@@ -1,0 +1,904 @@
+' DAQMX.txt
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+'
+' Copyright (c) 2003-2007 Yokogawa Electric Corporation. All rights reserved.
+'
+' This is defined export DAQMX.dll.
+' Declare Functions for Visual Basic
+'
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' 2007/09/30 Ver.3 Rev.1
+' 2007/05/30 Ver.3 Rev.0
+' 2004/11/01 Ver.2 Rev.1
+' 2003/05/30 Ver.1 Rev.1
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' communication
+Const DAQMX_COMMPORT = 34316
+
+' total number
+Const DAQMX_NUMMODULE = 6
+Const DAQMX_NUMCHANNEL = 60
+Const DAQMX_NUMDO = DAQMX_NUMCHANNEL
+Const DAQMX_NUMFIFO = 3
+Const DAQMX_NUMALARM = 4
+Const DAQMX_NUMSEGMENT = 2
+Const DAQMX_NUMMACADDR = 6
+Const DAQMX_NUMAOPWM = DAQMX_NUMCHANNEL
+Const DAQMX_NUMBALANCE = DAQMX_NUMCHANNEL
+Const DAQMX_NUMOUTPUT = DAQMX_NUMCHANNEL
+
+' string length without NULL
+Const DAQMX_MAXHOSTNAMELEN = 64
+Const DAQMX_MAXUNITLEN = 6
+Const DAQMX_MAXTAGLEN = 15
+Const DAQMX_MAXCOMMENTLEN = 30
+Const DAQMX_MAXSERIALLEN = 9
+Const DAQMX_MAXPARTNOLEN = 7
+
+' maximum number
+Const DAQMX_MAXDECIMALPOINT = 4
+Const DAQMX_MAXDISPTIME = 120000
+Const DAQMX_MAXPULSETIME = 30000
+
+' constant value
+Const DAQMX_INSTANTANEOUS = -1
+Const DAQMX_REFCHNO_NONE = 0
+Const DAQMX_REFCHNO_ALL = -1
+Const DAQMX_LEVELNO_ALL = -1
+Const DAQMX_DONO_ALL = -1
+Const DAQMX_SEGMENTNO_ALL = -1
+Const DAQMX_CHNO_ALL = -1
+Const DAQMX_MODULENO_ALL = -1
+Const DAQMX_FIFONO_ALL = -1
+Const DAQMX_AOPWMNO_ALL = -1
+Const DAQMX_BALANCENO_ALL = -1
+Const DAQMX_OUTPUTNO_ALL = -1
+
+' valid
+Const DAQMX_VALID_OFF = 0
+Const DAQMX_VALID_ON = 1
+
+' flag
+Const DAQMX_FLAG_OFF = &H0000
+Const DAQMX_FLAG_ENDDATA = &H0001
+
+' data status
+Const DAQMX_DATA_UNKNOWN = &H00000000
+Const DAQMX_DATA_NORMAL = &H00000001
+Const DAQMX_DATA_PLUSOVER = &H00007FFF
+Const DAQMX_DATA_MINUSOVER = &H00008001
+Const DAQMX_DATA_SKIP = &H00008002
+Const DAQMX_DATA_ILLEGAL = &H00008003
+Const DAQMX_DATA_NODATA = &H00008005
+Const DAQMX_DATA_LACK = &H00008400
+Const DAQMX_DATA_INVALID = &H00008700
+
+' alarm type
+Const DAQMX_ALARM_NONE = 0
+Const DAQMX_ALARM_UPPER = 1
+Const DAQMX_ALARM_LOWER = 2
+Const DAQMX_ALARM_UPDIFF = 3
+Const DAQMX_ALARM_LOWDIFF = 4
+
+' system control
+Const DAQMX_SYSTEM_RECONSTRUCT = 1
+Const DAQMX_SYSTEM_INITOPE = 2
+Const DAQMX_SYSTEM_RESETALARM = 3
+
+' channel kind
+Const DAQMX_CHKIND_NONE = &H0000
+Const DAQMX_CHKIND_AI = &H0010
+Const DAQMX_CHKIND_AIDIFF = &H0011
+Const DAQMX_CHKIND_AIRJC = &H0012
+Const DAQMX_CHKIND_DI = &H0030
+Const DAQMX_CHKIND_DIDIFF = &H0031
+Const DAQMX_CHKIND_DO = &H0040
+Const DAQMX_CHKIND_DOCOM = &H0041
+Const DAQMX_CHKIND_DOFAIL = &H0042
+Const DAQMX_CHKIND_DOERR = &H0043
+Const DAQMX_CHKIND_AO = &H0020
+Const DAQMX_CHKIND_AOCOM = &H0021
+Const DAQMX_CHKIND_PWM = &H0060
+Const DAQMX_CHKIND_PWMCOM = &H0061
+Const DAQMX_CHKIND_PI = &H0050
+Const DAQMX_CHKIND_PIDIFF = &H0051
+Const DAQMX_CHKIND_CI = &H0070
+Const DAQMX_CHKIND_CIDIFF = &H0071
+
+' scale type
+Const DAQMX_SCALE_NONE = 0
+Const DAQMX_SCALE_LINER = 1
+
+' module type
+' 0xF0000010 -> -268435440
+' 0xF0001C10 -> -268428272
+' 0xB0101F10 -> -1341120752
+' 0xD0001130 -> -805301968
+' 0x0000FF00 -> 65280
+Const DAQMX_MODULE_NONE = &H0
+Const DAQMX_MODULE_MX110UNVH04 = -268435440
+Const DAQMX_MODULE_MX110UNVM10 = -268428272
+Const DAQMX_MODULE_MX115D05H10 = &H10003010
+Const DAQMX_MODULE_MX125MKCM10 = &H00402010
+Const DAQMX_MODULE_MX110V4RM06 = -1341120752
+Const DAQMX_MODULE_MX112NDIM04 = &H01004010
+Const DAQMX_MODULE_MX112B35M04 = &H01004110
+Const DAQMX_MODULE_MX112B12M04 = &H01004210
+Const DAQMX_MODULE_MX115D24H10 = &H10003210
+Const DAQMX_MODULE_MX120VAOM08 = &H0080C010
+Const DAQMX_MODULE_MX120PWMM08 = &H0020C810
+Const DAQMX_MODULE_HIDDEN = 65280
+Const DAQMX_MODULE_MX114PLSM10 = &H0400B010
+Const DAQMX_MODULE_MX110VTDL30 = -805301968
+Const DAQMX_MODULE_MX118CANM10 = &H00085110
+Const DAQMX_MODULE_MX118CANM20 = &H00085220
+Const DAQMX_MODULE_MX118CANM30 = &H00085330
+Const DAQMX_MODULE_MX118CANSUB = &H00085000
+Const DAQMX_MODULE_MX118CANMERR = &H00005A10
+Const DAQMX_MODULE_MX118CANSERR = &H00005B10
+
+' how many channels by each module
+Const DAQMX_CHNUM_0 = 0
+Const DAQMX_CHNUM_4 = 4
+Const DAQMX_CHNUM_6 = 6
+Const DAQMX_CHNUM_8 = 8
+Const DAQMX_CHNUM_10 = 10
+Const DAQMX_CHNUM_30 = 30
+
+' interval (msec)
+Const DAQMX_INTERVAL_10 = 10
+Const DAQMX_INTERVAL_50 = 50
+Const DAQMX_INTERVAL_100 = 100
+Const DAQMX_INTERVAL_200 = 200
+Const DAQMX_INTERVAL_500 = 500
+Const DAQMX_INTERVAL_1000 = 1000
+Const DAQMX_INTERVAL_2000 = 2000
+Const DAQMX_INTERVAL_5000 = 5000
+Const DAQMX_INTERVAL_10000 = 10000
+Const DAQMX_INTERVAL_20000 = 20000
+Const DAQMX_INTERVAL_30000 = 30000
+Const DAQMX_INTERVAL_60000 = 60000
+
+' filter
+Const DAQMX_FILTER_0 = 0
+Const DAQMX_FILTER_5 = 1
+Const DAQMX_FILTER_10 = 2
+Const DAQMX_FILTER_20 = 3
+Const DAQMX_FILTER_25 = 4
+Const DAQMX_FILTER_40 = 5
+Const DAQMX_FILTER_50 = 6
+Const DAQMX_FILTER_100 = 7
+
+' RJC Type
+Const DAQMX_RJC_INTERNAL = 0
+Const DAQMX_RJC_EXTERNAL = 1
+
+' burnout
+Const DAQMX_BURNOUT_OFF = 0
+Const DAQMX_BURNOUT_UP = 1
+Const DAQMX_BURNOUT_DOWN = 2
+
+' unit type
+Const DAQMX_UNITTYPE_NONE = &H00000000
+Const DAQMX_UNITTYPE_MX100 = &H00010000
+
+' terminal type
+Const DAQMX_TERMINAL_SCREW = 0
+Const DAQMX_TERMINAL_CLAMP = 1
+Const DAQMX_TERMINAL_NDIS = 2
+Const DAQMX_TERMINAL_DSUB = 3
+
+' AD
+Const DAQMX_INTEGRAL_AUTO = 0
+Const DAQMX_INTEGRAL_50HZ = 1
+Const DAQMX_INTEGRAL_60HZ = 2
+
+' temparature unit
+Const DAQMX_TEMPUNIT_C = 0
+Const DAQMX_TEMPUNIT_F = 1
+
+' CF write mode
+Const DAQMX_CFWRITEMODE_ONCE = 0
+Const DAQMX_CFWRITEMODE_FIFO = 1
+
+' CF status
+Const DAQMX_CFSTATUS_NONE = &H0000
+Const DAQMX_CFSTATUS_EXIST = &H0001
+Const DAQMX_CFSTATUS_USE = &H0002
+Const DAQMX_CFSTATUS_FORMAT = &H0004
+
+' UNIT status
+Const DAQMX_UNITSTAT_NONE = &H0000
+Const DAQMX_UNITSTAT_INIT = &H0001
+Const DAQMX_UNITSTAT_STOP = &H0002
+Const DAQMX_UNITSTAT_RUN = &H0003
+Const DAQMX_UNITSTAT_BACKUP = &H0004
+
+' FIFO status
+Const DAQMX_FIFOSTAT_NONE = DAQMX_UNITSTAT_NONE
+Const DAQMX_FIFOSTAT_INIT = DAQMX_UNITSTAT_INIT
+Const DAQMX_FIFOSTAT_STOP = DAQMX_UNITSTAT_STOP
+Const DAQMX_FIFOSTAT_RUN = DAQMX_UNITSTAT_RUN
+Const DAQMX_FIFOSTAT_BACKUP = DAQMX_UNITSTAT_BACKUP
+
+' segment display type
+Const DAQMX_DISPTYPE_NONE = 0
+Const DAQMX_DISPTYPE_ON = 1
+Const DAQMX_DISPTYPE_BLINK = 2
+
+' choice
+Const DAQMX_CHOICE_PREV = 0
+Const DAQMX_CHOICE_PRESET = 1
+
+' transmit
+Const DAQMX_TRANSMIT_NONE = 0
+Const DAQMX_TRANSMIT_RUN = 1
+Const DAQMX_TRANSMIT_STOP = 2
+
+' balance
+Const DAQMX_BALANCE_NONE = 0
+Const DAQMX_BALANCE_DONE = 1
+Const DAQMX_BALANCE_NG = 2
+Const DAQMX_BALANCE_ERROR = 3
+
+' option
+Const DAQMX_OPTION_NONE = &H0000
+Const DAQMX_OPTION_DS = &H0001
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' range
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' Reference
+Const DAQMX_RANGE_REFERENCE = -1
+
+' Volt
+Const DAQMX_RANGE_VOLT_20MV = &H0000
+Const DAQMX_RANGE_VOLT_60MV = &H0001
+Const DAQMX_RANGE_VOLT_200MV = &H0002
+Const DAQMX_RANGE_VOLT_2V = &H0003
+Const DAQMX_RANGE_VOLT_6V = &H0004
+Const DAQMX_RANGE_VOLT_20V = &H0005
+Const DAQMX_RANGE_VOLT_100V = &H0006
+Const DAQMX_RANGE_VOLT_60MVH = &H0007
+Const DAQMX_RANGE_VOLT_1V = &H0008
+Const DAQMX_RANGE_VOLT_6VH = &H0009
+
+' TC
+Const DAQMX_RANGE_TC_R = &H0200
+Const DAQMX_RANGE_TC_S = &H0201
+Const DAQMX_RANGE_TC_B = &H0202
+Const DAQMX_RANGE_TC_K = &H0203
+Const DAQMX_RANGE_TC_E = &H0204
+Const DAQMX_RANGE_TC_J = &H0205
+Const DAQMX_RANGE_TC_T = &H0206
+Const DAQMX_RANGE_TC_N = &H0207
+Const DAQMX_RANGE_TC_W = &H0208
+Const DAQMX_RANGE_TC_L = &H0209
+Const DAQMX_RANGE_TC_U = &H020A
+Const DAQMX_RANGE_TC_KP = &H020B
+Const DAQMX_RANGE_TC_PL = &H020C
+Const DAQMX_RANGE_TC_PR = &H020D
+Const DAQMX_RANGE_TC_NNM = &H020E
+Const DAQMX_RANGE_TC_WR = &H020F
+Const DAQMX_RANGE_TC_WWR = &H0210
+Const DAQMX_RANGE_TC_AWG = &H0211
+Const DAQMX_RANGE_TC_XK = &H0212
+
+' RTD 1mA
+Const DAQMX_RANGE_RTD_1MAPT = &H0300
+Const DAQMX_RANGE_RTD_1MAJPT = &H0301
+Const DAQMX_RANGE_RTD_1MAPTH = &H0302
+Const DAQMX_RANGE_RTD_1MAJPTH = &H0303
+Const DAQMX_RANGE_RTD_1MANIS = &H0304
+Const DAQMX_RANGE_RTD_1MANID = &H0305
+Const DAQMX_RANGE_RTD_1MANI120 = &H0306
+Const DAQMX_RANGE_RTD_1MAPT50 = &H0307
+Const DAQMX_RANGE_RTD_1MACU10GE = &H0308
+Const DAQMX_RANGE_RTD_1MACU10LN = &H0309
+Const DAQMX_RANGE_RTD_1MACU10WEED = &H030A
+Const DAQMX_RANGE_RTD_1MACU10BAILEY = &H030B
+Const DAQMX_RANGE_RTD_1MAJ263B = &H030C
+Const DAQMX_RANGE_RTD_1MACU10A392 = &H030D
+Const DAQMX_RANGE_RTD_1MACU10A393 = &H030E
+Const DAQMX_RANGE_RTD_1MACU25 = &H030F
+Const DAQMX_RANGE_RTD_1MACU53 = &H0310
+Const DAQMX_RANGE_RTD_1MACU100 = &H0311
+Const DAQMX_RANGE_RTD_1MAPT25 = &H0312
+Const DAQMX_RANGE_RTD_1MACU10GEH = &H0313
+Const DAQMX_RANGE_RTD_1MACU10LNH = &H0314
+Const DAQMX_RANGE_RTD_1MACU10WEEDH = &H0315
+Const DAQMX_RANGE_RTD_1MACU10BAILEYH = &H0316
+Const DAQMX_RANGE_RTD_1MAPTN = &H0317
+Const DAQMX_RANGE_RTD_1MAJPTN = &H0318
+Const DAQMX_RANGE_RTD_1MAPTG = &H0319
+Const DAQMX_RANGE_RTD_1MACU100G = &H031A
+Const DAQMX_RANGE_RTD_1MACU50G = &H031B
+Const DAQMX_RANGE_RTD_1MACU10G = &H031C
+
+' RTD 2mA
+Const DAQMX_RANGE_RTD_2MAPT = &H0400
+Const DAQMX_RANGE_RTD_2MAJPT = &H0401
+Const DAQMX_RANGE_RTD_2MAPTH = &H0402
+Const DAQMX_RANGE_RTD_2MAJPTH = &H0403
+Const DAQMX_RANGE_RTD_2MAPT50 = &H0404
+Const DAQMX_RANGE_RTD_2MACU10GE = &H0405
+Const DAQMX_RANGE_RTD_2MACU10LN = &H0406
+Const DAQMX_RANGE_RTD_2MACU10WEED = &H0407
+Const DAQMX_RANGE_RTD_2MACU10BAILEY = &H0408
+Const DAQMX_RANGE_RTD_2MAJ263B = &H0409
+Const DAQMX_RANGE_RTD_2MACU10A392 = &H040A
+Const DAQMX_RANGE_RTD_2MACU10A393 = &H040B
+Const DAQMX_RANGE_RTD_2MACU25 = &H040C
+Const DAQMX_RANGE_RTD_2MACU53 = &H040D
+Const DAQMX_RANGE_RTD_2MACU100 = &H040E
+Const DAQMX_RANGE_RTD_2MAPT25 = &H040F
+Const DAQMX_RANGE_RTD_2MACU10GEH = &H0410
+Const DAQMX_RANGE_RTD_2MACU10LNH = &H0411
+Const DAQMX_RANGE_RTD_2MACU10WEEDH = &H0412
+Const DAQMX_RANGE_RTD_2MACU10BAILEYH = &H0413
+Const DAQMX_RANGE_RTD_2MAPTN = &H0414
+Const DAQMX_RANGE_RTD_2MAJPTN = &H0415
+Const DAQMX_RANGE_RTD_2MACU100G = &H0416
+Const DAQMX_RANGE_RTD_2MACU50G = &H0417
+Const DAQMX_RANGE_RTD_2MACU10G = &H0418
+
+' DI
+Const DAQMX_RANGE_DI_LEVEL = 1
+Const DAQMX_RANGE_DI_CONTACT = 2
+
+' DI : detail
+Const DAQMX_RANGE_DI_LEVEL_AI = &H0100
+Const DAQMX_RANGE_DI_CONTACT_AI4 = &H0101
+Const DAQMX_RANGE_DI_CONTACT_AI10 = &H0102
+Const DAQMX_RANGE_DI_LEVEL_DI = &H0103
+Const DAQMX_RANGE_DI_CONTACT_DI = &H0104
+Const DAQMX_RANGE_DI_LEVEL_DI5V = DAQMX_RANGE_DI_LEVEL_DI
+Const DAQMX_RANGE_DI_LEVEL_DI24V = &H0105
+Const DAQMX_RANGE_DI_CONTACT_AI30 = DAQMX_RANGE_DI_CONTACT_AI10
+
+' RTD 0.25mA
+Const DAQMX_RANGE_RTD_025MAPT500 = &H0500
+Const DAQMX_RANGE_RTD_025MAPT1K = &H0501
+
+' RES
+Const DAQMX_RANGE_RES_20 = &H0600
+Const DAQMX_RANGE_RES_200 = &H0601
+Const DAQMX_RANGE_RES_2K = &H0602
+
+' STR
+Const DAQMX_RANGE_STRAIN_2K = &H0700
+Const DAQMX_RANGE_STRAIN_20K = &H0701
+Const DAQMX_RANGE_STRAIN_200K = &H0702
+
+' AO
+Const DAQMX_RANGE_AO_10V = &H1000
+Const DAQMX_RANGE_AO_20MA = &H1001
+
+' PWM
+Const DAQMX_RANGE_PWM_1MS = &H1100
+Const DAQMX_RANGE_PWM_10MS = &H1101
+
+' CAN
+Const DAQMX_RANGE_COM_CAN = &H0800
+
+' PI
+Const DAQMX_RANGE_PI_LEVEL = &H0900
+Const DAQMX_RANGE_PI_CONTACT = &H0901
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Output
+Const DAQMX_OUTPUT_NONE = 0
+Const DAQMX_OUTPUT_AO_10V = DAQMX_RANGE_AO_10V
+Const DAQMX_OUTPUT_AO_20MA = DAQMX_RANGE_AO_20MA
+Const DAQMX_OUTPUT_PWM_1MS = DAQMX_RANGE_PWM_1MS
+Const DAQMX_OUTPUT_PWM_10MS = DAQMX_RANGE_PWM_10MS
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Structures
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' 64bit data
+Type MXDataNo
+	aLow		As Long
+	aHigh		As Long
+End Type
+Type MXUserTime
+	aLow		As Long
+	aHigh		As Long
+End Type
+
+' Date Time
+Type MXDateTime
+	aTime		As Long
+	aMilliSecond	As Long
+End Type
+
+' Alarm
+Type MXAlarm
+	aType		As Long
+	aReserve	As Long
+	aON		As Long	
+	aOFF		As Long
+End Type
+
+' Measured Data
+Type MXDataInfo
+	aValue		As Long
+	aStatus		As Long
+	aAlarm(1 To 4)	As Long
+End Type
+
+' Channel
+Type MXChConfigAIDI
+	aSpanMin	As Long
+	aSpanMax	As Long
+	aScaleMin	As Long
+	aScaleMax	As Long
+	aRefChNo	As Long
+	aChatFilter	As Long
+End Type
+Type MXChConfigAI
+	aFilter		As Long
+	aRJCType	As Long
+	aRJCVolt	As Long
+	aBurnout	As Long
+End Type
+Type MXChConfigDO
+	aDeenergize	As Long
+	aHold		As Long
+	aRefAlarm(1 To 4, 1 To 60)	As Byte
+End Type
+Type MXChID
+	aChNo		As Long
+	aPoint		As Long
+	aValid		As Long
+	aKind		As Long
+	aRange		As Long
+	aScaleType	As Long
+	aUnit		As String * DAQMX_MAXUNITLEN
+	align1(0 To 1)	As Byte
+	aTag		As String * DAQMX_MAXTAGLEN
+	aNULL		As Byte
+	aComment	As String * DAQMX_MAXCOMMENTLEN
+	align2(0 To 1)	As Byte
+	aAlarm(1 To 4)	As MXAlarm
+End Type
+Type MXChConfig
+	aChID	As MXChID
+	aAIDI	As MXChConfigAIDI
+	aAI	As MXChConfigAI
+	aDO	As MXChConfigDO
+End Type
+Type MXChInfo
+	aChID		As MXChID
+	aFIFONo		As Long
+	aFIFOIndex	As Long
+	aOrigMin	As Double
+	aOrigMax	As Double
+	aDispMin	As Double
+	aDispMax	As Double
+	aRealMin	As Double
+	aRealMax	As Double
+End Type
+
+' System
+Type MXProductInfo
+	aOption		As Long
+	aCheck		As Long
+	aSerial		As String * DAQMX_MAXSERIALLEN
+	aNULL		As Byte
+	aMAC(0 To 5)	As Byte
+End Type
+Type MXUnitData
+	aType		As Long
+	aStyle		As Long
+	aNo		As Long
+	aTempUnit	As Long
+	aCFTimeout	As Long
+	aCFWriteMode    As Long
+	aFrequency	As Long
+	aReserve        As Long
+	aPartNo		As String * DAQMX_MAXPARTNOLEN
+	aNULL		As Byte
+	aProduct	As MXProductInfo
+End Type
+Type MXModuleData
+	aType		As Long
+	aChNum		As Long
+	aInterval	As Long
+	aIntegralTime	As Long
+	aStandbyType	As Long
+	aRealType	As Long
+	aStatus		As Long
+	aVersion	As Long
+	aTerminalType	As Long
+	aFIFONo		As Long
+	aProduct	As MXProductInfo
+End Type
+Type MXSystemInfo
+	aUnit           As MXUnitData
+	aModule(0 To 5) As MXModuleData
+End Type
+
+' Status
+Type MXCFInfo
+	aStatus		As Long
+	aSize		As Long
+	aRemain		As Long
+	aReserve	As Long
+End Type
+Type MXFIFOInfo
+	aNo		As Long
+	aStatus		As Long
+	aInterval	As Long
+	aReserve	As Long
+	aOldNo		As MXDataNo
+	aNewNo		As MXDataNo
+End Type
+Type MXStatus
+	aUnitStatus		As Long
+	aConfigCnt		As Long
+	aTimeCnt		As Long
+	aFIFONum		As Long
+	aBackup			As Long
+	aReserve		As Long
+	aCFInfo			As MXCFInfo
+	aFIFOInfo(0 To 2)	As MXFIFOInfo
+	aDateTime		As MXDateTime
+End Type
+
+' Network
+Type MXNetInfo
+	aAddress	As Long
+	aPort		As Long
+	aSubMask	As Long
+	aGateway	As Long
+	aHost		As String * DAQMX_MAXHOSTNAMELEN
+	align(0 To 7)	As Byte
+End Type
+
+' DO
+Type MXDO
+	aValid	As Long
+	aONOFF	As Long
+End Type
+Type MXDOData
+	aDO(1 To 60)    As MXDO
+End Type
+
+' Segment
+Type MXSegment
+	aPattern(0 To 1) As Long
+End Type
+
+' Balance
+Type MXBalance
+	aValid As Long
+	aValue As Long
+End Type
+Type MXBalanceData
+	aBalance(1 To 60) As MXBalance
+End Type
+Type MXBalanceResult
+	aResult(1 To 60) As Long
+End Type
+
+' Output
+Type MXOutput
+	aType		As Long
+	aIdleChoice     As Long
+	aErrorChoice    As Long
+	aPresetValue    As Long
+	aPulseTime      As Long
+	aReserve	As Long
+End Type
+Type MXOutputData
+	aOutput(1 To 60) As MXOutput
+End Type
+
+' AO/PWM
+Type MXAOPWM
+	aValid  As Long
+	aValue  As Long
+End Type
+Type MXAOPWMData
+	aAOPWM(1 To 60) As MXAOPWM
+End Type
+Type MXTransmit
+	aTransmit(1 To 60) As Long
+End Type
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Low level communications
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function openMX Lib "DAQMX" (ByVal strAddress As String, ByRef errorCode As Long) As Long
+
+Declare Function closeMX Lib "DAQMX" (ByVal daqmx As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Middle level communications
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' FIFO control commands
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function startFIFOMX Lib "DAQMX" (ByVal daqmx As Long) As Long
+
+Declare Function stopFIFOMX Lib "DAQMX" (ByVal daqmx As Long) As Long
+
+Declare Function autoFIFOMX Lib "DAQMX" (ByVal daqmx As Long, ByVal bAuto As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Date time commands
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setDateTimeMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXDateTime As MXDateTime) As Long
+
+Declare Function setDateTimeNowMX Lib "DAQMX" (ByVal daqmx As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Control Commands
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setBackupMX Lib "DAQMX" (ByVal daqmx As Long, ByVal bBakcup As Long, ByVal iCFWriteMode As Long) As Long
+
+Declare Function formatCFMX Lib "DAQMX" (ByVal daqmx As Long) As Long
+
+Declare Function initSystemMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iCtrl As Long) As Long
+
+Declare Function setSegmentMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iDispType As Long, ByVal dispTime As Long, ByRef newSegment As MXSegment, ByRef oldSegment As MXSegment) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get status
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getStatusDataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXStatus As MXStatus) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get system
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getSystemConfigMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXSystemInfo As MXSystemInfo) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Configurature -> @see for Visual Basic
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' DO
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getDODataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXDOData As MXDOData) As Long
+
+Declare Function setDODataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXDOData As MXDOData) As Long
+
+Declare Function changeDODataMX Lib "DAQMX" (ByRef pMXDOData As MXDOData, ByVal doNo As Long, ByVal bValid As Long, ByVal bONOFF As Long) As Long
+
+Declare Function setDOTypeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal doNo As Long, ByVal iKind As Long, ByVal bDeenergize As Long, ByVal bHold As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get channel information
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkChInfoMX Lib "DAQMX" (ByVal daqmx As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function getChInfoMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXChInfo As MXChInfo, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Talker measured data by each channels
+' talkChDataMX -> talkChDataVBMX @see for Visual Basic
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getChDataNoMX Lib "DAQMX" (ByVal daqmx As Long, ByVal chNo As Long, ByRef startDataNo As MXDataNo, ByRef endDataNo As MXDataNo) As Long
+
+Declare Function talkChDataInstMX Lib "DAQMX" (ByVal daqmx As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Talker measured data by each FIFO
+' talkFIFODataMX -> talkFIFODataVBMX @see for Visual Basic
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getFIFODataNoMX Lib "DAQMX" (ByVal daqmx As Long, ByVal fifoNo As Long, ByRef startDataNo As MXDataNo, ByRef endDataNo As MXDataNo) As Long
+
+Declare Function talkFIFODataInstMX Lib "DAQMX" (ByVal daqmx As Long, ByVal fifoNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get measured data after talker
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getTimeDataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXDataNo As MXDataNo, ByRef pMXDateTime As MXDateTime, ByRef userTime as MXUserTime, ByRef pFlag As Long) As Long
+
+Declare Function getChDataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXDataNo As MXDataNo, ByRef pMXChInfo As MXChInfo, ByRef pMXDataInfo As MXDataInfo, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Misc
+' setUserTimeMX ->setUserTimeVBMX @see for Visual Basic
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getLastErrorMX Lib "DAQMX" (ByVal daqmx As Long, ByRef lastErr As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Set range
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setSKIPMX Lib "DAQMX" (ByVal daqmx As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setVOLTMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeVOLT As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setTCMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeTC As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setRTDMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeRTD As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setDIMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeDI As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setDELTAMX Lib "DAQMX" (ByVal daqmx As Long, ByVal refChNo As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long, ByVal iRange As Long) As Long
+
+Declare Function setRRJCMX Lib "DAQMX" (ByVal daqmx As Long, ByVal refChNo As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Scalling
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setScallingUnitMX Lib "DAQMX" (ByVal daqmx As Long, ByVal strUnit As String, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Alarm
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setAlarmMX Lib "DAQMX" (ByVal daqmx As Long, ByVal levelNo As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal iAlarmType As Long, ByVal value As Long, ByVal histerisys As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Channel configure
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setTagMX Lib "DAQMX" (ByVal daqmx As Long, ByVal strTag As String, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setCommentMX Lib "DAQMX" (ByVal daqmx As Long, ByVal strComment As String, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setRJCTypeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRJCType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal volt As Long) As Long
+
+Declare Function setFilterMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iFilter As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setBurnoutMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iBurnout As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setRefAlarmMX Lib "DAQMX" (ByVal daqmx As Long, ByVal refChNo As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal levelNo As Long, ByVal bValid As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Unit configure
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setIntervalMX Lib "DAQMX" (ByVal daqmx As Long, ByVal moduleNo As Long, ByVal iInterval As Long, ByVal iHz As Long) As Long
+
+Declare Function setTempUnitMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iTempUnit As Long) As Long
+
+Declare Function setUnitNoMX Lib "DAQMX" (ByVal daqmx As Long, ByVal unitNo As Long) As Long
+
+Declare Function setSystemTimeoutMX Lib "DAQMX" (ByVal daqmx As Long, ByVal timeout As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Utilities
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function toDoubleValueMX Lib "DAQMX" (ByVal dataValue As Long, ByVal point As Long) As Double
+
+Declare Function toStringValueMX Lib "DAQMX" (ByVal dataValue As Long, ByVal point As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function toAlarmNameMX Lib "DAQMX" (ByVal iAlarmType As Long, ByVal strAlarm As String, ByVal lenAlarm As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Messages
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getVersionAPIMX Lib "DAQMX" () As Long
+
+Declare Function getRevisionAPIMX  Lib "DAQMX" () As Long
+
+Declare Function toErrorMessageMX Lib "DAQMX" (ByVal errCode As Long, ByVal errStr As String, ByVal errLen As Long) As Long
+
+Declare Function getMaxLenErrorMessageMX Lib "DAQMX" () As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Deprecated command
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setTimeOutMX Lib "DAQMX" (ByVal daqmx As Long, ByVal seconds As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' for Visual Basic
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkConfigMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXSystemInfo As MXSystemInfo, ByRef pMXStatus As MXStatus, ByRef pMXNetInfo As MXNetInfo) As Long
+
+Declare Function getChConfigMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXChConfig As MXChConfig, ByRef pFlag As Long) As Long
+
+Declare Function setSystemConfigMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXSystemInfo As MXSystemInfo) As Long
+
+Declare Function setChConfigMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXChConfig As MXChConfig) As Long
+
+Declare Function talkChDataVBMX Lib "DAQMX" (ByVal daqmx As Long, ByVal chNo As Long, ByRef startDataNo As MXDataNo, ByRef endDataNo As MXDataNo) As Long
+
+Declare Function talkFIFODataVBMX Lib "DAQMX" (ByVal daqmx As Long, ByVal fifoNo As Long, ByRef startDataNo As MXDataNo, ByRef endDataNo As MXDataNo) As Long
+
+Declare Function setUserTimeVBMX Lib "DAQMX" (ByVal daqmx As Long, ByRef userTime As MXUserTime) As Long
+
+Declare Sub incrementDataNoMX Lib "DAQMX" (ByRef dataNo As MXDataNo, ByVal increment As Long)
+
+Declare Sub decrementDataNoMX Lib "DAQMX" (ByRef dataNo As MXDataNo, ByVal decrement As Long)
+
+Declare Function compareDataNoMX Lib "DAQMX" (ByRef prevDataNo As MXDataNo, ByRef nextDataNo As MXDataNo) As Long
+
+Declare Sub toDateTimeMX Lib "DAQMX" (ByRef pMXDateTime As MXDateTime, ByRef pYear As Long, ByRef pMonth As Long, ByRef pDay As Long, ByRef pHour As Long, ByRef pMinute As Long, ByRef pSecond As Long)
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' since R2.01
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setAOPWMDataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXAOPWMData As MXAOPWMData) As Long
+
+Declare Function setTransmitMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXTransmit As MXTransmit) As Long
+
+Declare Function runBalanceMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXBalanceData As MXBalanceData, ByRef pMXBalanceResult As MXBalanceResult) As Long
+
+Declare Function resetBalanceMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXBalanceData As MXBalanceData, ByRef pMXBalanceResult As MXBalanceResult) As Long
+
+Declare Function setBalanceMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXBalanceData As MXBalanceData) As Long
+
+Declare Function getBalanceMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXBalanceData As MXBalanceData) As Long
+
+Declare Function getAOPWMDataMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXAOPWMData As MXAOPWMData, ByRef pMXTransmit As MXTransmit) As Long
+
+Declare Function setRESMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeRES As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setSTRAINMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeSTRAIN As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setAOMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeAO As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+Declare Function setPWMMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangePWM As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+Declare Function setOutputTypeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iOutput As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setChoiceMX Lib "DAQMX" (ByVal daqmx As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal idleChoice As Long, ByVal errorChoice As Long, ByVal presetValue As Long) As Long
+
+Declare Function setPulseTimeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal pulseTime As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setAOTypeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal aoNo As Long, ByVal iKind As Long, ByVal refChNo As Long) As Long
+
+Declare Function setPWMTypeMX Lib "DAQMX" (ByVal daqmx As Long, ByVal pwmNo As Long, ByVal iKind As Long, ByVal refChNo As Long) As Long
+
+Declare Function getOutputMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXOutputData As MXOutputData) As Long
+
+Declare Function setOutputMX Lib "DAQMX" (ByVal daqmx As Long, ByRef pMXOutputData As MXOutputData) As Long
+
+Declare Function changeAOPWMDataMX Lib "DAQMX" (ByRef pMXAOPWMData As MXAOPWMData, ByVal aopwmNo As Long, ByVal bValid As Long, ByVal iAOPWMValue As Long) As Long
+
+Declare Function changeBalanceMX Lib "DAQMX" (ByRef pMXBalanceData As MXBalanceData, ByVal balanceNo As Long, ByVal bValid As Long, ByVal iValue As Long) As Long
+
+Declare Function changeTransmitMX Lib "DAQMX" (ByRef pMXTransmit As MXTransmit, ByVal pwmNo As Long, ByVal iTrans As Long) As Long
+
+Declare Function getMaxLenAlarmNameMX Lib "DAQMX" () As Long
+
+Declare Function toAOPWMValueMX Lib "DAQMX" (ByVal realValue As Double, ByVal iRangeAOPWM As Long) As Long
+
+Declare Function toRealValueMX Lib "DAQMX" (ByVal iAOPWMValue As Long, ByVal iRangeAOPWM As Long) As Double
+
+Declare Function getItemErrorMX Lib "DAQMX" (ByVal daqmx As Long, ByRef itemErr As Long) As Long
+
+Declare Function isDataNoVBMX Lib "DAQMX" (ByRef dataNo As MXDataNo) As Long
+
+Declare Function toStyleVersionMX Lib "DAQMX" (ByVal style As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' since R3.01
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setCOMMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangeCOM As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setPULSEMX Lib "DAQMX" (ByVal daqmx As Long, ByVal iRangePULSE As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setChatFilterMX Lib "DAQMX" (ByVal daqmx As Long, ByVal bChatFilter As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --

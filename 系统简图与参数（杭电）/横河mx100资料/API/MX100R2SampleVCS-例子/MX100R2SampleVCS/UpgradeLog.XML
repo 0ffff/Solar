@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MX100VCS">
+</Property><Property Name="解决方案文件" Value="C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\MX100VCS.sln">
+</Property><Property Name="用户选项文件" Value="C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\MX100VCS.suo">
+</Property><Property Name="Date" Value="2018年4月19日">
+</Property><Property Name="Time" Value="18:04">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MX100VCS.sln" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\MX100VCS.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MX100VCS.suo" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\MX100VCS.suo">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="MX100VCS.csproj" Description="项目文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\MX100VCS.csproj">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="MX100VCS.csproj.user" Description="项目用户文件成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\MX100VCS.csproj.user">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="2" Project="MX100VCS" Source="DAQMX100.cs" Description="未能将文件备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\DAQMX100.cs">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="DrawWaveMX100.cs" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\DrawWaveMX100.cs">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="Form1.cs" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="App.ico" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="Form1.resx" Description="文件已成功备份为 C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="MX100VCS.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="MX100VCS" Source="MX100VCS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MX100VCS.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="MX100VCS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MX100VCS" Source="MX100VCS.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

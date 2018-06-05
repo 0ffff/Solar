@@ -1,0 +1,150 @@
+' DAQDA100Reader.txt
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+'
+' Copyright (c) 2004 Yokogawa Electric Corporation. All rights reserved.
+'
+' This is defined export DAQDA100.dll.
+' Declare Functions for Visual Basic
+'
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' 2004/11/01 Ver.2 Rev.1
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' communication
+Const DAQDA100READER_DATAPORT = 34151
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' @see DAQDA100
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' total number
+Const DAQDA100READER_NUMCHANNEL = 360
+Const DAQDA100READER_NUMALARM = 4
+Const DAQDA100READER_NUMUNIT = 6
+Const DAQDA100READER_NUMSLOT = 6
+Const DAQDA100READER_NUMTERM = 10
+
+' all
+Const DAQDA100READER_CHTYPE_MEASALL = &H000F
+Const DAQDA100READER_CHNO_ALL = -1
+
+' string length without NULL
+Const DAQDA100READER_MAXUNITLEN = 6
+
+' valid
+Const DAQDA100READER_VALID_OFF = 0
+Const DAQDA100READER_VALID_ON = 1
+
+' data status
+Const DAQDA100READER_DATA_UNKNWON = &H00000000
+Const DAQDA100READER_DATA_NORMAL = &H00000001
+Const DAQDA100READER_DATA_DIFFINPUT = &H00000002
+Const DAQDA100READER_DATA_READER = &H00000003
+Const DAQDA100READER_DATA_PLUSOVER = &H00007FFF
+Const DAQDA100READER_DATA_MINUSOVER = &H00008001
+Const DAQDA100READER_DATA_SKIP = &H00008002
+Const DAQDA100READER_DATA_ILLEGAL = &H00008003
+Const DAQDA100READER_DATA_ABNORMAL = &H00008004
+Const DAQDA100READER_DATA_NODATA = &H00008005
+
+' alarm type
+Const DAQDA100READER_ALARM_NONE = 0
+Const DAQDA100READER_ALARM_UPPER = 1
+Const DAQDA100READER_ALARM_LOWER = 2
+Const DAQDA100READER_ALARM_UPDIFF = 3
+Const DAQDA100READER_ALARM_LOWDIFF = 4
+Const DAQDA100READER_ALARM_INCRATE = 5
+Const DAQDA100READER_ALARM_DECRATE = 6
+
+' channel/relay type
+' 0 - 5 if subunit
+Const DAQDA100READER_CHTYPE_MAINUNIT = -1
+Const DAQDA100READER_CHTYPE_STANDALONE = 0
+Const DAQDA100READER_CHTYPE_MATHTYPE = &H0080
+
+' unit number
+' 0 - 5 if subunit
+Const DAQDA100READER_UNITNO_MAINUNIT = DAQDA100READER_CHTYPE_MAINUNIT
+Const DAQDA100READER_UNITNO_STANDALONE = DAQDA100READER_CHTYPE_STANDALONE
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Connection
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function openDA100Reader Lib "DAQDA100" (ByVal strAddress As String, ByRef errorCode As Long) As Long
+
+Declare Function closeDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Measurement
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function measInstChDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function mathInstChDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chNo As Long) As Long
+
+Declare Function measInfoChDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function mathInfoChDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function dataValueDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataStatusDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function alarmTypeDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function dataAlarmDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function dataDoubleValueDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Double
+
+Declare Function dataStringValueDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function dataYearDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMonthDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataDayDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataHourDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMinuteDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataSecondDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMilliSecDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Channel Information
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelPointDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function channelStatusDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long) As Long
+
+Declare Function toChannelUnitDA100Reader Lib "DAQDA100" (ByVal daqda100reader As Long, ByVal chType As Long, ByVal chNo As Long, ByVal strUnit As String, ByVal lenUnit As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Utility
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function toDoubleValueDA100Reader Lib "DAQDA100" (ByVal dataValue As Long, ByVal point As Long) As Double
+
+Declare Function toStringValueDA100Reader Lib "DAQDA100" (ByVal dataValue As Long, ByVal point As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function toAlarmNameDA100Reader Lib "DAQDA100" (ByVal iAlarmType As Long, ByVal strAlarm As String, ByVal lenAlarm As Long) As Long
+
+Declare Function alarmMaxLengthDA100Reader Lib "DAQDA100" () As Long
+
+Declare Function versionAPIDA100Reader Lib "DAQDA100" () As Long
+
+Declare Function revisionAPIDA100Reader Lib "DAQDA100" () As Long
+
+Declare Function toErrorMessageDA100Reader Lib "DAQDA100" (ByVal errCode As Long, ByVal errStr As String, ByVal errLen As Long) As Long
+
+Declare Function errorMaxLengthDA100Reader Lib "DAQDA100" () As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --

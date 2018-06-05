@@ -1,0 +1,958 @@
+' DAQMX100.txt
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+'
+' Copyright (c) 2004-2007 Yokogawa Electric Corporation. All rights reserved.
+'
+' This is defined export DAQMX100.dll.
+' Declare Functions for Visual Basic
+'
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' 2007/09/30 Ver.3 Rev.1
+' 2004/11/01 Ver.2 Rev.1
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' specified
+Const DAQMX100_LIST_ALL = -1
+Const DAQMX100_LIST_CURRENT = -1
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' @see DAQMX
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' total number
+Const DAQMX100_NUMMODULE = 6
+Const DAQMX100_NUMCHANNEL = 60
+Const DAQMX100_NUMDO = DAQMX100_NUMCHANNEL
+Const DAQMX100_NUMFIFO = 3
+Const DAQMX100_NUMALARM = 4
+Const DAQMX100_NUMSEGMENT = 2
+Const DAQMX100_NUMMACADDR = 6
+Const DAQMX100_NUMAOPWM = DAQMX100_NUMCHANNEL
+Const DAQMX100_NUMBALANCE = DAQMX100_NUMCHANNEL
+Const DAQMX100_NUMOUTPUT = DAQMX100_NUMCHANNEL
+
+' string length without NULL
+Const DAQMX100_MAXHOSTNAMELEN = 64
+Const DAQMX100_MAXUNITLEN = 6
+Const DAQMX100_MAXTAGLEN = 15
+Const DAQMX100_MAXCOMMENTLEN = 30
+Const DAQMX100_MAXSERIALLEN = 9
+Const DAQMX100_MAXPARTNOLEN = 7
+
+' maximum number
+Const DAQMX100_MAXDECIMALPOINT = 4
+Const DAQMX100_MAXDISPTIME = 120000
+Const DAQMX100_MAXPULSETIME = 30000
+
+' constant value
+Const DAQMX100_INSTANTANEOUS = -1
+Const DAQMX100_REFCHNO_NONE = 0
+Const DAQMX100_REFCHNO_ALL = -1
+Const DAQMX100_LEVELNO_ALL = -1
+Const DAQMX100_DONO_ALL = -1
+Const DAQMX100_SEGMENTNO_ALL = -1
+Const DAQMX100_CHNO_ALL = -1
+Const DAQMX100_MODULENO_ALL = -1
+Const DAQMX100_FIFONO_ALL = -1
+Const DAQMX100_AOPWMNO_ALL = -1
+Const DAQMX100_BALANCENO_ALL = -1
+Const DAQMX100_OUTPUTNO_ALL = -1
+
+' valid
+Const DAQMX100_VALID_OFF = 0
+Const DAQMX100_VALID_ON = 1
+
+' flag : not use
+
+' data status
+Const DAQMX100_DATA_UNKNWON = &H00000000
+Const DAQMX100_DATA_NORMAL = &H00000001
+Const DAQMX100_DATA_PLUSOVER = &H00007FFF
+Const DAQMX100_DATA_MINUSOVER = &H00008001
+Const DAQMX100_DATA_SKIP = &H00008002
+Const DAQMX100_DATA_ILLEGAL = &H00008003
+Const DAQMX100_DATA_NODATA = &H00008005
+Const DAQMX100_DATA_LACK = &H00008400
+Const DAQMX100_DATA_INVALID = &H00008700
+
+' alarm type
+Const DAQMX100_ALARM_NONE = 0
+Const DAQMX100_ALARM_UPPER = 1
+Const DAQMX100_ALARM_LOWER = 2
+Const DAQMX100_ALARM_UPDIFF = 3
+Const DAQMX100_ALARM_LOWDIFF = 4
+
+' system control : @see each command function
+
+' channel kind
+Const DAQMX100_CHKIND_NONE = &H0000
+Const DAQMX100_CHKIND_AI = &H0010
+Const DAQMX100_CHKIND_AIDIFF = &H0011
+Const DAQMX100_CHKIND_AIRJC = &H0012
+Const DAQMX100_CHKIND_DI = &H0030
+Const DAQMX100_CHKIND_DIDIFF = &H0031
+Const DAQMX100_CHKIND_DO = &H0040
+Const DAQMX100_CHKIND_DOCOM = &H0041
+Const DAQMX100_CHKIND_DOFAIL = &H0042
+Const DAQMX100_CHKIND_DOERR = &H0043
+Const DAQMX100_CHKIND_AO = &H0020
+Const DAQMX100_CHKIND_AOCOM = &H0021
+Const DAQMX100_CHKIND_PWM = &H0060
+Const DAQMX100_CHKIND_PWMCOM = &H0061
+Const DAQMX100_CHKIND_PI = &H0050
+Const DAQMX100_CHKIND_PIDIFF = &H0051
+Const DAQMX100_CHKIND_CI = &H0070
+Const DAQMX100_CHKIND_CIDIFF = &H0071
+
+' scale type
+Const DAQMX100_SCALE_NONE = 0
+Const DAQMX100_SCALE_LINER = 1
+
+' module type
+' 0xF0000010 -> -268435440
+' 0xF0001C10 -> -268428272
+' 0xB0101F10 -> -1341120752
+' 0xD0001130 -> -805301968
+' 0x0000FF00 -> 65280
+Const DAQMX100_MODULE_NONE = &H0
+Const DAQMX100_MODULE_MX110UNVH04 = -268435440
+Const DAQMX100_MODULE_MX110UNVM10 = -268428272
+Const DAQMX100_MODULE_MX115D05H10 = &H10003010
+Const DAQMX100_MODULE_MX125MKCM10 = &H00402010
+Const DAQMX100_MODULE_MX110V4RM06 = -1341120752
+Const DAQMX100_MODULE_MX112NDIM04 = &H01004010
+Const DAQMX100_MODULE_MX112B35M04 = &H01004110
+Const DAQMX100_MODULE_MX112B12M04 = &H01004210
+Const DAQMX100_MODULE_MX115D24H10 = &H10003210
+Const DAQMX100_MODULE_MX120VAOM08 = &H0080C010
+Const DAQMX100_MODULE_MX120PWMM08 = &H0020C810
+Const DAQMX100_MODULE_HIDDEN = 65280
+Const DAQMX100_MODULE_MX114PLSM10 = &H0400B010
+Const DAQMX100_MODULE_MX110VTDL30 = -805301968
+Const DAQMX100_MODULE_MX118CANM10 = &H00085110
+Const DAQMX100_MODULE_MX118CANM20 = &H00085220
+Const DAQMX100_MODULE_MX118CANM30 = &H00085330
+Const DAQMX100_MODULE_MX118CANSUB = &H00085000
+Const DAQMX100_MODULE_MX118CANMERR = &H00005A10
+Const DAQMX100_MODULE_MX118CANSERR = &H00005B10
+
+' how many channels by each module
+Const DAQMX100_CHNUM_0 = 0
+Const DAQMX100_CHNUM_4 = 4
+Const DAQMX100_CHNUM_6 = 6
+Const DAQMX100_CHNUM_8 = 8
+Const DAQMX100_CHNUM_10 = 10
+Const DAQMX100_CHNUM_30 = 30
+
+' interval (msec)
+Const DAQMX100_INTERVAL_10 = 10
+Const DAQMX100_INTERVAL_50 = 50
+Const DAQMX100_INTERVAL_100 = 100
+Const DAQMX100_INTERVAL_200 = 200
+Const DAQMX100_INTERVAL_500 = 500
+Const DAQMX100_INTERVAL_1000 = 1000
+Const DAQMX100_INTERVAL_2000 = 2000
+Const DAQMX100_INTERVAL_5000 = 5000
+Const DAQMX100_INTERVAL_10000 = 10000
+Const DAQMX100_INTERVAL_20000 = 20000
+Const DAQMX100_INTERVAL_30000 = 30000
+Const DAQMX100_INTERVAL_60000 = 60000
+
+' filter
+Const DAQMX100_FILTER_0 = 0
+Const DAQMX100_FILTER_5 = 1
+Const DAQMX100_FILTER_10 = 2
+Const DAQMX100_FILTER_20 = 3
+Const DAQMX100_FILTER_25 = 4
+Const DAQMX100_FILTER_40 = 5
+Const DAQMX100_FILTER_50 = 6
+Const DAQMX100_FILTER_100 = 7
+
+' RJC Type
+Const DAQMX100_RJC_INTERNAL = 0
+Const DAQMX100_RJC_EXTERNAL = 1
+
+' burnout
+Const DAQMX100_BURNOUT_OFF = 0
+Const DAQMX100_BURNOUT_UP = 1
+Const DAQMX100_BURNOUT_DOWN = 2
+
+' unit type
+Const DAQMX100_UNITTYPE_NONE = &H00000000
+Const DAQMX100_UNITTYPE_MX100 = &H00010000
+
+' terminal type
+Const DAQMX100_TERMINAL_SCREW = 0
+Const DAQMX100_TERMINAL_CLAMP = 1
+Const DAQMX100_TERMINAL_NDIS = 2
+
+' AD
+Const DAQMX100_INTEGRAL_AUTO = 0
+Const DAQMX100_INTEGRAL_50HZ = 1
+Const DAQMX100_INTEGRAL_60HZ = 2
+
+' temparature unit
+Const DAQMX100_TEMPUNIT_C = 0
+Const DAQMX100_TEMPUNIT_F = 1
+
+' CF write mode
+Const DAQMX100_CFWRITEMODE_ONCE = 0
+Const DAQMX100_CFWRITEMODE_FIFO = 1
+
+' CF status
+Const DAQMX100_CFSTATUS_NONE = &H0000
+Const DAQMX100_CFSTATUS_EXIST = &H0001
+Const DAQMX100_CFSTATUS_USE = &H0002
+Const DAQMX100_CFSTATUS_FORMAT = &H0004
+
+' UNIT status
+Const DAQMX100_UNITSTAT_NONE = &H0000
+Const DAQMX100_UNITSTAT_INIT = &H0001
+Const DAQMX100_UNITSTAT_STOP = &H0002
+Const DAQMX100_UNITSTAT_RUN = &H0003
+Const DAQMX100_UNITSTAT_BACKUP = &H0004
+
+' FIFO status
+Const DAQMX100_FIFOSTAT_NONE = DAQMX100_UNITSTAT_NONE
+Const DAQMX100_FIFOSTAT_INIT = DAQMX100_UNITSTAT_INIT
+Const DAQMX100_FIFOSTAT_STOP = DAQMX100_UNITSTAT_STOP
+Const DAQMX100_FIFOSTAT_RUN = DAQMX100_UNITSTAT_RUN
+Const DAQMX100_FIFOSTAT_BACKUP = DAQMX100_UNITSTAT_BACKUP
+
+' segment display type
+Const DAQMX100_DISPTYPE_NONE = 0
+Const DAQMX100_DISPTYPE_ON = 1
+Const DAQMX100_DISPTYPE_BLINK = 2
+
+' choice
+Const DAQMX100_CHOICE_PREV = 0
+Const DAQMX100_CHOICE_PRESET = 1
+
+' transmit
+Const DAQMX100_TRANSMIT_NONE = 0
+Const DAQMX100_TRANSMIT_RUN = 1
+Const DAQMX100_TRANSMIT_STOP = 2
+
+' balance
+Const DAQMX100_BALANCE_NONE = 0
+Const DAQMX100_BALANCE_DONE = 1
+Const DAQMX100_BALANCE_NG = 2
+Const DAQMX100_BALANCE_ERROR = 3
+
+' option
+Const DAQMX100_OPTION_NONE = &H0000
+Const DAQMX100_OPTION_DS = &H0001
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' range
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' range type for special
+Const DAQMX100_RANGETYPE_DI = &H00010000
+Const DAQMX100_RANGETYPE_SKIP = &H00080000
+
+' DI : special
+Const DAQMX100_RANGE_DI_LEVEL = DAQMX100_RANGETYPE_DI + &H0001
+Const DAQMX100_RANGE_DI_CONTACT = DAQMX100_RANGETYPE_DI + &H0002
+
+' Skip
+Const DAQMX100_RANGE_SKIP = DAQMX100_RANGETYPE_SKIP
+
+' Reference
+Const DAQMX100_RANGE_REFERENCE = -1
+
+' Volt
+Const DAQMX100_RANGE_VOLT_20MV = &H0000
+Const DAQMX100_RANGE_VOLT_60MV = &H0001
+Const DAQMX100_RANGE_VOLT_200MV = &H0002
+Const DAQMX100_RANGE_VOLT_2V = &H0003
+Const DAQMX100_RANGE_VOLT_6V = &H0004
+Const DAQMX100_RANGE_VOLT_20V = &H0005
+Const DAQMX100_RANGE_VOLT_100V = &H0006
+Const DAQMX100_RANGE_VOLT_60MVH = &H0007
+Const DAQMX100_RANGE_VOLT_1V = &H0008
+Const DAQMX100_RANGE_VOLT_6VH = &H0009
+
+' TC
+Const DAQMX100_RANGE_TC_R = &H0200
+Const DAQMX100_RANGE_TC_S = &H0201
+Const DAQMX100_RANGE_TC_B = &H0202
+Const DAQMX100_RANGE_TC_K = &H0203
+Const DAQMX100_RANGE_TC_E = &H0204
+Const DAQMX100_RANGE_TC_J = &H0205
+Const DAQMX100_RANGE_TC_T = &H0206
+Const DAQMX100_RANGE_TC_N = &H0207
+Const DAQMX100_RANGE_TC_W = &H0208
+Const DAQMX100_RANGE_TC_L = &H0209
+Const DAQMX100_RANGE_TC_U = &H020A
+Const DAQMX100_RANGE_TC_KP = &H020B
+Const DAQMX100_RANGE_TC_PL = &H020C
+Const DAQMX100_RANGE_TC_PR = &H020D
+Const DAQMX100_RANGE_TC_NNM = &H020E
+Const DAQMX100_RANGE_TC_WR = &H020F
+Const DAQMX100_RANGE_TC_WWR = &H0210
+Const DAQMX100_RANGE_TC_AWG = &H0211
+Const DAQMX100_RANGE_TC_XK = &H0212
+
+' RTD 1mA
+Const DAQMX100_RANGE_RTD_1MAPT = &H0300
+Const DAQMX100_RANGE_RTD_1MAJPT = &H0301
+Const DAQMX100_RANGE_RTD_1MAPTH = &H0302
+Const DAQMX100_RANGE_RTD_1MAJPTH = &H0303
+Const DAQMX100_RANGE_RTD_1MANIS = &H0304
+Const DAQMX100_RANGE_RTD_1MANID = &H0305
+Const DAQMX100_RANGE_RTD_1MANI120 = &H0306
+Const DAQMX100_RANGE_RTD_1MAPT50 = &H0307
+Const DAQMX100_RANGE_RTD_1MACU10GE = &H0308
+Const DAQMX100_RANGE_RTD_1MACU10LN = &H0309
+Const DAQMX100_RANGE_RTD_1MACU10WEED = &H030A
+Const DAQMX100_RANGE_RTD_1MACU10BAILEY = &H030B
+Const DAQMX100_RANGE_RTD_1MAJ263B = &H030C
+Const DAQMX100_RANGE_RTD_1MACU10A392 = &H030D
+Const DAQMX100_RANGE_RTD_1MACU10A393 = &H030E
+Const DAQMX100_RANGE_RTD_1MACU25 = &H030F
+Const DAQMX100_RANGE_RTD_1MACU53 = &H0310
+Const DAQMX100_RANGE_RTD_1MACU100 = &H0311
+Const DAQMX100_RANGE_RTD_1MAPT25 = &H0312
+Const DAQMX100_RANGE_RTD_1MACU10GEH = &H0313
+Const DAQMX100_RANGE_RTD_1MACU10LNH = &H0314
+Const DAQMX100_RANGE_RTD_1MACU10WEEDH = &H0315
+Const DAQMX100_RANGE_RTD_1MACU10BAILEYH = &H0316
+Const DAQMX100_RANGE_RTD_1MAPTN = &H0317
+Const DAQMX100_RANGE_RTD_1MAJPTN = &H0318
+Const DAQMX100_RANGE_RTD_1MAPTG = &H0319
+Const DAQMX100_RANGE_RTD_1MACU100G = &H031A
+Const DAQMX100_RANGE_RTD_1MACU50G = &H031B
+Const DAQMX100_RANGE_RTD_1MACU10G = &H031C
+
+' RTD 2mA
+Const DAQMX100_RANGE_RTD_2MAPT = &H0400
+Const DAQMX100_RANGE_RTD_2MAJPT = &H0401
+Const DAQMX100_RANGE_RTD_2MAPTH = &H0402
+Const DAQMX100_RANGE_RTD_2MAJPTH = &H0403
+Const DAQMX100_RANGE_RTD_2MAPT50 = &H0404
+Const DAQMX100_RANGE_RTD_2MACU10GE = &H0405
+Const DAQMX100_RANGE_RTD_2MACU10LN = &H0406
+Const DAQMX100_RANGE_RTD_2MACU10WEED = &H0407
+Const DAQMX100_RANGE_RTD_2MACU10BAILEY = &H0408
+Const DAQMX100_RANGE_RTD_2MAJ263B = &H0409
+Const DAQMX100_RANGE_RTD_2MACU10A392 = &H040A
+Const DAQMX100_RANGE_RTD_2MACU10A393 = &H040B
+Const DAQMX100_RANGE_RTD_2MACU25 = &H040C
+Const DAQMX100_RANGE_RTD_2MACU53 = &H040D
+Const DAQMX100_RANGE_RTD_2MACU100 = &H040E
+Const DAQMX100_RANGE_RTD_2MAPT25 = &H040F
+Const DAQMX100_RANGE_RTD_2MACU10GEH = &H0410
+Const DAQMX100_RANGE_RTD_2MACU10LNH = &H0411
+Const DAQMX100_RANGE_RTD_2MACU10WEEDH = &H0412
+Const DAQMX100_RANGE_RTD_2MACU10BAILEYH = &H0413
+Const DAQMX100_RANGE_RTD_2MAPTN = &H0414
+Const DAQMX100_RANGE_RTD_2MAJPTN = &H0415
+Const DAQMX100_RANGE_RTD_2MACU100G = &H0416
+Const DAQMX100_RANGE_RTD_2MACU50G = &H0417
+Const DAQMX100_RANGE_RTD_2MACU10G = &H0418
+
+' DI : detail
+Const DAQMX100_RANGE_DI_LEVEL_AI = &H0100
+Const DAQMX100_RANGE_DI_CONTACT_AI4 = &H0101
+Const DAQMX100_RANGE_DI_CONTACT_AI10 = &H0102
+Const DAQMX100_RANGE_DI_LEVEL_DI = &H0103
+Const DAQMX100_RANGE_DI_CONTACT_DI = &H0104
+Const DAQMX100_RANGE_DI_LEVEL_DI5V = DAQMX100_RANGE_DI_LEVEL_DI
+Const DAQMX100_RANGE_DI_LEVEL_DI24V = &H0105
+Const DAQMX100_RANGE_DI_CONTACT_AI30 = DAQMX100_RANGE_DI_CONTACT_AI10
+
+' RTD 0.25mA
+Const DAQMX100_RANGE_RTD_025MAPT500 = &H0500
+Const DAQMX100_RANGE_RTD_025MAPT1K = &H0501
+
+' RES
+Const DAQMX100_RANGE_RES_20 = &H0600
+Const DAQMX100_RANGE_RES_200 = &H0601
+Const DAQMX100_RANGE_RES_2K = &H0602
+
+' STR
+Const DAQMX100_RANGE_STRAIN_2K = &H0700
+Const DAQMX100_RANGE_STRAIN_20K = &H0701
+Const DAQMX100_RANGE_STRAIN_200K = &H0702
+
+' AO
+Const DAQMX100_RANGE_AO_10V = &H1000
+Const DAQMX100_RANGE_AO_20MA = &H1001
+
+' PWM
+Const DAQMX100_RANGE_PWM_1MS = &H1100
+Const DAQMX100_RANGE_PWM_10MS = &H1101
+
+' CAN
+Const DAQMX100_RANGE_COM_CAN = &H0800
+
+' PI
+Const DAQMX100_RANGE_PI_LEVEL = &H0900
+Const DAQMX100_RANGE_PI_CONTACT = &H0901
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Output
+Const DAQMX100_OUTPUT_NONE = 0
+Const DAQMX100_OUTPUT_AO_10V = DAQMX100_RANGE_AO_10V
+Const DAQMX100_OUTPUT_AO_20MA = DAQMX100_RANGE_AO_20MA
+Const DAQMX100_OUTPUT_PWM_1MS = DAQMX100_RANGE_PWM_1MS
+Const DAQMX100_OUTPUT_PWM_10MS = DAQMX100_RANGE_PWM_10MS
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' configure item @see DAQMXItems.bas
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Connection
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function openMX100 Lib "DAQMX100" (ByVal strAddress As String, ByRef errCode As Long) As Long
+
+Declare Function closeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' FIFO
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function measStartMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function measStopMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Control
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setDateTimeNowMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function switchBackupMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal bBackup As Long) As Long
+
+Declare Function formatCFMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function reconstructMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function initSetValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function ackAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function displaySegmentMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal dispPattern0 As Long, ByVal dispPattern1 As Long, ByVal dispType As Long, ByVal dispTime As Long) As Long
+
+Declare Function initDataChMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function initDataFIFOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Setup
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function sendConfigMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function initBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function clearBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Setting
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setRangeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal iRange As Long) As Long
+
+Declare Function setChDELTAMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal refChNo As Long, ByVal iRange As Long) As Long
+
+Declare Function setChRRJCMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal refChNo As Long) As Long
+
+Declare Function setChUnitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strUnit As String) As Long
+
+Declare Function setChTagMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strTag As String) As Long
+
+Declare Function setChCommentMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strComment As String) As Long
+
+Declare Function setSpanMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+Declare Function setDoubleSpanMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal spanMin As Double, ByVal spanMax As Double) As Long
+
+Declare Function setScaleMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setDoubleScaleMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal scaleMin As Double, ByVal scaleMax As Double, ByVal scalePoint As Long) As Long
+
+Declare Function setAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal iAlarmType As Long, ByVal value As Long) As Long
+
+Declare Function setDoubleAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal iAlarmType As Long, ByVal value As Double) As Long
+
+Declare Function setAlarmValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal iAlarmType As Long, ByVal valueON As Long, ByVal valueOFF As Long) As Long
+
+Declare Function setDoubleAlarmValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal iAlarmType As Long, ByVal valueON As Double, ByVal valueOFF As Double) As Long
+
+Declare Function setHisterisysMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal histerisys As Long) As Long
+
+Declare Function setDoubleHisterisysMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long, ByVal histerisys As Double) As Long
+
+Declare Function setFilterMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal iFilter As Long) As Long
+
+Declare Function setRJCTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal iRJCType As Long, ByVal volt As Long) As Long
+
+Declare Function setBurnoutMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal iBurnout As Long) As Long
+
+Declare Function setDeenergizeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long, ByVal bDeenergize As Long) As Long
+
+Declare Function setHoldMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long, ByVal bHold As Long) As Long
+
+Declare Function setRefAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long, ByVal refChNo As Long, ByVal levelNo As Long, ByVal bValid As Long) As Long
+
+Declare Function setChKindMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal iKind As Long, ByVal refChNo As Long) As Long
+
+Declare Function setChatFilterMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal bChatFilter As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setIntervalMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long, ByVal iInterval As Long) As Long
+
+Declare Function setIntegralMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long, ByVal iIntegral As Long) As Long
+
+Declare Function setUnitNoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal unitNo As Long) As Long
+
+Declare Function setUnitTempMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal iTempUnit As Long) As Long
+
+Declare Function setCFWriteModeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal iCFWriteMode As Long) As Long
+
+Declare Function setOutputTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long, ByVal iOutput As Long) As Long
+
+Declare Function setChoiceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long, ByVal idleChoice As Long, ByVal errorChoice As Long, ByVal presetValue As Long) As Long
+
+Declare Function setDoubleChoiceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long, ByVal idleChoice As Long, ByVal errorChoice As Long, ByVal presetValue As Double) As Long
+
+Declare Function setPulseTimeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long, ByVal pulseTime As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Data Operation
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function createDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByRef errorCode As Long) As Long
+
+Declare Function deleteDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long) As Long
+
+Declare Function changeDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long, ByVal doNo As Long, ByVal bValid As Long, ByVal bONOFF As Long) As Long
+
+Declare Function copyDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long, ByVal idDOSrc As Long) As Long
+
+Declare Function commandDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long) As Long
+
+Declare Function switchDOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long, ByVal bONOFF As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function createAOPWMMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByRef errCode As Long) As Long
+
+Declare Function  deleteAOPWMMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long) As Long
+
+Declare Function changeAOPWMMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal aopwmNo As Long, ByVal bValid As Long, ByVal iAOPWMValue As Long) As Long
+
+Declare Function changeAOPWMValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal aopwmNo As Long, ByVal bValid As Long, ByVal realValue As Double) As Long
+
+Declare Function copyAOPWMMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal idAOPWMSrc As Long) As Long
+
+Declare Function commandAOPWMMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function createBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByRef errCode As Long) As Long
+
+Declare Function deleteBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long) As Long
+
+Declare Function changeBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long, ByVal balanceNo As Long, ByVal bValid As Long, ByVal iValue As Long) As Long
+
+Declare Function copyBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long, ByVal idBalanceSrc As Long) As Long
+
+Declare Function commandBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function createTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByRef errCode As Long) As Long
+
+Declare Function deleteTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long) As Long
+
+Declare Function changeTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long, ByVal aopwmNo As Long, ByVal iTransmit As Long) As Long
+
+Declare Function copyTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long, ByVal idTransSrc As Long) As Long
+
+Declare Function commandTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long) As Long
+
+Declare Function switchTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long, ByVal iTransmit As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Update
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function updateStatusMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateSystemMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateConfigMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateDODataMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateAOPWMDataMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateInfoChMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function updateBalanceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function updateOutputMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Data Aquisition
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function measDataChMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function measInstChMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function measDataFIFOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+Declare Function measInstFIFOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Item
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getItemAllMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function setItemAllMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function readItemMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal itemNo As Long, ByVal strItem As String, ByVal lenItem As Long, ByRef realLen As Long) As Long
+
+Declare Function writeItemMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal itemNo As Long, ByVal strItem As String) As Long
+
+Declare Function initItemMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Current Measured Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function dataValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataStatusMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function dataDoubleValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function dataStringValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function dataTimeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMilliSecMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataYearMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMonthMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataDayMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataHourMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataMinuteMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataSecondMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Channel Information
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelFIFONoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelFIFOIndexMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDisplayMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelDisplayMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelRealMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelRealMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Channel Configure
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelPointMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelKindMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelRangeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelScaleTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function toChannelUnitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strUnit As String, ByVal lenUnit As Long) As Long
+
+Declare Function toChannelTagMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strTag As String, ByVal lenTag As Long) As Long
+
+Declare Function toChannelCommentMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal strComment As String, ByVal lenComment As Long) As Long
+
+Declare Function channelSpanMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDoubleSpanMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelSpanMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDoubleSpanMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelScaleMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDoubleScaleMinMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+Declare Function channelScaleMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDoubleScaleMaxMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Double
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function alarmTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function alarmValueONMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function alarmDoubleValueONMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Double
+
+Declare Function alarmValueOFFMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function alarmDoubleValueOFFMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Double
+
+Declare Function alarmHisterisysMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function alarmDoubleHisterisysMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long, ByVal levelNo As Long) As Double
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelFilterMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelRJCTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelRJCVoltMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelBurnoutMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function channelDeenergizeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long) As Long
+
+Declare Function channelHoldMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long) As Long
+
+Declare Function channelRefAlarmMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long, ByVal refChNo As Long, ByVal levelNo As Long) As Long
+
+Declare Function channelRefChNoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelBalanceValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal balanceNo As Long) As Long
+
+Declare Function channelBalanceValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal balanceNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelOutputTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Long
+
+Declare Function channelIdleChoiceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Long
+
+Declare Function channelErrorChoiceMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Long
+
+Declare Function channelPresetValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Long
+
+Declare Function channelDoublePresetValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Double
+
+Declare Function channelPulseTimeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal outputNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function channelChatFilterMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Network Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function toNetHostMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal strHost As String, ByVal lenHost As Long) As Long
+
+Declare Function netAddressMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function netPortMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function netSubmaskMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function netGatewayMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get System Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function moduleTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleChNumMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleIntervalMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleIntegralMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleStandbyTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleRealTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleTerminalMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleVersionMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function moduleFIFONoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long) As Long
+
+Declare Function toModuleSerialMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal moduleNo As Long, ByVal strSerial As String, ByVal lenSerial As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function unitTypeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function unitStyleMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function unitNoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function unitTempMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function unitFrequencyMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function toUnitPartNoMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal strPartNo As String, ByVal lenPartNo As Long) As Long
+
+Declare Function unitOptionMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function toUnitSerialMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal strSerial As String, ByVal lenSerial As Long) As Long
+
+Declare Function unitMACMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal index As Long) As Long
+
+Declare Function unitCFWriteModeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Status Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function statusUnitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusFIFONumMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusBackupMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusFIFOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+Declare Function statusFIFOIntervalMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+Declare Function statusCFMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusCFSizeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusCFRemainMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusTimeMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusMilliSecMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusYearMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusMonthMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusDayMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusHourMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusMinuteMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function statusSecondMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get Current Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function currentDOValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long) As Long
+
+Declare Function currentDOValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal doNo As Long) As Long
+
+Declare Function currentAOPWMValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal aopwmNo As Long) As Long
+
+Declare Function currentAOPWMValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal aopwmNo As Long) As Long
+
+Declare Function currentDoubleAOPWMValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal aopwmNo As Long) As Double
+
+Declare Function currentBalanceValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal balanceNo As Long) As Long
+
+Declare Function currentBalanceValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal balanceNo As Long) As Long
+
+Declare Function currentBalanceResultMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal balanceNo As Long) As Long
+
+Declare Function currentTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal aopwmNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get User Data
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function userDOValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long, ByVal doNo As Long) As Long
+
+Declare Function userDOValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idDO As Long, ByVal doNo As Long) As Long
+
+Declare Function userAOPWMValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal aopwmNo As Long) As Long
+
+Declare Function userAOPWMValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal aopwmNo As Long) As Long
+
+Declare Function userDoubleAOPWMValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idAOPWM As Long, ByVal aopwmNo As Long) As Double
+
+Declare Function userBalanceValidMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long, ByVal balanceNo As Long) As Long
+
+Declare Function userBalanceValueMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idBalance As Long, ByVal balanceNo As Long) As Long
+
+Declare Function userTransmitMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal idTrans As Long, ByVal aopwmNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Utility
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function dataNumChMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal chNo As Long) As Long
+
+Declare Function dataNumFIFOMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long) As Long
+
+Declare Function lastErrorMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function toErrorMessageMX100 Lib "DAQMX100" (ByVal errCode As Long, ByVal errStr As String, ByVal errLen As Long) As Long
+
+Declare Function errorMaxLengthMX100 Lib "DAQMX100" () As Long
+
+Declare Function itemErrorMX100 Lib "DAQMX100" (ByVal daqmx100 As Long) As Long
+
+Declare Function channelNumberMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal fifoNo As Long, ByVal fifioIndex As Long) As Long
+
+Declare Function rangePointMX100 Lib "DAQMX100" (ByVal daqmx100 As Long, ByVal iRange As Long) As Long
+
+Declare Function toDoubleValueMX100 Lib "DAQMX100" (ByVal dataValue As Long, ByVal point As Long) As Double
+
+Declare Function toStringValueMX100 Lib "DAQMX100" (ByVal dataValue As Long, ByVal point As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function toAlarmNameMX100 Lib "DAQMX100" (ByVal iAlarmType As Long, ByVal strAlarm As String, ByVal lenAlarm As Long) As Long
+
+Declare Function alarmMaxLengthMX100 Lib "DAQMX100" () As Long
+
+Declare Function versionAPIMX100 Lib "DAQMX100" () As Long
+
+Declare Function revisionAPIMX100 Lib "DAQMX100" () As Long
+
+Declare Function addressPartMX100 Lib "DAQMX100" (ByVal address As Long, ByVal index As Long) As Long
+
+Declare Function toAOPWMValueMX100 Lib "DAQMX100" (ByVal realValue As Double, ByVal iRangeAOPWM As Long) As Long
+
+Declare Function toRealValueMX100 Lib "DAQMX100" (ByVal iAOPWMValue As Long, ByVal iRangeAOPWM As Long) As Double
+
+Declare Function toItemNameMX100 Lib "DAQMX100" (ByVal itemNo As Long, ByVal strItem As String, ByVal lenItem As Long) As Long
+
+Declare Function toItemNoMX100 Lib "DAQMX100" (ByVal strItem As String) As Long
+
+Declare Function itemMaxLengthMX100 Lib "DAQMX100" () As Long
+
+Declare Function toStyleVersionMX100 Lib "DAQMX100" (ByVal style As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --

@@ -1,0 +1,7 @@
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\bin\Debug\MX100VCS.exe
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\bin\Debug\MX100VCS.pdb
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\obj\Debug\MX100VCS.Form1.resources
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\obj\Debug\MX100VCS.csproj.GenerateResource.Cache
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\obj\Debug\MX100VCS.exe
+C:\Users\Jon\Desktop\分布式光伏直驱冷热双效蓄能空调系统\横河mx100资料\API\MX100R2SampleVCS-例子\MX100R2SampleVCS\obj\Debug\MX100VCS.pdb

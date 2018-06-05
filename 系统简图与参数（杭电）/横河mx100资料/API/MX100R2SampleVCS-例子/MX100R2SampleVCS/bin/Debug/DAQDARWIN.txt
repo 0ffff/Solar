@@ -1,0 +1,463 @@
+' DAQDARWIN.txt
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+'
+' Copyright (c) 2003-2004 Yokogawa Electric Corporation. All rights reserved.
+'
+' This is defined export DAQDARWIN.dll.
+' Declare Functions for Visual Basic
+'
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' 2004/11/01 Ver.2 rev.1
+' 2003/05/30 Ver.1 rev.1
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' communication
+Const DAQDARWIN_COMMPORT = 34150
+
+' total number
+Const DAQDARWIN_NUMCHANNEL = 360
+Const DAQDARWIN_NUMALARM = 4
+Const DAQDARWIN_NUMUNIT = 6
+Const DAQDARWIN_NUMSLOT = 6
+Const DAQDARWIN_NUMTERM = 10
+
+' string length without NULL
+Const DAQDARWIN_MAXCHNAMELEN = 3
+Const DAQDARWIN_MAXCHRANGLEN = 6
+Const DAQDARWIN_MAXUNITLEN = 6
+Const DAQDARWIN_MAXMODULELEN = 6
+Const DAQDARWIN_MAXRELAYLEN = DAQDARWIN_MAXCHNAMELEN
+
+' maximum value
+Const DAQDARWIN_MAXDECIMALPOINT = 4
+
+' string
+Const DAQDARWIN_TERMINATE = "\r\n"
+
+' valid
+Const DAQDARWIN_VALID_OFF = 0
+Const DAQDARWIN_VALID_ON = 1
+
+' flag
+Const DAQDARWIN_FLAG_OFF = &H0000
+Const DAQDARWIN_FLAG_ENDDATA = &H0001
+
+' data status
+Const DAQDARWIN_DATA_UNKNWON = &H00000000
+Const DAQDARWIN_DATA_NORMAL = &H00000001
+Const DAQDARWIN_DATA_DIFFINPUT = &H00000002
+Const DAQDARWIN_DATA_READER = &H00000003
+Const DAQDARWIN_DATA_PLUSOVER = &H00007FFF
+Const DAQDARWIN_DATA_MINUSOVER = &H00008001
+Const DAQDARWIN_DATA_SKIP = &H00008002
+Const DAQDARWIN_DATA_ILLEGAL = &H00008003
+Const DAQDARWIN_DATA_ABNORMAL = &H00008004
+Const DAQDARWIN_DATA_NODATA = &H00008005
+
+' alarm type
+Const DAQDARWIN_ALARM_NONE = 0
+Const DAQDARWIN_ALARM_UPPER = 1
+Const DAQDARWIN_ALARM_LOWER = 2
+Const DAQDARWIN_ALARM_UPDIFF = 3
+Const DAQDARWIN_ALARM_LOWDIFF = 4
+Const DAQDARWIN_ALARM_INCRATE = 5
+Const DAQDARWIN_ALARM_DECRATE = 6
+
+' system control
+Const DAQDARWIN_SYSTEM_RECONSTRUCT = 1
+Const DAQDARWIN_SYSTEM_INITOPE = 2
+Const DAQDARWIN_SYSTEM_RESETALARM = 3
+
+' channel/relay type
+Const DAQDARWIN_CHTYPE_MAINUNIT = -1
+Const DAQDARWIN_CHTYPE_STANDALONE = 0
+Const DAQDARWIN_CHTYPE_MATHTYPE = &H0080
+Const DAQDARWIN_CHTYPE_SWITCH = &H0040
+Const DAQDARWIN_CHTYPE_COMMDATA = &H0020
+Const DAQDARWIN_CHTYPE_CONSTANT = &H0010
+Const DAQDARWIN_CHTYPE_REPORT = &H0100
+
+' specified channel/relay type
+Const I = DAQDARWIN_CHTYPE_MAINUNIT
+Const A = DAQDARWIN_CHTYPE_MATHTYPE
+Const S = DAQDARWIN_CHTYPE_SWITCH
+Const C = DAQDARWIN_CHTYPE_COMMDATA
+Const K = DAQDARWIN_CHTYPE_CONSTANT
+Const R = DAQDARWIN_CHTYPE_REPORT
+
+' mode
+Const DAQDARWIN_MODE_OPE = 0
+Const DAQDARWIN_MODE_SETUP = 1
+Const DAQDARWIN_MODE_CALIB = 2
+
+' talker output type
+Const DAQDARWIN_TALK_MEASUREDDATA = 0
+Const DAQDARWIN_TALK_OPEDATA = 1
+Const DAQDARWIN_TALK_CHINFODATA = 2
+Const DAQDARWIN_TALK_REPORTDATA = 4
+Const DAQDARWIN_TALK_SYSINFODATA = 5
+Const DAQDARWIN_TALK_CALIBDATA = 8
+Const DAQDARWIN_TALK_SETUPDATA = 9
+
+' status byte
+Const DAQDARWIN_STATUS_OFF = &H0000
+Const DAQDARWIN_STATUS_ADCONV = &H0001
+Const DAQDARWIN_STATUS_SYNTAX = &H0002
+Const DAQDARWIN_STATUS_TIMER = &H0004
+Const DAQDARWIN_STATUS_MEDIA = &H0008
+Const DAQDARWIN_STATUS_RELEASE = &H0020
+Const DAQDARWIN_STATUS_SRQ = &H0040
+Const DAQDARWIN_STATUS_ALL = &H00FF
+
+' establish
+Const DAQDARWIN_SETUP_ABORT = DAQDARWIN_VALID_OFF
+Const DAQDARWIN_SETUP_STORE = DAQDARWIN_VALID_ON
+
+' unit number
+Const DAQDARWIN_UNITNO_MAINUNIT = DAQDARWIN_CHTYPE_MAINUNIT
+Const DAQDARWIN_UNITNO_STANDALONE = DAQDARWIN_CHTYPE_STANDALONE
+
+' computation
+Const DAQDARWIN_COMPUTE_START = 0
+Const DAQDARWIN_COMPUTE_STOP = 1
+Const DAQDARWIN_COMPUTE_RESTART = 2
+Const DAQDARWIN_COMPUTE_CLEAR = 3
+Const DAQDARWIN_COMPUTE_RELEASE = 4
+
+' reporting
+Const DAQDARWIN_REPORT_RUN_START = 0
+Const DAQDARWIN_REPORT_RUN_STOP = 1
+
+' report type
+Const DAQDARWIN_REPORT_HOURLY = 0
+Const DAQDARWIN_REPORT_DAILY = 1
+Const DAQDARWIN_REPORT_MONTHLY = 2
+Const DAQDARWIN_REPORT_STATUS = 3
+
+' report status
+Const DAQDARWIN_REPSTATUS_NONE = &H0000
+Const DAQDARWIN_REPSTATUS_HOURLY_NEW = &H0001
+Const DAQDARWIN_REPSTATUS_HOURLY_VALID = &H0002
+Const DAQDARWIN_REPSTATUS_DAILY_NEW = &H0004
+Const DAQDARWIN_REPSTATUS_DAILY_VALID = &H0008
+Const DAQDARWIN_REPSTATUS_MONTHLY_NEW = &H0010
+Const DAQDARWIN_REPSTATUS_MONTHLY_VALID = &H0020
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' range
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+' VOLT
+Const DAQDARWIN_RANGE_VOLT_20MV = 1
+Const DAQDARWIN_RANGE_VOLT_60MV = 2
+Const DAQDARWIN_RANGE_VOLT_200MV = 3
+Const DAQDARWIN_RANGE_VOLT_2V = 4
+Const DAQDARWIN_RANGE_VOLT_6V = 5
+Const DAQDARWIN_RANGE_VOLT_20V = 6
+Const DAQDARWIN_RANGE_VOLT_50V = 7
+
+' TC
+Const DAQDARWIN_RANGE_TC_R = 1
+Const DAQDARWIN_RANGE_TC_S = 2
+Const DAQDARWIN_RANGE_TC_B = 3
+Const DAQDARWIN_RANGE_TC_K = 4
+Const DAQDARWIN_RANGE_TC_E = 5
+Const DAQDARWIN_RANGE_TC_J = 6
+Const DAQDARWIN_RANGE_TC_T = 7
+Const DAQDARWIN_RANGE_TC_N = 8
+Const DAQDARWIN_RANGE_TC_W = 9
+Const DAQDARWIN_RANGE_TC_L = 10
+Const DAQDARWIN_RANGE_TC_U = 11
+Const DAQDARWIN_RANGE_TC_KP = 12
+
+' RTD
+Const DAQDARWIN_RANGE_RTD_1MAPT = 1
+Const DAQDARWIN_RANGE_RTD_2MAPT = 2
+Const DAQDARWIN_RANGE_RTD_1MAJPT = 3
+Const DAQDARWIN_RANGE_RTD_2MAJPT = 4
+Const DAQDARWIN_RANGE_RTD_2MAPT50 = 5
+Const DAQDARWIN_RANGE_RTD_1MAPTH = 6
+Const DAQDARWIN_RANGE_RTD_2MAPTH = 7
+Const DAQDARWIN_RANGE_RTD_1MAJPTH = 8
+Const DAQDARWIN_RANGE_RTD_2MAJPTH = 9
+Const DAQDARWIN_RANGE_RTD_1MANIS = 10
+Const DAQDARWIN_RANGE_RTD_1MANID = 11
+Const DAQDARWIN_RANGE_RTD_1MANI120 = 12
+Const DAQDARWIN_RANGE_RTD_CU10GE = 13
+Const DAQDARWIN_RANGE_RTD_CU10LN = 14
+Const DAQDARWIN_RANGE_RTD_CU10WEED = 15
+Const DAQDARWIN_RANGE_RTD_CU10BAILEY = 16
+Const DAQDARWIN_RANGE_RTD_J263B = 17
+
+' DI
+Const DAQDARWIN_RANGE_DI_LEVEL = 1
+Const DAQDARWIN_RANGE_DI_CONTACT = 2
+
+' mA
+Const DAQDARWIN_RANGE_MA_20MA = 1
+
+' STRAIN
+Const DAQDARWIN_RANGE_STRAIN_2K = 1
+Const DAQDARWIN_RANGE_STRAIN_20K = 2
+Const DAQDARWIN_RANGE_STRAIN_200K = 3
+
+' PULSE
+Const DAQDARWIN_RANGE_PULSE_RATE = 1
+Const DAQDARWIN_RANGE_PULSE_GATE = 2
+
+' POWER
+Const DAQDARWIN_RANGE_POWER_25V05A = 1
+Const DAQDARWIN_RANGE_POWER_25V5A = 2
+Const DAQDARWIN_RANGE_POWER_250V05A = 3
+Const DAQDARWIN_RANGE_POWER_250V5A = 4
+
+' wiring method
+Const DAQDARWIN_WIRE_1PH2W = 1
+Const DAQDARWIN_WIRE_1PH3W = 2
+Const DAQDARWIN_WIRE_3PH3W2I = 3
+Const DAQDARWIN_WIRE_3PH3W3I = 4
+Const DAQDARWIN_WIRE_3PH4W = 5
+
+' mesurement item
+Const DAQDARWIN_POWERITEM_I0 = &H0000
+Const DAQDARWIN_POWERITEM_I1 = &H0001
+Const DAQDARWIN_POWERITEM_I2 = &H0002
+Const DAQDARWIN_POWERITEM_I3 = &H0003
+Const DAQDARWIN_POWERITEM_I13 = &H000D
+Const DAQDARWIN_POWERITEM_P0 = &H0010
+Const DAQDARWIN_POWERITEM_P1 = &H0011
+Const DAQDARWIN_POWERITEM_P2 = &H0012
+Const DAQDARWIN_POWERITEM_P3 = &H0013
+Const DAQDARWIN_POWERITEM_P13 = &H001D
+Const DAQDARWIN_POWERITEM_PF0 = &H0020
+Const DAQDARWIN_POWERITEM_PF1 = &H0021
+Const DAQDARWIN_POWERITEM_PF2 = &H0022
+Const DAQDARWIN_POWERITEM_PF3 = &H0023
+Const DAQDARWIN_POWERITEM_PF13 = &H002D
+Const DAQDARWIN_POWERITEM_PH0 = &H0030
+Const DAQDARWIN_POWERITEM_PH1 = &H0031
+Const DAQDARWIN_POWERITEM_PH2 = &H0032
+Const DAQDARWIN_POWERITEM_PH3 = &H0033
+Const DAQDARWIN_POWERITEM_PH13 = &H003D
+Const DAQDARWIN_POWERITEM_V0 = &H0040
+Const DAQDARWIN_POWERITEM_V1 = &H0041
+Const DAQDARWIN_POWERITEM_V2 = &H0042
+Const DAQDARWIN_POWERITEM_V3 = &H0043
+Const DAQDARWIN_POWERITEM_V13 = &H004D
+Const DAQDARWIN_POWERITEM_VA0 = &H0050
+Const DAQDARWIN_POWERITEM_VA1 = &H0051
+Const DAQDARWIN_POWERITEM_VA2 = &H0052
+Const DAQDARWIN_POWERITEM_VA3 = &H0053
+Const DAQDARWIN_POWERITEM_VA13 = &H005D
+Const DAQDARWIN_POWERITEM_VAR0 = &H0060
+Const DAQDARWIN_POWERITEM_VAR1 = &H0061
+Const DAQDARWIN_POWERITEM_VAR2 = &H0062
+Const DAQDARWIN_POWERITEM_VAR3 = &H0063
+Const DAQDARWIN_POWERITEM_VAR13 = &H006D
+Const DAQDARWIN_POWERITEM_FREQ = &H007F
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' structures
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Type DarwinDateTime
+        aYear           As Byte
+        aMonth          As Byte
+        aDay            As Byte
+        aHour           As Byte
+        aMinute         As Byte
+        aSecond         As Byte
+        aMilliSecond    As Integer
+End Type
+Type DarwinDataInfo
+        aValue          As Long
+        aStatus         As Long
+        aAlarm(1 To 4)  As Long
+End Type
+Type DarwinChInfo
+        aChNo           As Long
+        aPoint          As Long
+        aStatus         As Long
+        aChType         As Long
+        aUnit           As String * DAQDARWIN_MAXUNITLEN
+        align(0 To 1)   As Byte
+End Type
+Type DarwinModuleInfo
+        aSlotNo         As Long
+        aInternalCode   As Long
+        aName           As String * DAQDARWIN_MAXMODULELEN
+        align(0 To 1)   As Byte
+End Type
+Type DarwinUnitInfo
+        aExist          As Long
+        aUnitNo         As Long
+        aModule(0 To 5) As DarwinModuleInfo
+End Type
+Type DarwinSystemInfo
+        aMainUnit               As DarwinUnitInfo
+        aSubUnit(0 To 5)        As DarwinUnitInfo
+End Type
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Low level communications
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function openDARWIN Lib "DAQDARWIN" (ByVal strAddress As String, ByRef errorCode As Long) As Long
+
+Declare Function closeDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long) As Long
+
+Declare Function sendLineDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal strLine As String) As Long
+
+Declare Function receiveLineDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal strLine As String, ByVal maxLine As Long, ByRef lenLine As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Middle level communications
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function runCommandDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal strCmd As String) As Long
+
+Declare Function getStatusByteDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pStatusByte As Long) As Long
+
+Declare Function sendTriggerDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Date time commands
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setDateTimeDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pDarwinDateTime As DarwinDateTime) As Long
+
+Declare Function setDateTimeNowDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Control commands
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function transModeDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iMode As Long) As Long
+
+Declare Function initSystemDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iCtrl As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get system
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getSystemConfigDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef interval As Double, ByRef pDarwinSystemInfo As DarwinSystemInfo) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get channel information
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkChInfoDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long) As Long
+
+Declare Function getChInfoDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pDarwinChInfo As DarwinChInfo, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get measured data as ASCII
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkDataByASCIIDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long, ByRef pDarwinDateTime As DarwinDateTime) As Long
+
+Declare Function getChDataByASCIIDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pDarwinChInfo As DarwinChInfo, ByRef pDarwinDataInfo As DarwinDataInfo, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get measured data as binary
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkDataByBinaryDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long, ByRef pDarwinDateTime As DarwinDateTime) As Long
+
+Declare Function getChDataByBinaryDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pDarwinChInfo As DarwinChInfo, ByRef pDarwinDataInfo As DarwinDataInfo, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Get configuration data by mode
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function talkOperationDataDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long) As Long
+
+Declare Function talkSetupDataDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long) As Long
+
+Declare Function talkCalibrationDataDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal startChType As Long, ByVal startChNo As Long, ByVal endChType As Long, ByVal endChNo As Long) As Long
+
+Declare Function getSetDataByLineDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal strLine As String, ByVal maxLine As Long, ByRef lenLine As Long, ByRef pFlag As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Set range
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setSKIPDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+Declare Function setVOLTDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeVOLT As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setTCDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeTC As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setRTDDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeRTD As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setDIDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeDI As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setDELTADARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal refChNo As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+Declare Function setRRJCDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal refChNo As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Scalling
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setScallingUnitDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal strUnit As String, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Alarm
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setAlarmDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal levelNo As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal iAlarmType As Long, ByVal value As Long, ByVal relayType As Long, ByVal relayNo As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Utilities
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function toDoubleValueDARWIN Lib "DAQDARWIN" (ByVal dataValue As Long, ByVal point As Long) As Double
+
+Declare Function toStringValueDARWIN Lib "DAQDARWIN" (ByVal dataValue As Long, ByVal point As Long, ByVal strValue As String, ByVal lenValue As Long) As Long
+
+Declare Function toAlarmNameDARWIN Lib "DAQDARWIN" (ByVal iAlarmType As Long, ByVal strAlarm As String, ByVal lenAlarm As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Messages
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function getVersionAPIDARWIN Lib "DAQDARWIN" () As Long
+
+Declare Function getRevisionAPIDARWIN Lib "DAQDARWIN" () As Long
+
+Declare Function toErrorMessageDARWIN Lib "DAQDARWIN" (ByVal errCode As Long, ByVal errStr As String, ByVal errLen As Long) As Long
+
+Declare Function getMaxLenErrorMessageDARWIN Lib "DAQDARWIN" () As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Deprecated command
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setTimeOutDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal seconds As Long) As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+' Since R2.01
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+
+Declare Function setMADARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeMA As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setSTRAINDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangeSTRAIN As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function setPULSEDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangePULSE As Long, ByVal chType As Long, ByVal startChNo As Long, ByVal endChNo As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long, ByVal bFilter As Long) As Long
+
+Declare Function setPOWERDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iRangePOWER As Long, ByVal chType As Long, ByVal chNo As Long, ByVal iItem As Long, ByVal iWire As Long, ByVal spanMin As Long, ByVal spanMax As Long, ByVal scaleMin As Long, ByVal scaleMax As Long, ByVal scalePoint As Long) As Long
+
+Declare Function establishDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iSetup As Long) As Long
+
+Declare Function computeDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iCompute As Long) As Long
+
+Declare Function reportingDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByVal iReportRun As Long) As Long
+
+Declare Function getReportStatusDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef pReportStatus As Long) As Long
+
+Declare Function receiveByteDARWIN Lib "DAQDARWIN" (ByVal daqdarwin As Long, ByRef byteData As Byte, ByVal maxData As Long, ByRef lenData As Long) As Long
+
+Declare Function getMaxLenAlarmNameDARWIN Lib "DAQDARWIN" () As Long
+
+' -- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
