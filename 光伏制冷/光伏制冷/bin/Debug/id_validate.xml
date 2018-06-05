@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <common>
+    <project_id>123456</project_id>
+    <gateway_id>001</gateway_id>
+    <type>md5</type>
+  </common>
+  <id_validate operation="md5">
+     <md5>asdfghjklmnbvcxzaqw</md5>
+  </id_validate >
+</root>

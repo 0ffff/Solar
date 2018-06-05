@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "光伏制冷", "光伏制冷\光伏制冷.csproj", "{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

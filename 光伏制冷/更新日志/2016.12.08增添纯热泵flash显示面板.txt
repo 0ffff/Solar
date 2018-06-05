@@ -1,0 +1,6 @@
+内容1:增添-无锡职院纯热泵-纯热泵flash显示面板
+改动位置:FormMain.cs---#region  改变选择树状图节点后触发---##region 控制器---if (collectorCollectorMode.ToString() == "5") ---this.panelFlash纯热泵.Visible = false;---if (collectorCollectorMode.ToString() == "2") ---this.panelFlash纯热泵.Visible = false;---if (collectorCollectorMode.ToString() == "3") ---this.panelFlash纯热泵.Visible = true;
+
+内容2:增添-无锡职院纯热泵-数据库中计量数据月份表
+原因:因为纯热泵项目的计量数据表中添加了一个液位字段BoxLevel(这是违反了太阳能项目计量数据表15个字段的标准,需要优化),因此,采用针对单/双水箱插入计量数据的源码不符合此种情况.添加新代码来解决此新模式.
+改动位置:       FormMain.cs--- #region 计量数据和热泵处理--- #region &针对无锡职院-纯热泵模式：暂时的处理，需要优化。

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <common>
+    <project_id>123456</project_id>
+    <gateway_id>001</gateway_id>
+    <type>period</type>
+  </common>
+  <stand operation="period">
+    <period>30</period>
+  </stand >
+</root>

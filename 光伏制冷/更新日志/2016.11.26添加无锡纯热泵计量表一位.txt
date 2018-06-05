@@ -1,0 +1,10 @@
+优化类型: 添加-无锡职业技术学院纯热泵系统-数据库
+
+
+内容：1.添加-无锡职业技术学院纯热泵系统-数据库-数据表<系统采集器Index>及数据表<系统采集器Index年月日>-增加一位<水箱液位boxLevel>
+
+2.修改代码:#region flash加载--private void flashData(--                else//&2016.11.15-添加--
+
+                            high = dt2.Rows[0][15].ToString() + "%";
+                            yw = dt2.Rows[0][15].ToString() + "%";
+

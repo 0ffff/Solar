@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <tec name="太阳能热水" id="101" />
+    <tec name="太阳能供热" id="102" />
+    <tec name="纯热泵干燥" id="103" />
+    <tec name="复杂热水系统" id="104" />
+    <tec name="简单热水系统" id="105" />
+    <tec name="光伏制冷系统" id ="106"/>
+
+</root>

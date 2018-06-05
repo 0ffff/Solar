@@ -1,0 +1,12 @@
+主题：增加纯热泵模式
+动作：
+1.修改富源单水箱flash，变为纯热泵模式flash
+2.添加项目-项目技术类型-添加《纯热泵》选项
+3.添加控制器-控制器模式-添加《纯热泵 单水箱。。。》
+修改代码：
+1.FormMain.cs-#region  改变选择树状图节点后触发-#region 控制器-else if (collectorCollectorMode.ToString() == "3")
+2.无
+3.FormCollectorConfiguration.cs-private void button1_Click(object sender, EventArgs e)-case "纯热泵 单水箱 双辅助能源 有回水 有伴热带，水箱上水，单集热系统":-case "3"://纯热泵单水箱系统 非计量系统
+
+备注：纯热泵项目，中继器没有shuju包和canshu包上传到数据中心。因此，数据中心对纯热泵模式没有相应的数据接收、存储、显示的操作。
+

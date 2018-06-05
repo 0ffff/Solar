@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <common>
+    <project_id>123456</project_id>
+    <gateway_id>001</gateway_id>
+    <type>setkey</type>
+  </common>
+  <stand operation="setKey">
+    <type>0</type>
+    <key>dhfi59ufhd</key>
+  </stand >
+</root>

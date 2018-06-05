@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <super>
+    <user id="HDU" psw="12345" />
+    <user id="fuyuan" psw="123456" />
+  </super>
+  <normal>
+    <user id="juhe" psw="qwert" />
+    <user id="yunnan" psw="123" />
+    <user id="zhang" psw="123" />
+  </normal>
+</root>

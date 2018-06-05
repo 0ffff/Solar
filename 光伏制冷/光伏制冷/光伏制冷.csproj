@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8768EE5F-2DA7-4613-9DB4-7350EC6C2B65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>西子新能源</RootNamespace>
+    <AssemblyName>西子新能源</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NationalInstruments.Common, Version=9.0.35.362, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Net, Version=9.0.35.292, Culture=neutral, PublicKeyToken=18cbae0f9955702a" />
+    <Reference Include="NationalInstruments.UI, Version=9.0.35.292, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=9.0.35.292, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES.cs" />
+    <Compile Include="CompanyConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyConfiguration.Designer.cs">
+      <DependentUpon>CompanyConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coummunication.cs" />
+    <Compile Include="CRC.cs" />
+    <Compile Include="CRCtest.cs" />
+    <Compile Include="DAQMX100.cs" />
+    <Compile Include="DAQMXItems.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="EnergyTestingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnergyTestingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyTestingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnergyTestingDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CanshuValue.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCanshuConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCanshuConfig.designer.cs">
+      <DependentUpon>FormCanshuConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlarm.Designer.cs">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAreaConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAreaConfiguration.Designer.cs">
+      <DependentUpon>FormAreaConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthority.Designer.cs">
+      <DependentUpon>FormAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCollectorConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCollectorConfiguration.Designer.cs">
+      <DependentUpon>FormCollectorConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCollectPointConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCollectPointConfiguration.Designer.cs">
+      <DependentUpon>FormCollectPointConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompanyAlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompanyAlter.Designer.cs">
+      <DependentUpon>FormCompanyAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCollectPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCollectPoint.Designer.cs">
+      <DependentUpon>FormEditCollectPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCollectPointsCollectData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCollectPointsCollectData.Designer.cs">
+      <DependentUpon>FormEditCollectPointsCollectData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnterSetMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnterSetMessage.Designer.cs">
+      <DependentUpon>FormEnterSetMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntry.Designer.cs">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProjectConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProjectConfiguration.Designer.cs">
+      <DependentUpon>FormProjectConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuery.Designer.cs">
+      <DependentUpon>FormQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalInfo.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD5Crypted.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CompanyConfiguration.resx">
+      <DependentUpon>CompanyConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCanshuConfig.resx">
+      <DependentUpon>FormCanshuConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlarm.resx">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAreaConfiguration.resx">
+      <DependentUpon>FormAreaConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthority.resx">
+      <DependentUpon>FormAuthority.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCollectorConfiguration.resx">
+      <DependentUpon>FormCollectorConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCollectPointConfiguration.resx">
+      <DependentUpon>FormCollectPointConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompanyAlter.resx">
+      <DependentUpon>FormCompanyAlter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCollectPoint.resx">
+      <DependentUpon>FormEditCollectPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCollectPointsCollectData.resx">
+      <DependentUpon>FormEditCollectPointsCollectData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnterSetMessage.resx">
+      <DependentUpon>FormEnterSetMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntry.resx">
+      <DependentUpon>FormEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProjectConfiguration.resx">
+      <DependentUpon>FormProjectConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuery.resx">
+      <DependentUpon>FormQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReceiveDataProcessing.cs" />
+    <Compile Include="RS485.cs" />
+    <Compile Include="SPort.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCWUIControlsLib">
+      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CWUIControlsLib">
+      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\电加热1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\电加热2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\管道1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\管道2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\集热1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\集热2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\解冻1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\解冻2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\热泵1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\热泵2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\上水1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="EnergyTestingDataSet.xsc">
+      <DependentUpon>EnergyTestingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EnergyTestingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnergyTestingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EnergyTestingDataSet.xss">
+      <DependentUpon>EnergyTestingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EnergyTestingDataSet1.xsc">
+      <DependentUpon>EnergyTestingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EnergyTestingDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnergyTestingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EnergyTestingDataSet1.xss">
+      <DependentUpon>EnergyTestingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="强制开关\上水2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="强制开关\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram3.cd" />
+    <None Include="强制开关\Open.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

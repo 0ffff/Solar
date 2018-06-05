@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+<province name ="北京市" >
+<area name= "北京" id="110000"/>
+</province>
+<province name ="天津市" >
+<area name= "天津" id="120000"/>
+</province>
+<province name ="河北省">
+<area name= "石家庄市" id="130100"/>
+<area name= "唐山市" id="130200"/>
+<area name= "秦皇岛市" id="130300"/>
+<area name= "邯郸市" id="130400"/>
+<area name= "邢台市" id="130500"/>
+<area name= "保定市" id="130600"/>
+<area name= "张家口市" id="130700"/>
+<area name= "承德市" id="130800"/>
+<area name= "沧州市" id="130900"/>
+<area name= "廊坊市" id="131000"/>
+<area name= "衡水市" id="131100"/>
+</province>
+<province name ="山西">
+<area name= "太原市" id="140100"/>
+<area name= "大同市" id="140200"/>
+<area name= "阳泉市" id="140300"/>
+<area name= "长治市" id="130400"/>
+<area name= "晋城市" id="140500"/>
+<area name= "朔州市" id="140600"/>
+<area name= "晋中市" id="140700"/>
+<area name= "运城市" id="140800"/>
+<area name= "忻州市" id="140900"/>
+<area name= "临汾市" id="141000"/>
+<area name= "吕梁地区" id="142300"/>
+</province>
+<province name ="内蒙古自治区">
+<area name= "呼和浩特市" id="150100"/>
+<area name= "包头市" id="150200"/>
+<area name= "乌海市" id="150300"/>
+<area name= "赤峰市" id="150400"/>
+<area name= "通辽市" id="150500"/>
+<area name= "鄂尔多斯市" id="150600"/>
+<area name= "呼伦贝尔市" id="150700"/>
+<area name= "兴安盟" id="152200"/>
+<area name= "锡林郭勒盟" id="152500"/>
+<area name= "乌兰察布盟" id="152600"/>
+<area name= "巴彦淖尔盟" id="152800"/>
+<area name= "阿拉善盟" id="152900"/>
+</province>
+<province name ="辽宁省">
+<area name= "沈阳市" id="210100"/>
+<area name= "大连市" id="210200"/>
+<area name= "鞍山市" id="210300"/>
+<area name= "抚顺市" id="210400"/>
+<area name= "本溪市" id="210500"/>
+<area name= "丹东市" id="210600"/>
+<area name= "锦州市" id="210700"/>
+<area name= "营口市" id="210800"/>
+<area name= "阜新市" id="210900"/>
+<area name= "辽阳市" id="211000"/>
+<area name= "盘锦市" id="211100"/>
+<area name= "铁岭市" id="211200"/>
+<area name= "朝阳市" id="211300"/>
+<area name= "葫芦岛市" id="211400"/>
+</province>
+  <province name="江苏省">
+    <area name="南京市" id="320100" />
+    <area name="无锡市" id="320200" />
+    <area name="徐州市" id="320300" />
+    <area name="常州市" id="320400" />
+    <area name="苏州市" id="320500" />
+    <area name="南通市" id="320600" />
+    <area name="连云港市" id="320700" />
+    <area name="淮安市" id="320800" />
+    <area name="盐城市" id="320900" />
+    <area name="扬州市" id="321000" />
+    <area name="镇江市" id="321100" />
+    <area name="泰州市" id="321200" />
+    <area name="宿迁市" id="321300" />
+  </province> 
+  <province name="浙江省">
+    <area name="杭州市" id="330100" />
+    <area name="宁波市" id="330200" />
+    <area name="温州市" id="330300" />
+    <area name="嘉兴市" id="330400" />
+    <area name="湖州市" id="330500" />
+    <area name="绍兴市" id="330600" />
+    <area name="金华市" id="330700" />
+    <area name="衢州市" id="330800" />
+    <area name="舟山市" id="330900" />
+    <area name="台州市" id="331000" />
+    <area name="丽水市" id="331100" />
+  </province>
+  <province name="安徽省">
+    <area name="合肥市" id="340100" />
+    <area name="芜湖市" id="340200" />
+    <area name="蚌埠市" id="340300" />
+    <area name="淮南市" id="340400" />
+    <area name="马鞍山市" id="340500" />
+    <area name="淮北市" id="340600" />
+    <area name="铜陵市" id="340700" />
+    <area name="安庆市" id="340800" />
+    <area name="黄山市" id="341000" />
+    <area name="滁州市" id="341100" />
+    <area name="阜阳市" id="341200" />
+    <area name="宿州市" id="341300" />
+    <area name="巢湖市" id="341400" />
+    <area name="六安市" id="341500" />
+    <area name="毫州市" id="341600" />
+    <area name="池州市" id="341700" />
+    <area name="宣城市" id="341800" />
+  </province> 
+  <province name="福建省">
+    <area name="福州市" id="350100" />
+    <area name="厦门市" id="350200" />
+    <area name="莆田市" id="350300" />
+    <area name="三明市" id="350400" />
+    <area name="泉州市" id="350500" />
+    <area name="漳州市" id="350600" />
+    <area name="南平市" id="350700" />
+    <area name="龙岩市" id="350800" />
+    <area name="宁德市" id="350900" />
+  </province> 
+   <province name="江西省">
+    <area name="南昌市" id="330100" />
+    <area name="景德镇市" id="330200" />
+    <area name="萍乡市" id="330300" />
+    <area name="九江市" id="330400" />
+    <area name="新余市" id="330500" />
+    <area name="鹰潭市" id="330600" />
+    <area name="赣州市" id="330700" />
+    <area name="吉安市" id="330800" />
+    <area name="宜春市" id="330900" />
+    <area name="抚州市" id="331000" />
+    <area name="上饶市" id="331100" />
+
+  </province>
+   <province name="广东省">
+    <area name="深圳市" id="518000" />
+  </province>
+   <province name="河南省">
+    <area name="郑州市" id="410100" />
+    <area name="洛阳市" id="410300" />
+    <area name="平顶山市" id="410400" />
+  </province>    
+    <province name="云南省">
+    <area name="香格里拉市" id="533421"/>
+    <area name="昆明市" id="650000"/>
+  </province>    
+    <province name="老挝行政区">
+    <area name="万象市" id="856021"/>
+</province>  
+
+</root>
