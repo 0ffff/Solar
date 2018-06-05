@@ -1062,6 +1062,55 @@ namespace 光伏制冷
 
         #endregion
 
+        #region 图片导出
+        private void ExportPicture(string fileName)
+        {
+            string saveFileName = "";
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.FileName = fileName;
+            //saveDialog.ShowDialog();
+            saveFileName = saveDialog.FileName;
+
+            saveDialog.Filter = "Bitmap (*.bmp)|*.bmp|JPEG (*.jpg)|*.jpg|EMF (*.emf)|*.emf|PNG (*.png)|*.png|SVG (*.svg)|*.svg|GIF (*.gif)|*.gif|TIFF (*.tif)|*.tif";
+            saveDialog.FilterIndex = 2;
+            saveDialog.RestoreDirectory = true;
+
+            // Set image file format
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                ChartImageFormat format = ChartImageFormat.Bmp;
+
+                if (saveDialog.FileName.EndsWith("bmp"))
+                {
+                    format = ChartImageFormat.Bmp;
+                }
+                else if (saveDialog.FileName.EndsWith("jpg"))
+                {
+                    format = ChartImageFormat.Jpeg;
+                }
+                else if (saveDialog.FileName.EndsWith("emf"))
+                {
+                    format = ChartImageFormat.Emf;
+                }
+                else if (saveDialog.FileName.EndsWith("gif"))
+                {
+                    format = ChartImageFormat.Gif;
+                }
+                else if (saveDialog.FileName.EndsWith("png"))
+                {
+                    format = ChartImageFormat.Png;
+                }
+                else if (saveDialog.FileName.EndsWith("tif"))
+                {
+                    format = ChartImageFormat.Tiff;
+                }
+
+                // Save image
+                chartHisOne.SaveImage(saveDialog.FileName, format);
+            }
+        }
+        #endregion
+
         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         #region 控制策略
         private void button2_Click(object sender, EventArgs e)
@@ -1605,6 +1654,12 @@ namespace 光伏制冷
         private void dgvHistory4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void chartHisOne_DoubleClick(object sender, EventArgs e)
+        {
+            string name = this.cmbCollectPointNameOne.Text + this.dtpBeginOne.Text+"-"+ this.dtpEndOne.Text;
+            ExportPicture(name);
         }
 
 

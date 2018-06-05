@@ -31,59 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("地区", 7, 5);
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
-            NationalInstruments.UI.ScaleCustomDivision scaleCustomDivision1 = new NationalInstruments.UI.ScaleCustomDivision();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -102,8 +51,59 @@
             System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            NationalInstruments.UI.ScaleCustomDivision scaleCustomDivision1 = new NationalInstruments.UI.ScaleCustomDivision();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolSBStart = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -133,10 +133,251 @@
             this.配置采集点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.项目信息tabPage = new System.Windows.Forms.TabPage();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.panelFlashCold = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlashCold = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.panelFlash1 = new System.Windows.Forms.Panel();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.panelFlash2 = new System.Windows.Forms.Panel();
+            this.groupBox82 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlash3 = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.panelFlash纯热泵 = new System.Windows.Forms.Panel();
+            this.groupBox83 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlash纯热泵 = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.panelFlash4 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlash4 = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.panelFlash5 = new System.Windows.Forms.Panel();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.axShockwaveFlash5 = new AxShockwaveFlashObjects.AxShockwaveFlash();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.txtHeatArea = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.txtTecCode = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.txtTectype = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.txtDescribe = new System.Windows.Forms.RichTextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txtLatitude = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.txtLongtitude = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.txtProjectAddress = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.txtProjectCode = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.txtProjectName = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.txtAreaCode = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtAreaName = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.监控信息tabPage = new System.Windows.Forms.TabPage();
+            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
+            this.DGVMain = new System.Windows.Forms.DataGridView();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.splitContainer27 = new System.Windows.Forms.SplitContainer();
+            this.DGV2Main = new System.Windows.Forms.DataGridView();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.光伏制冷系统信息 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbBSerialPort2 = new System.Windows.Forms.ComboBox();
+            this.cbBSerialPort1 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblYHProject = new System.Windows.Forms.Label();
+            this.btReflesh = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.lblTimeCanShu1 = new System.Windows.Forms.Label();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.groupBox48 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBoxSwictch = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.meter1 = new NationalInstruments.UI.WindowsForms.Meter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioButton24 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pbX3 = new System.Windows.Forms.PictureBox();
+            this.pbX2 = new System.Windows.Forms.PictureBox();
+            this.pbX1 = new System.Windows.Forms.PictureBox();
+            this.C1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label218 = new System.Windows.Forms.Label();
+            this.label219 = new System.Windows.Forms.Label();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.gbCOP = new System.Windows.Forms.GroupBox();
+            this.Z44 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Z45 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Z46 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Z43 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox50 = new System.Windows.Forms.GroupBox();
+            this.Z41 = new System.Windows.Forms.TextBox();
+            this.Z34 = new System.Windows.Forms.TextBox();
+            this.Z35 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Z42 = new System.Windows.Forms.TextBox();
+            this.Z40 = new System.Windows.Forms.TextBox();
+            this.Z39 = new System.Windows.Forms.TextBox();
+            this.Z38 = new System.Windows.Forms.TextBox();
+            this.Z37 = new System.Windows.Forms.TextBox();
+            this.Z32 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Z36 = new System.Windows.Forms.TextBox();
+            this.label249 = new System.Windows.Forms.Label();
+            this.Z33 = new System.Windows.Forms.TextBox();
+            this.label256 = new System.Windows.Forms.Label();
+            this.Z31 = new System.Windows.Forms.TextBox();
+            this.label258 = new System.Windows.Forms.Label();
+            this.Z30 = new System.Windows.Forms.TextBox();
+            this.label259 = new System.Windows.Forms.Label();
+            this.label260 = new System.Windows.Forms.Label();
+            this.label261 = new System.Windows.Forms.Label();
+            this.label262 = new System.Windows.Forms.Label();
+            this.label263 = new System.Windows.Forms.Label();
+            this.label264 = new System.Windows.Forms.Label();
+            this.label265 = new System.Windows.Forms.Label();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.groupBox光伏系统数据 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Z6 = new System.Windows.Forms.TextBox();
+            this.label271 = new System.Windows.Forms.Label();
+            this.label269 = new System.Windows.Forms.Label();
+            this.Z7 = new System.Windows.Forms.TextBox();
+            this.Z5 = new System.Windows.Forms.TextBox();
+            this.label229 = new System.Windows.Forms.Label();
+            this.label234 = new System.Windows.Forms.Label();
+            this.label238 = new System.Windows.Forms.Label();
+            this.label270 = new System.Windows.Forms.Label();
+            this.Z8 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox制冷系统 = new System.Windows.Forms.GroupBox();
+            this.Z15 = new System.Windows.Forms.TextBox();
+            this.Z29 = new System.Windows.Forms.TextBox();
+            this.Z26 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.Z16 = new System.Windows.Forms.TextBox();
+            this.Z12 = new System.Windows.Forms.TextBox();
+            this.Z9 = new System.Windows.Forms.TextBox();
+            this.Z11 = new System.Windows.Forms.TextBox();
+            this.Z14 = new System.Windows.Forms.TextBox();
+            this.Z18 = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.Z21 = new System.Windows.Forms.TextBox();
+            this.Z20 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Z17 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Z27 = new System.Windows.Forms.TextBox();
+            this.Z28 = new System.Windows.Forms.TextBox();
+            this.Z25 = new System.Windows.Forms.TextBox();
+            this.Z24 = new System.Windows.Forms.TextBox();
+            this.Z23 = new System.Windows.Forms.TextBox();
+            this.Z22 = new System.Windows.Forms.TextBox();
+            this.Z19 = new System.Windows.Forms.TextBox();
+            this.Z13 = new System.Windows.Forms.TextBox();
+            this.label275 = new System.Windows.Forms.Label();
+            this.label272 = new System.Windows.Forms.Label();
+            this.label233 = new System.Windows.Forms.Label();
+            this.label244 = new System.Windows.Forms.Label();
+            this.label230 = new System.Windows.Forms.Label();
+            this.Z10 = new System.Windows.Forms.TextBox();
+            this.label239 = new System.Windows.Forms.Label();
+            this.label235 = new System.Windows.Forms.Label();
+            this.label243 = new System.Windows.Forms.Label();
+            this.label231 = new System.Windows.Forms.Label();
+            this.label232 = new System.Windows.Forms.Label();
+            this.label237 = new System.Windows.Forms.Label();
+            this.groupBox气象数据 = new System.Windows.Forms.GroupBox();
+            this.Z2 = new System.Windows.Forms.TextBox();
+            this.Z3 = new System.Windows.Forms.TextBox();
+            this.label268 = new System.Windows.Forms.Label();
+            this.label267 = new System.Windows.Forms.Label();
+            this.label255 = new System.Windows.Forms.Label();
+            this.Z1 = new System.Windows.Forms.TextBox();
+            this.label242 = new System.Windows.Forms.Label();
+            this.label241 = new System.Windows.Forms.Label();
+            this.Z4 = new System.Windows.Forms.TextBox();
+            this.label236 = new System.Windows.Forms.Label();
+            this.label240 = new System.Windows.Forms.Label();
+            this.label250 = new System.Windows.Forms.Label();
+            this.维护登记tabPage9 = new System.Windows.Forms.TabPage();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.录入被更换表数据groupBox84 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.projectInfoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.energyTestingDataSet1 = new 西子新能源.EnergyTestingDataSet1();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.projectInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.energyTestingDataSet = new 西子新能源.EnergyTestingDataSet();
+            this.label1056 = new System.Windows.Forms.Label();
+            this.label1055 = new System.Windows.Forms.Label();
+            this.录入热量表数据 = new System.Windows.Forms.Button();
+            this.录入电表数据 = new System.Windows.Forms.Button();
+            this.热量表值录入textBox246 = new System.Windows.Forms.TextBox();
+            this.电表值录入textBox245 = new System.Windows.Forms.TextBox();
+            this.登记老热量表值label1056 = new System.Windows.Forms.Label();
+            this.登记老电表值label1055 = new System.Windows.Forms.Label();
+            this.系统运行信息tabPage = new System.Windows.Forms.TabPage();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.button61 = new System.Windows.Forms.Button();
+            this.label177 = new System.Windows.Forms.Label();
+            this.txtInfoProject = new System.Windows.Forms.TextBox();
+            this.label178 = new System.Windows.Forms.Label();
+            this.txtInfoCollector = new System.Windows.Forms.TextBox();
+            this.label179 = new System.Windows.Forms.Label();
+            this.txtInfoCollectorCode = new System.Windows.Forms.TextBox();
+            this.label180 = new System.Windows.Forms.Label();
+            this.参数回发button6 = new System.Windows.Forms.Button();
+            this.txtInfoCollectPointNum = new System.Windows.Forms.TextBox();
+            this.txtInfoArea = new System.Windows.Forms.TextBox();
+            this.label181 = new System.Windows.Forms.Label();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.lsvServer = new System.Windows.Forms.ListView();
+            this.clmServer = new System.Windows.Forms.ColumnHeader();
+            this.clmIP = new System.Windows.Forms.ColumnHeader();
+            this.clmPort = new System.Windows.Forms.ColumnHeader();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.listBoxStatus = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelUserType = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -958,256 +1199,80 @@
             this.projectInfoTableAdapter = new 西子新能源.EnergyTestingDataSetTableAdapters.ProjectInfoTableAdapter();
             this.projectInfoTableAdapter1 = new 西子新能源.EnergyTestingDataSet1TableAdapters.ProjectInfoTableAdapter();
             this.timerMX100 = new System.Windows.Forms.Timer(this.components);
-            this.系统运行信息tabPage = new System.Windows.Forms.TabPage();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.listBoxStatus = new System.Windows.Forms.ListBox();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.lsvServer = new System.Windows.Forms.ListView();
-            this.clmServer = new System.Windows.Forms.ColumnHeader();
-            this.clmIP = new System.Windows.Forms.ColumnHeader();
-            this.clmPort = new System.Windows.Forms.ColumnHeader();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label181 = new System.Windows.Forms.Label();
-            this.txtInfoArea = new System.Windows.Forms.TextBox();
-            this.txtInfoCollectPointNum = new System.Windows.Forms.TextBox();
-            this.参数回发button6 = new System.Windows.Forms.Button();
-            this.label180 = new System.Windows.Forms.Label();
-            this.txtInfoCollectorCode = new System.Windows.Forms.TextBox();
-            this.label179 = new System.Windows.Forms.Label();
-            this.txtInfoCollector = new System.Windows.Forms.TextBox();
-            this.label178 = new System.Windows.Forms.Label();
-            this.txtInfoProject = new System.Windows.Forms.TextBox();
-            this.label177 = new System.Windows.Forms.Label();
-            this.button61 = new System.Windows.Forms.Button();
-            this.维护登记tabPage9 = new System.Windows.Forms.TabPage();
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.录入被更换表数据groupBox84 = new System.Windows.Forms.GroupBox();
-            this.登记老电表值label1055 = new System.Windows.Forms.Label();
-            this.登记老热量表值label1056 = new System.Windows.Forms.Label();
-            this.电表值录入textBox245 = new System.Windows.Forms.TextBox();
-            this.热量表值录入textBox246 = new System.Windows.Forms.TextBox();
-            this.录入电表数据 = new System.Windows.Forms.Button();
-            this.录入热量表数据 = new System.Windows.Forms.Button();
-            this.label1055 = new System.Windows.Forms.Label();
-            this.label1056 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.光伏制冷系统信息 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.groupBox气象数据 = new System.Windows.Forms.GroupBox();
-            this.label250 = new System.Windows.Forms.Label();
-            this.label240 = new System.Windows.Forms.Label();
-            this.label236 = new System.Windows.Forms.Label();
-            this.Z4 = new System.Windows.Forms.TextBox();
-            this.label241 = new System.Windows.Forms.Label();
-            this.label242 = new System.Windows.Forms.Label();
-            this.Z1 = new System.Windows.Forms.TextBox();
-            this.label255 = new System.Windows.Forms.Label();
-            this.label267 = new System.Windows.Forms.Label();
-            this.label268 = new System.Windows.Forms.Label();
-            this.Z3 = new System.Windows.Forms.TextBox();
-            this.Z2 = new System.Windows.Forms.TextBox();
-            this.groupBox制冷系统 = new System.Windows.Forms.GroupBox();
-            this.label237 = new System.Windows.Forms.Label();
-            this.label232 = new System.Windows.Forms.Label();
-            this.label231 = new System.Windows.Forms.Label();
-            this.label243 = new System.Windows.Forms.Label();
-            this.label235 = new System.Windows.Forms.Label();
-            this.label239 = new System.Windows.Forms.Label();
-            this.Z10 = new System.Windows.Forms.TextBox();
-            this.label230 = new System.Windows.Forms.Label();
-            this.label244 = new System.Windows.Forms.Label();
-            this.label233 = new System.Windows.Forms.Label();
-            this.label272 = new System.Windows.Forms.Label();
-            this.label275 = new System.Windows.Forms.Label();
-            this.Z13 = new System.Windows.Forms.TextBox();
-            this.Z19 = new System.Windows.Forms.TextBox();
-            this.Z22 = new System.Windows.Forms.TextBox();
-            this.Z23 = new System.Windows.Forms.TextBox();
-            this.Z24 = new System.Windows.Forms.TextBox();
-            this.Z25 = new System.Windows.Forms.TextBox();
-            this.Z28 = new System.Windows.Forms.TextBox();
-            this.Z27 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Z17 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.Z20 = new System.Windows.Forms.TextBox();
-            this.Z21 = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.Z18 = new System.Windows.Forms.TextBox();
-            this.Z14 = new System.Windows.Forms.TextBox();
-            this.Z11 = new System.Windows.Forms.TextBox();
-            this.Z9 = new System.Windows.Forms.TextBox();
-            this.Z12 = new System.Windows.Forms.TextBox();
-            this.Z16 = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.Z26 = new System.Windows.Forms.TextBox();
-            this.Z29 = new System.Windows.Forms.TextBox();
-            this.Z15 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox光伏系统数据 = new System.Windows.Forms.GroupBox();
-            this.Z8 = new System.Windows.Forms.TextBox();
-            this.label270 = new System.Windows.Forms.Label();
-            this.label238 = new System.Windows.Forms.Label();
-            this.label234 = new System.Windows.Forms.Label();
-            this.label229 = new System.Windows.Forms.Label();
-            this.Z5 = new System.Windows.Forms.TextBox();
-            this.Z7 = new System.Windows.Forms.TextBox();
-            this.label269 = new System.Windows.Forms.Label();
-            this.label271 = new System.Windows.Forms.Label();
-            this.Z6 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.groupBox50 = new System.Windows.Forms.GroupBox();
-            this.label265 = new System.Windows.Forms.Label();
-            this.label264 = new System.Windows.Forms.Label();
-            this.label263 = new System.Windows.Forms.Label();
-            this.label262 = new System.Windows.Forms.Label();
-            this.label261 = new System.Windows.Forms.Label();
-            this.label260 = new System.Windows.Forms.Label();
-            this.label259 = new System.Windows.Forms.Label();
-            this.Z30 = new System.Windows.Forms.TextBox();
-            this.label258 = new System.Windows.Forms.Label();
-            this.Z31 = new System.Windows.Forms.TextBox();
-            this.label256 = new System.Windows.Forms.Label();
-            this.Z33 = new System.Windows.Forms.TextBox();
-            this.label249 = new System.Windows.Forms.Label();
-            this.Z36 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Z32 = new System.Windows.Forms.TextBox();
-            this.Z37 = new System.Windows.Forms.TextBox();
-            this.Z38 = new System.Windows.Forms.TextBox();
-            this.Z39 = new System.Windows.Forms.TextBox();
-            this.Z40 = new System.Windows.Forms.TextBox();
-            this.Z42 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Z35 = new System.Windows.Forms.TextBox();
-            this.Z34 = new System.Windows.Forms.TextBox();
-            this.Z41 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.gbCOP = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Z43 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.Z46 = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Z45 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.Z44 = new System.Windows.Forms.TextBox();
-            this.label219 = new System.Windows.Forms.Label();
-            this.label218 = new System.Windows.Forms.Label();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.groupBox48 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.C1 = new System.Windows.Forms.TextBox();
-            this.groupBoxSwictch = new System.Windows.Forms.GroupBox();
-            this.pbX1 = new System.Windows.Forms.PictureBox();
-            this.pbX2 = new System.Windows.Forms.PictureBox();
-            this.pbX3 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton24 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.meter1 = new NationalInstruments.UI.WindowsForms.Meter();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.lblTimeCanShu1 = new System.Windows.Forms.Label();
-            this.button34 = new System.Windows.Forms.Button();
-            this.btReflesh = new System.Windows.Forms.Button();
-            this.lblYHProject = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cbBSerialPort1 = new System.Windows.Forms.ComboBox();
-            this.cbBSerialPort2 = new System.Windows.Forms.ComboBox();
-            this.监控信息tabPage = new System.Windows.Forms.TabPage();
-            this.splitContainer27 = new System.Windows.Forms.SplitContainer();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.DGV2Main = new System.Windows.Forms.DataGridView();
-            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
-            this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.DGVMain = new System.Windows.Forms.DataGridView();
-            this.项目信息tabPage = new System.Windows.Forms.TabPage();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtAreaName = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.txtAreaCode = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.txtProjectCode = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.txtProjectAddress = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.txtCompanyName = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.txtLongtitude = new System.Windows.Forms.TextBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.txtLatitude = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtDescribe = new System.Windows.Forms.RichTextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.txtTectype = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.txtTecCode = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.txtHeatArea = new System.Windows.Forms.TextBox();
-            this.panelFlash5 = new System.Windows.Forms.Panel();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlash5 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panelFlash4 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlash4 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panelFlash纯热泵 = new System.Windows.Forms.Panel();
-            this.groupBox83 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlash纯热泵 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panelFlash2 = new System.Windows.Forms.Panel();
-            this.groupBox82 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlash3 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panelFlash1 = new System.Windows.Forms.Panel();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panelFlashCold = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.axShockwaveFlashCold = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.tabControl = new System.Windows.Forms.TabControl();
             this.toolStrip1.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripTreeView.SuspendLayout();
+            this.tabControl.SuspendLayout();
+            this.项目信息tabPage.SuspendLayout();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            this.panelFlashCold.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlashCold)).BeginInit();
+            this.panelFlash1.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
+            this.panelFlash2.SuspendLayout();
+            this.groupBox82.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash3)).BeginInit();
+            this.panelFlash纯热泵.SuspendLayout();
+            this.groupBox83.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash纯热泵)).BeginInit();
+            this.panelFlash4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash4)).BeginInit();
+            this.panelFlash5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash5)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            this.监控信息tabPage.SuspendLayout();
+            this.splitContainer5.Panel1.SuspendLayout();
+            this.splitContainer5.Panel2.SuspendLayout();
+            this.splitContainer5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart6)).BeginInit();
+            this.splitContainer27.Panel1.SuspendLayout();
+            this.splitContainer27.Panel2.SuspendLayout();
+            this.splitContainer27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV2Main)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            this.光伏制冷系统信息.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.groupBox48.SuspendLayout();
+            this.groupBoxSwictch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.meter1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX1)).BeginInit();
+            this.panel36.SuspendLayout();
+            this.gbCOP.SuspendLayout();
+            this.groupBox50.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.groupBox光伏系统数据.SuspendLayout();
+            this.groupBox制冷系统.SuspendLayout();
+            this.groupBox气象数据.SuspendLayout();
+            this.维护登记tabPage9.SuspendLayout();
+            this.panel55.SuspendLayout();
+            this.录入被更换表数据groupBox84.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.projectInfoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.energyTestingDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectInfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.energyTestingDataSet)).BeginInit();
+            this.系统运行信息tabPage.SuspendLayout();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelTime.SuspendLayout();
@@ -1310,71 +1375,6 @@
             this.panel29.SuspendLayout();
             this.groupBox46.SuspendLayout();
             this.groupBox47.SuspendLayout();
-            this.系统运行信息tabPage.SuspendLayout();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.维护登记tabPage9.SuspendLayout();
-            this.panel55.SuspendLayout();
-            this.录入被更换表数据groupBox84.SuspendLayout();
-            this.光伏制冷系统信息.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.groupBox气象数据.SuspendLayout();
-            this.groupBox制冷系统.SuspendLayout();
-            this.groupBox光伏系统数据.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.groupBox50.SuspendLayout();
-            this.gbCOP.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.groupBox48.SuspendLayout();
-            this.groupBoxSwictch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.meter1)).BeginInit();
-            this.监控信息tabPage.SuspendLayout();
-            this.splitContainer27.Panel1.SuspendLayout();
-            this.splitContainer27.Panel2.SuspendLayout();
-            this.splitContainer27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV2Main)).BeginInit();
-            this.splitContainer5.Panel1.SuspendLayout();
-            this.splitContainer5.Panel2.SuspendLayout();
-            this.splitContainer5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVMain)).BeginInit();
-            this.项目信息tabPage.SuspendLayout();
-            this.splitContainer4.Panel1.SuspendLayout();
-            this.splitContainer4.Panel2.SuspendLayout();
-            this.splitContainer4.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.panelFlash5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash5)).BeginInit();
-            this.panelFlash4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash4)).BeginInit();
-            this.panelFlash纯热泵.SuspendLayout();
-            this.groupBox83.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash纯热泵)).BeginInit();
-            this.panelFlash2.SuspendLayout();
-            this.groupBox82.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash3)).BeginInit();
-            this.panelFlash1.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
-            this.panelFlashCold.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlashCold)).BeginInit();
-            this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -1642,6 +1642,2731 @@
             this.imageList1.Images.SetKeyName(5, "table.png");
             this.imageList1.Images.SetKeyName(6, "感叹号.png");
             // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.项目信息tabPage);
+            this.tabControl.Controls.Add(this.监控信息tabPage);
+            this.tabControl.Controls.Add(this.光伏制冷系统信息);
+            this.tabControl.Controls.Add(this.维护登记tabPage9);
+            this.tabControl.Controls.Add(this.系统运行信息tabPage);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1037, 646);
+            this.tabControl.TabIndex = 0;
+            // 
+            // 项目信息tabPage
+            // 
+            this.项目信息tabPage.Controls.Add(this.splitContainer4);
+            this.项目信息tabPage.Location = new System.Drawing.Point(4, 30);
+            this.项目信息tabPage.Name = "项目信息tabPage";
+            this.项目信息tabPage.Size = new System.Drawing.Size(1029, 612);
+            this.项目信息tabPage.TabIndex = 3;
+            this.项目信息tabPage.Text = "项目信息";
+            this.项目信息tabPage.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlashCold);
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlash1);
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlash2);
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlash纯热泵);
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlash4);
+            this.splitContainer4.Panel1.Controls.Add(this.panelFlash5);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.groupBox16);
+            this.splitContainer4.Size = new System.Drawing.Size(1029, 612);
+            this.splitContainer4.SplitterDistance = 363;
+            this.splitContainer4.TabIndex = 0;
+            // 
+            // panelFlashCold
+            // 
+            this.panelFlashCold.Controls.Add(this.groupBox2);
+            this.panelFlashCold.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFlashCold.Location = new System.Drawing.Point(0, 0);
+            this.panelFlashCold.Name = "panelFlashCold";
+            this.panelFlashCold.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlashCold.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.axShockwaveFlashCold);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1025, 359);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "系统Flsh展示";
+            // 
+            // axShockwaveFlashCold
+            // 
+            this.axShockwaveFlashCold.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axShockwaveFlashCold.Enabled = true;
+            this.axShockwaveFlashCold.Location = new System.Drawing.Point(3, 25);
+            this.axShockwaveFlashCold.Name = "axShockwaveFlashCold";
+            this.axShockwaveFlashCold.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlashCold.OcxState")));
+            this.axShockwaveFlashCold.Size = new System.Drawing.Size(1019, 331);
+            this.axShockwaveFlashCold.TabIndex = 1;
+            // 
+            // panelFlash1
+            // 
+            this.panelFlash1.Controls.Add(this.groupBox15);
+            this.panelFlash1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFlash1.Location = new System.Drawing.Point(0, 0);
+            this.panelFlash1.Name = "panelFlash1";
+            this.panelFlash1.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlash1.TabIndex = 0;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox15.Controls.Add(this.axShockwaveFlash1);
+            this.groupBox15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox15.Location = new System.Drawing.Point(0, 0);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(1025, 363);
+            this.groupBox15.TabIndex = 1;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "系统Flash展示";
+            // 
+            // axShockwaveFlash1
+            // 
+            this.axShockwaveFlash1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.axShockwaveFlash1.Enabled = true;
+            this.axShockwaveFlash1.Location = new System.Drawing.Point(3, 22);
+            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
+            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
+            this.axShockwaveFlash1.Size = new System.Drawing.Size(1019, 338);
+            this.axShockwaveFlash1.TabIndex = 0;
+            // 
+            // panelFlash2
+            // 
+            this.panelFlash2.Controls.Add(this.groupBox82);
+            this.panelFlash2.Location = new System.Drawing.Point(0, 0);
+            this.panelFlash2.Name = "panelFlash2";
+            this.panelFlash2.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlash2.TabIndex = 1;
+            // 
+            // groupBox82
+            // 
+            this.groupBox82.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox82.Controls.Add(this.axShockwaveFlash3);
+            this.groupBox82.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox82.Location = new System.Drawing.Point(0, 0);
+            this.groupBox82.Name = "groupBox82";
+            this.groupBox82.Size = new System.Drawing.Size(1025, 363);
+            this.groupBox82.TabIndex = 2;
+            this.groupBox82.TabStop = false;
+            this.groupBox82.Text = "系统Flash展示";
+            // 
+            // axShockwaveFlash3
+            // 
+            this.axShockwaveFlash3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.axShockwaveFlash3.Enabled = true;
+            this.axShockwaveFlash3.Location = new System.Drawing.Point(3, 22);
+            this.axShockwaveFlash3.Name = "axShockwaveFlash3";
+            this.axShockwaveFlash3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash3.OcxState")));
+            this.axShockwaveFlash3.Size = new System.Drawing.Size(1019, 338);
+            this.axShockwaveFlash3.TabIndex = 0;
+            // 
+            // panelFlash纯热泵
+            // 
+            this.panelFlash纯热泵.Controls.Add(this.groupBox83);
+            this.panelFlash纯热泵.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFlash纯热泵.Location = new System.Drawing.Point(0, 0);
+            this.panelFlash纯热泵.Name = "panelFlash纯热泵";
+            this.panelFlash纯热泵.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlash纯热泵.TabIndex = 2;
+            // 
+            // groupBox83
+            // 
+            this.groupBox83.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox83.Controls.Add(this.axShockwaveFlash纯热泵);
+            this.groupBox83.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox83.Location = new System.Drawing.Point(0, 0);
+            this.groupBox83.Name = "groupBox83";
+            this.groupBox83.Size = new System.Drawing.Size(1025, 363);
+            this.groupBox83.TabIndex = 1;
+            this.groupBox83.TabStop = false;
+            this.groupBox83.Text = "系统Flash展示";
+            // 
+            // axShockwaveFlash纯热泵
+            // 
+            this.axShockwaveFlash纯热泵.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.axShockwaveFlash纯热泵.Enabled = true;
+            this.axShockwaveFlash纯热泵.Location = new System.Drawing.Point(3, 22);
+            this.axShockwaveFlash纯热泵.Name = "axShockwaveFlash纯热泵";
+            this.axShockwaveFlash纯热泵.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash纯热泵.OcxState")));
+            this.axShockwaveFlash纯热泵.Size = new System.Drawing.Size(1019, 338);
+            this.axShockwaveFlash纯热泵.TabIndex = 0;
+            // 
+            // panelFlash4
+            // 
+            this.panelFlash4.Controls.Add(this.groupBox5);
+            this.panelFlash4.Location = new System.Drawing.Point(0, 2);
+            this.panelFlash4.Name = "panelFlash4";
+            this.panelFlash4.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlash4.TabIndex = 3;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Controls.Add(this.axShockwaveFlash4);
+            this.groupBox5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox5.Location = new System.Drawing.Point(0, 0);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1025, 363);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "系统Flash展示";
+            // 
+            // axShockwaveFlash4
+            // 
+            this.axShockwaveFlash4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.axShockwaveFlash4.Enabled = true;
+            this.axShockwaveFlash4.Location = new System.Drawing.Point(3, 22);
+            this.axShockwaveFlash4.Name = "axShockwaveFlash4";
+            this.axShockwaveFlash4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash4.OcxState")));
+            this.axShockwaveFlash4.Size = new System.Drawing.Size(1019, 338);
+            this.axShockwaveFlash4.TabIndex = 0;
+            // 
+            // panelFlash5
+            // 
+            this.panelFlash5.Controls.Add(this.groupBox6);
+            this.panelFlash5.Location = new System.Drawing.Point(8, 10);
+            this.panelFlash5.Name = "panelFlash5";
+            this.panelFlash5.Size = new System.Drawing.Size(1025, 359);
+            this.panelFlash5.TabIndex = 5;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.axShockwaveFlash5);
+            this.groupBox6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox6.Location = new System.Drawing.Point(0, 0);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1025, 363);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "系统Flash展示";
+            // 
+            // axShockwaveFlash5
+            // 
+            this.axShockwaveFlash5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.axShockwaveFlash5.Enabled = true;
+            this.axShockwaveFlash5.Location = new System.Drawing.Point(3, 22);
+            this.axShockwaveFlash5.Name = "axShockwaveFlash5";
+            this.axShockwaveFlash5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash5.OcxState")));
+            this.axShockwaveFlash5.Size = new System.Drawing.Size(1019, 338);
+            this.axShockwaveFlash5.TabIndex = 0;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox16.BackColor = System.Drawing.Color.White;
+            this.groupBox16.Controls.Add(this.txtHeatArea);
+            this.groupBox16.Controls.Add(this.label68);
+            this.groupBox16.Controls.Add(this.txtTecCode);
+            this.groupBox16.Controls.Add(this.label69);
+            this.groupBox16.Controls.Add(this.txtTectype);
+            this.groupBox16.Controls.Add(this.label70);
+            this.groupBox16.Controls.Add(this.txtDescribe);
+            this.groupBox16.Controls.Add(this.label67);
+            this.groupBox16.Controls.Add(this.txtLatitude);
+            this.groupBox16.Controls.Add(this.label65);
+            this.groupBox16.Controls.Add(this.txtLongtitude);
+            this.groupBox16.Controls.Add(this.label66);
+            this.groupBox16.Controls.Add(this.txtCompanyName);
+            this.groupBox16.Controls.Add(this.label60);
+            this.groupBox16.Controls.Add(this.txtProjectAddress);
+            this.groupBox16.Controls.Add(this.label59);
+            this.groupBox16.Controls.Add(this.txtProjectCode);
+            this.groupBox16.Controls.Add(this.label54);
+            this.groupBox16.Controls.Add(this.txtProjectName);
+            this.groupBox16.Controls.Add(this.label53);
+            this.groupBox16.Controls.Add(this.txtAreaCode);
+            this.groupBox16.Controls.Add(this.label48);
+            this.groupBox16.Controls.Add(this.label47);
+            this.groupBox16.Controls.Add(this.txtAreaName);
+            this.groupBox16.Controls.Add(this.label27);
+            this.groupBox16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox16.Location = new System.Drawing.Point(0, 0);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(1025, 242);
+            this.groupBox16.TabIndex = 1;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "项目及监测对象信息";
+            // 
+            // txtHeatArea
+            // 
+            this.txtHeatArea.Location = new System.Drawing.Point(627, 206);
+            this.txtHeatArea.Name = "txtHeatArea";
+            this.txtHeatArea.ReadOnly = true;
+            this.txtHeatArea.Size = new System.Drawing.Size(100, 26);
+            this.txtHeatArea.TabIndex = 65;
+            this.txtHeatArea.Text = "txtHeatArea";
+            this.txtHeatArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(542, 209);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(79, 20);
+            this.label68.TabIndex = 64;
+            this.label68.Text = "集热面积：";
+            // 
+            // txtTecCode
+            // 
+            this.txtTecCode.Location = new System.Drawing.Point(388, 206);
+            this.txtTecCode.Name = "txtTecCode";
+            this.txtTecCode.ReadOnly = true;
+            this.txtTecCode.Size = new System.Drawing.Size(135, 26);
+            this.txtTecCode.TabIndex = 63;
+            this.txtTecCode.Text = "txtTecCode";
+            this.txtTecCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(303, 209);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(79, 20);
+            this.label69.TabIndex = 62;
+            this.label69.Text = "技术编码：";
+            // 
+            // txtTectype
+            // 
+            this.txtTectype.Location = new System.Drawing.Point(143, 206);
+            this.txtTectype.Name = "txtTectype";
+            this.txtTectype.ReadOnly = true;
+            this.txtTectype.Size = new System.Drawing.Size(135, 26);
+            this.txtTectype.TabIndex = 61;
+            this.txtTectype.Text = "txtTectype";
+            this.txtTectype.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(58, 209);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(79, 20);
+            this.label70.TabIndex = 60;
+            this.label70.Text = "技术类型：";
+            // 
+            // txtDescribe
+            // 
+            this.txtDescribe.Location = new System.Drawing.Point(742, 61);
+            this.txtDescribe.Name = "txtDescribe";
+            this.txtDescribe.ReadOnly = true;
+            this.txtDescribe.Size = new System.Drawing.Size(263, 171);
+            this.txtDescribe.TabIndex = 59;
+            this.txtDescribe.Text = "";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(738, 32);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(79, 20);
+            this.label67.TabIndex = 58;
+            this.label67.Text = "项目描述：";
+            // 
+            // txtLatitude
+            // 
+            this.txtLatitude.Location = new System.Drawing.Point(627, 164);
+            this.txtLatitude.Name = "txtLatitude";
+            this.txtLatitude.ReadOnly = true;
+            this.txtLatitude.Size = new System.Drawing.Size(100, 26);
+            this.txtLatitude.TabIndex = 57;
+            this.txtLatitude.Text = "txtLatitude";
+            this.txtLatitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(542, 167);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(79, 20);
+            this.label65.TabIndex = 56;
+            this.label65.Text = "项目纬度：";
+            // 
+            // txtLongtitude
+            // 
+            this.txtLongtitude.Location = new System.Drawing.Point(627, 119);
+            this.txtLongtitude.Name = "txtLongtitude";
+            this.txtLongtitude.ReadOnly = true;
+            this.txtLongtitude.Size = new System.Drawing.Size(100, 26);
+            this.txtLongtitude.TabIndex = 55;
+            this.txtLongtitude.Text = "txtLongtitude";
+            this.txtLongtitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(542, 122);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(79, 20);
+            this.label66.TabIndex = 54;
+            this.label66.Text = "项目经度：";
+            // 
+            // txtCompanyName
+            // 
+            this.txtCompanyName.Location = new System.Drawing.Point(143, 166);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.ReadOnly = true;
+            this.txtCompanyName.Size = new System.Drawing.Size(380, 26);
+            this.txtCompanyName.TabIndex = 53;
+            this.txtCompanyName.Text = "txtCompanyName";
+            this.txtCompanyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(58, 169);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(79, 20);
+            this.label60.TabIndex = 52;
+            this.label60.Text = "公司名称：";
+            // 
+            // txtProjectAddress
+            // 
+            this.txtProjectAddress.Location = new System.Drawing.Point(143, 122);
+            this.txtProjectAddress.Name = "txtProjectAddress";
+            this.txtProjectAddress.ReadOnly = true;
+            this.txtProjectAddress.Size = new System.Drawing.Size(380, 26);
+            this.txtProjectAddress.TabIndex = 51;
+            this.txtProjectAddress.Text = "txtProjectAddress";
+            this.txtProjectAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(58, 125);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(79, 20);
+            this.label59.TabIndex = 50;
+            this.label59.Text = "项目地址：";
+            // 
+            // txtProjectCode
+            // 
+            this.txtProjectCode.Location = new System.Drawing.Point(627, 74);
+            this.txtProjectCode.Name = "txtProjectCode";
+            this.txtProjectCode.ReadOnly = true;
+            this.txtProjectCode.Size = new System.Drawing.Size(100, 26);
+            this.txtProjectCode.TabIndex = 49;
+            this.txtProjectCode.Text = "txtProjectCode";
+            this.txtProjectCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(542, 77);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(79, 20);
+            this.label54.TabIndex = 48;
+            this.label54.Text = "项目编码：";
+            // 
+            // txtProjectName
+            // 
+            this.txtProjectName.Location = new System.Drawing.Point(143, 74);
+            this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.ReadOnly = true;
+            this.txtProjectName.Size = new System.Drawing.Size(380, 26);
+            this.txtProjectName.TabIndex = 47;
+            this.txtProjectName.Text = "txtProjectName";
+            this.txtProjectName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(58, 77);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(79, 20);
+            this.label53.TabIndex = 46;
+            this.label53.Text = "项目名称：";
+            // 
+            // txtAreaCode
+            // 
+            this.txtAreaCode.Location = new System.Drawing.Point(627, 29);
+            this.txtAreaCode.Name = "txtAreaCode";
+            this.txtAreaCode.ReadOnly = true;
+            this.txtAreaCode.Size = new System.Drawing.Size(100, 26);
+            this.txtAreaCode.TabIndex = 45;
+            this.txtAreaCode.Text = "txtAreaCode";
+            this.txtAreaCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(542, 32);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(79, 20);
+            this.label48.TabIndex = 44;
+            this.label48.Text = "地区代码：";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(374, 32);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(93, 20);
+            this.label47.TabIndex = 43;
+            this.label47.Text = "地（区、市）";
+            // 
+            // txtAreaName
+            // 
+            this.txtAreaName.Location = new System.Drawing.Point(143, 29);
+            this.txtAreaName.Name = "txtAreaName";
+            this.txtAreaName.ReadOnly = true;
+            this.txtAreaName.Size = new System.Drawing.Size(225, 26);
+            this.txtAreaName.TabIndex = 41;
+            this.txtAreaName.Text = "txtAreaName";
+            this.txtAreaName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(44, 32);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(93, 20);
+            this.label27.TabIndex = 40;
+            this.label27.Text = "项目所在地：";
+            // 
+            // 监控信息tabPage
+            // 
+            this.监控信息tabPage.Controls.Add(this.splitContainer5);
+            this.监控信息tabPage.Controls.Add(this.splitContainer27);
+            this.监控信息tabPage.Location = new System.Drawing.Point(4, 30);
+            this.监控信息tabPage.Name = "监控信息tabPage";
+            this.监控信息tabPage.Size = new System.Drawing.Size(1029, 612);
+            this.监控信息tabPage.TabIndex = 4;
+            this.监控信息tabPage.Text = "监控信息";
+            this.监控信息tabPage.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer5
+            // 
+            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer5.Name = "splitContainer5";
+            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer5.Panel1
+            // 
+            this.splitContainer5.Panel1.Controls.Add(this.DGVMain);
+            // 
+            // splitContainer5.Panel2
+            // 
+            this.splitContainer5.Panel2.Controls.Add(this.chart1);
+            this.splitContainer5.Panel2.Controls.Add(this.chart4);
+            this.splitContainer5.Panel2.Controls.Add(this.chart5);
+            this.splitContainer5.Panel2.Controls.Add(this.chart6);
+            this.splitContainer5.Size = new System.Drawing.Size(1029, 612);
+            this.splitContainer5.SplitterDistance = 318;
+            this.splitContainer5.TabIndex = 0;
+            // 
+            // DGVMain
+            // 
+            this.DGVMain.AllowUserToAddRows = false;
+            this.DGVMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGVMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGVMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVMain.Location = new System.Drawing.Point(0, 0);
+            this.DGVMain.Name = "DGVMain";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVMain.RowTemplate.Height = 23;
+            this.DGVMain.Size = new System.Drawing.Size(1029, 322);
+            this.DGVMain.TabIndex = 0;
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            this.chart1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
+            this.chart1.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chart1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea1.Area3DStyle.IsRightAngleAxes = false;
+            chartArea1.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
+            chartArea1.Area3DStyle.PointDepth = 40;
+            chartArea1.Area3DStyle.PointGapDepth = 0;
+            chartArea1.Area3DStyle.Rotation = 7;
+            chartArea1.Area3DStyle.WallWidth = 3;
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea1.BackColor = System.Drawing.Color.Black;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea1.BorderWidth = 2;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Yellow;
+            series1.Legend = "Legend1";
+            series1.LegendText = "压缩机排气压力";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.LegendText = "蒸发器出口压力";
+            series2.Name = "Series2";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.LegendText = "压排温度";
+            series3.Name = "Series3";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series4.Legend = "Legend1";
+            series4.LegendText = "冷出温";
+            series4.Name = "Series4";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.LegendText = "蒸出温";
+            series5.Name = "Series5";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.LegendText = "蒸入温";
+            series6.Name = "Series6";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.LegendText = "供冷流量";
+            series7.Name = "Series7";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.LegendText = "冰块温度";
+            series8.Name = "Series8";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.LegendText = "水箱上温";
+            series9.Name = "Series9";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.LegendText = "回水温";
+            series10.Name = "Series10";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.LegendText = "水箱下温";
+            series11.Name = "Series11";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Legend = "Legend1";
+            series12.LegendText = "供水温";
+            series12.Name = "Series12";
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Legend = "Legend1";
+            series13.LegendText = "风口温";
+            series13.Name = "Series13";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Legend = "Legend1";
+            series14.LegendText = "房间温";
+            series14.Name = "Series14";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series15.Legend = "Legend1";
+            series15.LegendText = "溢水量";
+            series15.Name = "Series15";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series16.Legend = "Legend1";
+            series16.LegendText = "水箱液位";
+            series16.Name = "Series16";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Series.Add(series9);
+            this.chart1.Series.Add(series10);
+            this.chart1.Series.Add(series11);
+            this.chart1.Series.Add(series12);
+            this.chart1.Series.Add(series13);
+            this.chart1.Series.Add(series14);
+            this.chart1.Series.Add(series15);
+            this.chart1.Series.Add(series16);
+            this.chart1.Size = new System.Drawing.Size(1029, 290);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // chart4
+            // 
+            this.chart4.BackColor = System.Drawing.Color.Transparent;
+            this.chart4.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
+            this.chart4.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chart4.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.BackColor = System.Drawing.Color.Black;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea2.BorderWidth = 2;
+            chartArea2.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea2);
+            this.chart4.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend2.Name = "Legend1";
+            this.chart4.Legends.Add(legend2);
+            this.chart4.Location = new System.Drawing.Point(0, 0);
+            this.chart4.Name = "chart4";
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Legend = "Legend1";
+            series17.LegendText = "温度T1";
+            series17.Name = "Series1";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series18.Legend = "Legend1";
+            series18.LegendText = "温度T2";
+            series18.Name = "Series2";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Legend = "Legend1";
+            series19.LegendText = "温度T3";
+            series19.Name = "Series3";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Legend = "Legend1";
+            series20.LegendText = "温度T4";
+            series20.Name = "Series4";
+            series20.YValuesPerPoint = 2;
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Legend = "Legend1";
+            series21.LegendText = "温度T5";
+            series21.Name = "Series5";
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series22.Legend = "Legend1";
+            series22.LegendText = "温度T6";
+            series22.Name = "Series6";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series23.Legend = "Legend1";
+            series23.LegendText = "温度T7";
+            series23.Name = "Series7";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series24.Legend = "Legend1";
+            series24.LegendText = "温度T8";
+            series24.Name = "Series8";
+            this.chart4.Series.Add(series17);
+            this.chart4.Series.Add(series18);
+            this.chart4.Series.Add(series19);
+            this.chart4.Series.Add(series20);
+            this.chart4.Series.Add(series21);
+            this.chart4.Series.Add(series22);
+            this.chart4.Series.Add(series23);
+            this.chart4.Series.Add(series24);
+            this.chart4.Size = new System.Drawing.Size(1029, 290);
+            this.chart4.TabIndex = 1;
+            this.chart4.Text = "chart4";
+            // 
+            // chart5
+            // 
+            this.chart5.BackColor = System.Drawing.Color.Transparent;
+            this.chart5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
+            this.chart5.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chart5.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.BackColor = System.Drawing.Color.Black;
+            chartArea3.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea3.BorderWidth = 2;
+            chartArea3.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea3);
+            this.chart5.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend3.Name = "Legend1";
+            this.chart5.Legends.Add(legend3);
+            this.chart5.Location = new System.Drawing.Point(0, 0);
+            this.chart5.Name = "chart5";
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series25.Legend = "Legend1";
+            series25.LegendText = "冷水上水温度T1";
+            series25.Name = "Series1";
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series26.Legend = "Legend1";
+            series26.LegendText = "环境温度T2";
+            series26.Name = "Series2";
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series27.Legend = "Legend1";
+            series27.LegendText = "回水温度T3";
+            series27.Name = "Series3";
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series28.Legend = "Legend1";
+            series28.LegendText = "1号水箱温度T4";
+            series28.Name = "Series4";
+            series28.YValuesPerPoint = 2;
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series29.Legend = "Legend1";
+            series29.LegendText = "热水供水温度T5";
+            series29.Name = "Series5";
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series30.Legend = "Legend1";
+            series30.LegendText = "2号水箱温度T6";
+            series30.Name = "Series6";
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series31.Legend = "Legend1";
+            series31.LegendText = "热泵供水温度T7";
+            series31.Name = "Series7";
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series32.Legend = "Legend1";
+            series32.LegendText = "热泵进水温度T8";
+            series32.Name = "Series8";
+            this.chart5.Series.Add(series25);
+            this.chart5.Series.Add(series26);
+            this.chart5.Series.Add(series27);
+            this.chart5.Series.Add(series28);
+            this.chart5.Series.Add(series29);
+            this.chart5.Series.Add(series30);
+            this.chart5.Series.Add(series31);
+            this.chart5.Series.Add(series32);
+            this.chart5.Size = new System.Drawing.Size(1029, 290);
+            this.chart5.TabIndex = 2;
+            this.chart5.Text = "chart5";
+            // 
+            // chart6
+            // 
+            this.chart6.BackColor = System.Drawing.Color.Transparent;
+            this.chart6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
+            this.chart6.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chart6.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.BackColor = System.Drawing.Color.Black;
+            chartArea4.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea4.BorderWidth = 2;
+            chartArea4.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea4);
+            this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend4.Name = "Legend1";
+            this.chart6.Legends.Add(legend4);
+            this.chart6.Location = new System.Drawing.Point(0, 0);
+            this.chart6.Name = "chart6";
+            series33.ChartArea = "ChartArea1";
+            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series33.Legend = "Legend1";
+            series33.LegendText = "冷水进水温度";
+            series33.Name = "Series1";
+            series34.ChartArea = "ChartArea1";
+            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series34.Legend = "Legend1";
+            series34.LegendText = "热水出水温度";
+            series34.Name = "Series2";
+            series35.ChartArea = "ChartArea1";
+            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series35.Legend = "Legend1";
+            series35.LegendText = "集热器进口温度";
+            series35.Name = "Series3";
+            series36.ChartArea = "ChartArea1";
+            series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series36.Legend = "Legend1";
+            series36.LegendText = "集热器出口温度";
+            series36.Name = "Series4";
+            series36.YValuesPerPoint = 2;
+            series37.ChartArea = "ChartArea1";
+            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series37.Legend = "Legend1";
+            series37.LegendText = "环境温度";
+            series37.Name = "Series5";
+            this.chart6.Series.Add(series33);
+            this.chart6.Series.Add(series34);
+            this.chart6.Series.Add(series35);
+            this.chart6.Series.Add(series36);
+            this.chart6.Series.Add(series37);
+            this.chart6.Size = new System.Drawing.Size(1029, 290);
+            this.chart6.TabIndex = 3;
+            this.chart6.Text = "chart6";
+            // 
+            // splitContainer27
+            // 
+            this.splitContainer27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer27.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer27.Name = "splitContainer27";
+            this.splitContainer27.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer27.Panel1
+            // 
+            this.splitContainer27.Panel1.Controls.Add(this.DGV2Main);
+            // 
+            // splitContainer27.Panel2
+            // 
+            this.splitContainer27.Panel2.Controls.Add(this.chart3);
+            this.splitContainer27.Size = new System.Drawing.Size(1029, 612);
+            this.splitContainer27.SplitterDistance = 318;
+            this.splitContainer27.TabIndex = 1;
+            // 
+            // DGV2Main
+            // 
+            this.DGV2Main.AllowUserToAddRows = false;
+            this.DGV2Main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV2Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DGV2Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV2Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGV2Main.Location = new System.Drawing.Point(0, 0);
+            this.DGV2Main.Name = "DGV2Main";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV2Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DGV2Main.RowTemplate.Height = 23;
+            this.DGV2Main.Size = new System.Drawing.Size(1029, 318);
+            this.DGV2Main.TabIndex = 0;
+            // 
+            // chart3
+            // 
+            this.chart3.BackColor = System.Drawing.Color.Transparent;
+            this.chart3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
+            this.chart3.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chart3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea5.Area3DStyle.IsRightAngleAxes = false;
+            chartArea5.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
+            chartArea5.Area3DStyle.PointDepth = 40;
+            chartArea5.Area3DStyle.PointGapDepth = 0;
+            chartArea5.Area3DStyle.Rotation = 7;
+            chartArea5.Area3DStyle.WallWidth = 3;
+            chartArea5.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea5.BackColor = System.Drawing.Color.Black;
+            chartArea5.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea5.BorderWidth = 2;
+            chartArea5.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea5);
+            this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend5.Name = "Legend1";
+            this.chart3.Legends.Add(legend5);
+            this.chart3.Location = new System.Drawing.Point(0, 0);
+            this.chart3.Name = "chart3";
+            series38.ChartArea = "ChartArea1";
+            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series38.Color = System.Drawing.Color.Yellow;
+            series38.IsValueShownAsLabel = true;
+            series38.Legend = "Legend1";
+            series38.LegendText = "集热器管道温度";
+            series38.Name = "Series1";
+            series39.ChartArea = "ChartArea1";
+            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series39.Legend = "Legend1";
+            series39.LegendText = "集热水箱温度";
+            series39.Name = "Series2";
+            series40.ChartArea = "ChartArea1";
+            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series40.Legend = "Legend1";
+            series40.LegendText = "回水温度";
+            series40.Name = "Series3";
+            series41.ChartArea = "ChartArea1";
+            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series41.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series41.Legend = "Legend1";
+            series41.LegendText = "环境温度";
+            series41.Name = "Series4";
+            series42.ChartArea = "ChartArea1";
+            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series42.Legend = "Legend1";
+            series42.LegendText = "集热水箱液位高度";
+            series42.Name = "Series5";
+            series43.ChartArea = "ChartArea1";
+            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series43.Legend = "Legend1";
+            series43.LegendText = "恒温水箱温度";
+            series43.Name = "Series6";
+            series44.ChartArea = "ChartArea1";
+            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series44.Legend = "Legend1";
+            series44.LegendText = "恒温水箱液位高度";
+            series44.Name = "Series7";
+            this.chart3.Series.Add(series38);
+            this.chart3.Series.Add(series39);
+            this.chart3.Series.Add(series40);
+            this.chart3.Series.Add(series41);
+            this.chart3.Series.Add(series42);
+            this.chart3.Series.Add(series43);
+            this.chart3.Series.Add(series44);
+            this.chart3.Size = new System.Drawing.Size(1029, 290);
+            this.chart3.TabIndex = 0;
+            this.chart3.Text = "chart3";
+            // 
+            // 光伏制冷系统信息
+            // 
+            this.光伏制冷系统信息.Controls.Add(this.groupBox7);
+            this.光伏制冷系统信息.Location = new System.Drawing.Point(4, 30);
+            this.光伏制冷系统信息.Name = "光伏制冷系统信息";
+            this.光伏制冷系统信息.Padding = new System.Windows.Forms.Padding(3);
+            this.光伏制冷系统信息.Size = new System.Drawing.Size(1029, 612);
+            this.光伏制冷系统信息.TabIndex = 10;
+            this.光伏制冷系统信息.Text = "光伏制冷系统信息";
+            this.光伏制冷系统信息.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.cbBSerialPort2);
+            this.groupBox7.Controls.Add(this.cbBSerialPort1);
+            this.groupBox7.Controls.Add(this.label19);
+            this.groupBox7.Controls.Add(this.label18);
+            this.groupBox7.Controls.Add(this.lblYHProject);
+            this.groupBox7.Controls.Add(this.btReflesh);
+            this.groupBox7.Controls.Add(this.button34);
+            this.groupBox7.Controls.Add(this.lblTimeCanShu1);
+            this.groupBox7.Controls.Add(this.panel32);
+            this.groupBox7.Controls.Add(this.label218);
+            this.groupBox7.Controls.Add(this.label219);
+            this.groupBox7.Controls.Add(this.panel36);
+            this.groupBox7.Controls.Add(this.panel35);
+            this.groupBox7.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox7.Location = new System.Drawing.Point(0, 0);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(1020, 605);
+            this.groupBox7.TabIndex = 1;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "香格里拉太阳能与热泵供供暖数据指标";
+            // 
+            // cbBSerialPort2
+            // 
+            this.cbBSerialPort2.FormattingEnabled = true;
+            this.cbBSerialPort2.Items.AddRange(new object[] {
+            "COM1",
+            "COM2",
+            "COM3",
+            "COM4",
+            "COM5",
+            "COM6"});
+            this.cbBSerialPort2.Location = new System.Drawing.Point(926, 29);
+            this.cbBSerialPort2.Name = "cbBSerialPort2";
+            this.cbBSerialPort2.Size = new System.Drawing.Size(62, 27);
+            this.cbBSerialPort2.TabIndex = 57;
+            this.cbBSerialPort2.SelectedIndexChanged += new System.EventHandler(this.cbBSerialPort2_SelectedIndexChanged);
+            // 
+            // cbBSerialPort1
+            // 
+            this.cbBSerialPort1.FormattingEnabled = true;
+            this.cbBSerialPort1.Items.AddRange(new object[] {
+            "COM1",
+            "COM2",
+            "COM3",
+            "COM4",
+            "COM5",
+            "COM6"});
+            this.cbBSerialPort1.Location = new System.Drawing.Point(789, 29);
+            this.cbBSerialPort1.Name = "cbBSerialPort1";
+            this.cbBSerialPort1.Size = new System.Drawing.Size(62, 27);
+            this.cbBSerialPort1.TabIndex = 56;
+            this.cbBSerialPort1.SelectedIndexChanged += new System.EventHandler(this.cbBSerialPort1_SelectedIndexChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(869, 33);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 19);
+            this.label19.TabIndex = 55;
+            this.label19.Text = "串口2：";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(739, 33);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(56, 19);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "串口1：";
+            // 
+            // lblYHProject
+            // 
+            this.lblYHProject.AutoSize = true;
+            this.lblYHProject.Location = new System.Drawing.Point(133, 22);
+            this.lblYHProject.Name = "lblYHProject";
+            this.lblYHProject.Size = new System.Drawing.Size(93, 19);
+            this.lblYHProject.TabIndex = 53;
+            this.lblYHProject.Text = "lblYHProject";
+            // 
+            // btReflesh
+            // 
+            this.btReflesh.AutoSize = true;
+            this.btReflesh.BackColor = System.Drawing.Color.Lime;
+            this.btReflesh.Location = new System.Drawing.Point(664, 26);
+            this.btReflesh.Name = "btReflesh";
+            this.btReflesh.Size = new System.Drawing.Size(55, 32);
+            this.btReflesh.TabIndex = 26;
+            this.btReflesh.Text = "刷新";
+            this.btReflesh.UseVisualStyleBackColor = false;
+            this.btReflesh.Click += new System.EventHandler(this.btReflesh_Click);
+            // 
+            // button34
+            // 
+            this.button34.AutoSize = true;
+            this.button34.BackColor = System.Drawing.Color.Lime;
+            this.button34.Location = new System.Drawing.Point(552, 25);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(84, 32);
+            this.button34.TabIndex = 24;
+            this.button34.Text = "获取参数";
+            this.button34.UseVisualStyleBackColor = false;
+            // 
+            // lblTimeCanShu1
+            // 
+            this.lblTimeCanShu1.AutoSize = true;
+            this.lblTimeCanShu1.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblTimeCanShu1.Location = new System.Drawing.Point(136, 56);
+            this.lblTimeCanShu1.Name = "lblTimeCanShu1";
+            this.lblTimeCanShu1.Size = new System.Drawing.Size(40, 16);
+            this.lblTimeCanShu1.TabIndex = 4;
+            this.lblTimeCanShu1.Text = "时间";
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel32.Controls.Add(this.groupBox48);
+            this.panel32.Location = new System.Drawing.Point(550, 83);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(470, 533);
+            this.panel32.TabIndex = 1;
+            // 
+            // groupBox48
+            // 
+            this.groupBox48.Controls.Add(this.label16);
+            this.groupBox48.Controls.Add(this.button3);
+            this.groupBox48.Controls.Add(this.groupBoxSwictch);
+            this.groupBox48.Controls.Add(this.C1);
+            this.groupBox48.Controls.Add(this.label6);
+            this.groupBox48.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox48.Location = new System.Drawing.Point(20, 5);
+            this.groupBox48.Name = "groupBox48";
+            this.groupBox48.Size = new System.Drawing.Size(430, 477);
+            this.groupBox48.TabIndex = 52;
+            this.groupBox48.TabStop = false;
+            this.groupBox48.Text = "控制系统";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label16.Location = new System.Drawing.Point(160, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(22, 19);
+            this.label16.TabIndex = 67;
+            this.label16.Text = "℃";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(204, 31);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 26);
+            this.button3.TabIndex = 66;
+            this.button3.Text = "发送参数";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // groupBoxSwictch
+            // 
+            this.groupBoxSwictch.Controls.Add(this.label5);
+            this.groupBoxSwictch.Controls.Add(this.label4);
+            this.groupBoxSwictch.Controls.Add(this.label3);
+            this.groupBoxSwictch.Controls.Add(this.label2);
+            this.groupBoxSwictch.Controls.Add(this.meter1);
+            this.groupBoxSwictch.Controls.Add(this.label1);
+            this.groupBoxSwictch.Controls.Add(this.radioButton24);
+            this.groupBoxSwictch.Controls.Add(this.radioButton1);
+            this.groupBoxSwictch.Controls.Add(this.label17);
+            this.groupBoxSwictch.Controls.Add(this.comboBox3);
+            this.groupBoxSwictch.Controls.Add(this.checkBox1);
+            this.groupBoxSwictch.Controls.Add(this.label15);
+            this.groupBoxSwictch.Controls.Add(this.label14);
+            this.groupBoxSwictch.Controls.Add(this.label13);
+            this.groupBoxSwictch.Controls.Add(this.pbX3);
+            this.groupBoxSwictch.Controls.Add(this.pbX2);
+            this.groupBoxSwictch.Controls.Add(this.pbX1);
+            this.groupBoxSwictch.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSwictch.Location = new System.Drawing.Point(0, 111);
+            this.groupBoxSwictch.Name = "groupBoxSwictch";
+            this.groupBoxSwictch.Size = new System.Drawing.Size(430, 371);
+            this.groupBoxSwictch.TabIndex = 53;
+            this.groupBoxSwictch.TabStop = false;
+            this.groupBoxSwictch.Text = "开关量";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(279, 325);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 19);
+            this.label5.TabIndex = 79;
+            this.label5.Text = "光伏";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(185, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 19);
+            this.label4.TabIndex = 78;
+            this.label4.Text = "上位机控制";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(296, 141);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 19);
+            this.label3.TabIndex = 77;
+            this.label3.Text = "市电";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(105, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 19);
+            this.label2.TabIndex = 76;
+            this.label2.Text = "光伏";
+            // 
+            // meter1
+            // 
+            scaleCustomDivision1.Text = "开关";
+            this.meter1.CustomDivisions.AddRange(new NationalInstruments.UI.ScaleCustomDivision[] {
+            scaleCustomDivision1});
+            this.meter1.Location = new System.Drawing.Point(125, 107);
+            this.meter1.MeterStyle = NationalInstruments.UI.MeterStyle.FlatWithThickNeedle;
+            this.meter1.Name = "meter1";
+            this.meter1.Range = new NationalInstruments.UI.Range(1, 3);
+            this.meter1.ScaleVisible = false;
+            this.meter1.Size = new System.Drawing.Size(188, 100);
+            this.meter1.TabIndex = 75;
+            this.meter1.Value = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 19);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "控制柜手动开关：";
+            // 
+            // radioButton24
+            // 
+            this.radioButton24.AutoSize = true;
+            this.radioButton24.Location = new System.Drawing.Point(132, 36);
+            this.radioButton24.Name = "radioButton24";
+            this.radioButton24.Size = new System.Drawing.Size(79, 23);
+            this.radioButton24.TabIndex = 73;
+            this.radioButton24.Text = "自动控制";
+            this.radioButton24.UseVisualStyleBackColor = true;
+            this.radioButton24.Click += new System.EventHandler(this.radioButton24_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(47, 37);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(79, 23);
+            this.radioButton1.TabIndex = 72;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "手动控制";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(297, 35);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 19);
+            this.label17.TabIndex = 71;
+            this.label17.Text = "min";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Enabled = false;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"});
+            this.comboBox3.Location = new System.Drawing.Point(244, 32);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(51, 27);
+            this.comboBox3.TabIndex = 70;
+            this.comboBox3.Text = "10";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(341, 35);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(54, 23);
+            this.checkBox1.TabIndex = 69;
+            this.checkBox1.Text = "实验";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(111, 325);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 19);
+            this.label15.TabIndex = 56;
+            this.label15.Text = "市电";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label14.Location = new System.Drawing.Point(73, 273);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 19);
+            this.label14.TabIndex = 55;
+            this.label14.Text = "放水电磁阀:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label13.Location = new System.Drawing.Point(73, 222);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 19);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "进水电磁阀:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // pbX3
+            // 
+            this.pbX3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbX3.Image = global::西子新能源.Properties.Resources.Open;
+            this.pbX3.Location = new System.Drawing.Point(173, 319);
+            this.pbX3.Name = "pbX3";
+            this.pbX3.Size = new System.Drawing.Size(92, 30);
+            this.pbX3.TabIndex = 2;
+            this.pbX3.TabStop = false;
+            this.pbX3.Click += new System.EventHandler(this.pbX3_Click);
+            // 
+            // pbX2
+            // 
+            this.pbX2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbX2.Image = global::西子新能源.Properties.Resources.Open;
+            this.pbX2.Location = new System.Drawing.Point(173, 262);
+            this.pbX2.Name = "pbX2";
+            this.pbX2.Size = new System.Drawing.Size(92, 30);
+            this.pbX2.TabIndex = 1;
+            this.pbX2.TabStop = false;
+            this.pbX2.Click += new System.EventHandler(this.pbX2_Click);
+            // 
+            // pbX1
+            // 
+            this.pbX1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbX1.Image = global::西子新能源.Properties.Resources.Open;
+            this.pbX1.Location = new System.Drawing.Point(173, 216);
+            this.pbX1.Name = "pbX1";
+            this.pbX1.Size = new System.Drawing.Size(92, 30);
+            this.pbX1.TabIndex = 0;
+            this.pbX1.TabStop = false;
+            this.pbX1.Click += new System.EventHandler(this.pbX1_Click);
+            // 
+            // C1
+            // 
+            this.C1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.C1.Location = new System.Drawing.Point(106, 30);
+            this.C1.MaxLength = 10;
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(52, 24);
+            this.C1.TabIndex = 63;
+            this.C1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.C1_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(20, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 19);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "设定温度：";
+            // 
+            // label218
+            // 
+            this.label218.AutoSize = true;
+            this.label218.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label218.Location = new System.Drawing.Point(14, 54);
+            this.label218.Name = "label218";
+            this.label218.Size = new System.Drawing.Size(120, 16);
+            this.label218.TabIndex = 3;
+            this.label218.Text = "参数获取时间：";
+            // 
+            // label219
+            // 
+            this.label219.AutoSize = true;
+            this.label219.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label219.Location = new System.Drawing.Point(17, 24);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(120, 16);
+            this.label219.TabIndex = 2;
+            this.label219.Text = "当前项目名称：";
+            // 
+            // panel36
+            // 
+            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel36.Controls.Add(this.gbCOP);
+            this.panel36.Controls.Add(this.button2);
+            this.panel36.Controls.Add(this.groupBox50);
+            this.panel36.Location = new System.Drawing.Point(0, 82);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(550, 526);
+            this.panel36.TabIndex = 52;
+            // 
+            // gbCOP
+            // 
+            this.gbCOP.Controls.Add(this.Z44);
+            this.gbCOP.Controls.Add(this.label56);
+            this.gbCOP.Controls.Add(this.Z45);
+            this.gbCOP.Controls.Add(this.label55);
+            this.gbCOP.Controls.Add(this.Z46);
+            this.gbCOP.Controls.Add(this.label20);
+            this.gbCOP.Controls.Add(this.Z43);
+            this.gbCOP.Controls.Add(this.label8);
+            this.gbCOP.Location = new System.Drawing.Point(15, 359);
+            this.gbCOP.Name = "gbCOP";
+            this.gbCOP.Size = new System.Drawing.Size(512, 116);
+            this.gbCOP.TabIndex = 53;
+            this.gbCOP.TabStop = false;
+            this.gbCOP.Text = "COP";
+            // 
+            // Z44
+            // 
+            this.Z44.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z44.Location = new System.Drawing.Point(406, 23);
+            this.Z44.Name = "Z44";
+            this.Z44.ReadOnly = true;
+            this.Z44.Size = new System.Drawing.Size(49, 24);
+            this.Z44.TabIndex = 70;
+            this.Z44.Text = "z44";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label56.Location = new System.Drawing.Point(325, 25);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(74, 19);
+            this.label56.TabIndex = 69;
+            this.label56.Text = "水箱液位：";
+            // 
+            // Z45
+            // 
+            this.Z45.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z45.Location = new System.Drawing.Point(169, 57);
+            this.Z45.Name = "Z45";
+            this.Z45.ReadOnly = true;
+            this.Z45.Size = new System.Drawing.Size(49, 24);
+            this.Z45.TabIndex = 68;
+            this.Z45.Text = "z45";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label55.Location = new System.Drawing.Point(88, 27);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(61, 19);
+            this.label55.TabIndex = 67;
+            this.label55.Text = "溢水量：";
+            // 
+            // Z46
+            // 
+            this.Z46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z46.Location = new System.Drawing.Point(406, 58);
+            this.Z46.Name = "Z46";
+            this.Z46.ReadOnly = true;
+            this.Z46.Size = new System.Drawing.Size(49, 24);
+            this.Z46.TabIndex = 66;
+            this.Z46.Text = "z46";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(338, 62);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 19);
+            this.label20.TabIndex = 65;
+            this.label20.Text = "能效比：";
+            // 
+            // Z43
+            // 
+            this.Z43.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z43.Location = new System.Drawing.Point(169, 25);
+            this.Z43.Name = "Z43";
+            this.Z43.ReadOnly = true;
+            this.Z43.Size = new System.Drawing.Size(49, 24);
+            this.Z43.TabIndex = 64;
+            this.Z43.Text = "z43";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Location = new System.Drawing.Point(74, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 19);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "逆控效率：";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.Location = new System.Drawing.Point(405, 491);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 26);
+            this.button2.TabIndex = 52;
+            this.button2.Text = "上一页";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // groupBox50
+            // 
+            this.groupBox50.Controls.Add(this.Z41);
+            this.groupBox50.Controls.Add(this.Z34);
+            this.groupBox50.Controls.Add(this.Z35);
+            this.groupBox50.Controls.Add(this.label21);
+            this.groupBox50.Controls.Add(this.Z42);
+            this.groupBox50.Controls.Add(this.Z40);
+            this.groupBox50.Controls.Add(this.Z39);
+            this.groupBox50.Controls.Add(this.Z38);
+            this.groupBox50.Controls.Add(this.Z37);
+            this.groupBox50.Controls.Add(this.Z32);
+            this.groupBox50.Controls.Add(this.label11);
+            this.groupBox50.Controls.Add(this.label10);
+            this.groupBox50.Controls.Add(this.Z36);
+            this.groupBox50.Controls.Add(this.label249);
+            this.groupBox50.Controls.Add(this.Z33);
+            this.groupBox50.Controls.Add(this.label256);
+            this.groupBox50.Controls.Add(this.Z31);
+            this.groupBox50.Controls.Add(this.label258);
+            this.groupBox50.Controls.Add(this.Z30);
+            this.groupBox50.Controls.Add(this.label259);
+            this.groupBox50.Controls.Add(this.label260);
+            this.groupBox50.Controls.Add(this.label261);
+            this.groupBox50.Controls.Add(this.label262);
+            this.groupBox50.Controls.Add(this.label263);
+            this.groupBox50.Controls.Add(this.label264);
+            this.groupBox50.Controls.Add(this.label265);
+            this.groupBox50.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox50.Location = new System.Drawing.Point(20, 5);
+            this.groupBox50.Name = "groupBox50";
+            this.groupBox50.Size = new System.Drawing.Size(510, 343);
+            this.groupBox50.TabIndex = 51;
+            this.groupBox50.TabStop = false;
+            this.groupBox50.Text = "供冷系统";
+            // 
+            // Z41
+            // 
+            this.Z41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z41.Location = new System.Drawing.Point(169, 288);
+            this.Z41.Name = "Z41";
+            this.Z41.ReadOnly = true;
+            this.Z41.Size = new System.Drawing.Size(49, 24);
+            this.Z41.TabIndex = 68;
+            this.Z41.Text = "z41";
+            // 
+            // Z34
+            // 
+            this.Z34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z34.Location = new System.Drawing.Point(169, 114);
+            this.Z34.Name = "Z34";
+            this.Z34.ReadOnly = true;
+            this.Z34.Size = new System.Drawing.Size(49, 24);
+            this.Z34.TabIndex = 67;
+            this.Z34.Text = "z34";
+            // 
+            // Z35
+            // 
+            this.Z35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z35.Location = new System.Drawing.Point(169, 157);
+            this.Z35.Name = "Z35";
+            this.Z35.ReadOnly = true;
+            this.Z35.Size = new System.Drawing.Size(49, 24);
+            this.Z35.TabIndex = 66;
+            this.Z35.Text = "z35";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Location = new System.Drawing.Point(50, 118);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(100, 19);
+            this.label21.TabIndex = 65;
+            this.label21.Text = "水泵变频电能：";
+            // 
+            // Z42
+            // 
+            this.Z42.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z42.Location = new System.Drawing.Point(406, 286);
+            this.Z42.Name = "Z42";
+            this.Z42.ReadOnly = true;
+            this.Z42.Size = new System.Drawing.Size(49, 24);
+            this.Z42.TabIndex = 64;
+            this.Z42.Text = "z42";
+            // 
+            // Z40
+            // 
+            this.Z40.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z40.Location = new System.Drawing.Point(409, 244);
+            this.Z40.Name = "Z40";
+            this.Z40.ReadOnly = true;
+            this.Z40.Size = new System.Drawing.Size(49, 24);
+            this.Z40.TabIndex = 63;
+            this.Z40.Text = "z40";
+            // 
+            // Z39
+            // 
+            this.Z39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z39.Location = new System.Drawing.Point(169, 244);
+            this.Z39.Name = "Z39";
+            this.Z39.ReadOnly = true;
+            this.Z39.Size = new System.Drawing.Size(49, 24);
+            this.Z39.TabIndex = 61;
+            this.Z39.Text = "z39";
+            // 
+            // Z38
+            // 
+            this.Z38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z38.Location = new System.Drawing.Point(406, 200);
+            this.Z38.Name = "Z38";
+            this.Z38.ReadOnly = true;
+            this.Z38.Size = new System.Drawing.Size(49, 24);
+            this.Z38.TabIndex = 60;
+            this.Z38.Text = "z38";
+            // 
+            // Z37
+            // 
+            this.Z37.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z37.Location = new System.Drawing.Point(169, 200);
+            this.Z37.Name = "Z37";
+            this.Z37.ReadOnly = true;
+            this.Z37.Size = new System.Drawing.Size(49, 24);
+            this.Z37.TabIndex = 59;
+            this.Z37.Text = "z37";
+            // 
+            // Z32
+            // 
+            this.Z32.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z32.Location = new System.Drawing.Point(167, 71);
+            this.Z32.Name = "Z32";
+            this.Z32.ReadOnly = true;
+            this.Z32.Size = new System.Drawing.Size(52, 24);
+            this.Z32.TabIndex = 55;
+            this.Z32.Text = "z32";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(270, 247);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(139, 19);
+            this.label11.TabIndex = 54;
+            this.label11.Text = "供冷循环中供水温度：";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(278, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(139, 19);
+            this.label10.TabIndex = 53;
+            this.label10.Text = "供冷循环中回水温度：";
+            // 
+            // Z36
+            // 
+            this.Z36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z36.Location = new System.Drawing.Point(404, 157);
+            this.Z36.Name = "Z36";
+            this.Z36.ReadOnly = true;
+            this.Z36.Size = new System.Drawing.Size(52, 24);
+            this.Z36.TabIndex = 52;
+            this.Z36.Text = "z36";
+            // 
+            // label249
+            // 
+            this.label249.AutoSize = true;
+            this.label249.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label249.Location = new System.Drawing.Point(331, 290);
+            this.label249.Name = "label249";
+            this.label249.Size = new System.Drawing.Size(74, 19);
+            this.label249.TabIndex = 51;
+            this.label249.Text = "房间温度：";
+            // 
+            // Z33
+            // 
+            this.Z33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z33.Location = new System.Drawing.Point(406, 71);
+            this.Z33.Name = "Z33";
+            this.Z33.ReadOnly = true;
+            this.Z33.Size = new System.Drawing.Size(49, 24);
+            this.Z33.TabIndex = 50;
+            this.Z33.Text = "z33";
+            // 
+            // label256
+            // 
+            this.label256.AutoSize = true;
+            this.label256.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label256.Location = new System.Drawing.Point(50, 204);
+            this.label256.Name = "label256";
+            this.label256.Size = new System.Drawing.Size(100, 19);
+            this.label256.TabIndex = 38;
+            this.label256.Text = "水箱上层水温：";
+            // 
+            // Z31
+            // 
+            this.Z31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z31.Location = new System.Drawing.Point(406, 28);
+            this.Z31.Name = "Z31";
+            this.Z31.ReadOnly = true;
+            this.Z31.Size = new System.Drawing.Size(49, 24);
+            this.Z31.TabIndex = 46;
+            this.Z31.Text = "z31";
+            // 
+            // label258
+            // 
+            this.label258.AutoSize = true;
+            this.label258.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label258.Location = new System.Drawing.Point(11, 290);
+            this.label258.Name = "label258";
+            this.label258.Size = new System.Drawing.Size(139, 19);
+            this.label258.TabIndex = 42;
+            this.label258.Text = "风机盘管出风口温度：";
+            // 
+            // Z30
+            // 
+            this.Z30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z30.Location = new System.Drawing.Point(167, 28);
+            this.Z30.Name = "Z30";
+            this.Z30.ReadOnly = true;
+            this.Z30.Size = new System.Drawing.Size(52, 24);
+            this.Z30.TabIndex = 43;
+            this.Z30.Text = "z30";
+            // 
+            // label259
+            // 
+            this.label259.AutoSize = true;
+            this.label259.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label259.Location = new System.Drawing.Point(271, 75);
+            this.label259.Name = "label259";
+            this.label259.Size = new System.Drawing.Size(130, 19);
+            this.label259.TabIndex = 3;
+            this.label259.Text = "水泵变频运行频率 ：";
+            // 
+            // label260
+            // 
+            this.label260.AutoSize = true;
+            this.label260.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label260.Location = new System.Drawing.Point(24, 161);
+            this.label260.Name = "label260";
+            this.label260.Size = new System.Drawing.Size(126, 19);
+            this.label260.TabIndex = 9;
+            this.label260.Text = "供冷冷水质量流量：";
+            // 
+            // label261
+            // 
+            this.label261.AutoSize = true;
+            this.label261.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label261.Location = new System.Drawing.Point(24, 75);
+            this.label261.Name = "label261";
+            this.label261.Size = new System.Drawing.Size(126, 19);
+            this.label261.TabIndex = 37;
+            this.label261.Text = "水泵变频运行功率：";
+            // 
+            // label262
+            // 
+            this.label262.AutoSize = true;
+            this.label262.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label262.Location = new System.Drawing.Point(24, 32);
+            this.label262.Name = "label262";
+            this.label262.Size = new System.Drawing.Size(126, 19);
+            this.label262.TabIndex = 1;
+            this.label262.Text = "水泵变频运行电压：";
+            // 
+            // label263
+            // 
+            this.label263.AutoSize = true;
+            this.label263.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label263.Location = new System.Drawing.Point(50, 247);
+            this.label263.Name = "label263";
+            this.label263.Size = new System.Drawing.Size(100, 19);
+            this.label263.TabIndex = 40;
+            this.label263.Text = "水箱下层水温：";
+            // 
+            // label264
+            // 
+            this.label264.AutoSize = true;
+            this.label264.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label264.Location = new System.Drawing.Point(321, 161);
+            this.label264.Name = "label264";
+            this.label264.Size = new System.Drawing.Size(89, 19);
+            this.label264.TabIndex = 41;
+            this.label264.Text = "冰块温度T6：";
+            // 
+            // label265
+            // 
+            this.label265.AutoSize = true;
+            this.label265.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label265.Location = new System.Drawing.Point(275, 32);
+            this.label265.Name = "label265";
+            this.label265.Size = new System.Drawing.Size(126, 19);
+            this.label265.TabIndex = 1;
+            this.label265.Text = "水泵变频运行电流：";
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel35.Controls.Add(this.groupBox光伏系统数据);
+            this.panel35.Controls.Add(this.button1);
+            this.panel35.Controls.Add(this.groupBox制冷系统);
+            this.panel35.Controls.Add(this.groupBox气象数据);
+            this.panel35.Location = new System.Drawing.Point(0, 82);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(550, 533);
+            this.panel35.TabIndex = 0;
+            // 
+            // groupBox光伏系统数据
+            // 
+            this.groupBox光伏系统数据.Controls.Add(this.label22);
+            this.groupBox光伏系统数据.Controls.Add(this.Z6);
+            this.groupBox光伏系统数据.Controls.Add(this.label271);
+            this.groupBox光伏系统数据.Controls.Add(this.label269);
+            this.groupBox光伏系统数据.Controls.Add(this.Z7);
+            this.groupBox光伏系统数据.Controls.Add(this.Z5);
+            this.groupBox光伏系统数据.Controls.Add(this.label229);
+            this.groupBox光伏系统数据.Controls.Add(this.label234);
+            this.groupBox光伏系统数据.Controls.Add(this.label238);
+            this.groupBox光伏系统数据.Controls.Add(this.label270);
+            this.groupBox光伏系统数据.Controls.Add(this.Z8);
+            this.groupBox光伏系统数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox光伏系统数据.Location = new System.Drawing.Point(14, 6);
+            this.groupBox光伏系统数据.Name = "groupBox光伏系统数据";
+            this.groupBox光伏系统数据.Size = new System.Drawing.Size(525, 100);
+            this.groupBox光伏系统数据.TabIndex = 50;
+            this.groupBox光伏系统数据.TabStop = false;
+            this.groupBox光伏系统数据.Text = "光伏系统数据";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Location = new System.Drawing.Point(293, 71);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(87, 19);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "直流表电能：";
+            // 
+            // Z6
+            // 
+            this.Z6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z6.Location = new System.Drawing.Point(396, 32);
+            this.Z6.Name = "Z6";
+            this.Z6.ReadOnly = true;
+            this.Z6.Size = new System.Drawing.Size(53, 24);
+            this.Z6.TabIndex = 4;
+            this.Z6.Text = "z6";
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label271.Location = new System.Drawing.Point(448, 35);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(18, 19);
+            this.label271.TabIndex = 51;
+            this.label271.Text = "A";
+            // 
+            // label269
+            // 
+            this.label269.AutoSize = true;
+            this.label269.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label269.Location = new System.Drawing.Point(204, 35);
+            this.label269.Name = "label269";
+            this.label269.Size = new System.Drawing.Size(18, 19);
+            this.label269.TabIndex = 49;
+            this.label269.Text = "V";
+            // 
+            // Z7
+            // 
+            this.Z7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z7.Location = new System.Drawing.Point(155, 69);
+            this.Z7.Name = "Z7";
+            this.Z7.ReadOnly = true;
+            this.Z7.Size = new System.Drawing.Size(49, 24);
+            this.Z7.TabIndex = 6;
+            this.Z7.Text = "z7";
+            // 
+            // Z5
+            // 
+            this.Z5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z5.Location = new System.Drawing.Point(155, 32);
+            this.Z5.Name = "Z5";
+            this.Z5.ReadOnly = true;
+            this.Z5.Size = new System.Drawing.Size(49, 24);
+            this.Z5.TabIndex = 2;
+            this.Z5.Text = "z5";
+            // 
+            // label229
+            // 
+            this.label229.AutoSize = true;
+            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label229.Location = new System.Drawing.Point(55, 72);
+            this.label229.Name = "label229";
+            this.label229.Size = new System.Drawing.Size(100, 19);
+            this.label229.TabIndex = 48;
+            this.label229.Text = "输出直流功率：";
+            // 
+            // label234
+            // 
+            this.label234.AutoSize = true;
+            this.label234.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label234.Location = new System.Drawing.Point(55, 35);
+            this.label234.Name = "label234";
+            this.label234.Size = new System.Drawing.Size(100, 19);
+            this.label234.TabIndex = 39;
+            this.label234.Text = "输出直流电压：";
+            // 
+            // label238
+            // 
+            this.label238.AutoSize = true;
+            this.label238.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label238.Location = new System.Drawing.Point(296, 35);
+            this.label238.Name = "label238";
+            this.label238.Size = new System.Drawing.Size(100, 19);
+            this.label238.TabIndex = 38;
+            this.label238.Text = "输出直流电流：";
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label270.Location = new System.Drawing.Point(204, 72);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(22, 19);
+            this.label270.TabIndex = 50;
+            this.label270.Text = "W";
+            // 
+            // Z8
+            // 
+            this.Z8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z8.Location = new System.Drawing.Point(400, 71);
+            this.Z8.Name = "Z8";
+            this.Z8.ReadOnly = true;
+            this.Z8.Size = new System.Drawing.Size(49, 24);
+            this.Z8.TabIndex = 8;
+            this.Z8.Text = "z8";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(405, 491);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "下一页";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // groupBox制冷系统
+            // 
+            this.groupBox制冷系统.Controls.Add(this.Z15);
+            this.groupBox制冷系统.Controls.Add(this.Z29);
+            this.groupBox制冷系统.Controls.Add(this.Z26);
+            this.groupBox制冷系统.Controls.Add(this.label52);
+            this.groupBox制冷系统.Controls.Add(this.label46);
+            this.groupBox制冷系统.Controls.Add(this.Z16);
+            this.groupBox制冷系统.Controls.Add(this.Z12);
+            this.groupBox制冷系统.Controls.Add(this.Z9);
+            this.groupBox制冷系统.Controls.Add(this.Z11);
+            this.groupBox制冷系统.Controls.Add(this.Z14);
+            this.groupBox制冷系统.Controls.Add(this.Z18);
+            this.groupBox制冷系统.Controls.Add(this.label51);
+            this.groupBox制冷系统.Controls.Add(this.Z21);
+            this.groupBox制冷系统.Controls.Add(this.Z20);
+            this.groupBox制冷系统.Controls.Add(this.label50);
+            this.groupBox制冷系统.Controls.Add(this.label49);
+            this.groupBox制冷系统.Controls.Add(this.label31);
+            this.groupBox制冷系统.Controls.Add(this.label30);
+            this.groupBox制冷系统.Controls.Add(this.label29);
+            this.groupBox制冷系统.Controls.Add(this.label28);
+            this.groupBox制冷系统.Controls.Add(this.label26);
+            this.groupBox制冷系统.Controls.Add(this.label25);
+            this.groupBox制冷系统.Controls.Add(this.label24);
+            this.groupBox制冷系统.Controls.Add(this.label23);
+            this.groupBox制冷系统.Controls.Add(this.Z17);
+            this.groupBox制冷系统.Controls.Add(this.label7);
+            this.groupBox制冷系统.Controls.Add(this.Z27);
+            this.groupBox制冷系统.Controls.Add(this.Z28);
+            this.groupBox制冷系统.Controls.Add(this.Z25);
+            this.groupBox制冷系统.Controls.Add(this.Z24);
+            this.groupBox制冷系统.Controls.Add(this.Z23);
+            this.groupBox制冷系统.Controls.Add(this.Z22);
+            this.groupBox制冷系统.Controls.Add(this.Z19);
+            this.groupBox制冷系统.Controls.Add(this.Z13);
+            this.groupBox制冷系统.Controls.Add(this.label275);
+            this.groupBox制冷系统.Controls.Add(this.label272);
+            this.groupBox制冷系统.Controls.Add(this.label233);
+            this.groupBox制冷系统.Controls.Add(this.label244);
+            this.groupBox制冷系统.Controls.Add(this.label230);
+            this.groupBox制冷系统.Controls.Add(this.Z10);
+            this.groupBox制冷系统.Controls.Add(this.label239);
+            this.groupBox制冷系统.Controls.Add(this.label235);
+            this.groupBox制冷系统.Controls.Add(this.label243);
+            this.groupBox制冷系统.Controls.Add(this.label231);
+            this.groupBox制冷系统.Controls.Add(this.label232);
+            this.groupBox制冷系统.Controls.Add(this.label237);
+            this.groupBox制冷系统.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox制冷系统.Location = new System.Drawing.Point(22, 123);
+            this.groupBox制冷系统.Name = "groupBox制冷系统";
+            this.groupBox制冷系统.Size = new System.Drawing.Size(514, 360);
+            this.groupBox制冷系统.TabIndex = 52;
+            this.groupBox制冷系统.TabStop = false;
+            this.groupBox制冷系统.Text = "制冷系统";
+            // 
+            // Z15
+            // 
+            this.Z15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z15.Location = new System.Drawing.Point(201, 102);
+            this.Z15.Name = "Z15";
+            this.Z15.ReadOnly = true;
+            this.Z15.Size = new System.Drawing.Size(53, 24);
+            this.Z15.TabIndex = 53;
+            this.Z15.Text = "z15";
+            // 
+            // Z29
+            // 
+            this.Z29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z29.Location = new System.Drawing.Point(413, 320);
+            this.Z29.Name = "Z29";
+            this.Z29.ReadOnly = true;
+            this.Z29.Size = new System.Drawing.Size(52, 24);
+            this.Z29.TabIndex = 90;
+            this.Z29.Text = "z29";
+            // 
+            // Z26
+            // 
+            this.Z26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z26.Location = new System.Drawing.Point(195, 285);
+            this.Z26.Name = "Z26";
+            this.Z26.ReadOnly = true;
+            this.Z26.Size = new System.Drawing.Size(52, 24);
+            this.Z26.TabIndex = 89;
+            this.Z26.Text = "z26";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label52.Location = new System.Drawing.Point(268, 215);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(120, 19);
+            this.label52.TabIndex = 88;
+            this.label52.Text = "a相电流不平衡度：";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label46.Location = new System.Drawing.Point(35, 215);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(120, 19);
+            this.label46.TabIndex = 87;
+            this.label46.Text = "a相电压不平衡度：";
+            // 
+            // Z16
+            // 
+            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z16.Location = new System.Drawing.Point(317, 104);
+            this.Z16.Name = "Z16";
+            this.Z16.ReadOnly = true;
+            this.Z16.Size = new System.Drawing.Size(49, 24);
+            this.Z16.TabIndex = 50;
+            this.Z16.Text = "z16";
+            // 
+            // Z12
+            // 
+            this.Z12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z12.Location = new System.Drawing.Point(206, 69);
+            this.Z12.Name = "Z12";
+            this.Z12.ReadOnly = true;
+            this.Z12.Size = new System.Drawing.Size(52, 24);
+            this.Z12.TabIndex = 47;
+            this.Z12.Text = "z12";
+            // 
+            // Z9
+            // 
+            this.Z9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z9.Location = new System.Drawing.Point(205, 35);
+            this.Z9.Name = "Z9";
+            this.Z9.ReadOnly = true;
+            this.Z9.Size = new System.Drawing.Size(49, 24);
+            this.Z9.TabIndex = 10;
+            this.Z9.Text = "z9";
+            // 
+            // Z11
+            // 
+            this.Z11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z11.Location = new System.Drawing.Point(420, 31);
+            this.Z11.Name = "Z11";
+            this.Z11.ReadOnly = true;
+            this.Z11.Size = new System.Drawing.Size(52, 24);
+            this.Z11.TabIndex = 43;
+            this.Z11.Text = "z11";
+            // 
+            // Z14
+            // 
+            this.Z14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z14.Location = new System.Drawing.Point(423, 71);
+            this.Z14.Name = "Z14";
+            this.Z14.ReadOnly = true;
+            this.Z14.Size = new System.Drawing.Size(49, 24);
+            this.Z14.TabIndex = 48;
+            this.Z14.Text = "z14";
+            // 
+            // Z18
+            // 
+            this.Z18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z18.Location = new System.Drawing.Point(197, 139);
+            this.Z18.Name = "Z18";
+            this.Z18.ReadOnly = true;
+            this.Z18.Size = new System.Drawing.Size(49, 24);
+            this.Z18.TabIndex = 86;
+            this.Z18.Text = "z18";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label51.Location = new System.Drawing.Point(81, 143);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(74, 19);
+            this.label51.TabIndex = 85;
+            this.label51.Text = "功率因素：";
+            // 
+            // Z21
+            // 
+            this.Z21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z21.Location = new System.Drawing.Point(416, 175);
+            this.Z21.Name = "Z21";
+            this.Z21.ReadOnly = true;
+            this.Z21.Size = new System.Drawing.Size(49, 24);
+            this.Z21.TabIndex = 84;
+            this.Z21.Text = "z21";
+            // 
+            // Z20
+            // 
+            this.Z20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z20.Location = new System.Drawing.Point(197, 175);
+            this.Z20.Name = "Z20";
+            this.Z20.ReadOnly = true;
+            this.Z20.Size = new System.Drawing.Size(49, 24);
+            this.Z20.TabIndex = 83;
+            this.Z20.Text = "z20";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label50.Location = new System.Drawing.Point(294, 179);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(94, 19);
+            this.label50.TabIndex = 82;
+            this.label50.Text = "a相畸变电流：";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label49.Location = new System.Drawing.Point(61, 179);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(94, 19);
+            this.label49.TabIndex = 81;
+            this.label49.Text = "a相畸变电压：";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label31.Location = new System.Drawing.Point(353, 106);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(61, 19);
+            this.label31.TabIndex = 79;
+            this.label31.Text = "总无功：";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label30.Location = new System.Drawing.Point(255, 106);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(61, 19);
+            this.label30.TabIndex = 78;
+            this.label30.Text = "总有功：";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label29.Location = new System.Drawing.Point(140, 106);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(61, 19);
+            this.label29.TabIndex = 77;
+            this.label29.Text = "总视在：";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label28.Location = new System.Drawing.Point(372, 70);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(42, 19);
+            this.label28.TabIndex = 76;
+            this.label28.Text = "c相：";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(264, 70);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(43, 19);
+            this.label26.TabIndex = 75;
+            this.label26.Text = "b相：";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.Location = new System.Drawing.Point(157, 70);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 19);
+            this.label25.TabIndex = 74;
+            this.label25.Text = "a相：";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label24.Location = new System.Drawing.Point(372, 34);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 19);
+            this.label24.TabIndex = 73;
+            this.label24.Text = "ca：";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label23.Location = new System.Drawing.Point(264, 34);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(37, 19);
+            this.label23.TabIndex = 72;
+            this.label23.Text = "bc：";
+            // 
+            // Z17
+            // 
+            this.Z17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z17.Location = new System.Drawing.Point(416, 103);
+            this.Z17.Name = "Z17";
+            this.Z17.ReadOnly = true;
+            this.Z17.Size = new System.Drawing.Size(49, 24);
+            this.Z17.TabIndex = 71;
+            this.Z17.Text = "z17";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(301, 143);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 19);
+            this.label7.TabIndex = 70;
+            this.label7.Text = "压缩机电能：";
+            // 
+            // Z27
+            // 
+            this.Z27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z27.Location = new System.Drawing.Point(415, 286);
+            this.Z27.Name = "Z27";
+            this.Z27.ReadOnly = true;
+            this.Z27.Size = new System.Drawing.Size(52, 24);
+            this.Z27.TabIndex = 69;
+            this.Z27.Text = "z27";
+            // 
+            // Z28
+            // 
+            this.Z28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z28.Location = new System.Drawing.Point(194, 320);
+            this.Z28.Name = "Z28";
+            this.Z28.ReadOnly = true;
+            this.Z28.Size = new System.Drawing.Size(52, 24);
+            this.Z28.TabIndex = 68;
+            this.Z28.Text = "z28";
+            // 
+            // Z25
+            // 
+            this.Z25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z25.Location = new System.Drawing.Point(414, 247);
+            this.Z25.Name = "Z25";
+            this.Z25.ReadOnly = true;
+            this.Z25.Size = new System.Drawing.Size(52, 24);
+            this.Z25.TabIndex = 67;
+            this.Z25.Text = "z25";
+            // 
+            // Z24
+            // 
+            this.Z24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z24.Location = new System.Drawing.Point(195, 247);
+            this.Z24.Name = "Z24";
+            this.Z24.ReadOnly = true;
+            this.Z24.Size = new System.Drawing.Size(52, 24);
+            this.Z24.TabIndex = 66;
+            this.Z24.Text = "z24";
+            // 
+            // Z23
+            // 
+            this.Z23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z23.Location = new System.Drawing.Point(414, 211);
+            this.Z23.Name = "Z23";
+            this.Z23.ReadOnly = true;
+            this.Z23.Size = new System.Drawing.Size(52, 24);
+            this.Z23.TabIndex = 65;
+            this.Z23.Text = "z23";
+            // 
+            // Z22
+            // 
+            this.Z22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z22.Location = new System.Drawing.Point(195, 211);
+            this.Z22.Name = "Z22";
+            this.Z22.ReadOnly = true;
+            this.Z22.Size = new System.Drawing.Size(52, 24);
+            this.Z22.TabIndex = 64;
+            this.Z22.Text = "z22";
+            // 
+            // Z19
+            // 
+            this.Z19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z19.Location = new System.Drawing.Point(414, 139);
+            this.Z19.Name = "Z19";
+            this.Z19.ReadOnly = true;
+            this.Z19.Size = new System.Drawing.Size(52, 24);
+            this.Z19.TabIndex = 63;
+            this.Z19.Text = "z19";
+            // 
+            // Z13
+            // 
+            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z13.Location = new System.Drawing.Point(310, 71);
+            this.Z13.Name = "Z13";
+            this.Z13.ReadOnly = true;
+            this.Z13.Size = new System.Drawing.Size(49, 24);
+            this.Z13.TabIndex = 46;
+            this.Z13.Text = "z13";
+            // 
+            // label275
+            // 
+            this.label275.AutoSize = true;
+            this.label275.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label275.Location = new System.Drawing.Point(210, 112);
+            this.label275.Name = "label275";
+            this.label275.Size = new System.Drawing.Size(0, 19);
+            this.label275.TabIndex = 54;
+            // 
+            // label272
+            // 
+            this.label272.AutoSize = true;
+            this.label272.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label272.Location = new System.Drawing.Point(157, 34);
+            this.label272.Name = "label272";
+            this.label272.Size = new System.Drawing.Size(37, 19);
+            this.label272.TabIndex = 51;
+            this.label272.Text = "ab：";
+            // 
+            // label233
+            // 
+            this.label233.AutoSize = true;
+            this.label233.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label233.Location = new System.Drawing.Point(276, 288);
+            this.label233.Name = "label233";
+            this.label233.Size = new System.Drawing.Size(113, 19);
+            this.label233.TabIndex = 38;
+            this.label233.Text = "冷凝器出口温度：";
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label244.Location = new System.Drawing.Point(279, 251);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(113, 19);
+            this.label244.TabIndex = 5;
+            this.label244.Text = "蒸发器出口压力：";
+            // 
+            // label230
+            // 
+            this.label230.AutoSize = true;
+            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label230.Location = new System.Drawing.Point(42, 323);
+            this.label230.Name = "label230";
+            this.label230.Size = new System.Drawing.Size(113, 19);
+            this.label230.TabIndex = 42;
+            this.label230.Text = "蒸发器出口温度：";
+            // 
+            // Z10
+            // 
+            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z10.Location = new System.Drawing.Point(314, 34);
+            this.Z10.Name = "Z10";
+            this.Z10.ReadOnly = true;
+            this.Z10.Size = new System.Drawing.Size(49, 24);
+            this.Z10.TabIndex = 42;
+            this.Z10.Text = "z10";
+            // 
+            // label239
+            // 
+            this.label239.AutoSize = true;
+            this.label239.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label239.Location = new System.Drawing.Point(16, 35);
+            this.label239.Name = "label239";
+            this.label239.Size = new System.Drawing.Size(139, 19);
+            this.label239.TabIndex = 9;
+            this.label239.Text = "压缩机运行交流电压：";
+            // 
+            // label235
+            // 
+            this.label235.AutoSize = true;
+            this.label235.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label235.Location = new System.Drawing.Point(16, 107);
+            this.label235.Name = "label235";
+            this.label235.Size = new System.Drawing.Size(139, 19);
+            this.label235.TabIndex = 37;
+            this.label235.Text = "压缩机运行交流功率：";
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label243.Location = new System.Drawing.Point(16, 71);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(139, 19);
+            this.label243.TabIndex = 1;
+            this.label243.Text = "压缩机运行交流电流：";
+            // 
+            // label231
+            // 
+            this.label231.AutoSize = true;
+            this.label231.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label231.Location = new System.Drawing.Point(280, 326);
+            this.label231.Name = "label231";
+            this.label231.Size = new System.Drawing.Size(113, 19);
+            this.label231.TabIndex = 40;
+            this.label231.Text = "蒸发器入口温度：";
+            // 
+            // label232
+            // 
+            this.label232.AutoSize = true;
+            this.label232.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label232.Location = new System.Drawing.Point(42, 251);
+            this.label232.Name = "label232";
+            this.label232.Size = new System.Drawing.Size(113, 19);
+            this.label232.TabIndex = 41;
+            this.label232.Text = "压缩机排气压力：";
+            // 
+            // label237
+            // 
+            this.label237.AutoSize = true;
+            this.label237.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label237.Location = new System.Drawing.Point(42, 287);
+            this.label237.Name = "label237";
+            this.label237.Size = new System.Drawing.Size(113, 19);
+            this.label237.TabIndex = 36;
+            this.label237.Text = "压缩机排气温度：";
+            // 
+            // groupBox气象数据
+            // 
+            this.groupBox气象数据.Controls.Add(this.Z2);
+            this.groupBox气象数据.Controls.Add(this.Z3);
+            this.groupBox气象数据.Controls.Add(this.label268);
+            this.groupBox气象数据.Controls.Add(this.label267);
+            this.groupBox气象数据.Controls.Add(this.label255);
+            this.groupBox气象数据.Controls.Add(this.Z1);
+            this.groupBox气象数据.Controls.Add(this.label242);
+            this.groupBox气象数据.Controls.Add(this.label241);
+            this.groupBox气象数据.Controls.Add(this.Z4);
+            this.groupBox气象数据.Controls.Add(this.label236);
+            this.groupBox气象数据.Controls.Add(this.label240);
+            this.groupBox气象数据.Controls.Add(this.label250);
+            this.groupBox气象数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox气象数据.Location = new System.Drawing.Point(20, 5);
+            this.groupBox气象数据.Name = "groupBox气象数据";
+            this.groupBox气象数据.Size = new System.Drawing.Size(510, 97);
+            this.groupBox气象数据.TabIndex = 49;
+            this.groupBox气象数据.TabStop = false;
+            this.groupBox气象数据.Text = "气象数据";
+            this.groupBox气象数据.Visible = false;
+            // 
+            // Z2
+            // 
+            this.Z2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z2.Location = new System.Drawing.Point(396, 32);
+            this.Z2.Name = "Z2";
+            this.Z2.ReadOnly = true;
+            this.Z2.Size = new System.Drawing.Size(53, 24);
+            this.Z2.TabIndex = 5;
+            this.Z2.Text = "z2";
+            // 
+            // Z3
+            // 
+            this.Z3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z3.Location = new System.Drawing.Point(155, 69);
+            this.Z3.Name = "Z3";
+            this.Z3.ReadOnly = true;
+            this.Z3.Size = new System.Drawing.Size(49, 24);
+            this.Z3.TabIndex = 6;
+            this.Z3.Text = "z3";
+            // 
+            // label268
+            // 
+            this.label268.AutoSize = true;
+            this.label268.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label268.Location = new System.Drawing.Point(494, 71);
+            this.label268.Name = "label268";
+            this.label268.Size = new System.Drawing.Size(0, 19);
+            this.label268.TabIndex = 51;
+            // 
+            // label267
+            // 
+            this.label267.AutoSize = true;
+            this.label267.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label267.Location = new System.Drawing.Point(448, 35);
+            this.label267.Name = "label267";
+            this.label267.Size = new System.Drawing.Size(45, 19);
+            this.label267.TabIndex = 50;
+            this.label267.Text = "W/m²";
+            // 
+            // label255
+            // 
+            this.label255.AutoSize = true;
+            this.label255.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label255.Location = new System.Drawing.Point(204, 72);
+            this.label255.Name = "label255";
+            this.label255.Size = new System.Drawing.Size(33, 19);
+            this.label255.TabIndex = 49;
+            this.label255.Text = "m/s";
+            // 
+            // Z1
+            // 
+            this.Z1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z1.Location = new System.Drawing.Point(155, 32);
+            this.Z1.Name = "Z1";
+            this.Z1.ReadOnly = true;
+            this.Z1.Size = new System.Drawing.Size(49, 24);
+            this.Z1.TabIndex = 4;
+            this.Z1.Text = "z1";
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label242.Location = new System.Drawing.Point(81, 35);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(74, 19);
+            this.label242.TabIndex = 2;
+            this.label242.Text = "环境温度：";
+            // 
+            // label241
+            // 
+            this.label241.AutoSize = true;
+            this.label241.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label241.Location = new System.Drawing.Point(296, 35);
+            this.label241.Name = "label241";
+            this.label241.Size = new System.Drawing.Size(100, 19);
+            this.label241.TabIndex = 3;
+            this.label241.Text = "太阳能辐照度：";
+            // 
+            // Z4
+            // 
+            this.Z4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z4.Location = new System.Drawing.Point(396, 69);
+            this.Z4.Name = "Z4";
+            this.Z4.ReadOnly = true;
+            this.Z4.Size = new System.Drawing.Size(53, 24);
+            this.Z4.TabIndex = 47;
+            this.Z4.Text = "z4";
+            // 
+            // label236
+            // 
+            this.label236.AutoSize = true;
+            this.label236.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label236.Location = new System.Drawing.Point(107, 72);
+            this.label236.Name = "label236";
+            this.label236.Size = new System.Drawing.Size(48, 19);
+            this.label236.TabIndex = 46;
+            this.label236.Text = "风速：";
+            // 
+            // label240
+            // 
+            this.label240.AutoSize = true;
+            this.label240.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label240.Location = new System.Drawing.Point(348, 72);
+            this.label240.Name = "label240";
+            this.label240.Size = new System.Drawing.Size(48, 19);
+            this.label240.TabIndex = 7;
+            this.label240.Text = "湿度：";
+            // 
+            // label250
+            // 
+            this.label250.AutoSize = true;
+            this.label250.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label250.Location = new System.Drawing.Point(204, 35);
+            this.label250.Name = "label250";
+            this.label250.Size = new System.Drawing.Size(22, 19);
+            this.label250.TabIndex = 48;
+            this.label250.Text = "℃";
+            // 
+            // 维护登记tabPage9
+            // 
+            this.维护登记tabPage9.Controls.Add(this.panel55);
+            this.维护登记tabPage9.Location = new System.Drawing.Point(4, 30);
+            this.维护登记tabPage9.Name = "维护登记tabPage9";
+            this.维护登记tabPage9.Size = new System.Drawing.Size(1029, 612);
+            this.维护登记tabPage9.TabIndex = 9;
+            this.维护登记tabPage9.Text = "维护登记";
+            this.维护登记tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // panel55
+            // 
+            this.panel55.Controls.Add(this.录入被更换表数据groupBox84);
+            this.panel55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel55.Location = new System.Drawing.Point(0, 0);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(1029, 612);
+            this.panel55.TabIndex = 0;
+            // 
+            // 录入被更换表数据groupBox84
+            // 
+            this.录入被更换表数据groupBox84.Controls.Add(this.comboBox2);
+            this.录入被更换表数据groupBox84.Controls.Add(this.comboBox1);
+            this.录入被更换表数据groupBox84.Controls.Add(this.label1056);
+            this.录入被更换表数据groupBox84.Controls.Add(this.label1055);
+            this.录入被更换表数据groupBox84.Controls.Add(this.录入热量表数据);
+            this.录入被更换表数据groupBox84.Controls.Add(this.录入电表数据);
+            this.录入被更换表数据groupBox84.Controls.Add(this.热量表值录入textBox246);
+            this.录入被更换表数据groupBox84.Controls.Add(this.电表值录入textBox245);
+            this.录入被更换表数据groupBox84.Controls.Add(this.登记老热量表值label1056);
+            this.录入被更换表数据groupBox84.Controls.Add(this.登记老电表值label1055);
+            this.录入被更换表数据groupBox84.Location = new System.Drawing.Point(252, 120);
+            this.录入被更换表数据groupBox84.Name = "录入被更换表数据groupBox84";
+            this.录入被更换表数据groupBox84.Size = new System.Drawing.Size(600, 300);
+            this.录入被更换表数据groupBox84.TabIndex = 0;
+            this.录入被更换表数据groupBox84.TabStop = false;
+            this.录入被更换表数据groupBox84.Text = "录入被更换表的数据";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.projectInfoBindingSource1;
+            this.comboBox2.DisplayMember = "ProjectName";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(374, 67);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(214, 29);
+            this.comboBox2.TabIndex = 12;
+            this.comboBox2.ValueMember = "ProjectName";
+            // 
             // projectInfoBindingSource1
             // 
             this.projectInfoBindingSource1.DataMember = "ProjectInfo";
@@ -1652,6 +4377,17 @@
             this.energyTestingDataSet1.DataSetName = "EnergyTestingDataSet1";
             this.energyTestingDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.projectInfoBindingSource;
+            this.comboBox1.DisplayMember = "AreaName";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(169, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 29);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.ValueMember = "AreaName";
+            // 
             // projectInfoBindingSource
             // 
             this.projectInfoBindingSource.DataMember = "ProjectInfo";
@@ -1661,6 +4397,354 @@
             // 
             this.energyTestingDataSet.DataSetName = "EnergyTestingDataSet";
             this.energyTestingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1056
+            // 
+            this.label1056.AutoSize = true;
+            this.label1056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1056.Location = new System.Drawing.Point(88, 71);
+            this.label1056.Name = "label1056";
+            this.label1056.Size = new System.Drawing.Size(58, 21);
+            this.label1056.TabIndex = 10;
+            this.label1056.Text = "地区：";
+            // 
+            // label1055
+            // 
+            this.label1055.AutoSize = true;
+            this.label1055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1055.Location = new System.Drawing.Point(309, 71);
+            this.label1055.Name = "label1055";
+            this.label1055.Size = new System.Drawing.Size(58, 21);
+            this.label1055.TabIndex = 9;
+            this.label1055.Text = "项目：";
+            // 
+            // 录入热量表数据
+            // 
+            this.录入热量表数据.Location = new System.Drawing.Point(309, 177);
+            this.录入热量表数据.Name = "录入热量表数据";
+            this.录入热量表数据.Size = new System.Drawing.Size(75, 28);
+            this.录入热量表数据.TabIndex = 6;
+            this.录入热量表数据.Text = "录入";
+            this.录入热量表数据.UseVisualStyleBackColor = true;
+            this.录入热量表数据.Click += new System.EventHandler(this.录入热量表数据_Click);
+            // 
+            // 录入电表数据
+            // 
+            this.录入电表数据.Location = new System.Drawing.Point(309, 122);
+            this.录入电表数据.Name = "录入电表数据";
+            this.录入电表数据.Size = new System.Drawing.Size(75, 28);
+            this.录入电表数据.TabIndex = 4;
+            this.录入电表数据.Text = "录入";
+            this.录入电表数据.UseVisualStyleBackColor = true;
+            this.录入电表数据.Click += new System.EventHandler(this.录入电表数据_Click);
+            // 
+            // 热量表值录入textBox246
+            // 
+            this.热量表值录入textBox246.Location = new System.Drawing.Point(169, 180);
+            this.热量表值录入textBox246.Name = "热量表值录入textBox246";
+            this.热量表值录入textBox246.Size = new System.Drawing.Size(100, 29);
+            this.热量表值录入textBox246.TabIndex = 3;
+            // 
+            // 电表值录入textBox245
+            // 
+            this.电表值录入textBox245.Location = new System.Drawing.Point(169, 123);
+            this.电表值录入textBox245.Name = "电表值录入textBox245";
+            this.电表值录入textBox245.Size = new System.Drawing.Size(100, 29);
+            this.电表值录入textBox245.TabIndex = 2;
+            // 
+            // 登记老热量表值label1056
+            // 
+            this.登记老热量表值label1056.AutoSize = true;
+            this.登记老热量表值label1056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.登记老热量表值label1056.Location = new System.Drawing.Point(74, 183);
+            this.登记老热量表值label1056.Name = "登记老热量表值label1056";
+            this.登记老热量表值label1056.Size = new System.Drawing.Size(74, 21);
+            this.登记老热量表值label1056.TabIndex = 1;
+            this.登记老热量表值label1056.Text = "热量表：";
+            // 
+            // 登记老电表值label1055
+            // 
+            this.登记老电表值label1055.AutoSize = true;
+            this.登记老电表值label1055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.登记老电表值label1055.Location = new System.Drawing.Point(88, 127);
+            this.登记老电表值label1055.Name = "登记老电表值label1055";
+            this.登记老电表值label1055.Size = new System.Drawing.Size(58, 21);
+            this.登记老电表值label1055.TabIndex = 0;
+            this.登记老电表值label1055.Text = "电表：";
+            // 
+            // 系统运行信息tabPage
+            // 
+            this.系统运行信息tabPage.Controls.Add(this.splitContainer3);
+            this.系统运行信息tabPage.Location = new System.Drawing.Point(4, 30);
+            this.系统运行信息tabPage.Name = "系统运行信息tabPage";
+            this.系统运行信息tabPage.Size = new System.Drawing.Size(1029, 612);
+            this.系统运行信息tabPage.TabIndex = 2;
+            this.系统运行信息tabPage.Text = "系统运行信息";
+            this.系统运行信息tabPage.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.groupBox18);
+            this.splitContainer3.Panel1.Controls.Add(this.groupBox17);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.groupBox14);
+            this.splitContainer3.Size = new System.Drawing.Size(1029, 612);
+            this.splitContainer3.SplitterDistance = 249;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.panel15);
+            this.groupBox18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox18.Location = new System.Drawing.Point(503, 0);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(480, 245);
+            this.groupBox18.TabIndex = 1;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "控制器信息";
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.button61);
+            this.panel15.Controls.Add(this.label177);
+            this.panel15.Controls.Add(this.txtInfoProject);
+            this.panel15.Controls.Add(this.label178);
+            this.panel15.Controls.Add(this.txtInfoCollector);
+            this.panel15.Controls.Add(this.label179);
+            this.panel15.Controls.Add(this.txtInfoCollectorCode);
+            this.panel15.Controls.Add(this.label180);
+            this.panel15.Controls.Add(this.参数回发button6);
+            this.panel15.Controls.Add(this.txtInfoCollectPointNum);
+            this.panel15.Controls.Add(this.txtInfoArea);
+            this.panel15.Controls.Add(this.label181);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(3, 25);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(474, 217);
+            this.panel15.TabIndex = 14;
+            // 
+            // button61
+            // 
+            this.button61.Location = new System.Drawing.Point(220, 181);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(84, 29);
+            this.button61.TabIndex = 136;
+            this.button61.Text = "清空列表";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click_1);
+            // 
+            // label177
+            // 
+            this.label177.BackColor = System.Drawing.SystemColors.Window;
+            this.label177.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label177.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label177.Location = new System.Drawing.Point(0, 25);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(178, 23);
+            this.label177.TabIndex = 5;
+            this.label177.Text = "所属项目";
+            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtInfoProject
+            // 
+            this.txtInfoProject.BackColor = System.Drawing.SystemColors.Window;
+            this.txtInfoProject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInfoProject.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInfoProject.ForeColor = System.Drawing.Color.Black;
+            this.txtInfoProject.Location = new System.Drawing.Point(178, 25);
+            this.txtInfoProject.Name = "txtInfoProject";
+            this.txtInfoProject.ReadOnly = true;
+            this.txtInfoProject.Size = new System.Drawing.Size(293, 23);
+            this.txtInfoProject.TabIndex = 6;
+            this.txtInfoProject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label178
+            // 
+            this.label178.BackColor = System.Drawing.SystemColors.Control;
+            this.label178.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label178.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label178.Location = new System.Drawing.Point(0, 48);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(178, 23);
+            this.label178.TabIndex = 7;
+            this.label178.Text = "采集器名称";
+            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtInfoCollector
+            // 
+            this.txtInfoCollector.BackColor = System.Drawing.SystemColors.Control;
+            this.txtInfoCollector.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInfoCollector.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInfoCollector.ForeColor = System.Drawing.Color.Black;
+            this.txtInfoCollector.Location = new System.Drawing.Point(178, 48);
+            this.txtInfoCollector.Name = "txtInfoCollector";
+            this.txtInfoCollector.ReadOnly = true;
+            this.txtInfoCollector.Size = new System.Drawing.Size(293, 23);
+            this.txtInfoCollector.TabIndex = 8;
+            this.txtInfoCollector.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label179
+            // 
+            this.label179.BackColor = System.Drawing.SystemColors.Window;
+            this.label179.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label179.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label179.Location = new System.Drawing.Point(0, 71);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(178, 23);
+            this.label179.TabIndex = 9;
+            this.label179.Text = "采集器编码";
+            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtInfoCollectorCode
+            // 
+            this.txtInfoCollectorCode.BackColor = System.Drawing.SystemColors.Window;
+            this.txtInfoCollectorCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInfoCollectorCode.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInfoCollectorCode.ForeColor = System.Drawing.Color.Black;
+            this.txtInfoCollectorCode.Location = new System.Drawing.Point(178, 71);
+            this.txtInfoCollectorCode.Name = "txtInfoCollectorCode";
+            this.txtInfoCollectorCode.ReadOnly = true;
+            this.txtInfoCollectorCode.Size = new System.Drawing.Size(293, 23);
+            this.txtInfoCollectorCode.TabIndex = 10;
+            this.txtInfoCollectorCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label180
+            // 
+            this.label180.BackColor = System.Drawing.SystemColors.Control;
+            this.label180.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label180.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label180.Location = new System.Drawing.Point(0, 94);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(178, 23);
+            this.label180.TabIndex = 11;
+            this.label180.Text = "采集点数量";
+            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // 参数回发button6
+            // 
+            this.参数回发button6.Location = new System.Drawing.Point(358, 181);
+            this.参数回发button6.Name = "参数回发button6";
+            this.参数回发button6.Size = new System.Drawing.Size(97, 29);
+            this.参数回发button6.TabIndex = 135;
+            this.参数回发button6.Text = "重启中继器";
+            this.参数回发button6.UseVisualStyleBackColor = true;
+            this.参数回发button6.Click += new System.EventHandler(this.参数回发button6_Click);
+            // 
+            // txtInfoCollectPointNum
+            // 
+            this.txtInfoCollectPointNum.BackColor = System.Drawing.SystemColors.Control;
+            this.txtInfoCollectPointNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInfoCollectPointNum.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInfoCollectPointNum.ForeColor = System.Drawing.Color.Black;
+            this.txtInfoCollectPointNum.Location = new System.Drawing.Point(178, 94);
+            this.txtInfoCollectPointNum.Name = "txtInfoCollectPointNum";
+            this.txtInfoCollectPointNum.ReadOnly = true;
+            this.txtInfoCollectPointNum.Size = new System.Drawing.Size(293, 23);
+            this.txtInfoCollectPointNum.TabIndex = 12;
+            this.txtInfoCollectPointNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtInfoArea
+            // 
+            this.txtInfoArea.BackColor = System.Drawing.SystemColors.Control;
+            this.txtInfoArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInfoArea.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInfoArea.ForeColor = System.Drawing.Color.Black;
+            this.txtInfoArea.Location = new System.Drawing.Point(178, 2);
+            this.txtInfoArea.Name = "txtInfoArea";
+            this.txtInfoArea.ReadOnly = true;
+            this.txtInfoArea.Size = new System.Drawing.Size(293, 23);
+            this.txtInfoArea.TabIndex = 4;
+            this.txtInfoArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label181
+            // 
+            this.label181.BackColor = System.Drawing.SystemColors.Control;
+            this.label181.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label181.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label181.Location = new System.Drawing.Point(0, 2);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(178, 23);
+            this.label181.TabIndex = 3;
+            this.label181.Text = "所属地区";
+            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.lsvServer);
+            this.groupBox17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox17.Location = new System.Drawing.Point(0, 0);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(503, 245);
+            this.groupBox17.TabIndex = 0;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "服务器信息";
+            // 
+            // lsvServer
+            // 
+            this.lsvServer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lsvServer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clmServer,
+            this.clmIP,
+            this.clmPort});
+            this.lsvServer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lsvServer.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lsvServer.GridLines = true;
+            this.lsvServer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.lsvServer.Location = new System.Drawing.Point(3, 25);
+            this.lsvServer.Name = "lsvServer";
+            this.lsvServer.Size = new System.Drawing.Size(497, 217);
+            this.lsvServer.TabIndex = 2;
+            this.lsvServer.UseCompatibleStateImageBehavior = false;
+            this.lsvServer.View = System.Windows.Forms.View.Details;
+            // 
+            // clmServer
+            // 
+            this.clmServer.Text = "中心服务器";
+            this.clmServer.Width = 151;
+            // 
+            // clmIP
+            // 
+            this.clmIP.Text = "IP地址";
+            this.clmIP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clmIP.Width = 206;
+            // 
+            // clmPort
+            // 
+            this.clmPort.Text = "端口号";
+            this.clmPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clmPort.Width = 135;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.listBoxStatus);
+            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox14.Location = new System.Drawing.Point(0, 0);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(1025, 355);
+            this.groupBox14.TabIndex = 0;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "系统运行状态显示";
+            // 
+            // listBoxStatus
+            // 
+            this.listBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxStatus.FormattingEnabled = true;
+            this.listBoxStatus.ItemHeight = 21;
+            this.listBoxStatus.Location = new System.Drawing.Point(3, 25);
+            this.listBoxStatus.Name = "listBoxStatus";
+            this.listBoxStatus.Size = new System.Drawing.Size(1019, 319);
+            this.listBoxStatus.TabIndex = 0;
             // 
             // statusStrip1
             // 
@@ -4632,7 +7716,6 @@
             // 
             this.splitContainer15.Panel2.Controls.Add(this.panel19);
             this.splitContainer15.Size = new System.Drawing.Size(613, 473);
-            this.splitContainer15.SplitterDistance = 51;
             this.splitContainer15.TabIndex = 32;
             // 
             // panel17
@@ -4641,7 +7724,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(609, 47);
+            this.panel17.Size = new System.Drawing.Size(609, 46);
             this.panel17.TabIndex = 57;
             // 
             // groupBox20
@@ -4656,7 +7739,7 @@
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox20.Location = new System.Drawing.Point(0, 0);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(609, 47);
+            this.groupBox20.Size = new System.Drawing.Size(609, 46);
             this.groupBox20.TabIndex = 57;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "集热循环参数";
@@ -4729,7 +7812,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(609, 47);
+            this.panel18.Size = new System.Drawing.Size(609, 46);
             this.panel18.TabIndex = 57;
             // 
             // groupBox21
@@ -4744,7 +7827,7 @@
             this.groupBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox21.Location = new System.Drawing.Point(0, 0);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(609, 47);
+            this.groupBox21.Size = new System.Drawing.Size(609, 46);
             this.groupBox21.TabIndex = 58;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "集热定温循环参数";
@@ -4818,7 +7901,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(0, 0);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(609, 414);
+            this.panel19.Size = new System.Drawing.Size(609, 415);
             this.panel19.TabIndex = 32;
             // 
             // groupBox22
@@ -9982,3090 +13065,6 @@
             this.timerMX100.Interval = 1000;
             this.timerMX100.Tick += new System.EventHandler(this.timerMX100_Tick_1);
             // 
-            // 系统运行信息tabPage
-            // 
-            this.系统运行信息tabPage.Controls.Add(this.splitContainer3);
-            this.系统运行信息tabPage.Location = new System.Drawing.Point(4, 30);
-            this.系统运行信息tabPage.Name = "系统运行信息tabPage";
-            this.系统运行信息tabPage.Size = new System.Drawing.Size(1029, 612);
-            this.系统运行信息tabPage.TabIndex = 2;
-            this.系统运行信息tabPage.Text = "系统运行信息";
-            this.系统运行信息tabPage.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer3
-            // 
-            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.groupBox18);
-            this.splitContainer3.Panel1.Controls.Add(this.groupBox17);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.Controls.Add(this.groupBox14);
-            this.splitContainer3.Size = new System.Drawing.Size(1029, 612);
-            this.splitContainer3.SplitterDistance = 249;
-            this.splitContainer3.TabIndex = 0;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.listBoxStatus);
-            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox14.Location = new System.Drawing.Point(0, 0);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(1025, 355);
-            this.groupBox14.TabIndex = 0;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "系统运行状态显示";
-            // 
-            // listBoxStatus
-            // 
-            this.listBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxStatus.FormattingEnabled = true;
-            this.listBoxStatus.ItemHeight = 21;
-            this.listBoxStatus.Location = new System.Drawing.Point(3, 25);
-            this.listBoxStatus.Name = "listBoxStatus";
-            this.listBoxStatus.Size = new System.Drawing.Size(1019, 319);
-            this.listBoxStatus.TabIndex = 0;
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.lsvServer);
-            this.groupBox17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox17.Location = new System.Drawing.Point(0, 0);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(503, 245);
-            this.groupBox17.TabIndex = 0;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "服务器信息";
-            // 
-            // lsvServer
-            // 
-            this.lsvServer.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lsvServer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.clmServer,
-            this.clmIP,
-            this.clmPort});
-            this.lsvServer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lsvServer.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lsvServer.GridLines = true;
-            this.lsvServer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.lsvServer.Location = new System.Drawing.Point(3, 25);
-            this.lsvServer.Name = "lsvServer";
-            this.lsvServer.Size = new System.Drawing.Size(497, 217);
-            this.lsvServer.TabIndex = 2;
-            this.lsvServer.UseCompatibleStateImageBehavior = false;
-            this.lsvServer.View = System.Windows.Forms.View.Details;
-            // 
-            // clmServer
-            // 
-            this.clmServer.Text = "中心服务器";
-            this.clmServer.Width = 151;
-            // 
-            // clmIP
-            // 
-            this.clmIP.Text = "IP地址";
-            this.clmIP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmIP.Width = 206;
-            // 
-            // clmPort
-            // 
-            this.clmPort.Text = "端口号";
-            this.clmPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmPort.Width = 135;
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.panel15);
-            this.groupBox18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox18.Location = new System.Drawing.Point(503, 0);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(480, 245);
-            this.groupBox18.TabIndex = 1;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "控制器信息";
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.button61);
-            this.panel15.Controls.Add(this.label177);
-            this.panel15.Controls.Add(this.txtInfoProject);
-            this.panel15.Controls.Add(this.label178);
-            this.panel15.Controls.Add(this.txtInfoCollector);
-            this.panel15.Controls.Add(this.label179);
-            this.panel15.Controls.Add(this.txtInfoCollectorCode);
-            this.panel15.Controls.Add(this.label180);
-            this.panel15.Controls.Add(this.参数回发button6);
-            this.panel15.Controls.Add(this.txtInfoCollectPointNum);
-            this.panel15.Controls.Add(this.txtInfoArea);
-            this.panel15.Controls.Add(this.label181);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(3, 25);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(474, 217);
-            this.panel15.TabIndex = 14;
-            // 
-            // label181
-            // 
-            this.label181.BackColor = System.Drawing.SystemColors.Control;
-            this.label181.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label181.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label181.Location = new System.Drawing.Point(0, 2);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(178, 23);
-            this.label181.TabIndex = 3;
-            this.label181.Text = "所属地区";
-            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtInfoArea
-            // 
-            this.txtInfoArea.BackColor = System.Drawing.SystemColors.Control;
-            this.txtInfoArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfoArea.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtInfoArea.ForeColor = System.Drawing.Color.Black;
-            this.txtInfoArea.Location = new System.Drawing.Point(178, 2);
-            this.txtInfoArea.Name = "txtInfoArea";
-            this.txtInfoArea.ReadOnly = true;
-            this.txtInfoArea.Size = new System.Drawing.Size(293, 23);
-            this.txtInfoArea.TabIndex = 4;
-            this.txtInfoArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtInfoCollectPointNum
-            // 
-            this.txtInfoCollectPointNum.BackColor = System.Drawing.SystemColors.Control;
-            this.txtInfoCollectPointNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfoCollectPointNum.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtInfoCollectPointNum.ForeColor = System.Drawing.Color.Black;
-            this.txtInfoCollectPointNum.Location = new System.Drawing.Point(178, 94);
-            this.txtInfoCollectPointNum.Name = "txtInfoCollectPointNum";
-            this.txtInfoCollectPointNum.ReadOnly = true;
-            this.txtInfoCollectPointNum.Size = new System.Drawing.Size(293, 23);
-            this.txtInfoCollectPointNum.TabIndex = 12;
-            this.txtInfoCollectPointNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // 参数回发button6
-            // 
-            this.参数回发button6.Location = new System.Drawing.Point(358, 181);
-            this.参数回发button6.Name = "参数回发button6";
-            this.参数回发button6.Size = new System.Drawing.Size(97, 29);
-            this.参数回发button6.TabIndex = 135;
-            this.参数回发button6.Text = "重启中继器";
-            this.参数回发button6.UseVisualStyleBackColor = true;
-            this.参数回发button6.Click += new System.EventHandler(this.参数回发button6_Click);
-            // 
-            // label180
-            // 
-            this.label180.BackColor = System.Drawing.SystemColors.Control;
-            this.label180.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label180.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label180.Location = new System.Drawing.Point(0, 94);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(178, 23);
-            this.label180.TabIndex = 11;
-            this.label180.Text = "采集点数量";
-            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtInfoCollectorCode
-            // 
-            this.txtInfoCollectorCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtInfoCollectorCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfoCollectorCode.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtInfoCollectorCode.ForeColor = System.Drawing.Color.Black;
-            this.txtInfoCollectorCode.Location = new System.Drawing.Point(178, 71);
-            this.txtInfoCollectorCode.Name = "txtInfoCollectorCode";
-            this.txtInfoCollectorCode.ReadOnly = true;
-            this.txtInfoCollectorCode.Size = new System.Drawing.Size(293, 23);
-            this.txtInfoCollectorCode.TabIndex = 10;
-            this.txtInfoCollectorCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label179
-            // 
-            this.label179.BackColor = System.Drawing.SystemColors.Window;
-            this.label179.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label179.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label179.Location = new System.Drawing.Point(0, 71);
-            this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(178, 23);
-            this.label179.TabIndex = 9;
-            this.label179.Text = "采集器编码";
-            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtInfoCollector
-            // 
-            this.txtInfoCollector.BackColor = System.Drawing.SystemColors.Control;
-            this.txtInfoCollector.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfoCollector.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtInfoCollector.ForeColor = System.Drawing.Color.Black;
-            this.txtInfoCollector.Location = new System.Drawing.Point(178, 48);
-            this.txtInfoCollector.Name = "txtInfoCollector";
-            this.txtInfoCollector.ReadOnly = true;
-            this.txtInfoCollector.Size = new System.Drawing.Size(293, 23);
-            this.txtInfoCollector.TabIndex = 8;
-            this.txtInfoCollector.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label178
-            // 
-            this.label178.BackColor = System.Drawing.SystemColors.Control;
-            this.label178.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label178.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label178.Location = new System.Drawing.Point(0, 48);
-            this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(178, 23);
-            this.label178.TabIndex = 7;
-            this.label178.Text = "采集器名称";
-            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtInfoProject
-            // 
-            this.txtInfoProject.BackColor = System.Drawing.SystemColors.Window;
-            this.txtInfoProject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfoProject.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtInfoProject.ForeColor = System.Drawing.Color.Black;
-            this.txtInfoProject.Location = new System.Drawing.Point(178, 25);
-            this.txtInfoProject.Name = "txtInfoProject";
-            this.txtInfoProject.ReadOnly = true;
-            this.txtInfoProject.Size = new System.Drawing.Size(293, 23);
-            this.txtInfoProject.TabIndex = 6;
-            this.txtInfoProject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label177
-            // 
-            this.label177.BackColor = System.Drawing.SystemColors.Window;
-            this.label177.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label177.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label177.Location = new System.Drawing.Point(0, 25);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(178, 23);
-            this.label177.TabIndex = 5;
-            this.label177.Text = "所属项目";
-            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button61
-            // 
-            this.button61.Location = new System.Drawing.Point(220, 181);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(84, 29);
-            this.button61.TabIndex = 136;
-            this.button61.Text = "清空列表";
-            this.button61.UseVisualStyleBackColor = true;
-            this.button61.Click += new System.EventHandler(this.button61_Click_1);
-            // 
-            // 维护登记tabPage9
-            // 
-            this.维护登记tabPage9.Controls.Add(this.panel55);
-            this.维护登记tabPage9.Location = new System.Drawing.Point(4, 30);
-            this.维护登记tabPage9.Name = "维护登记tabPage9";
-            this.维护登记tabPage9.Size = new System.Drawing.Size(1029, 612);
-            this.维护登记tabPage9.TabIndex = 9;
-            this.维护登记tabPage9.Text = "维护登记";
-            this.维护登记tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // panel55
-            // 
-            this.panel55.Controls.Add(this.录入被更换表数据groupBox84);
-            this.panel55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel55.Location = new System.Drawing.Point(0, 0);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(1029, 612);
-            this.panel55.TabIndex = 0;
-            // 
-            // 录入被更换表数据groupBox84
-            // 
-            this.录入被更换表数据groupBox84.Controls.Add(this.comboBox2);
-            this.录入被更换表数据groupBox84.Controls.Add(this.comboBox1);
-            this.录入被更换表数据groupBox84.Controls.Add(this.label1056);
-            this.录入被更换表数据groupBox84.Controls.Add(this.label1055);
-            this.录入被更换表数据groupBox84.Controls.Add(this.录入热量表数据);
-            this.录入被更换表数据groupBox84.Controls.Add(this.录入电表数据);
-            this.录入被更换表数据groupBox84.Controls.Add(this.热量表值录入textBox246);
-            this.录入被更换表数据groupBox84.Controls.Add(this.电表值录入textBox245);
-            this.录入被更换表数据groupBox84.Controls.Add(this.登记老热量表值label1056);
-            this.录入被更换表数据groupBox84.Controls.Add(this.登记老电表值label1055);
-            this.录入被更换表数据groupBox84.Location = new System.Drawing.Point(252, 120);
-            this.录入被更换表数据groupBox84.Name = "录入被更换表数据groupBox84";
-            this.录入被更换表数据groupBox84.Size = new System.Drawing.Size(600, 300);
-            this.录入被更换表数据groupBox84.TabIndex = 0;
-            this.录入被更换表数据groupBox84.TabStop = false;
-            this.录入被更换表数据groupBox84.Text = "录入被更换表的数据";
-            // 
-            // 登记老电表值label1055
-            // 
-            this.登记老电表值label1055.AutoSize = true;
-            this.登记老电表值label1055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.登记老电表值label1055.Location = new System.Drawing.Point(88, 127);
-            this.登记老电表值label1055.Name = "登记老电表值label1055";
-            this.登记老电表值label1055.Size = new System.Drawing.Size(58, 21);
-            this.登记老电表值label1055.TabIndex = 0;
-            this.登记老电表值label1055.Text = "电表：";
-            // 
-            // 登记老热量表值label1056
-            // 
-            this.登记老热量表值label1056.AutoSize = true;
-            this.登记老热量表值label1056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.登记老热量表值label1056.Location = new System.Drawing.Point(74, 183);
-            this.登记老热量表值label1056.Name = "登记老热量表值label1056";
-            this.登记老热量表值label1056.Size = new System.Drawing.Size(74, 21);
-            this.登记老热量表值label1056.TabIndex = 1;
-            this.登记老热量表值label1056.Text = "热量表：";
-            // 
-            // 电表值录入textBox245
-            // 
-            this.电表值录入textBox245.Location = new System.Drawing.Point(169, 123);
-            this.电表值录入textBox245.Name = "电表值录入textBox245";
-            this.电表值录入textBox245.Size = new System.Drawing.Size(100, 29);
-            this.电表值录入textBox245.TabIndex = 2;
-            // 
-            // 热量表值录入textBox246
-            // 
-            this.热量表值录入textBox246.Location = new System.Drawing.Point(169, 180);
-            this.热量表值录入textBox246.Name = "热量表值录入textBox246";
-            this.热量表值录入textBox246.Size = new System.Drawing.Size(100, 29);
-            this.热量表值录入textBox246.TabIndex = 3;
-            // 
-            // 录入电表数据
-            // 
-            this.录入电表数据.Location = new System.Drawing.Point(309, 122);
-            this.录入电表数据.Name = "录入电表数据";
-            this.录入电表数据.Size = new System.Drawing.Size(75, 28);
-            this.录入电表数据.TabIndex = 4;
-            this.录入电表数据.Text = "录入";
-            this.录入电表数据.UseVisualStyleBackColor = true;
-            this.录入电表数据.Click += new System.EventHandler(this.录入电表数据_Click);
-            // 
-            // 录入热量表数据
-            // 
-            this.录入热量表数据.Location = new System.Drawing.Point(309, 177);
-            this.录入热量表数据.Name = "录入热量表数据";
-            this.录入热量表数据.Size = new System.Drawing.Size(75, 28);
-            this.录入热量表数据.TabIndex = 6;
-            this.录入热量表数据.Text = "录入";
-            this.录入热量表数据.UseVisualStyleBackColor = true;
-            this.录入热量表数据.Click += new System.EventHandler(this.录入热量表数据_Click);
-            // 
-            // label1055
-            // 
-            this.label1055.AutoSize = true;
-            this.label1055.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label1055.Location = new System.Drawing.Point(309, 71);
-            this.label1055.Name = "label1055";
-            this.label1055.Size = new System.Drawing.Size(58, 21);
-            this.label1055.TabIndex = 9;
-            this.label1055.Text = "项目：";
-            // 
-            // label1056
-            // 
-            this.label1056.AutoSize = true;
-            this.label1056.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label1056.Location = new System.Drawing.Point(88, 71);
-            this.label1056.Name = "label1056";
-            this.label1056.Size = new System.Drawing.Size(58, 21);
-            this.label1056.TabIndex = 10;
-            this.label1056.Text = "地区：";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.projectInfoBindingSource;
-            this.comboBox1.DisplayMember = "AreaName";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.ValueMember = "AreaName";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.projectInfoBindingSource1;
-            this.comboBox2.DisplayMember = "ProjectName";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(374, 67);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(214, 29);
-            this.comboBox2.TabIndex = 12;
-            this.comboBox2.ValueMember = "ProjectName";
-            // 
-            // 光伏制冷系统信息
-            // 
-            this.光伏制冷系统信息.Controls.Add(this.groupBox7);
-            this.光伏制冷系统信息.Location = new System.Drawing.Point(4, 30);
-            this.光伏制冷系统信息.Name = "光伏制冷系统信息";
-            this.光伏制冷系统信息.Padding = new System.Windows.Forms.Padding(3);
-            this.光伏制冷系统信息.Size = new System.Drawing.Size(1029, 612);
-            this.光伏制冷系统信息.TabIndex = 10;
-            this.光伏制冷系统信息.Text = "光伏制冷系统信息";
-            this.光伏制冷系统信息.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.cbBSerialPort2);
-            this.groupBox7.Controls.Add(this.cbBSerialPort1);
-            this.groupBox7.Controls.Add(this.label19);
-            this.groupBox7.Controls.Add(this.label18);
-            this.groupBox7.Controls.Add(this.lblYHProject);
-            this.groupBox7.Controls.Add(this.btReflesh);
-            this.groupBox7.Controls.Add(this.button34);
-            this.groupBox7.Controls.Add(this.lblTimeCanShu1);
-            this.groupBox7.Controls.Add(this.panel32);
-            this.groupBox7.Controls.Add(this.label218);
-            this.groupBox7.Controls.Add(this.label219);
-            this.groupBox7.Controls.Add(this.panel36);
-            this.groupBox7.Controls.Add(this.panel35);
-            this.groupBox7.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox7.Location = new System.Drawing.Point(0, 0);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1020, 605);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "香格里拉太阳能与热泵供供暖数据指标";
-            // 
-            // panel35
-            // 
-            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel35.Controls.Add(this.groupBox光伏系统数据);
-            this.panel35.Controls.Add(this.button1);
-            this.panel35.Controls.Add(this.groupBox制冷系统);
-            this.panel35.Controls.Add(this.groupBox气象数据);
-            this.panel35.Location = new System.Drawing.Point(0, 82);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(550, 533);
-            this.panel35.TabIndex = 0;
-            // 
-            // groupBox气象数据
-            // 
-            this.groupBox气象数据.Controls.Add(this.Z2);
-            this.groupBox气象数据.Controls.Add(this.Z3);
-            this.groupBox气象数据.Controls.Add(this.label268);
-            this.groupBox气象数据.Controls.Add(this.label267);
-            this.groupBox气象数据.Controls.Add(this.label255);
-            this.groupBox气象数据.Controls.Add(this.Z1);
-            this.groupBox气象数据.Controls.Add(this.label242);
-            this.groupBox气象数据.Controls.Add(this.label241);
-            this.groupBox气象数据.Controls.Add(this.Z4);
-            this.groupBox气象数据.Controls.Add(this.label236);
-            this.groupBox气象数据.Controls.Add(this.label240);
-            this.groupBox气象数据.Controls.Add(this.label250);
-            this.groupBox气象数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox气象数据.Location = new System.Drawing.Point(20, 5);
-            this.groupBox气象数据.Name = "groupBox气象数据";
-            this.groupBox气象数据.Size = new System.Drawing.Size(510, 97);
-            this.groupBox气象数据.TabIndex = 49;
-            this.groupBox气象数据.TabStop = false;
-            this.groupBox气象数据.Text = "气象数据";
-            this.groupBox气象数据.Visible = false;
-            // 
-            // label250
-            // 
-            this.label250.AutoSize = true;
-            this.label250.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label250.Location = new System.Drawing.Point(204, 35);
-            this.label250.Name = "label250";
-            this.label250.Size = new System.Drawing.Size(22, 19);
-            this.label250.TabIndex = 48;
-            this.label250.Text = "℃";
-            // 
-            // label240
-            // 
-            this.label240.AutoSize = true;
-            this.label240.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label240.Location = new System.Drawing.Point(348, 72);
-            this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(48, 19);
-            this.label240.TabIndex = 7;
-            this.label240.Text = "湿度：";
-            // 
-            // label236
-            // 
-            this.label236.AutoSize = true;
-            this.label236.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label236.Location = new System.Drawing.Point(107, 72);
-            this.label236.Name = "label236";
-            this.label236.Size = new System.Drawing.Size(48, 19);
-            this.label236.TabIndex = 46;
-            this.label236.Text = "风速：";
-            // 
-            // Z4
-            // 
-            this.Z4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z4.Location = new System.Drawing.Point(396, 69);
-            this.Z4.Name = "Z4";
-            this.Z4.ReadOnly = true;
-            this.Z4.Size = new System.Drawing.Size(53, 24);
-            this.Z4.TabIndex = 47;
-            this.Z4.Text = "z4";
-            // 
-            // label241
-            // 
-            this.label241.AutoSize = true;
-            this.label241.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label241.Location = new System.Drawing.Point(296, 35);
-            this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(100, 19);
-            this.label241.TabIndex = 3;
-            this.label241.Text = "太阳能辐照度：";
-            // 
-            // label242
-            // 
-            this.label242.AutoSize = true;
-            this.label242.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label242.Location = new System.Drawing.Point(81, 35);
-            this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(74, 19);
-            this.label242.TabIndex = 2;
-            this.label242.Text = "环境温度：";
-            // 
-            // Z1
-            // 
-            this.Z1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z1.Location = new System.Drawing.Point(155, 32);
-            this.Z1.Name = "Z1";
-            this.Z1.ReadOnly = true;
-            this.Z1.Size = new System.Drawing.Size(49, 24);
-            this.Z1.TabIndex = 4;
-            this.Z1.Text = "z1";
-            // 
-            // label255
-            // 
-            this.label255.AutoSize = true;
-            this.label255.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label255.Location = new System.Drawing.Point(204, 72);
-            this.label255.Name = "label255";
-            this.label255.Size = new System.Drawing.Size(33, 19);
-            this.label255.TabIndex = 49;
-            this.label255.Text = "m/s";
-            // 
-            // label267
-            // 
-            this.label267.AutoSize = true;
-            this.label267.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label267.Location = new System.Drawing.Point(448, 35);
-            this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(45, 19);
-            this.label267.TabIndex = 50;
-            this.label267.Text = "W/m²";
-            // 
-            // label268
-            // 
-            this.label268.AutoSize = true;
-            this.label268.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label268.Location = new System.Drawing.Point(494, 71);
-            this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(0, 19);
-            this.label268.TabIndex = 51;
-            // 
-            // Z3
-            // 
-            this.Z3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z3.Location = new System.Drawing.Point(155, 69);
-            this.Z3.Name = "Z3";
-            this.Z3.ReadOnly = true;
-            this.Z3.Size = new System.Drawing.Size(49, 24);
-            this.Z3.TabIndex = 6;
-            this.Z3.Text = "z3";
-            // 
-            // Z2
-            // 
-            this.Z2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z2.Location = new System.Drawing.Point(396, 32);
-            this.Z2.Name = "Z2";
-            this.Z2.ReadOnly = true;
-            this.Z2.Size = new System.Drawing.Size(53, 24);
-            this.Z2.TabIndex = 5;
-            this.Z2.Text = "z2";
-            // 
-            // groupBox制冷系统
-            // 
-            this.groupBox制冷系统.Controls.Add(this.Z15);
-            this.groupBox制冷系统.Controls.Add(this.Z29);
-            this.groupBox制冷系统.Controls.Add(this.Z26);
-            this.groupBox制冷系统.Controls.Add(this.label52);
-            this.groupBox制冷系统.Controls.Add(this.label46);
-            this.groupBox制冷系统.Controls.Add(this.Z16);
-            this.groupBox制冷系统.Controls.Add(this.Z12);
-            this.groupBox制冷系统.Controls.Add(this.Z9);
-            this.groupBox制冷系统.Controls.Add(this.Z11);
-            this.groupBox制冷系统.Controls.Add(this.Z14);
-            this.groupBox制冷系统.Controls.Add(this.Z18);
-            this.groupBox制冷系统.Controls.Add(this.label51);
-            this.groupBox制冷系统.Controls.Add(this.Z21);
-            this.groupBox制冷系统.Controls.Add(this.Z20);
-            this.groupBox制冷系统.Controls.Add(this.label50);
-            this.groupBox制冷系统.Controls.Add(this.label49);
-            this.groupBox制冷系统.Controls.Add(this.label31);
-            this.groupBox制冷系统.Controls.Add(this.label30);
-            this.groupBox制冷系统.Controls.Add(this.label29);
-            this.groupBox制冷系统.Controls.Add(this.label28);
-            this.groupBox制冷系统.Controls.Add(this.label26);
-            this.groupBox制冷系统.Controls.Add(this.label25);
-            this.groupBox制冷系统.Controls.Add(this.label24);
-            this.groupBox制冷系统.Controls.Add(this.label23);
-            this.groupBox制冷系统.Controls.Add(this.Z17);
-            this.groupBox制冷系统.Controls.Add(this.label7);
-            this.groupBox制冷系统.Controls.Add(this.Z27);
-            this.groupBox制冷系统.Controls.Add(this.Z28);
-            this.groupBox制冷系统.Controls.Add(this.Z25);
-            this.groupBox制冷系统.Controls.Add(this.Z24);
-            this.groupBox制冷系统.Controls.Add(this.Z23);
-            this.groupBox制冷系统.Controls.Add(this.Z22);
-            this.groupBox制冷系统.Controls.Add(this.Z19);
-            this.groupBox制冷系统.Controls.Add(this.Z13);
-            this.groupBox制冷系统.Controls.Add(this.label275);
-            this.groupBox制冷系统.Controls.Add(this.label272);
-            this.groupBox制冷系统.Controls.Add(this.label233);
-            this.groupBox制冷系统.Controls.Add(this.label244);
-            this.groupBox制冷系统.Controls.Add(this.label230);
-            this.groupBox制冷系统.Controls.Add(this.Z10);
-            this.groupBox制冷系统.Controls.Add(this.label239);
-            this.groupBox制冷系统.Controls.Add(this.label235);
-            this.groupBox制冷系统.Controls.Add(this.label243);
-            this.groupBox制冷系统.Controls.Add(this.label231);
-            this.groupBox制冷系统.Controls.Add(this.label232);
-            this.groupBox制冷系统.Controls.Add(this.label237);
-            this.groupBox制冷系统.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox制冷系统.Location = new System.Drawing.Point(22, 123);
-            this.groupBox制冷系统.Name = "groupBox制冷系统";
-            this.groupBox制冷系统.Size = new System.Drawing.Size(514, 360);
-            this.groupBox制冷系统.TabIndex = 52;
-            this.groupBox制冷系统.TabStop = false;
-            this.groupBox制冷系统.Text = "制冷系统";
-            // 
-            // label237
-            // 
-            this.label237.AutoSize = true;
-            this.label237.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label237.Location = new System.Drawing.Point(42, 287);
-            this.label237.Name = "label237";
-            this.label237.Size = new System.Drawing.Size(113, 19);
-            this.label237.TabIndex = 36;
-            this.label237.Text = "压缩机排气温度：";
-            // 
-            // label232
-            // 
-            this.label232.AutoSize = true;
-            this.label232.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label232.Location = new System.Drawing.Point(42, 251);
-            this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(113, 19);
-            this.label232.TabIndex = 41;
-            this.label232.Text = "压缩机排气压力：";
-            // 
-            // label231
-            // 
-            this.label231.AutoSize = true;
-            this.label231.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label231.Location = new System.Drawing.Point(280, 326);
-            this.label231.Name = "label231";
-            this.label231.Size = new System.Drawing.Size(113, 19);
-            this.label231.TabIndex = 40;
-            this.label231.Text = "蒸发器入口温度：";
-            // 
-            // label243
-            // 
-            this.label243.AutoSize = true;
-            this.label243.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label243.Location = new System.Drawing.Point(16, 71);
-            this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(139, 19);
-            this.label243.TabIndex = 1;
-            this.label243.Text = "压缩机运行交流电流：";
-            // 
-            // label235
-            // 
-            this.label235.AutoSize = true;
-            this.label235.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label235.Location = new System.Drawing.Point(16, 107);
-            this.label235.Name = "label235";
-            this.label235.Size = new System.Drawing.Size(139, 19);
-            this.label235.TabIndex = 37;
-            this.label235.Text = "压缩机运行交流功率：";
-            // 
-            // label239
-            // 
-            this.label239.AutoSize = true;
-            this.label239.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label239.Location = new System.Drawing.Point(16, 35);
-            this.label239.Name = "label239";
-            this.label239.Size = new System.Drawing.Size(139, 19);
-            this.label239.TabIndex = 9;
-            this.label239.Text = "压缩机运行交流电压：";
-            // 
-            // Z10
-            // 
-            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z10.Location = new System.Drawing.Point(314, 34);
-            this.Z10.Name = "Z10";
-            this.Z10.ReadOnly = true;
-            this.Z10.Size = new System.Drawing.Size(49, 24);
-            this.Z10.TabIndex = 42;
-            this.Z10.Text = "z10";
-            // 
-            // label230
-            // 
-            this.label230.AutoSize = true;
-            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label230.Location = new System.Drawing.Point(42, 323);
-            this.label230.Name = "label230";
-            this.label230.Size = new System.Drawing.Size(113, 19);
-            this.label230.TabIndex = 42;
-            this.label230.Text = "蒸发器出口温度：";
-            // 
-            // label244
-            // 
-            this.label244.AutoSize = true;
-            this.label244.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label244.Location = new System.Drawing.Point(279, 251);
-            this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(113, 19);
-            this.label244.TabIndex = 5;
-            this.label244.Text = "蒸发器出口压力：";
-            // 
-            // label233
-            // 
-            this.label233.AutoSize = true;
-            this.label233.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label233.Location = new System.Drawing.Point(276, 288);
-            this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(113, 19);
-            this.label233.TabIndex = 38;
-            this.label233.Text = "冷凝器出口温度：";
-            // 
-            // label272
-            // 
-            this.label272.AutoSize = true;
-            this.label272.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label272.Location = new System.Drawing.Point(157, 34);
-            this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(37, 19);
-            this.label272.TabIndex = 51;
-            this.label272.Text = "ab：";
-            // 
-            // label275
-            // 
-            this.label275.AutoSize = true;
-            this.label275.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label275.Location = new System.Drawing.Point(210, 112);
-            this.label275.Name = "label275";
-            this.label275.Size = new System.Drawing.Size(0, 19);
-            this.label275.TabIndex = 54;
-            // 
-            // Z13
-            // 
-            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z13.Location = new System.Drawing.Point(310, 71);
-            this.Z13.Name = "Z13";
-            this.Z13.ReadOnly = true;
-            this.Z13.Size = new System.Drawing.Size(49, 24);
-            this.Z13.TabIndex = 46;
-            this.Z13.Text = "z13";
-            // 
-            // Z19
-            // 
-            this.Z19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z19.Location = new System.Drawing.Point(414, 139);
-            this.Z19.Name = "Z19";
-            this.Z19.ReadOnly = true;
-            this.Z19.Size = new System.Drawing.Size(52, 24);
-            this.Z19.TabIndex = 63;
-            this.Z19.Text = "z19";
-            // 
-            // Z22
-            // 
-            this.Z22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z22.Location = new System.Drawing.Point(195, 211);
-            this.Z22.Name = "Z22";
-            this.Z22.ReadOnly = true;
-            this.Z22.Size = new System.Drawing.Size(52, 24);
-            this.Z22.TabIndex = 64;
-            this.Z22.Text = "z22";
-            // 
-            // Z23
-            // 
-            this.Z23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z23.Location = new System.Drawing.Point(414, 211);
-            this.Z23.Name = "Z23";
-            this.Z23.ReadOnly = true;
-            this.Z23.Size = new System.Drawing.Size(52, 24);
-            this.Z23.TabIndex = 65;
-            this.Z23.Text = "z23";
-            // 
-            // Z24
-            // 
-            this.Z24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z24.Location = new System.Drawing.Point(195, 247);
-            this.Z24.Name = "Z24";
-            this.Z24.ReadOnly = true;
-            this.Z24.Size = new System.Drawing.Size(52, 24);
-            this.Z24.TabIndex = 66;
-            this.Z24.Text = "z24";
-            // 
-            // Z25
-            // 
-            this.Z25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z25.Location = new System.Drawing.Point(414, 247);
-            this.Z25.Name = "Z25";
-            this.Z25.ReadOnly = true;
-            this.Z25.Size = new System.Drawing.Size(52, 24);
-            this.Z25.TabIndex = 67;
-            this.Z25.Text = "z25";
-            // 
-            // Z28
-            // 
-            this.Z28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z28.Location = new System.Drawing.Point(194, 320);
-            this.Z28.Name = "Z28";
-            this.Z28.ReadOnly = true;
-            this.Z28.Size = new System.Drawing.Size(52, 24);
-            this.Z28.TabIndex = 68;
-            this.Z28.Text = "z28";
-            // 
-            // Z27
-            // 
-            this.Z27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z27.Location = new System.Drawing.Point(415, 286);
-            this.Z27.Name = "Z27";
-            this.Z27.ReadOnly = true;
-            this.Z27.Size = new System.Drawing.Size(52, 24);
-            this.Z27.TabIndex = 69;
-            this.Z27.Text = "z27";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(301, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 19);
-            this.label7.TabIndex = 70;
-            this.label7.Text = "压缩机电能：";
-            // 
-            // Z17
-            // 
-            this.Z17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z17.Location = new System.Drawing.Point(416, 103);
-            this.Z17.Name = "Z17";
-            this.Z17.ReadOnly = true;
-            this.Z17.Size = new System.Drawing.Size(49, 24);
-            this.Z17.TabIndex = 71;
-            this.Z17.Text = "z17";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label23.Location = new System.Drawing.Point(264, 34);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(37, 19);
-            this.label23.TabIndex = 72;
-            this.label23.Text = "bc：";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(372, 34);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(36, 19);
-            this.label24.TabIndex = 73;
-            this.label24.Text = "ca：";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(157, 70);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 19);
-            this.label25.TabIndex = 74;
-            this.label25.Text = "a相：";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(264, 70);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(43, 19);
-            this.label26.TabIndex = 75;
-            this.label26.Text = "b相：";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label28.Location = new System.Drawing.Point(372, 70);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 19);
-            this.label28.TabIndex = 76;
-            this.label28.Text = "c相：";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label29.Location = new System.Drawing.Point(140, 106);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(61, 19);
-            this.label29.TabIndex = 77;
-            this.label29.Text = "总视在：";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label30.Location = new System.Drawing.Point(255, 106);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 19);
-            this.label30.TabIndex = 78;
-            this.label30.Text = "总有功：";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label31.Location = new System.Drawing.Point(353, 106);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(61, 19);
-            this.label31.TabIndex = 79;
-            this.label31.Text = "总无功：";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label49.Location = new System.Drawing.Point(61, 179);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(94, 19);
-            this.label49.TabIndex = 81;
-            this.label49.Text = "a相畸变电压：";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label50.Location = new System.Drawing.Point(294, 179);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(94, 19);
-            this.label50.TabIndex = 82;
-            this.label50.Text = "a相畸变电流：";
-            // 
-            // Z20
-            // 
-            this.Z20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z20.Location = new System.Drawing.Point(197, 175);
-            this.Z20.Name = "Z20";
-            this.Z20.ReadOnly = true;
-            this.Z20.Size = new System.Drawing.Size(49, 24);
-            this.Z20.TabIndex = 83;
-            this.Z20.Text = "z20";
-            // 
-            // Z21
-            // 
-            this.Z21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z21.Location = new System.Drawing.Point(416, 175);
-            this.Z21.Name = "Z21";
-            this.Z21.ReadOnly = true;
-            this.Z21.Size = new System.Drawing.Size(49, 24);
-            this.Z21.TabIndex = 84;
-            this.Z21.Text = "z21";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label51.Location = new System.Drawing.Point(81, 143);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(74, 19);
-            this.label51.TabIndex = 85;
-            this.label51.Text = "功率因素：";
-            // 
-            // Z18
-            // 
-            this.Z18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z18.Location = new System.Drawing.Point(197, 139);
-            this.Z18.Name = "Z18";
-            this.Z18.ReadOnly = true;
-            this.Z18.Size = new System.Drawing.Size(49, 24);
-            this.Z18.TabIndex = 86;
-            this.Z18.Text = "z18";
-            // 
-            // Z14
-            // 
-            this.Z14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z14.Location = new System.Drawing.Point(423, 71);
-            this.Z14.Name = "Z14";
-            this.Z14.ReadOnly = true;
-            this.Z14.Size = new System.Drawing.Size(49, 24);
-            this.Z14.TabIndex = 48;
-            this.Z14.Text = "z14";
-            // 
-            // Z11
-            // 
-            this.Z11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z11.Location = new System.Drawing.Point(420, 31);
-            this.Z11.Name = "Z11";
-            this.Z11.ReadOnly = true;
-            this.Z11.Size = new System.Drawing.Size(52, 24);
-            this.Z11.TabIndex = 43;
-            this.Z11.Text = "z11";
-            // 
-            // Z9
-            // 
-            this.Z9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z9.Location = new System.Drawing.Point(205, 35);
-            this.Z9.Name = "Z9";
-            this.Z9.ReadOnly = true;
-            this.Z9.Size = new System.Drawing.Size(49, 24);
-            this.Z9.TabIndex = 10;
-            this.Z9.Text = "z9";
-            // 
-            // Z12
-            // 
-            this.Z12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z12.Location = new System.Drawing.Point(206, 69);
-            this.Z12.Name = "Z12";
-            this.Z12.ReadOnly = true;
-            this.Z12.Size = new System.Drawing.Size(52, 24);
-            this.Z12.TabIndex = 47;
-            this.Z12.Text = "z12";
-            // 
-            // Z16
-            // 
-            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z16.Location = new System.Drawing.Point(317, 104);
-            this.Z16.Name = "Z16";
-            this.Z16.ReadOnly = true;
-            this.Z16.Size = new System.Drawing.Size(49, 24);
-            this.Z16.TabIndex = 50;
-            this.Z16.Text = "z16";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label46.Location = new System.Drawing.Point(35, 215);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(120, 19);
-            this.label46.TabIndex = 87;
-            this.label46.Text = "a相电压不平衡度：";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label52.Location = new System.Drawing.Point(268, 215);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(120, 19);
-            this.label52.TabIndex = 88;
-            this.label52.Text = "a相电流不平衡度：";
-            // 
-            // Z26
-            // 
-            this.Z26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z26.Location = new System.Drawing.Point(195, 285);
-            this.Z26.Name = "Z26";
-            this.Z26.ReadOnly = true;
-            this.Z26.Size = new System.Drawing.Size(52, 24);
-            this.Z26.TabIndex = 89;
-            this.Z26.Text = "z26";
-            // 
-            // Z29
-            // 
-            this.Z29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z29.Location = new System.Drawing.Point(413, 320);
-            this.Z29.Name = "Z29";
-            this.Z29.ReadOnly = true;
-            this.Z29.Size = new System.Drawing.Size(52, 24);
-            this.Z29.TabIndex = 90;
-            this.Z29.Text = "z29";
-            // 
-            // Z15
-            // 
-            this.Z15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z15.Location = new System.Drawing.Point(201, 102);
-            this.Z15.Name = "Z15";
-            this.Z15.ReadOnly = true;
-            this.Z15.Size = new System.Drawing.Size(53, 24);
-            this.Z15.TabIndex = 53;
-            this.Z15.Text = "z15";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(405, 491);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "下一页";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // groupBox光伏系统数据
-            // 
-            this.groupBox光伏系统数据.Controls.Add(this.label22);
-            this.groupBox光伏系统数据.Controls.Add(this.Z6);
-            this.groupBox光伏系统数据.Controls.Add(this.label271);
-            this.groupBox光伏系统数据.Controls.Add(this.label269);
-            this.groupBox光伏系统数据.Controls.Add(this.Z7);
-            this.groupBox光伏系统数据.Controls.Add(this.Z5);
-            this.groupBox光伏系统数据.Controls.Add(this.label229);
-            this.groupBox光伏系统数据.Controls.Add(this.label234);
-            this.groupBox光伏系统数据.Controls.Add(this.label238);
-            this.groupBox光伏系统数据.Controls.Add(this.label270);
-            this.groupBox光伏系统数据.Controls.Add(this.Z8);
-            this.groupBox光伏系统数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox光伏系统数据.Location = new System.Drawing.Point(14, 6);
-            this.groupBox光伏系统数据.Name = "groupBox光伏系统数据";
-            this.groupBox光伏系统数据.Size = new System.Drawing.Size(525, 100);
-            this.groupBox光伏系统数据.TabIndex = 50;
-            this.groupBox光伏系统数据.TabStop = false;
-            this.groupBox光伏系统数据.Text = "光伏系统数据";
-            // 
-            // Z8
-            // 
-            this.Z8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z8.Location = new System.Drawing.Point(400, 71);
-            this.Z8.Name = "Z8";
-            this.Z8.ReadOnly = true;
-            this.Z8.Size = new System.Drawing.Size(49, 24);
-            this.Z8.TabIndex = 8;
-            this.Z8.Text = "z8";
-            // 
-            // label270
-            // 
-            this.label270.AutoSize = true;
-            this.label270.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label270.Location = new System.Drawing.Point(204, 72);
-            this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(22, 19);
-            this.label270.TabIndex = 50;
-            this.label270.Text = "W";
-            // 
-            // label238
-            // 
-            this.label238.AutoSize = true;
-            this.label238.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label238.Location = new System.Drawing.Point(296, 35);
-            this.label238.Name = "label238";
-            this.label238.Size = new System.Drawing.Size(100, 19);
-            this.label238.TabIndex = 38;
-            this.label238.Text = "输出直流电流：";
-            // 
-            // label234
-            // 
-            this.label234.AutoSize = true;
-            this.label234.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label234.Location = new System.Drawing.Point(55, 35);
-            this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(100, 19);
-            this.label234.TabIndex = 39;
-            this.label234.Text = "输出直流电压：";
-            // 
-            // label229
-            // 
-            this.label229.AutoSize = true;
-            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label229.Location = new System.Drawing.Point(55, 72);
-            this.label229.Name = "label229";
-            this.label229.Size = new System.Drawing.Size(100, 19);
-            this.label229.TabIndex = 48;
-            this.label229.Text = "输出直流功率：";
-            // 
-            // Z5
-            // 
-            this.Z5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z5.Location = new System.Drawing.Point(155, 32);
-            this.Z5.Name = "Z5";
-            this.Z5.ReadOnly = true;
-            this.Z5.Size = new System.Drawing.Size(49, 24);
-            this.Z5.TabIndex = 2;
-            this.Z5.Text = "z5";
-            // 
-            // Z7
-            // 
-            this.Z7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z7.Location = new System.Drawing.Point(155, 69);
-            this.Z7.Name = "Z7";
-            this.Z7.ReadOnly = true;
-            this.Z7.Size = new System.Drawing.Size(49, 24);
-            this.Z7.TabIndex = 6;
-            this.Z7.Text = "z7";
-            // 
-            // label269
-            // 
-            this.label269.AutoSize = true;
-            this.label269.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label269.Location = new System.Drawing.Point(204, 35);
-            this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(18, 19);
-            this.label269.TabIndex = 49;
-            this.label269.Text = "V";
-            // 
-            // label271
-            // 
-            this.label271.AutoSize = true;
-            this.label271.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label271.Location = new System.Drawing.Point(448, 35);
-            this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(18, 19);
-            this.label271.TabIndex = 51;
-            this.label271.Text = "A";
-            // 
-            // Z6
-            // 
-            this.Z6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z6.Location = new System.Drawing.Point(396, 32);
-            this.Z6.Name = "Z6";
-            this.Z6.ReadOnly = true;
-            this.Z6.Size = new System.Drawing.Size(53, 24);
-            this.Z6.TabIndex = 4;
-            this.Z6.Text = "z6";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.Location = new System.Drawing.Point(293, 71);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(87, 19);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "直流表电能：";
-            // 
-            // panel36
-            // 
-            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel36.Controls.Add(this.gbCOP);
-            this.panel36.Controls.Add(this.button2);
-            this.panel36.Controls.Add(this.groupBox50);
-            this.panel36.Location = new System.Drawing.Point(0, 82);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(550, 526);
-            this.panel36.TabIndex = 52;
-            // 
-            // groupBox50
-            // 
-            this.groupBox50.Controls.Add(this.Z41);
-            this.groupBox50.Controls.Add(this.Z34);
-            this.groupBox50.Controls.Add(this.Z35);
-            this.groupBox50.Controls.Add(this.label21);
-            this.groupBox50.Controls.Add(this.Z42);
-            this.groupBox50.Controls.Add(this.Z40);
-            this.groupBox50.Controls.Add(this.Z39);
-            this.groupBox50.Controls.Add(this.Z38);
-            this.groupBox50.Controls.Add(this.Z37);
-            this.groupBox50.Controls.Add(this.Z32);
-            this.groupBox50.Controls.Add(this.label11);
-            this.groupBox50.Controls.Add(this.label10);
-            this.groupBox50.Controls.Add(this.Z36);
-            this.groupBox50.Controls.Add(this.label249);
-            this.groupBox50.Controls.Add(this.Z33);
-            this.groupBox50.Controls.Add(this.label256);
-            this.groupBox50.Controls.Add(this.Z31);
-            this.groupBox50.Controls.Add(this.label258);
-            this.groupBox50.Controls.Add(this.Z30);
-            this.groupBox50.Controls.Add(this.label259);
-            this.groupBox50.Controls.Add(this.label260);
-            this.groupBox50.Controls.Add(this.label261);
-            this.groupBox50.Controls.Add(this.label262);
-            this.groupBox50.Controls.Add(this.label263);
-            this.groupBox50.Controls.Add(this.label264);
-            this.groupBox50.Controls.Add(this.label265);
-            this.groupBox50.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox50.Location = new System.Drawing.Point(20, 5);
-            this.groupBox50.Name = "groupBox50";
-            this.groupBox50.Size = new System.Drawing.Size(510, 343);
-            this.groupBox50.TabIndex = 51;
-            this.groupBox50.TabStop = false;
-            this.groupBox50.Text = "供冷系统";
-            // 
-            // label265
-            // 
-            this.label265.AutoSize = true;
-            this.label265.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label265.Location = new System.Drawing.Point(275, 32);
-            this.label265.Name = "label265";
-            this.label265.Size = new System.Drawing.Size(126, 19);
-            this.label265.TabIndex = 1;
-            this.label265.Text = "水泵变频运行电流：";
-            // 
-            // label264
-            // 
-            this.label264.AutoSize = true;
-            this.label264.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label264.Location = new System.Drawing.Point(321, 161);
-            this.label264.Name = "label264";
-            this.label264.Size = new System.Drawing.Size(89, 19);
-            this.label264.TabIndex = 41;
-            this.label264.Text = "冰块温度T6：";
-            // 
-            // label263
-            // 
-            this.label263.AutoSize = true;
-            this.label263.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label263.Location = new System.Drawing.Point(50, 247);
-            this.label263.Name = "label263";
-            this.label263.Size = new System.Drawing.Size(100, 19);
-            this.label263.TabIndex = 40;
-            this.label263.Text = "水箱下层水温：";
-            // 
-            // label262
-            // 
-            this.label262.AutoSize = true;
-            this.label262.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label262.Location = new System.Drawing.Point(24, 32);
-            this.label262.Name = "label262";
-            this.label262.Size = new System.Drawing.Size(126, 19);
-            this.label262.TabIndex = 1;
-            this.label262.Text = "水泵变频运行电压：";
-            // 
-            // label261
-            // 
-            this.label261.AutoSize = true;
-            this.label261.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label261.Location = new System.Drawing.Point(24, 75);
-            this.label261.Name = "label261";
-            this.label261.Size = new System.Drawing.Size(126, 19);
-            this.label261.TabIndex = 37;
-            this.label261.Text = "水泵变频运行功率：";
-            // 
-            // label260
-            // 
-            this.label260.AutoSize = true;
-            this.label260.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label260.Location = new System.Drawing.Point(24, 161);
-            this.label260.Name = "label260";
-            this.label260.Size = new System.Drawing.Size(126, 19);
-            this.label260.TabIndex = 9;
-            this.label260.Text = "供冷冷水质量流量：";
-            // 
-            // label259
-            // 
-            this.label259.AutoSize = true;
-            this.label259.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label259.Location = new System.Drawing.Point(271, 75);
-            this.label259.Name = "label259";
-            this.label259.Size = new System.Drawing.Size(130, 19);
-            this.label259.TabIndex = 3;
-            this.label259.Text = "水泵变频运行频率 ：";
-            // 
-            // Z30
-            // 
-            this.Z30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z30.Location = new System.Drawing.Point(167, 28);
-            this.Z30.Name = "Z30";
-            this.Z30.ReadOnly = true;
-            this.Z30.Size = new System.Drawing.Size(52, 24);
-            this.Z30.TabIndex = 43;
-            this.Z30.Text = "z30";
-            // 
-            // label258
-            // 
-            this.label258.AutoSize = true;
-            this.label258.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label258.Location = new System.Drawing.Point(11, 290);
-            this.label258.Name = "label258";
-            this.label258.Size = new System.Drawing.Size(139, 19);
-            this.label258.TabIndex = 42;
-            this.label258.Text = "风机盘管出风口温度：";
-            // 
-            // Z31
-            // 
-            this.Z31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z31.Location = new System.Drawing.Point(406, 28);
-            this.Z31.Name = "Z31";
-            this.Z31.ReadOnly = true;
-            this.Z31.Size = new System.Drawing.Size(49, 24);
-            this.Z31.TabIndex = 46;
-            this.Z31.Text = "z31";
-            // 
-            // label256
-            // 
-            this.label256.AutoSize = true;
-            this.label256.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label256.Location = new System.Drawing.Point(50, 204);
-            this.label256.Name = "label256";
-            this.label256.Size = new System.Drawing.Size(100, 19);
-            this.label256.TabIndex = 38;
-            this.label256.Text = "水箱上层水温：";
-            // 
-            // Z33
-            // 
-            this.Z33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z33.Location = new System.Drawing.Point(406, 71);
-            this.Z33.Name = "Z33";
-            this.Z33.ReadOnly = true;
-            this.Z33.Size = new System.Drawing.Size(49, 24);
-            this.Z33.TabIndex = 50;
-            this.Z33.Text = "z33";
-            // 
-            // label249
-            // 
-            this.label249.AutoSize = true;
-            this.label249.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label249.Location = new System.Drawing.Point(331, 290);
-            this.label249.Name = "label249";
-            this.label249.Size = new System.Drawing.Size(74, 19);
-            this.label249.TabIndex = 51;
-            this.label249.Text = "房间温度：";
-            // 
-            // Z36
-            // 
-            this.Z36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z36.Location = new System.Drawing.Point(404, 157);
-            this.Z36.Name = "Z36";
-            this.Z36.ReadOnly = true;
-            this.Z36.Size = new System.Drawing.Size(52, 24);
-            this.Z36.TabIndex = 52;
-            this.Z36.Text = "z36";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(278, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 19);
-            this.label10.TabIndex = 53;
-            this.label10.Text = "供冷循环中回水温度：";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(270, 247);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 19);
-            this.label11.TabIndex = 54;
-            this.label11.Text = "供冷循环中供水温度：";
-            // 
-            // Z32
-            // 
-            this.Z32.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z32.Location = new System.Drawing.Point(167, 71);
-            this.Z32.Name = "Z32";
-            this.Z32.ReadOnly = true;
-            this.Z32.Size = new System.Drawing.Size(52, 24);
-            this.Z32.TabIndex = 55;
-            this.Z32.Text = "z32";
-            // 
-            // Z37
-            // 
-            this.Z37.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z37.Location = new System.Drawing.Point(169, 200);
-            this.Z37.Name = "Z37";
-            this.Z37.ReadOnly = true;
-            this.Z37.Size = new System.Drawing.Size(49, 24);
-            this.Z37.TabIndex = 59;
-            this.Z37.Text = "z37";
-            // 
-            // Z38
-            // 
-            this.Z38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z38.Location = new System.Drawing.Point(406, 200);
-            this.Z38.Name = "Z38";
-            this.Z38.ReadOnly = true;
-            this.Z38.Size = new System.Drawing.Size(49, 24);
-            this.Z38.TabIndex = 60;
-            this.Z38.Text = "z38";
-            // 
-            // Z39
-            // 
-            this.Z39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z39.Location = new System.Drawing.Point(169, 244);
-            this.Z39.Name = "Z39";
-            this.Z39.ReadOnly = true;
-            this.Z39.Size = new System.Drawing.Size(49, 24);
-            this.Z39.TabIndex = 61;
-            this.Z39.Text = "z39";
-            // 
-            // Z40
-            // 
-            this.Z40.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z40.Location = new System.Drawing.Point(409, 244);
-            this.Z40.Name = "Z40";
-            this.Z40.ReadOnly = true;
-            this.Z40.Size = new System.Drawing.Size(49, 24);
-            this.Z40.TabIndex = 63;
-            this.Z40.Text = "z40";
-            // 
-            // Z42
-            // 
-            this.Z42.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z42.Location = new System.Drawing.Point(406, 286);
-            this.Z42.Name = "Z42";
-            this.Z42.ReadOnly = true;
-            this.Z42.Size = new System.Drawing.Size(49, 24);
-            this.Z42.TabIndex = 64;
-            this.Z42.Text = "z42";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(50, 118);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(100, 19);
-            this.label21.TabIndex = 65;
-            this.label21.Text = "水泵变频电能：";
-            // 
-            // Z35
-            // 
-            this.Z35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z35.Location = new System.Drawing.Point(169, 157);
-            this.Z35.Name = "Z35";
-            this.Z35.ReadOnly = true;
-            this.Z35.Size = new System.Drawing.Size(49, 24);
-            this.Z35.TabIndex = 66;
-            this.Z35.Text = "z35";
-            // 
-            // Z34
-            // 
-            this.Z34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z34.Location = new System.Drawing.Point(169, 114);
-            this.Z34.Name = "Z34";
-            this.Z34.ReadOnly = true;
-            this.Z34.Size = new System.Drawing.Size(49, 24);
-            this.Z34.TabIndex = 67;
-            this.Z34.Text = "z34";
-            // 
-            // Z41
-            // 
-            this.Z41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z41.Location = new System.Drawing.Point(169, 288);
-            this.Z41.Name = "Z41";
-            this.Z41.ReadOnly = true;
-            this.Z41.Size = new System.Drawing.Size(49, 24);
-            this.Z41.TabIndex = 68;
-            this.Z41.Text = "z41";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(405, 491);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 52;
-            this.button2.Text = "上一页";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // gbCOP
-            // 
-            this.gbCOP.Controls.Add(this.Z44);
-            this.gbCOP.Controls.Add(this.label56);
-            this.gbCOP.Controls.Add(this.Z45);
-            this.gbCOP.Controls.Add(this.label55);
-            this.gbCOP.Controls.Add(this.Z46);
-            this.gbCOP.Controls.Add(this.label20);
-            this.gbCOP.Controls.Add(this.Z43);
-            this.gbCOP.Controls.Add(this.label8);
-            this.gbCOP.Location = new System.Drawing.Point(15, 359);
-            this.gbCOP.Name = "gbCOP";
-            this.gbCOP.Size = new System.Drawing.Size(512, 116);
-            this.gbCOP.TabIndex = 53;
-            this.gbCOP.TabStop = false;
-            this.gbCOP.Text = "COP";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(74, 62);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 19);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "逆控效率：";
-            // 
-            // Z43
-            // 
-            this.Z43.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z43.Location = new System.Drawing.Point(169, 25);
-            this.Z43.Name = "Z43";
-            this.Z43.ReadOnly = true;
-            this.Z43.Size = new System.Drawing.Size(49, 24);
-            this.Z43.TabIndex = 64;
-            this.Z43.Text = "z43";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(338, 62);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 19);
-            this.label20.TabIndex = 65;
-            this.label20.Text = "能效比：";
-            // 
-            // Z46
-            // 
-            this.Z46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z46.Location = new System.Drawing.Point(406, 58);
-            this.Z46.Name = "Z46";
-            this.Z46.ReadOnly = true;
-            this.Z46.Size = new System.Drawing.Size(49, 24);
-            this.Z46.TabIndex = 66;
-            this.Z46.Text = "z46";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label55.Location = new System.Drawing.Point(88, 27);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(61, 19);
-            this.label55.TabIndex = 67;
-            this.label55.Text = "溢水量：";
-            // 
-            // Z45
-            // 
-            this.Z45.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z45.Location = new System.Drawing.Point(169, 57);
-            this.Z45.Name = "Z45";
-            this.Z45.ReadOnly = true;
-            this.Z45.Size = new System.Drawing.Size(49, 24);
-            this.Z45.TabIndex = 68;
-            this.Z45.Text = "z45";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label56.Location = new System.Drawing.Point(325, 25);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(74, 19);
-            this.label56.TabIndex = 69;
-            this.label56.Text = "水箱液位：";
-            // 
-            // Z44
-            // 
-            this.Z44.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z44.Location = new System.Drawing.Point(406, 23);
-            this.Z44.Name = "Z44";
-            this.Z44.ReadOnly = true;
-            this.Z44.Size = new System.Drawing.Size(49, 24);
-            this.Z44.TabIndex = 70;
-            this.Z44.Text = "z44";
-            // 
-            // label219
-            // 
-            this.label219.AutoSize = true;
-            this.label219.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label219.Location = new System.Drawing.Point(17, 24);
-            this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(120, 16);
-            this.label219.TabIndex = 2;
-            this.label219.Text = "当前项目名称：";
-            // 
-            // label218
-            // 
-            this.label218.AutoSize = true;
-            this.label218.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label218.Location = new System.Drawing.Point(14, 54);
-            this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(120, 16);
-            this.label218.TabIndex = 3;
-            this.label218.Text = "参数获取时间：";
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel32.Controls.Add(this.groupBox48);
-            this.panel32.Location = new System.Drawing.Point(550, 83);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(470, 533);
-            this.panel32.TabIndex = 1;
-            // 
-            // groupBox48
-            // 
-            this.groupBox48.Controls.Add(this.label16);
-            this.groupBox48.Controls.Add(this.button3);
-            this.groupBox48.Controls.Add(this.groupBoxSwictch);
-            this.groupBox48.Controls.Add(this.C1);
-            this.groupBox48.Controls.Add(this.label6);
-            this.groupBox48.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox48.Location = new System.Drawing.Point(20, 5);
-            this.groupBox48.Name = "groupBox48";
-            this.groupBox48.Size = new System.Drawing.Size(430, 477);
-            this.groupBox48.TabIndex = 52;
-            this.groupBox48.TabStop = false;
-            this.groupBox48.Text = "控制系统";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(20, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 19);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "设定温度：";
-            // 
-            // C1
-            // 
-            this.C1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.C1.Location = new System.Drawing.Point(106, 30);
-            this.C1.MaxLength = 10;
-            this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(52, 24);
-            this.C1.TabIndex = 63;
-            this.C1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.C1_KeyPress);
-            // 
-            // groupBoxSwictch
-            // 
-            this.groupBoxSwictch.Controls.Add(this.label5);
-            this.groupBoxSwictch.Controls.Add(this.label4);
-            this.groupBoxSwictch.Controls.Add(this.label3);
-            this.groupBoxSwictch.Controls.Add(this.label2);
-            this.groupBoxSwictch.Controls.Add(this.meter1);
-            this.groupBoxSwictch.Controls.Add(this.label1);
-            this.groupBoxSwictch.Controls.Add(this.radioButton24);
-            this.groupBoxSwictch.Controls.Add(this.radioButton1);
-            this.groupBoxSwictch.Controls.Add(this.label17);
-            this.groupBoxSwictch.Controls.Add(this.comboBox3);
-            this.groupBoxSwictch.Controls.Add(this.checkBox1);
-            this.groupBoxSwictch.Controls.Add(this.label15);
-            this.groupBoxSwictch.Controls.Add(this.label14);
-            this.groupBoxSwictch.Controls.Add(this.label13);
-            this.groupBoxSwictch.Controls.Add(this.pbX3);
-            this.groupBoxSwictch.Controls.Add(this.pbX2);
-            this.groupBoxSwictch.Controls.Add(this.pbX1);
-            this.groupBoxSwictch.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSwictch.Location = new System.Drawing.Point(0, 111);
-            this.groupBoxSwictch.Name = "groupBoxSwictch";
-            this.groupBoxSwictch.Size = new System.Drawing.Size(430, 371);
-            this.groupBoxSwictch.TabIndex = 53;
-            this.groupBoxSwictch.TabStop = false;
-            this.groupBoxSwictch.Text = "开关量";
-            // 
-            // pbX1
-            // 
-            this.pbX1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbX1.Image = global::西子新能源.Properties.Resources.Open;
-            this.pbX1.Location = new System.Drawing.Point(173, 216);
-            this.pbX1.Name = "pbX1";
-            this.pbX1.Size = new System.Drawing.Size(92, 30);
-            this.pbX1.TabIndex = 0;
-            this.pbX1.TabStop = false;
-            this.pbX1.Click += new System.EventHandler(this.pbX1_Click);
-            // 
-            // pbX2
-            // 
-            this.pbX2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbX2.Image = global::西子新能源.Properties.Resources.Open;
-            this.pbX2.Location = new System.Drawing.Point(173, 262);
-            this.pbX2.Name = "pbX2";
-            this.pbX2.Size = new System.Drawing.Size(92, 30);
-            this.pbX2.TabIndex = 1;
-            this.pbX2.TabStop = false;
-            this.pbX2.Click += new System.EventHandler(this.pbX2_Click);
-            // 
-            // pbX3
-            // 
-            this.pbX3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbX3.Image = global::西子新能源.Properties.Resources.Open;
-            this.pbX3.Location = new System.Drawing.Point(173, 319);
-            this.pbX3.Name = "pbX3";
-            this.pbX3.Size = new System.Drawing.Size(92, 30);
-            this.pbX3.TabIndex = 2;
-            this.pbX3.TabStop = false;
-            this.pbX3.Click += new System.EventHandler(this.pbX3_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(73, 222);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 19);
-            this.label13.TabIndex = 46;
-            this.label13.Text = "进水电磁阀:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(73, 273);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 19);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "放水电磁阀:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(111, 325);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 19);
-            this.label15.TabIndex = 56;
-            this.label15.Text = "市电";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(341, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(54, 23);
-            this.checkBox1.TabIndex = 69;
-            this.checkBox1.Text = "实验";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Enabled = false;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "5",
-            "10",
-            "15",
-            "20",
-            "25",
-            "30"});
-            this.comboBox3.Location = new System.Drawing.Point(244, 32);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(51, 27);
-            this.comboBox3.TabIndex = 70;
-            this.comboBox3.Text = "10";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(297, 35);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 19);
-            this.label17.TabIndex = 71;
-            this.label17.Text = "min";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(47, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(79, 23);
-            this.radioButton1.TabIndex = 72;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "手动控制";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
-            // 
-            // radioButton24
-            // 
-            this.radioButton24.AutoSize = true;
-            this.radioButton24.Location = new System.Drawing.Point(132, 36);
-            this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(79, 23);
-            this.radioButton24.TabIndex = 73;
-            this.radioButton24.Text = "自动控制";
-            this.radioButton24.UseVisualStyleBackColor = true;
-            this.radioButton24.Click += new System.EventHandler(this.radioButton24_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 19);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "控制柜手动开关：";
-            // 
-            // meter1
-            // 
-            scaleCustomDivision1.Text = "开关";
-            this.meter1.CustomDivisions.AddRange(new NationalInstruments.UI.ScaleCustomDivision[] {
-            scaleCustomDivision1});
-            this.meter1.Location = new System.Drawing.Point(125, 107);
-            this.meter1.MeterStyle = NationalInstruments.UI.MeterStyle.FlatWithThickNeedle;
-            this.meter1.Name = "meter1";
-            this.meter1.Range = new NationalInstruments.UI.Range(1, 3);
-            this.meter1.ScaleVisible = false;
-            this.meter1.Size = new System.Drawing.Size(188, 100);
-            this.meter1.TabIndex = 75;
-            this.meter1.Value = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 19);
-            this.label2.TabIndex = 76;
-            this.label2.Text = "光伏";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(296, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 19);
-            this.label3.TabIndex = 77;
-            this.label3.Text = "市电";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(185, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 19);
-            this.label4.TabIndex = 78;
-            this.label4.Text = "上位机控制";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(279, 325);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 19);
-            this.label5.TabIndex = 79;
-            this.label5.Text = "光伏";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(204, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 26);
-            this.button3.TabIndex = 66;
-            this.button3.Text = "发送参数";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(160, 34);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(22, 19);
-            this.label16.TabIndex = 67;
-            this.label16.Text = "℃";
-            // 
-            // lblTimeCanShu1
-            // 
-            this.lblTimeCanShu1.AutoSize = true;
-            this.lblTimeCanShu1.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTimeCanShu1.Location = new System.Drawing.Point(136, 56);
-            this.lblTimeCanShu1.Name = "lblTimeCanShu1";
-            this.lblTimeCanShu1.Size = new System.Drawing.Size(40, 16);
-            this.lblTimeCanShu1.TabIndex = 4;
-            this.lblTimeCanShu1.Text = "时间";
-            // 
-            // button34
-            // 
-            this.button34.AutoSize = true;
-            this.button34.BackColor = System.Drawing.Color.Lime;
-            this.button34.Location = new System.Drawing.Point(552, 25);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(84, 32);
-            this.button34.TabIndex = 24;
-            this.button34.Text = "获取参数";
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // btReflesh
-            // 
-            this.btReflesh.AutoSize = true;
-            this.btReflesh.BackColor = System.Drawing.Color.Lime;
-            this.btReflesh.Location = new System.Drawing.Point(664, 26);
-            this.btReflesh.Name = "btReflesh";
-            this.btReflesh.Size = new System.Drawing.Size(55, 32);
-            this.btReflesh.TabIndex = 26;
-            this.btReflesh.Text = "刷新";
-            this.btReflesh.UseVisualStyleBackColor = false;
-            this.btReflesh.Click += new System.EventHandler(this.btReflesh_Click);
-            // 
-            // lblYHProject
-            // 
-            this.lblYHProject.AutoSize = true;
-            this.lblYHProject.Location = new System.Drawing.Point(133, 22);
-            this.lblYHProject.Name = "lblYHProject";
-            this.lblYHProject.Size = new System.Drawing.Size(93, 19);
-            this.lblYHProject.TabIndex = 53;
-            this.lblYHProject.Text = "lblYHProject";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(739, 33);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 19);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "串口1：";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(869, 33);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 19);
-            this.label19.TabIndex = 55;
-            this.label19.Text = "串口2：";
-            // 
-            // cbBSerialPort1
-            // 
-            this.cbBSerialPort1.FormattingEnabled = true;
-            this.cbBSerialPort1.Items.AddRange(new object[] {
-            "COM1",
-            "COM2",
-            "COM3",
-            "COM4",
-            "COM5",
-            "COM6"});
-            this.cbBSerialPort1.Location = new System.Drawing.Point(789, 29);
-            this.cbBSerialPort1.Name = "cbBSerialPort1";
-            this.cbBSerialPort1.Size = new System.Drawing.Size(62, 27);
-            this.cbBSerialPort1.TabIndex = 56;
-            this.cbBSerialPort1.SelectedIndexChanged += new System.EventHandler(this.cbBSerialPort1_SelectedIndexChanged);
-            // 
-            // cbBSerialPort2
-            // 
-            this.cbBSerialPort2.FormattingEnabled = true;
-            this.cbBSerialPort2.Items.AddRange(new object[] {
-            "COM1",
-            "COM2",
-            "COM3",
-            "COM4",
-            "COM5",
-            "COM6"});
-            this.cbBSerialPort2.Location = new System.Drawing.Point(926, 29);
-            this.cbBSerialPort2.Name = "cbBSerialPort2";
-            this.cbBSerialPort2.Size = new System.Drawing.Size(62, 27);
-            this.cbBSerialPort2.TabIndex = 57;
-            this.cbBSerialPort2.SelectedIndexChanged += new System.EventHandler(this.cbBSerialPort2_SelectedIndexChanged);
-            // 
-            // 监控信息tabPage
-            // 
-            this.监控信息tabPage.Controls.Add(this.splitContainer5);
-            this.监控信息tabPage.Controls.Add(this.splitContainer27);
-            this.监控信息tabPage.Location = new System.Drawing.Point(4, 30);
-            this.监控信息tabPage.Name = "监控信息tabPage";
-            this.监控信息tabPage.Size = new System.Drawing.Size(1029, 612);
-            this.监控信息tabPage.TabIndex = 4;
-            this.监控信息tabPage.Text = "监控信息";
-            this.监控信息tabPage.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer27
-            // 
-            this.splitContainer27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer27.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer27.Name = "splitContainer27";
-            this.splitContainer27.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer27.Panel1
-            // 
-            this.splitContainer27.Panel1.Controls.Add(this.DGV2Main);
-            // 
-            // splitContainer27.Panel2
-            // 
-            this.splitContainer27.Panel2.Controls.Add(this.chart3);
-            this.splitContainer27.Size = new System.Drawing.Size(1029, 612);
-            this.splitContainer27.SplitterDistance = 318;
-            this.splitContainer27.TabIndex = 1;
-            // 
-            // chart3
-            // 
-            this.chart3.BackColor = System.Drawing.Color.Transparent;
-            this.chart3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
-            this.chart3.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            this.chart3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea5.Area3DStyle.IsRightAngleAxes = false;
-            chartArea5.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
-            chartArea5.Area3DStyle.PointDepth = 40;
-            chartArea5.Area3DStyle.PointGapDepth = 0;
-            chartArea5.Area3DStyle.Rotation = 7;
-            chartArea5.Area3DStyle.WallWidth = 3;
-            chartArea5.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea5.BackColor = System.Drawing.Color.Black;
-            chartArea5.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea5.BorderWidth = 2;
-            chartArea5.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea5);
-            this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chart3.Legends.Add(legend5);
-            this.chart3.Location = new System.Drawing.Point(0, 0);
-            this.chart3.Name = "chart3";
-            series38.ChartArea = "ChartArea1";
-            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series38.Color = System.Drawing.Color.Yellow;
-            series38.IsValueShownAsLabel = true;
-            series38.Legend = "Legend1";
-            series38.LegendText = "集热器管道温度";
-            series38.Name = "Series1";
-            series39.ChartArea = "ChartArea1";
-            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series39.Legend = "Legend1";
-            series39.LegendText = "集热水箱温度";
-            series39.Name = "Series2";
-            series40.ChartArea = "ChartArea1";
-            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series40.Legend = "Legend1";
-            series40.LegendText = "回水温度";
-            series40.Name = "Series3";
-            series41.ChartArea = "ChartArea1";
-            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series41.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series41.Legend = "Legend1";
-            series41.LegendText = "环境温度";
-            series41.Name = "Series4";
-            series42.ChartArea = "ChartArea1";
-            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series42.Legend = "Legend1";
-            series42.LegendText = "集热水箱液位高度";
-            series42.Name = "Series5";
-            series43.ChartArea = "ChartArea1";
-            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series43.Legend = "Legend1";
-            series43.LegendText = "恒温水箱温度";
-            series43.Name = "Series6";
-            series44.ChartArea = "ChartArea1";
-            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series44.Legend = "Legend1";
-            series44.LegendText = "恒温水箱液位高度";
-            series44.Name = "Series7";
-            this.chart3.Series.Add(series38);
-            this.chart3.Series.Add(series39);
-            this.chart3.Series.Add(series40);
-            this.chart3.Series.Add(series41);
-            this.chart3.Series.Add(series42);
-            this.chart3.Series.Add(series43);
-            this.chart3.Series.Add(series44);
-            this.chart3.Size = new System.Drawing.Size(1029, 290);
-            this.chart3.TabIndex = 0;
-            this.chart3.Text = "chart3";
-            // 
-            // DGV2Main
-            // 
-            this.DGV2Main.AllowUserToAddRows = false;
-            this.DGV2Main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV2Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DGV2Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV2Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV2Main.Location = new System.Drawing.Point(0, 0);
-            this.DGV2Main.Name = "DGV2Main";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV2Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DGV2Main.RowTemplate.Height = 23;
-            this.DGV2Main.Size = new System.Drawing.Size(1029, 318);
-            this.DGV2Main.TabIndex = 0;
-            // 
-            // splitContainer5
-            // 
-            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer5.Name = "splitContainer5";
-            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer5.Panel1
-            // 
-            this.splitContainer5.Panel1.Controls.Add(this.DGVMain);
-            // 
-            // splitContainer5.Panel2
-            // 
-            this.splitContainer5.Panel2.Controls.Add(this.chart1);
-            this.splitContainer5.Panel2.Controls.Add(this.chart4);
-            this.splitContainer5.Panel2.Controls.Add(this.chart5);
-            this.splitContainer5.Panel2.Controls.Add(this.chart6);
-            this.splitContainer5.Size = new System.Drawing.Size(1029, 612);
-            this.splitContainer5.SplitterDistance = 318;
-            this.splitContainer5.TabIndex = 0;
-            // 
-            // chart6
-            // 
-            this.chart6.BackColor = System.Drawing.Color.Transparent;
-            this.chart6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
-            this.chart6.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            this.chart6.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea4.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea4.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea4.BackColor = System.Drawing.Color.Black;
-            chartArea4.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea4.BorderWidth = 2;
-            chartArea4.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea4);
-            this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chart6.Legends.Add(legend4);
-            this.chart6.Location = new System.Drawing.Point(0, 0);
-            this.chart6.Name = "chart6";
-            series33.ChartArea = "ChartArea1";
-            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series33.Legend = "Legend1";
-            series33.LegendText = "冷水进水温度";
-            series33.Name = "Series1";
-            series34.ChartArea = "ChartArea1";
-            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series34.Legend = "Legend1";
-            series34.LegendText = "热水出水温度";
-            series34.Name = "Series2";
-            series35.ChartArea = "ChartArea1";
-            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series35.Legend = "Legend1";
-            series35.LegendText = "集热器进口温度";
-            series35.Name = "Series3";
-            series36.ChartArea = "ChartArea1";
-            series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series36.Legend = "Legend1";
-            series36.LegendText = "集热器出口温度";
-            series36.Name = "Series4";
-            series36.YValuesPerPoint = 2;
-            series37.ChartArea = "ChartArea1";
-            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series37.Legend = "Legend1";
-            series37.LegendText = "环境温度";
-            series37.Name = "Series5";
-            this.chart6.Series.Add(series33);
-            this.chart6.Series.Add(series34);
-            this.chart6.Series.Add(series35);
-            this.chart6.Series.Add(series36);
-            this.chart6.Series.Add(series37);
-            this.chart6.Size = new System.Drawing.Size(1029, 290);
-            this.chart6.TabIndex = 3;
-            this.chart6.Text = "chart6";
-            // 
-            // chart5
-            // 
-            this.chart5.BackColor = System.Drawing.Color.Transparent;
-            this.chart5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
-            this.chart5.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            this.chart5.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea3.BackColor = System.Drawing.Color.Black;
-            chartArea3.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea3.BorderWidth = 2;
-            chartArea3.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea3);
-            this.chart5.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chart5.Legends.Add(legend3);
-            this.chart5.Location = new System.Drawing.Point(0, 0);
-            this.chart5.Name = "chart5";
-            series25.ChartArea = "ChartArea1";
-            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series25.Legend = "Legend1";
-            series25.LegendText = "冷水上水温度T1";
-            series25.Name = "Series1";
-            series26.ChartArea = "ChartArea1";
-            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series26.Legend = "Legend1";
-            series26.LegendText = "环境温度T2";
-            series26.Name = "Series2";
-            series27.ChartArea = "ChartArea1";
-            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series27.Legend = "Legend1";
-            series27.LegendText = "回水温度T3";
-            series27.Name = "Series3";
-            series28.ChartArea = "ChartArea1";
-            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series28.Legend = "Legend1";
-            series28.LegendText = "1号水箱温度T4";
-            series28.Name = "Series4";
-            series28.YValuesPerPoint = 2;
-            series29.ChartArea = "ChartArea1";
-            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series29.Legend = "Legend1";
-            series29.LegendText = "热水供水温度T5";
-            series29.Name = "Series5";
-            series30.ChartArea = "ChartArea1";
-            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series30.Legend = "Legend1";
-            series30.LegendText = "2号水箱温度T6";
-            series30.Name = "Series6";
-            series31.ChartArea = "ChartArea1";
-            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series31.Legend = "Legend1";
-            series31.LegendText = "热泵供水温度T7";
-            series31.Name = "Series7";
-            series32.ChartArea = "ChartArea1";
-            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series32.Legend = "Legend1";
-            series32.LegendText = "热泵进水温度T8";
-            series32.Name = "Series8";
-            this.chart5.Series.Add(series25);
-            this.chart5.Series.Add(series26);
-            this.chart5.Series.Add(series27);
-            this.chart5.Series.Add(series28);
-            this.chart5.Series.Add(series29);
-            this.chart5.Series.Add(series30);
-            this.chart5.Series.Add(series31);
-            this.chart5.Series.Add(series32);
-            this.chart5.Size = new System.Drawing.Size(1029, 290);
-            this.chart5.TabIndex = 2;
-            this.chart5.Text = "chart5";
-            // 
-            // chart4
-            // 
-            this.chart4.BackColor = System.Drawing.Color.Transparent;
-            this.chart4.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
-            this.chart4.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            this.chart4.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea2.BackColor = System.Drawing.Color.Black;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea2.BorderWidth = 2;
-            chartArea2.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea2);
-            this.chart4.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chart4.Legends.Add(legend2);
-            this.chart4.Location = new System.Drawing.Point(0, 0);
-            this.chart4.Name = "chart4";
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series17.Legend = "Legend1";
-            series17.LegendText = "温度T1";
-            series17.Name = "Series1";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series18.Legend = "Legend1";
-            series18.LegendText = "温度T2";
-            series18.Name = "Series2";
-            series19.ChartArea = "ChartArea1";
-            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series19.Legend = "Legend1";
-            series19.LegendText = "温度T3";
-            series19.Name = "Series3";
-            series20.ChartArea = "ChartArea1";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series20.Legend = "Legend1";
-            series20.LegendText = "温度T4";
-            series20.Name = "Series4";
-            series20.YValuesPerPoint = 2;
-            series21.ChartArea = "ChartArea1";
-            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series21.Legend = "Legend1";
-            series21.LegendText = "温度T5";
-            series21.Name = "Series5";
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series22.Legend = "Legend1";
-            series22.LegendText = "温度T6";
-            series22.Name = "Series6";
-            series23.ChartArea = "ChartArea1";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series23.Legend = "Legend1";
-            series23.LegendText = "温度T7";
-            series23.Name = "Series7";
-            series24.ChartArea = "ChartArea1";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series24.Legend = "Legend1";
-            series24.LegendText = "温度T8";
-            series24.Name = "Series8";
-            this.chart4.Series.Add(series17);
-            this.chart4.Series.Add(series18);
-            this.chart4.Series.Add(series19);
-            this.chart4.Series.Add(series20);
-            this.chart4.Series.Add(series21);
-            this.chart4.Series.Add(series22);
-            this.chart4.Series.Add(series23);
-            this.chart4.Series.Add(series24);
-            this.chart4.Size = new System.Drawing.Size(1029, 290);
-            this.chart4.TabIndex = 1;
-            this.chart4.Text = "chart4";
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Transparent;
-            this.chart1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
-            this.chart1.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            this.chart1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea1.Area3DStyle.IsRightAngleAxes = false;
-            chartArea1.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
-            chartArea1.Area3DStyle.PointDepth = 40;
-            chartArea1.Area3DStyle.PointGapDepth = 0;
-            chartArea1.Area3DStyle.Rotation = 7;
-            chartArea1.Area3DStyle.WallWidth = 3;
-            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea1.BackColor = System.Drawing.Color.Black;
-            chartArea1.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea1.BorderWidth = 2;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Yellow;
-            series1.Legend = "Legend1";
-            series1.LegendText = "压缩机排气压力";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.LegendText = "蒸发器出口压力";
-            series2.Name = "Series2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.LegendText = "压排温度";
-            series3.Name = "Series3";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series4.Legend = "Legend1";
-            series4.LegendText = "冷出温";
-            series4.Name = "Series4";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.LegendText = "蒸出温";
-            series5.Name = "Series5";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.LegendText = "蒸入温";
-            series6.Name = "Series6";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.LegendText = "供冷流量";
-            series7.Name = "Series7";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.LegendText = "冰块温度";
-            series8.Name = "Series8";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.LegendText = "水箱上温";
-            series9.Name = "Series9";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.LegendText = "回水温";
-            series10.Name = "Series10";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.LegendText = "水箱下温";
-            series11.Name = "Series11";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Legend = "Legend1";
-            series12.LegendText = "供水温";
-            series12.Name = "Series12";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Legend = "Legend1";
-            series13.LegendText = "风口温";
-            series13.Name = "Series13";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.Legend = "Legend1";
-            series14.LegendText = "房间温";
-            series14.Name = "Series14";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series15.Legend = "Legend1";
-            series15.LegendText = "溢水量";
-            series15.Name = "Series15";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series16.Legend = "Legend1";
-            series16.LegendText = "水箱液位";
-            series16.Name = "Series16";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
-            this.chart1.Series.Add(series11);
-            this.chart1.Series.Add(series12);
-            this.chart1.Series.Add(series13);
-            this.chart1.Series.Add(series14);
-            this.chart1.Series.Add(series15);
-            this.chart1.Series.Add(series16);
-            this.chart1.Size = new System.Drawing.Size(1029, 290);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
-            // DGVMain
-            // 
-            this.DGVMain.AllowUserToAddRows = false;
-            this.DGVMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGVMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGVMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVMain.Location = new System.Drawing.Point(0, 0);
-            this.DGVMain.Name = "DGVMain";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVMain.RowTemplate.Height = 23;
-            this.DGVMain.Size = new System.Drawing.Size(1029, 322);
-            this.DGVMain.TabIndex = 0;
-            // 
-            // 项目信息tabPage
-            // 
-            this.项目信息tabPage.Controls.Add(this.splitContainer4);
-            this.项目信息tabPage.Location = new System.Drawing.Point(4, 30);
-            this.项目信息tabPage.Name = "项目信息tabPage";
-            this.项目信息tabPage.Size = new System.Drawing.Size(1029, 612);
-            this.项目信息tabPage.TabIndex = 3;
-            this.项目信息tabPage.Text = "项目信息";
-            this.项目信息tabPage.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer4
-            // 
-            this.splitContainer4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer4.Name = "splitContainer4";
-            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer4.Panel1
-            // 
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlashCold);
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlash1);
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlash2);
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlash纯热泵);
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlash4);
-            this.splitContainer4.Panel1.Controls.Add(this.panelFlash5);
-            // 
-            // splitContainer4.Panel2
-            // 
-            this.splitContainer4.Panel2.Controls.Add(this.groupBox16);
-            this.splitContainer4.Size = new System.Drawing.Size(1029, 612);
-            this.splitContainer4.SplitterDistance = 363;
-            this.splitContainer4.TabIndex = 0;
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox16.BackColor = System.Drawing.Color.White;
-            this.groupBox16.Controls.Add(this.txtHeatArea);
-            this.groupBox16.Controls.Add(this.label68);
-            this.groupBox16.Controls.Add(this.txtTecCode);
-            this.groupBox16.Controls.Add(this.label69);
-            this.groupBox16.Controls.Add(this.txtTectype);
-            this.groupBox16.Controls.Add(this.label70);
-            this.groupBox16.Controls.Add(this.txtDescribe);
-            this.groupBox16.Controls.Add(this.label67);
-            this.groupBox16.Controls.Add(this.txtLatitude);
-            this.groupBox16.Controls.Add(this.label65);
-            this.groupBox16.Controls.Add(this.txtLongtitude);
-            this.groupBox16.Controls.Add(this.label66);
-            this.groupBox16.Controls.Add(this.txtCompanyName);
-            this.groupBox16.Controls.Add(this.label60);
-            this.groupBox16.Controls.Add(this.txtProjectAddress);
-            this.groupBox16.Controls.Add(this.label59);
-            this.groupBox16.Controls.Add(this.txtProjectCode);
-            this.groupBox16.Controls.Add(this.label54);
-            this.groupBox16.Controls.Add(this.txtProjectName);
-            this.groupBox16.Controls.Add(this.label53);
-            this.groupBox16.Controls.Add(this.txtAreaCode);
-            this.groupBox16.Controls.Add(this.label48);
-            this.groupBox16.Controls.Add(this.label47);
-            this.groupBox16.Controls.Add(this.txtAreaName);
-            this.groupBox16.Controls.Add(this.label27);
-            this.groupBox16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox16.Location = new System.Drawing.Point(0, 0);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(1025, 242);
-            this.groupBox16.TabIndex = 1;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "项目及监测对象信息";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(44, 32);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(93, 20);
-            this.label27.TabIndex = 40;
-            this.label27.Text = "项目所在地：";
-            // 
-            // txtAreaName
-            // 
-            this.txtAreaName.Location = new System.Drawing.Point(143, 29);
-            this.txtAreaName.Name = "txtAreaName";
-            this.txtAreaName.ReadOnly = true;
-            this.txtAreaName.Size = new System.Drawing.Size(225, 26);
-            this.txtAreaName.TabIndex = 41;
-            this.txtAreaName.Text = "txtAreaName";
-            this.txtAreaName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(374, 32);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(93, 20);
-            this.label47.TabIndex = 43;
-            this.label47.Text = "地（区、市）";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(542, 32);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(79, 20);
-            this.label48.TabIndex = 44;
-            this.label48.Text = "地区代码：";
-            // 
-            // txtAreaCode
-            // 
-            this.txtAreaCode.Location = new System.Drawing.Point(627, 29);
-            this.txtAreaCode.Name = "txtAreaCode";
-            this.txtAreaCode.ReadOnly = true;
-            this.txtAreaCode.Size = new System.Drawing.Size(100, 26);
-            this.txtAreaCode.TabIndex = 45;
-            this.txtAreaCode.Text = "txtAreaCode";
-            this.txtAreaCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(58, 77);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(79, 20);
-            this.label53.TabIndex = 46;
-            this.label53.Text = "项目名称：";
-            // 
-            // txtProjectName
-            // 
-            this.txtProjectName.Location = new System.Drawing.Point(143, 74);
-            this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.ReadOnly = true;
-            this.txtProjectName.Size = new System.Drawing.Size(380, 26);
-            this.txtProjectName.TabIndex = 47;
-            this.txtProjectName.Text = "txtProjectName";
-            this.txtProjectName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(542, 77);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(79, 20);
-            this.label54.TabIndex = 48;
-            this.label54.Text = "项目编码：";
-            // 
-            // txtProjectCode
-            // 
-            this.txtProjectCode.Location = new System.Drawing.Point(627, 74);
-            this.txtProjectCode.Name = "txtProjectCode";
-            this.txtProjectCode.ReadOnly = true;
-            this.txtProjectCode.Size = new System.Drawing.Size(100, 26);
-            this.txtProjectCode.TabIndex = 49;
-            this.txtProjectCode.Text = "txtProjectCode";
-            this.txtProjectCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(58, 125);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(79, 20);
-            this.label59.TabIndex = 50;
-            this.label59.Text = "项目地址：";
-            // 
-            // txtProjectAddress
-            // 
-            this.txtProjectAddress.Location = new System.Drawing.Point(143, 122);
-            this.txtProjectAddress.Name = "txtProjectAddress";
-            this.txtProjectAddress.ReadOnly = true;
-            this.txtProjectAddress.Size = new System.Drawing.Size(380, 26);
-            this.txtProjectAddress.TabIndex = 51;
-            this.txtProjectAddress.Text = "txtProjectAddress";
-            this.txtProjectAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(58, 169);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(79, 20);
-            this.label60.TabIndex = 52;
-            this.label60.Text = "公司名称：";
-            // 
-            // txtCompanyName
-            // 
-            this.txtCompanyName.Location = new System.Drawing.Point(143, 166);
-            this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.ReadOnly = true;
-            this.txtCompanyName.Size = new System.Drawing.Size(380, 26);
-            this.txtCompanyName.TabIndex = 53;
-            this.txtCompanyName.Text = "txtCompanyName";
-            this.txtCompanyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(542, 122);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(79, 20);
-            this.label66.TabIndex = 54;
-            this.label66.Text = "项目经度：";
-            // 
-            // txtLongtitude
-            // 
-            this.txtLongtitude.Location = new System.Drawing.Point(627, 119);
-            this.txtLongtitude.Name = "txtLongtitude";
-            this.txtLongtitude.ReadOnly = true;
-            this.txtLongtitude.Size = new System.Drawing.Size(100, 26);
-            this.txtLongtitude.TabIndex = 55;
-            this.txtLongtitude.Text = "txtLongtitude";
-            this.txtLongtitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(542, 167);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(79, 20);
-            this.label65.TabIndex = 56;
-            this.label65.Text = "项目纬度：";
-            // 
-            // txtLatitude
-            // 
-            this.txtLatitude.Location = new System.Drawing.Point(627, 164);
-            this.txtLatitude.Name = "txtLatitude";
-            this.txtLatitude.ReadOnly = true;
-            this.txtLatitude.Size = new System.Drawing.Size(100, 26);
-            this.txtLatitude.TabIndex = 57;
-            this.txtLatitude.Text = "txtLatitude";
-            this.txtLatitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(738, 32);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(79, 20);
-            this.label67.TabIndex = 58;
-            this.label67.Text = "项目描述：";
-            // 
-            // txtDescribe
-            // 
-            this.txtDescribe.Location = new System.Drawing.Point(742, 61);
-            this.txtDescribe.Name = "txtDescribe";
-            this.txtDescribe.ReadOnly = true;
-            this.txtDescribe.Size = new System.Drawing.Size(263, 171);
-            this.txtDescribe.TabIndex = 59;
-            this.txtDescribe.Text = "";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(58, 209);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(79, 20);
-            this.label70.TabIndex = 60;
-            this.label70.Text = "技术类型：";
-            // 
-            // txtTectype
-            // 
-            this.txtTectype.Location = new System.Drawing.Point(143, 206);
-            this.txtTectype.Name = "txtTectype";
-            this.txtTectype.ReadOnly = true;
-            this.txtTectype.Size = new System.Drawing.Size(135, 26);
-            this.txtTectype.TabIndex = 61;
-            this.txtTectype.Text = "txtTectype";
-            this.txtTectype.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(303, 209);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(79, 20);
-            this.label69.TabIndex = 62;
-            this.label69.Text = "技术编码：";
-            // 
-            // txtTecCode
-            // 
-            this.txtTecCode.Location = new System.Drawing.Point(388, 206);
-            this.txtTecCode.Name = "txtTecCode";
-            this.txtTecCode.ReadOnly = true;
-            this.txtTecCode.Size = new System.Drawing.Size(135, 26);
-            this.txtTecCode.TabIndex = 63;
-            this.txtTecCode.Text = "txtTecCode";
-            this.txtTecCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(542, 209);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(79, 20);
-            this.label68.TabIndex = 64;
-            this.label68.Text = "集热面积：";
-            // 
-            // txtHeatArea
-            // 
-            this.txtHeatArea.Location = new System.Drawing.Point(627, 206);
-            this.txtHeatArea.Name = "txtHeatArea";
-            this.txtHeatArea.ReadOnly = true;
-            this.txtHeatArea.Size = new System.Drawing.Size(100, 26);
-            this.txtHeatArea.TabIndex = 65;
-            this.txtHeatArea.Text = "txtHeatArea";
-            this.txtHeatArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panelFlash5
-            // 
-            this.panelFlash5.Controls.Add(this.groupBox6);
-            this.panelFlash5.Location = new System.Drawing.Point(8, 10);
-            this.panelFlash5.Name = "panelFlash5";
-            this.panelFlash5.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlash5.TabIndex = 5;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.axShockwaveFlash5);
-            this.groupBox6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox6.Location = new System.Drawing.Point(0, 0);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1025, 363);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "系统Flash展示";
-            // 
-            // axShockwaveFlash5
-            // 
-            this.axShockwaveFlash5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.axShockwaveFlash5.Enabled = true;
-            this.axShockwaveFlash5.Location = new System.Drawing.Point(3, 22);
-            this.axShockwaveFlash5.Name = "axShockwaveFlash5";
-            this.axShockwaveFlash5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash5.OcxState")));
-            this.axShockwaveFlash5.Size = new System.Drawing.Size(1019, 338);
-            this.axShockwaveFlash5.TabIndex = 0;
-            // 
-            // panelFlash4
-            // 
-            this.panelFlash4.Controls.Add(this.groupBox5);
-            this.panelFlash4.Location = new System.Drawing.Point(0, 2);
-            this.panelFlash4.Name = "panelFlash4";
-            this.panelFlash4.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlash4.TabIndex = 3;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.axShockwaveFlash4);
-            this.groupBox5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox5.Location = new System.Drawing.Point(0, 0);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1025, 363);
-            this.groupBox5.TabIndex = 2;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "系统Flash展示";
-            // 
-            // axShockwaveFlash4
-            // 
-            this.axShockwaveFlash4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.axShockwaveFlash4.Enabled = true;
-            this.axShockwaveFlash4.Location = new System.Drawing.Point(3, 22);
-            this.axShockwaveFlash4.Name = "axShockwaveFlash4";
-            this.axShockwaveFlash4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash4.OcxState")));
-            this.axShockwaveFlash4.Size = new System.Drawing.Size(1019, 338);
-            this.axShockwaveFlash4.TabIndex = 0;
-            // 
-            // panelFlash纯热泵
-            // 
-            this.panelFlash纯热泵.Controls.Add(this.groupBox83);
-            this.panelFlash纯热泵.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFlash纯热泵.Location = new System.Drawing.Point(0, 0);
-            this.panelFlash纯热泵.Name = "panelFlash纯热泵";
-            this.panelFlash纯热泵.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlash纯热泵.TabIndex = 2;
-            // 
-            // groupBox83
-            // 
-            this.groupBox83.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox83.Controls.Add(this.axShockwaveFlash纯热泵);
-            this.groupBox83.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox83.Location = new System.Drawing.Point(0, 0);
-            this.groupBox83.Name = "groupBox83";
-            this.groupBox83.Size = new System.Drawing.Size(1025, 363);
-            this.groupBox83.TabIndex = 1;
-            this.groupBox83.TabStop = false;
-            this.groupBox83.Text = "系统Flash展示";
-            // 
-            // axShockwaveFlash纯热泵
-            // 
-            this.axShockwaveFlash纯热泵.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.axShockwaveFlash纯热泵.Enabled = true;
-            this.axShockwaveFlash纯热泵.Location = new System.Drawing.Point(3, 22);
-            this.axShockwaveFlash纯热泵.Name = "axShockwaveFlash纯热泵";
-            this.axShockwaveFlash纯热泵.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash纯热泵.OcxState")));
-            this.axShockwaveFlash纯热泵.Size = new System.Drawing.Size(1019, 338);
-            this.axShockwaveFlash纯热泵.TabIndex = 0;
-            // 
-            // panelFlash2
-            // 
-            this.panelFlash2.Controls.Add(this.groupBox82);
-            this.panelFlash2.Location = new System.Drawing.Point(0, 0);
-            this.panelFlash2.Name = "panelFlash2";
-            this.panelFlash2.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlash2.TabIndex = 1;
-            // 
-            // groupBox82
-            // 
-            this.groupBox82.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox82.Controls.Add(this.axShockwaveFlash3);
-            this.groupBox82.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox82.Location = new System.Drawing.Point(0, 0);
-            this.groupBox82.Name = "groupBox82";
-            this.groupBox82.Size = new System.Drawing.Size(1025, 363);
-            this.groupBox82.TabIndex = 2;
-            this.groupBox82.TabStop = false;
-            this.groupBox82.Text = "系统Flash展示";
-            // 
-            // axShockwaveFlash3
-            // 
-            this.axShockwaveFlash3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.axShockwaveFlash3.Enabled = true;
-            this.axShockwaveFlash3.Location = new System.Drawing.Point(3, 22);
-            this.axShockwaveFlash3.Name = "axShockwaveFlash3";
-            this.axShockwaveFlash3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash3.OcxState")));
-            this.axShockwaveFlash3.Size = new System.Drawing.Size(1019, 338);
-            this.axShockwaveFlash3.TabIndex = 0;
-            // 
-            // panelFlash1
-            // 
-            this.panelFlash1.Controls.Add(this.groupBox15);
-            this.panelFlash1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFlash1.Location = new System.Drawing.Point(0, 0);
-            this.panelFlash1.Name = "panelFlash1";
-            this.panelFlash1.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlash1.TabIndex = 0;
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox15.Controls.Add(this.axShockwaveFlash1);
-            this.groupBox15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox15.Location = new System.Drawing.Point(0, 0);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(1025, 363);
-            this.groupBox15.TabIndex = 1;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "系统Flash展示";
-            // 
-            // axShockwaveFlash1
-            // 
-            this.axShockwaveFlash1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.axShockwaveFlash1.Enabled = true;
-            this.axShockwaveFlash1.Location = new System.Drawing.Point(3, 22);
-            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
-            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(1019, 338);
-            this.axShockwaveFlash1.TabIndex = 0;
-            // 
-            // panelFlashCold
-            // 
-            this.panelFlashCold.Controls.Add(this.groupBox2);
-            this.panelFlashCold.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFlashCold.Location = new System.Drawing.Point(0, 0);
-            this.panelFlashCold.Name = "panelFlashCold";
-            this.panelFlashCold.Size = new System.Drawing.Size(1025, 359);
-            this.panelFlashCold.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.axShockwaveFlashCold);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1025, 359);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "系统Flsh展示";
-            // 
-            // axShockwaveFlashCold
-            // 
-            this.axShockwaveFlashCold.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axShockwaveFlashCold.Enabled = true;
-            this.axShockwaveFlashCold.Location = new System.Drawing.Point(3, 25);
-            this.axShockwaveFlashCold.Name = "axShockwaveFlashCold";
-            this.axShockwaveFlashCold.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlashCold.OcxState")));
-            this.axShockwaveFlashCold.Size = new System.Drawing.Size(1019, 331);
-            this.axShockwaveFlashCold.TabIndex = 1;
-            // 
-            // tabControl
-            // 
-            this.tabControl.Controls.Add(this.项目信息tabPage);
-            this.tabControl.Controls.Add(this.监控信息tabPage);
-            this.tabControl.Controls.Add(this.光伏制冷系统信息);
-            this.tabControl.Controls.Add(this.维护登记tabPage9);
-            this.tabControl.Controls.Add(this.系统运行信息tabPage);
-            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabControl.Location = new System.Drawing.Point(0, 0);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1037, 646);
-            this.tabControl.TabIndex = 0;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -13093,10 +13092,86 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripTreeView.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
+            this.项目信息tabPage.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            this.splitContainer4.ResumeLayout(false);
+            this.panelFlashCold.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlashCold)).EndInit();
+            this.panelFlash1.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
+            this.panelFlash2.ResumeLayout(false);
+            this.groupBox82.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash3)).EndInit();
+            this.panelFlash纯热泵.ResumeLayout(false);
+            this.groupBox83.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash纯热泵)).EndInit();
+            this.panelFlash4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash4)).EndInit();
+            this.panelFlash5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash5)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.监控信息tabPage.ResumeLayout(false);
+            this.splitContainer5.Panel1.ResumeLayout(false);
+            this.splitContainer5.Panel2.ResumeLayout(false);
+            this.splitContainer5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart6)).EndInit();
+            this.splitContainer27.Panel1.ResumeLayout(false);
+            this.splitContainer27.Panel2.ResumeLayout(false);
+            this.splitContainer27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV2Main)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            this.光伏制冷系统信息.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.groupBox48.ResumeLayout(false);
+            this.groupBox48.PerformLayout();
+            this.groupBoxSwictch.ResumeLayout(false);
+            this.groupBoxSwictch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.meter1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX1)).EndInit();
+            this.panel36.ResumeLayout(false);
+            this.gbCOP.ResumeLayout(false);
+            this.gbCOP.PerformLayout();
+            this.groupBox50.ResumeLayout(false);
+            this.groupBox50.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.groupBox光伏系统数据.ResumeLayout(false);
+            this.groupBox光伏系统数据.PerformLayout();
+            this.groupBox制冷系统.ResumeLayout(false);
+            this.groupBox制冷系统.PerformLayout();
+            this.groupBox气象数据.ResumeLayout(false);
+            this.groupBox气象数据.PerformLayout();
+            this.维护登记tabPage9.ResumeLayout(false);
+            this.panel55.ResumeLayout(false);
+            this.录入被更换表数据groupBox84.ResumeLayout(false);
+            this.录入被更换表数据groupBox84.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.projectInfoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.energyTestingDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectInfoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.energyTestingDataSet)).EndInit();
+            this.系统运行信息tabPage.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
@@ -13240,82 +13315,6 @@
             this.panel29.PerformLayout();
             this.groupBox46.ResumeLayout(false);
             this.groupBox47.ResumeLayout(false);
-            this.系统运行信息tabPage.ResumeLayout(false);
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            this.splitContainer3.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox18.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            this.维护登记tabPage9.ResumeLayout(false);
-            this.panel55.ResumeLayout(false);
-            this.录入被更换表数据groupBox84.ResumeLayout(false);
-            this.录入被更换表数据groupBox84.PerformLayout();
-            this.光伏制冷系统信息.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.groupBox气象数据.ResumeLayout(false);
-            this.groupBox气象数据.PerformLayout();
-            this.groupBox制冷系统.ResumeLayout(false);
-            this.groupBox制冷系统.PerformLayout();
-            this.groupBox光伏系统数据.ResumeLayout(false);
-            this.groupBox光伏系统数据.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.groupBox50.ResumeLayout(false);
-            this.groupBox50.PerformLayout();
-            this.gbCOP.ResumeLayout(false);
-            this.gbCOP.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.groupBox48.ResumeLayout(false);
-            this.groupBox48.PerformLayout();
-            this.groupBoxSwictch.ResumeLayout(false);
-            this.groupBoxSwictch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbX3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.meter1)).EndInit();
-            this.监控信息tabPage.ResumeLayout(false);
-            this.splitContainer27.Panel1.ResumeLayout(false);
-            this.splitContainer27.Panel2.ResumeLayout(false);
-            this.splitContainer27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV2Main)).EndInit();
-            this.splitContainer5.Panel1.ResumeLayout(false);
-            this.splitContainer5.Panel2.ResumeLayout(false);
-            this.splitContainer5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVMain)).EndInit();
-            this.项目信息tabPage.ResumeLayout(false);
-            this.splitContainer4.Panel1.ResumeLayout(false);
-            this.splitContainer4.Panel2.ResumeLayout(false);
-            this.splitContainer4.ResumeLayout(false);
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.panelFlash5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash5)).EndInit();
-            this.panelFlash4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash4)).EndInit();
-            this.panelFlash纯热泵.ResumeLayout(false);
-            this.groupBox83.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash纯热泵)).EndInit();
-            this.panelFlash2.ResumeLayout(false);
-            this.groupBox82.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash3)).EndInit();
-            this.panelFlash1.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
-            this.panelFlashCold.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlashCold)).EndInit();
-            this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

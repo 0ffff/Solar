@@ -994,6 +994,7 @@
             title1.Name = "Title1";
             title1.Text = "标题";
             this.chartHisOne.Titles.Add(title1);
+            this.chartHisOne.DoubleClick += new System.EventHandler(this.chartHisOne_DoubleClick);
             // 
             // label5
             // 
