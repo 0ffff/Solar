@@ -49,6 +49,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btPicture = new System.Windows.Forms.Button();
             this.btnCurve = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -200,6 +201,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btPicture);
             this.groupBox2.Controls.Add(this.btnCurve);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -210,6 +212,19 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "查询数据";
+            // 
+            // btPicture
+            // 
+            this.btPicture.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btPicture.ForeColor = System.Drawing.Color.Black;
+            this.btPicture.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btPicture.Location = new System.Drawing.Point(57, 148);
+            this.btPicture.Name = "btPicture";
+            this.btPicture.Size = new System.Drawing.Size(120, 35);
+            this.btPicture.TabIndex = 5;
+            this.btPicture.Text = "导出图片";
+            this.btPicture.UseVisualStyleBackColor = true;
+            this.btPicture.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // btnCurve
             // 
@@ -1266,6 +1281,7 @@
         private System.Windows.Forms.DataGridView dgvHistory2;
         private System.Windows.Forms.Panel pnlHistory;
         private System.Windows.Forms.DataGridView dgvHistory;
+        private System.Windows.Forms.Button btPicture;
 
 
     }

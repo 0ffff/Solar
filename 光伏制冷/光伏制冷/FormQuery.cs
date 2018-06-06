@@ -47,6 +47,7 @@ namespace 光伏制冷
                 this.cmbArea.SelectedIndex = 0;//初选项
                 this.tLP1.Visible = true;
                 this.tLP2.Visible = false;
+                this.btPicture.Visible = false;//导出图片按钮不可见
                 
             }
             catch
@@ -1380,6 +1381,8 @@ namespace 光伏制冷
                     if (this.cmbCollectPointNameOne.SelectedIndex != -1)
                     {
                         SearchHisData(beginOne, endOne, this.chartHisOne, this.cmbCollectPointNameOne);
+                        //打印按钮可见
+                        this.btPicture.Visible = true;
                     }
                     else
                     { MessageBox.Show("请选择采集点名称！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
@@ -1660,6 +1663,26 @@ namespace 光伏制冷
         {
             string name = this.cmbCollectPointNameOne.Text + this.dtpBeginOne.Text+"-"+ this.dtpEndOne.Text;
             ExportPicture(name);
+        }
+
+        /// <summary>
+        /// 导出图片按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if (this.cmbCollectPointNameOne.Text != "")
+            {
+                string name = this.cmbCollectPointNameOne.Text + this.dtpBeginOne.Text + "-" + this.dtpEndOne.Text;
+                ExportPicture(name);
+            }
+            else
+            {
+                MessageBox.Show("请选择监测点");
+            }
+
+
         }
 
 
