@@ -30,79 +30,79 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("地区", 7, 5);
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series50 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series51 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series52 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series53 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series54 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series55 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series56 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series59 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series60 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series61 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series62 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series63 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series64 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series65 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series66 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series67 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series68 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series69 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series70 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series71 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series72 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series73 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series74 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series75 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series76 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series77 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series78 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series79 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series80 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series81 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series82 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series83 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series84 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series85 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series86 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series87 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series88 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series89 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series90 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series91 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series92 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series93 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            NationalInstruments.UI.ScaleCustomDivision scaleCustomDivision2 = new NationalInstruments.UI.ScaleCustomDivision();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("地区", 7, 5);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            NationalInstruments.UI.ScaleCustomDivision scaleCustomDivision1 = new NationalInstruments.UI.ScaleCustomDivision();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series94 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series95 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series96 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series97 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series98 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "监控中心数据服务器"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134))));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolSBStart = new System.Windows.Forms.ToolStripButton();
@@ -226,44 +226,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label218 = new System.Windows.Forms.Label();
             this.label219 = new System.Windows.Forms.Label();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.gbCOP = new System.Windows.Forms.GroupBox();
-            this.Z44 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.Z45 = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Z46 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.Z43 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox50 = new System.Windows.Forms.GroupBox();
-            this.Z41 = new System.Windows.Forms.TextBox();
-            this.Z34 = new System.Windows.Forms.TextBox();
-            this.Z35 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Z42 = new System.Windows.Forms.TextBox();
-            this.Z40 = new System.Windows.Forms.TextBox();
-            this.Z39 = new System.Windows.Forms.TextBox();
-            this.Z38 = new System.Windows.Forms.TextBox();
-            this.Z37 = new System.Windows.Forms.TextBox();
-            this.Z32 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Z36 = new System.Windows.Forms.TextBox();
-            this.label249 = new System.Windows.Forms.Label();
-            this.Z33 = new System.Windows.Forms.TextBox();
-            this.label256 = new System.Windows.Forms.Label();
-            this.Z31 = new System.Windows.Forms.TextBox();
-            this.label258 = new System.Windows.Forms.Label();
-            this.Z30 = new System.Windows.Forms.TextBox();
-            this.label259 = new System.Windows.Forms.Label();
-            this.label260 = new System.Windows.Forms.Label();
-            this.label261 = new System.Windows.Forms.Label();
-            this.label262 = new System.Windows.Forms.Label();
-            this.label263 = new System.Windows.Forms.Label();
-            this.label264 = new System.Windows.Forms.Label();
-            this.label265 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
             this.groupBox光伏系统数据 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -338,6 +300,44 @@
             this.label236 = new System.Windows.Forms.Label();
             this.label240 = new System.Windows.Forms.Label();
             this.label250 = new System.Windows.Forms.Label();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.gbCOP = new System.Windows.Forms.GroupBox();
+            this.Z44 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Z45 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Z46 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Z43 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox50 = new System.Windows.Forms.GroupBox();
+            this.Z41 = new System.Windows.Forms.TextBox();
+            this.Z34 = new System.Windows.Forms.TextBox();
+            this.Z35 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Z42 = new System.Windows.Forms.TextBox();
+            this.Z40 = new System.Windows.Forms.TextBox();
+            this.Z39 = new System.Windows.Forms.TextBox();
+            this.Z38 = new System.Windows.Forms.TextBox();
+            this.Z37 = new System.Windows.Forms.TextBox();
+            this.Z32 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Z36 = new System.Windows.Forms.TextBox();
+            this.label249 = new System.Windows.Forms.Label();
+            this.Z33 = new System.Windows.Forms.TextBox();
+            this.label256 = new System.Windows.Forms.Label();
+            this.Z31 = new System.Windows.Forms.TextBox();
+            this.label258 = new System.Windows.Forms.Label();
+            this.Z30 = new System.Windows.Forms.TextBox();
+            this.label259 = new System.Windows.Forms.Label();
+            this.label260 = new System.Windows.Forms.Label();
+            this.label261 = new System.Windows.Forms.Label();
+            this.label262 = new System.Windows.Forms.Label();
+            this.label263 = new System.Windows.Forms.Label();
+            this.label264 = new System.Windows.Forms.Label();
+            this.label265 = new System.Windows.Forms.Label();
             this.维护登记tabPage9 = new System.Windows.Forms.TabPage();
             this.panel55 = new System.Windows.Forms.Panel();
             this.录入被更换表数据groupBox84 = new System.Windows.Forms.GroupBox();
@@ -1251,13 +1251,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbX3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbX2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbX1)).BeginInit();
-            this.panel36.SuspendLayout();
-            this.gbCOP.SuspendLayout();
-            this.groupBox50.SuspendLayout();
             this.panel35.SuspendLayout();
             this.groupBox光伏系统数据.SuspendLayout();
             this.groupBox制冷系统.SuspendLayout();
             this.groupBox气象数据.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.gbCOP.SuspendLayout();
+            this.groupBox50.SuspendLayout();
             this.维护登记tabPage9.SuspendLayout();
             this.panel55.SuspendLayout();
             this.录入被更换表数据groupBox84.SuspendLayout();
@@ -1513,12 +1513,12 @@
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode2.ImageIndex = 7;
-            treeNode2.Name = "节点1";
-            treeNode2.SelectedImageIndex = 5;
-            treeNode2.Text = "地区";
+            treeNode1.ImageIndex = 7;
+            treeNode1.Name = "节点1";
+            treeNode1.SelectedImageIndex = 5;
+            treeNode1.Text = "地区";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode1});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(239, 646);
             this.treeView1.TabIndex = 0;
@@ -2196,25 +2196,25 @@
             this.DGVMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.DGVMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVMain.Location = new System.Drawing.Point(0, 0);
             this.DGVMain.Name = "DGVMain";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVMain.RowTemplate.Height = 23;
             this.DGVMain.Size = new System.Drawing.Size(1029, 322);
             this.DGVMain.TabIndex = 0;
@@ -2225,123 +2225,123 @@
             this.chart1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.chart1.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea7.Area3DStyle.IsRightAngleAxes = false;
-            chartArea7.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
-            chartArea7.Area3DStyle.PointDepth = 40;
-            chartArea7.Area3DStyle.PointGapDepth = 0;
-            chartArea7.Area3DStyle.Rotation = 7;
-            chartArea7.Area3DStyle.WallWidth = 3;
-            chartArea7.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea7.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea7.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea7.BackColor = System.Drawing.Color.Black;
-            chartArea7.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea7.BorderWidth = 2;
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
+            chartArea1.Area3DStyle.IsRightAngleAxes = false;
+            chartArea1.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
+            chartArea1.Area3DStyle.PointDepth = 40;
+            chartArea1.Area3DStyle.PointGapDepth = 0;
+            chartArea1.Area3DStyle.Rotation = 7;
+            chartArea1.Area3DStyle.WallWidth = 3;
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea1.BackColor = System.Drawing.Color.Black;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea1.BorderWidth = 2;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series50.ChartArea = "ChartArea1";
-            series50.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series50.Color = System.Drawing.Color.Yellow;
-            series50.Legend = "Legend1";
-            series50.LegendText = "压缩机排气压力";
-            series50.Name = "Series1";
-            series51.ChartArea = "ChartArea1";
-            series51.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series51.Legend = "Legend1";
-            series51.LegendText = "蒸发器出口压力";
-            series51.Name = "Series2";
-            series52.ChartArea = "ChartArea1";
-            series52.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series52.Legend = "Legend1";
-            series52.LegendText = "压排温度";
-            series52.Name = "Series3";
-            series53.ChartArea = "ChartArea1";
-            series53.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series53.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series53.Legend = "Legend1";
-            series53.LegendText = "冷出温";
-            series53.Name = "Series4";
-            series54.ChartArea = "ChartArea1";
-            series54.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series54.Legend = "Legend1";
-            series54.LegendText = "蒸出温";
-            series54.Name = "Series5";
-            series55.ChartArea = "ChartArea1";
-            series55.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series55.Legend = "Legend1";
-            series55.LegendText = "蒸入温";
-            series55.Name = "Series6";
-            series56.ChartArea = "ChartArea1";
-            series56.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series56.Legend = "Legend1";
-            series56.LegendText = "供冷流量";
-            series56.Name = "Series7";
-            series57.ChartArea = "ChartArea1";
-            series57.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series57.Legend = "Legend1";
-            series57.LegendText = "冰块温度";
-            series57.Name = "Series8";
-            series58.ChartArea = "ChartArea1";
-            series58.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series58.Legend = "Legend1";
-            series58.LegendText = "水箱上温";
-            series58.Name = "Series9";
-            series59.ChartArea = "ChartArea1";
-            series59.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series59.Legend = "Legend1";
-            series59.LegendText = "回水温";
-            series59.Name = "Series10";
-            series60.ChartArea = "ChartArea1";
-            series60.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series60.Legend = "Legend1";
-            series60.LegendText = "水箱下温";
-            series60.Name = "Series11";
-            series61.ChartArea = "ChartArea1";
-            series61.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series61.Legend = "Legend1";
-            series61.LegendText = "供水温";
-            series61.Name = "Series12";
-            series62.ChartArea = "ChartArea1";
-            series62.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series62.Legend = "Legend1";
-            series62.LegendText = "风口温";
-            series62.Name = "Series13";
-            series63.ChartArea = "ChartArea1";
-            series63.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series63.Legend = "Legend1";
-            series63.LegendText = "房间温";
-            series63.Name = "Series14";
-            series64.ChartArea = "ChartArea1";
-            series64.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series64.Legend = "Legend1";
-            series64.LegendText = "溢水量";
-            series64.Name = "Series15";
-            series65.ChartArea = "ChartArea1";
-            series65.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series65.Legend = "Legend1";
-            series65.LegendText = "水箱液位";
-            series65.Name = "Series16";
-            this.chart1.Series.Add(series50);
-            this.chart1.Series.Add(series51);
-            this.chart1.Series.Add(series52);
-            this.chart1.Series.Add(series53);
-            this.chart1.Series.Add(series54);
-            this.chart1.Series.Add(series55);
-            this.chart1.Series.Add(series56);
-            this.chart1.Series.Add(series57);
-            this.chart1.Series.Add(series58);
-            this.chart1.Series.Add(series59);
-            this.chart1.Series.Add(series60);
-            this.chart1.Series.Add(series61);
-            this.chart1.Series.Add(series62);
-            this.chart1.Series.Add(series63);
-            this.chart1.Series.Add(series64);
-            this.chart1.Series.Add(series65);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Yellow;
+            series1.Legend = "Legend1";
+            series1.LegendText = "压缩机排气压力";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.LegendText = "蒸发器出口压力";
+            series2.Name = "Series2";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.LegendText = "压排温度";
+            series3.Name = "Series3";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series4.Legend = "Legend1";
+            series4.LegendText = "冷出温";
+            series4.Name = "Series4";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.LegendText = "蒸出温";
+            series5.Name = "Series5";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.LegendText = "蒸入温";
+            series6.Name = "Series6";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.LegendText = "供冷流量";
+            series7.Name = "Series7";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.LegendText = "冰块温度";
+            series8.Name = "Series8";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.LegendText = "水箱上温";
+            series9.Name = "Series9";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.LegendText = "回水温";
+            series10.Name = "Series10";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.LegendText = "水箱下温";
+            series11.Name = "Series11";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Legend = "Legend1";
+            series12.LegendText = "供水温";
+            series12.Name = "Series12";
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Legend = "Legend1";
+            series13.LegendText = "风口温";
+            series13.Name = "Series13";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Legend = "Legend1";
+            series14.LegendText = "房间温";
+            series14.Name = "Series14";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series15.Legend = "Legend1";
+            series15.LegendText = "溢水量";
+            series15.Name = "Series15";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series16.Legend = "Legend1";
+            series16.LegendText = "水箱液位";
+            series16.Name = "Series16";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Series.Add(series9);
+            this.chart1.Series.Add(series10);
+            this.chart1.Series.Add(series11);
+            this.chart1.Series.Add(series12);
+            this.chart1.Series.Add(series13);
+            this.chart1.Series.Add(series14);
+            this.chart1.Series.Add(series15);
+            this.chart1.Series.Add(series16);
             this.chart1.Size = new System.Drawing.Size(1029, 290);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -2352,69 +2352,69 @@
             this.chart4.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.chart4.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart4.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea8.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea8.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea8.BackColor = System.Drawing.Color.Black;
-            chartArea8.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea8.BorderWidth = 2;
-            chartArea8.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea8);
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea2.BackColor = System.Drawing.Color.Black;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea2.BorderWidth = 2;
+            chartArea2.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea2);
             this.chart4.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chart4.Legends.Add(legend8);
+            legend2.Name = "Legend1";
+            this.chart4.Legends.Add(legend2);
             this.chart4.Location = new System.Drawing.Point(0, 0);
             this.chart4.Name = "chart4";
-            series66.ChartArea = "ChartArea1";
-            series66.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series66.Legend = "Legend1";
-            series66.LegendText = "温度T1";
-            series66.Name = "Series1";
-            series67.ChartArea = "ChartArea1";
-            series67.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series67.Legend = "Legend1";
-            series67.LegendText = "温度T2";
-            series67.Name = "Series2";
-            series68.ChartArea = "ChartArea1";
-            series68.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series68.Legend = "Legend1";
-            series68.LegendText = "温度T3";
-            series68.Name = "Series3";
-            series69.ChartArea = "ChartArea1";
-            series69.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series69.Legend = "Legend1";
-            series69.LegendText = "温度T4";
-            series69.Name = "Series4";
-            series69.YValuesPerPoint = 2;
-            series70.ChartArea = "ChartArea1";
-            series70.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series70.Legend = "Legend1";
-            series70.LegendText = "温度T5";
-            series70.Name = "Series5";
-            series71.ChartArea = "ChartArea1";
-            series71.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series71.Legend = "Legend1";
-            series71.LegendText = "温度T6";
-            series71.Name = "Series6";
-            series72.ChartArea = "ChartArea1";
-            series72.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series72.Legend = "Legend1";
-            series72.LegendText = "温度T7";
-            series72.Name = "Series7";
-            series73.ChartArea = "ChartArea1";
-            series73.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series73.Legend = "Legend1";
-            series73.LegendText = "温度T8";
-            series73.Name = "Series8";
-            this.chart4.Series.Add(series66);
-            this.chart4.Series.Add(series67);
-            this.chart4.Series.Add(series68);
-            this.chart4.Series.Add(series69);
-            this.chart4.Series.Add(series70);
-            this.chart4.Series.Add(series71);
-            this.chart4.Series.Add(series72);
-            this.chart4.Series.Add(series73);
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Legend = "Legend1";
+            series17.LegendText = "温度T1";
+            series17.Name = "Series1";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series18.Legend = "Legend1";
+            series18.LegendText = "温度T2";
+            series18.Name = "Series2";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Legend = "Legend1";
+            series19.LegendText = "温度T3";
+            series19.Name = "Series3";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Legend = "Legend1";
+            series20.LegendText = "温度T4";
+            series20.Name = "Series4";
+            series20.YValuesPerPoint = 2;
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Legend = "Legend1";
+            series21.LegendText = "温度T5";
+            series21.Name = "Series5";
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series22.Legend = "Legend1";
+            series22.LegendText = "温度T6";
+            series22.Name = "Series6";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series23.Legend = "Legend1";
+            series23.LegendText = "温度T7";
+            series23.Name = "Series7";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series24.Legend = "Legend1";
+            series24.LegendText = "温度T8";
+            series24.Name = "Series8";
+            this.chart4.Series.Add(series17);
+            this.chart4.Series.Add(series18);
+            this.chart4.Series.Add(series19);
+            this.chart4.Series.Add(series20);
+            this.chart4.Series.Add(series21);
+            this.chart4.Series.Add(series22);
+            this.chart4.Series.Add(series23);
+            this.chart4.Series.Add(series24);
             this.chart4.Size = new System.Drawing.Size(1029, 290);
             this.chart4.TabIndex = 1;
             this.chart4.Text = "chart4";
@@ -2425,69 +2425,69 @@
             this.chart5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.chart5.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart5.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea9.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea9.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea9.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea9.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea9.BackColor = System.Drawing.Color.Black;
-            chartArea9.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea9.BorderWidth = 2;
-            chartArea9.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea9);
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea3.BackColor = System.Drawing.Color.Black;
+            chartArea3.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea3.BorderWidth = 2;
+            chartArea3.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea3);
             this.chart5.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend9.Name = "Legend1";
-            this.chart5.Legends.Add(legend9);
+            legend3.Name = "Legend1";
+            this.chart5.Legends.Add(legend3);
             this.chart5.Location = new System.Drawing.Point(0, 0);
             this.chart5.Name = "chart5";
-            series74.ChartArea = "ChartArea1";
-            series74.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series74.Legend = "Legend1";
-            series74.LegendText = "冷水上水温度T1";
-            series74.Name = "Series1";
-            series75.ChartArea = "ChartArea1";
-            series75.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series75.Legend = "Legend1";
-            series75.LegendText = "环境温度T2";
-            series75.Name = "Series2";
-            series76.ChartArea = "ChartArea1";
-            series76.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series76.Legend = "Legend1";
-            series76.LegendText = "回水温度T3";
-            series76.Name = "Series3";
-            series77.ChartArea = "ChartArea1";
-            series77.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series77.Legend = "Legend1";
-            series77.LegendText = "1号水箱温度T4";
-            series77.Name = "Series4";
-            series77.YValuesPerPoint = 2;
-            series78.ChartArea = "ChartArea1";
-            series78.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series78.Legend = "Legend1";
-            series78.LegendText = "热水供水温度T5";
-            series78.Name = "Series5";
-            series79.ChartArea = "ChartArea1";
-            series79.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series79.Legend = "Legend1";
-            series79.LegendText = "2号水箱温度T6";
-            series79.Name = "Series6";
-            series80.ChartArea = "ChartArea1";
-            series80.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series80.Legend = "Legend1";
-            series80.LegendText = "热泵供水温度T7";
-            series80.Name = "Series7";
-            series81.ChartArea = "ChartArea1";
-            series81.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series81.Legend = "Legend1";
-            series81.LegendText = "热泵进水温度T8";
-            series81.Name = "Series8";
-            this.chart5.Series.Add(series74);
-            this.chart5.Series.Add(series75);
-            this.chart5.Series.Add(series76);
-            this.chart5.Series.Add(series77);
-            this.chart5.Series.Add(series78);
-            this.chart5.Series.Add(series79);
-            this.chart5.Series.Add(series80);
-            this.chart5.Series.Add(series81);
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series25.Legend = "Legend1";
+            series25.LegendText = "冷水上水温度T1";
+            series25.Name = "Series1";
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series26.Legend = "Legend1";
+            series26.LegendText = "环境温度T2";
+            series26.Name = "Series2";
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series27.Legend = "Legend1";
+            series27.LegendText = "回水温度T3";
+            series27.Name = "Series3";
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series28.Legend = "Legend1";
+            series28.LegendText = "1号水箱温度T4";
+            series28.Name = "Series4";
+            series28.YValuesPerPoint = 2;
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series29.Legend = "Legend1";
+            series29.LegendText = "热水供水温度T5";
+            series29.Name = "Series5";
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series30.Legend = "Legend1";
+            series30.LegendText = "2号水箱温度T6";
+            series30.Name = "Series6";
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series31.Legend = "Legend1";
+            series31.LegendText = "热泵供水温度T7";
+            series31.Name = "Series7";
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series32.Legend = "Legend1";
+            series32.LegendText = "热泵进水温度T8";
+            series32.Name = "Series8";
+            this.chart5.Series.Add(series25);
+            this.chart5.Series.Add(series26);
+            this.chart5.Series.Add(series27);
+            this.chart5.Series.Add(series28);
+            this.chart5.Series.Add(series29);
+            this.chart5.Series.Add(series30);
+            this.chart5.Series.Add(series31);
+            this.chart5.Series.Add(series32);
             this.chart5.Size = new System.Drawing.Size(1029, 290);
             this.chart5.TabIndex = 2;
             this.chart5.Text = "chart5";
@@ -2498,51 +2498,51 @@
             this.chart6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.chart6.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart6.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea10.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea10.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea10.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea10.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea10.BackColor = System.Drawing.Color.Black;
-            chartArea10.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea10.BorderWidth = 2;
-            chartArea10.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea10);
+            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisX2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.AxisY2.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea4.BackColor = System.Drawing.Color.Black;
+            chartArea4.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea4.BorderWidth = 2;
+            chartArea4.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea4);
             this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend10.Name = "Legend1";
-            this.chart6.Legends.Add(legend10);
+            legend4.Name = "Legend1";
+            this.chart6.Legends.Add(legend4);
             this.chart6.Location = new System.Drawing.Point(0, 0);
             this.chart6.Name = "chart6";
-            series82.ChartArea = "ChartArea1";
-            series82.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series82.Legend = "Legend1";
-            series82.LegendText = "冷水进水温度";
-            series82.Name = "Series1";
-            series83.ChartArea = "ChartArea1";
-            series83.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series83.Legend = "Legend1";
-            series83.LegendText = "热水出水温度";
-            series83.Name = "Series2";
-            series84.ChartArea = "ChartArea1";
-            series84.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series84.Legend = "Legend1";
-            series84.LegendText = "集热器进口温度";
-            series84.Name = "Series3";
-            series85.ChartArea = "ChartArea1";
-            series85.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series85.Legend = "Legend1";
-            series85.LegendText = "集热器出口温度";
-            series85.Name = "Series4";
-            series85.YValuesPerPoint = 2;
-            series86.ChartArea = "ChartArea1";
-            series86.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series86.Legend = "Legend1";
-            series86.LegendText = "环境温度";
-            series86.Name = "Series5";
-            this.chart6.Series.Add(series82);
-            this.chart6.Series.Add(series83);
-            this.chart6.Series.Add(series84);
-            this.chart6.Series.Add(series85);
-            this.chart6.Series.Add(series86);
+            series33.ChartArea = "ChartArea1";
+            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series33.Legend = "Legend1";
+            series33.LegendText = "冷水进水温度";
+            series33.Name = "Series1";
+            series34.ChartArea = "ChartArea1";
+            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series34.Legend = "Legend1";
+            series34.LegendText = "热水出水温度";
+            series34.Name = "Series2";
+            series35.ChartArea = "ChartArea1";
+            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series35.Legend = "Legend1";
+            series35.LegendText = "集热器进口温度";
+            series35.Name = "Series3";
+            series36.ChartArea = "ChartArea1";
+            series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series36.Legend = "Legend1";
+            series36.LegendText = "集热器出口温度";
+            series36.Name = "Series4";
+            series36.YValuesPerPoint = 2;
+            series37.ChartArea = "ChartArea1";
+            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series37.Legend = "Legend1";
+            series37.LegendText = "环境温度";
+            series37.Name = "Series5";
+            this.chart6.Series.Add(series33);
+            this.chart6.Series.Add(series34);
+            this.chart6.Series.Add(series35);
+            this.chart6.Series.Add(series36);
+            this.chart6.Series.Add(series37);
             this.chart6.Size = new System.Drawing.Size(1029, 290);
             this.chart6.TabIndex = 3;
             this.chart6.Text = "chart6";
@@ -2569,26 +2569,26 @@
             // 
             this.DGV2Main.AllowUserToAddRows = false;
             this.DGV2Main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV2Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV2Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DGV2Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV2Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV2Main.Location = new System.Drawing.Point(0, 0);
             this.DGV2Main.Name = "DGV2Main";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV2Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV2Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DGV2Main.RowTemplate.Height = 23;
             this.DGV2Main.Size = new System.Drawing.Size(1029, 318);
             this.DGV2Main.TabIndex = 0;
@@ -2599,70 +2599,70 @@
             this.chart3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Cross;
             this.chart3.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea11.Area3DStyle.IsRightAngleAxes = false;
-            chartArea11.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
-            chartArea11.Area3DStyle.PointDepth = 40;
-            chartArea11.Area3DStyle.PointGapDepth = 0;
-            chartArea11.Area3DStyle.Rotation = 7;
-            chartArea11.Area3DStyle.WallWidth = 3;
-            chartArea11.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea11.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea11.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
-            chartArea11.BackColor = System.Drawing.Color.Black;
-            chartArea11.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea11.BorderWidth = 2;
-            chartArea11.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea11);
+            chartArea5.Area3DStyle.IsRightAngleAxes = false;
+            chartArea5.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
+            chartArea5.Area3DStyle.PointDepth = 40;
+            chartArea5.Area3DStyle.PointGapDepth = 0;
+            chartArea5.Area3DStyle.Rotation = 7;
+            chartArea5.Area3DStyle.WallWidth = 3;
+            chartArea5.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(8)))));
+            chartArea5.BackColor = System.Drawing.Color.Black;
+            chartArea5.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea5.BorderWidth = 2;
+            chartArea5.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea5);
             this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend11.Name = "Legend1";
-            this.chart3.Legends.Add(legend11);
+            legend5.Name = "Legend1";
+            this.chart3.Legends.Add(legend5);
             this.chart3.Location = new System.Drawing.Point(0, 0);
             this.chart3.Name = "chart3";
-            series87.ChartArea = "ChartArea1";
-            series87.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series87.Color = System.Drawing.Color.Yellow;
-            series87.IsValueShownAsLabel = true;
-            series87.Legend = "Legend1";
-            series87.LegendText = "集热器管道温度";
-            series87.Name = "Series1";
-            series88.ChartArea = "ChartArea1";
-            series88.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series88.Legend = "Legend1";
-            series88.LegendText = "集热水箱温度";
-            series88.Name = "Series2";
-            series89.ChartArea = "ChartArea1";
-            series89.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series89.Legend = "Legend1";
-            series89.LegendText = "回水温度";
-            series89.Name = "Series3";
-            series90.ChartArea = "ChartArea1";
-            series90.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series90.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series90.Legend = "Legend1";
-            series90.LegendText = "环境温度";
-            series90.Name = "Series4";
-            series91.ChartArea = "ChartArea1";
-            series91.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series91.Legend = "Legend1";
-            series91.LegendText = "集热水箱液位高度";
-            series91.Name = "Series5";
-            series92.ChartArea = "ChartArea1";
-            series92.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series92.Legend = "Legend1";
-            series92.LegendText = "恒温水箱温度";
-            series92.Name = "Series6";
-            series93.ChartArea = "ChartArea1";
-            series93.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series93.Legend = "Legend1";
-            series93.LegendText = "恒温水箱液位高度";
-            series93.Name = "Series7";
-            this.chart3.Series.Add(series87);
-            this.chart3.Series.Add(series88);
-            this.chart3.Series.Add(series89);
-            this.chart3.Series.Add(series90);
-            this.chart3.Series.Add(series91);
-            this.chart3.Series.Add(series92);
-            this.chart3.Series.Add(series93);
+            series38.ChartArea = "ChartArea1";
+            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series38.Color = System.Drawing.Color.Yellow;
+            series38.IsValueShownAsLabel = true;
+            series38.Legend = "Legend1";
+            series38.LegendText = "集热器管道温度";
+            series38.Name = "Series1";
+            series39.ChartArea = "ChartArea1";
+            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series39.Legend = "Legend1";
+            series39.LegendText = "集热水箱温度";
+            series39.Name = "Series2";
+            series40.ChartArea = "ChartArea1";
+            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series40.Legend = "Legend1";
+            series40.LegendText = "回水温度";
+            series40.Name = "Series3";
+            series41.ChartArea = "ChartArea1";
+            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series41.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series41.Legend = "Legend1";
+            series41.LegendText = "环境温度";
+            series41.Name = "Series4";
+            series42.ChartArea = "ChartArea1";
+            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series42.Legend = "Legend1";
+            series42.LegendText = "集热水箱液位高度";
+            series42.Name = "Series5";
+            series43.ChartArea = "ChartArea1";
+            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series43.Legend = "Legend1";
+            series43.LegendText = "恒温水箱温度";
+            series43.Name = "Series6";
+            series44.ChartArea = "ChartArea1";
+            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series44.Legend = "Legend1";
+            series44.LegendText = "恒温水箱液位高度";
+            series44.Name = "Series7";
+            this.chart3.Series.Add(series38);
+            this.chart3.Series.Add(series39);
+            this.chart3.Series.Add(series40);
+            this.chart3.Series.Add(series41);
+            this.chart3.Series.Add(series42);
+            this.chart3.Series.Add(series43);
+            this.chart3.Series.Add(series44);
             this.chart3.Size = new System.Drawing.Size(1029, 290);
             this.chart3.TabIndex = 0;
             this.chart3.Text = "chart3";
@@ -2904,9 +2904,9 @@
             // 
             // meter1
             // 
-            scaleCustomDivision2.Text = "开关";
+            scaleCustomDivision1.Text = "开关";
             this.meter1.CustomDivisions.AddRange(new NationalInstruments.UI.ScaleCustomDivision[] {
-            scaleCustomDivision2});
+            scaleCustomDivision1});
             this.meter1.Location = new System.Drawing.Point(125, 107);
             this.meter1.MeterStyle = NationalInstruments.UI.MeterStyle.FlatWithThickNeedle;
             this.meter1.Name = "meter1";
@@ -3091,6 +3091,817 @@
             this.label219.Size = new System.Drawing.Size(120, 16);
             this.label219.TabIndex = 2;
             this.label219.Text = "当前项目名称：";
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel35.Controls.Add(this.groupBox光伏系统数据);
+            this.panel35.Controls.Add(this.button1);
+            this.panel35.Controls.Add(this.groupBox制冷系统);
+            this.panel35.Controls.Add(this.groupBox气象数据);
+            this.panel35.Location = new System.Drawing.Point(0, 82);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(550, 533);
+            this.panel35.TabIndex = 0;
+            // 
+            // groupBox光伏系统数据
+            // 
+            this.groupBox光伏系统数据.Controls.Add(this.label22);
+            this.groupBox光伏系统数据.Controls.Add(this.Z6);
+            this.groupBox光伏系统数据.Controls.Add(this.label271);
+            this.groupBox光伏系统数据.Controls.Add(this.label269);
+            this.groupBox光伏系统数据.Controls.Add(this.Z7);
+            this.groupBox光伏系统数据.Controls.Add(this.Z5);
+            this.groupBox光伏系统数据.Controls.Add(this.label229);
+            this.groupBox光伏系统数据.Controls.Add(this.label234);
+            this.groupBox光伏系统数据.Controls.Add(this.label238);
+            this.groupBox光伏系统数据.Controls.Add(this.label270);
+            this.groupBox光伏系统数据.Controls.Add(this.Z8);
+            this.groupBox光伏系统数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox光伏系统数据.Location = new System.Drawing.Point(14, 6);
+            this.groupBox光伏系统数据.Name = "groupBox光伏系统数据";
+            this.groupBox光伏系统数据.Size = new System.Drawing.Size(525, 100);
+            this.groupBox光伏系统数据.TabIndex = 50;
+            this.groupBox光伏系统数据.TabStop = false;
+            this.groupBox光伏系统数据.Text = "光伏系统数据";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Location = new System.Drawing.Point(293, 71);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(87, 19);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "直流表电能：";
+            // 
+            // Z6
+            // 
+            this.Z6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z6.Location = new System.Drawing.Point(396, 32);
+            this.Z6.Name = "Z6";
+            this.Z6.ReadOnly = true;
+            this.Z6.Size = new System.Drawing.Size(53, 24);
+            this.Z6.TabIndex = 4;
+            this.Z6.Text = "z6";
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label271.Location = new System.Drawing.Point(448, 35);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(18, 19);
+            this.label271.TabIndex = 51;
+            this.label271.Text = "A";
+            // 
+            // label269
+            // 
+            this.label269.AutoSize = true;
+            this.label269.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label269.Location = new System.Drawing.Point(204, 35);
+            this.label269.Name = "label269";
+            this.label269.Size = new System.Drawing.Size(18, 19);
+            this.label269.TabIndex = 49;
+            this.label269.Text = "V";
+            // 
+            // Z7
+            // 
+            this.Z7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z7.Location = new System.Drawing.Point(155, 69);
+            this.Z7.Name = "Z7";
+            this.Z7.ReadOnly = true;
+            this.Z7.Size = new System.Drawing.Size(49, 24);
+            this.Z7.TabIndex = 6;
+            this.Z7.Text = "z7";
+            // 
+            // Z5
+            // 
+            this.Z5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z5.Location = new System.Drawing.Point(155, 32);
+            this.Z5.Name = "Z5";
+            this.Z5.ReadOnly = true;
+            this.Z5.Size = new System.Drawing.Size(49, 24);
+            this.Z5.TabIndex = 2;
+            this.Z5.Text = "z5";
+            // 
+            // label229
+            // 
+            this.label229.AutoSize = true;
+            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label229.Location = new System.Drawing.Point(55, 72);
+            this.label229.Name = "label229";
+            this.label229.Size = new System.Drawing.Size(100, 19);
+            this.label229.TabIndex = 48;
+            this.label229.Text = "输出直流功率：";
+            // 
+            // label234
+            // 
+            this.label234.AutoSize = true;
+            this.label234.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label234.Location = new System.Drawing.Point(55, 35);
+            this.label234.Name = "label234";
+            this.label234.Size = new System.Drawing.Size(100, 19);
+            this.label234.TabIndex = 39;
+            this.label234.Text = "输出直流电压：";
+            // 
+            // label238
+            // 
+            this.label238.AutoSize = true;
+            this.label238.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label238.Location = new System.Drawing.Point(296, 35);
+            this.label238.Name = "label238";
+            this.label238.Size = new System.Drawing.Size(100, 19);
+            this.label238.TabIndex = 38;
+            this.label238.Text = "输出直流电流：";
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label270.Location = new System.Drawing.Point(204, 72);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(22, 19);
+            this.label270.TabIndex = 50;
+            this.label270.Text = "W";
+            // 
+            // Z8
+            // 
+            this.Z8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z8.Location = new System.Drawing.Point(400, 71);
+            this.Z8.Name = "Z8";
+            this.Z8.ReadOnly = true;
+            this.Z8.Size = new System.Drawing.Size(49, 24);
+            this.Z8.TabIndex = 8;
+            this.Z8.Text = "z8";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(405, 491);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "下一页";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // groupBox制冷系统
+            // 
+            this.groupBox制冷系统.Controls.Add(this.Z16);
+            this.groupBox制冷系统.Controls.Add(this.Z13);
+            this.groupBox制冷系统.Controls.Add(this.Z10);
+            this.groupBox制冷系统.Controls.Add(this.Z15);
+            this.groupBox制冷系统.Controls.Add(this.Z29);
+            this.groupBox制冷系统.Controls.Add(this.Z26);
+            this.groupBox制冷系统.Controls.Add(this.label52);
+            this.groupBox制冷系统.Controls.Add(this.label46);
+            this.groupBox制冷系统.Controls.Add(this.Z12);
+            this.groupBox制冷系统.Controls.Add(this.Z9);
+            this.groupBox制冷系统.Controls.Add(this.Z11);
+            this.groupBox制冷系统.Controls.Add(this.Z14);
+            this.groupBox制冷系统.Controls.Add(this.Z18);
+            this.groupBox制冷系统.Controls.Add(this.label51);
+            this.groupBox制冷系统.Controls.Add(this.Z21);
+            this.groupBox制冷系统.Controls.Add(this.Z20);
+            this.groupBox制冷系统.Controls.Add(this.label50);
+            this.groupBox制冷系统.Controls.Add(this.label49);
+            this.groupBox制冷系统.Controls.Add(this.label31);
+            this.groupBox制冷系统.Controls.Add(this.label30);
+            this.groupBox制冷系统.Controls.Add(this.label29);
+            this.groupBox制冷系统.Controls.Add(this.label28);
+            this.groupBox制冷系统.Controls.Add(this.label26);
+            this.groupBox制冷系统.Controls.Add(this.label25);
+            this.groupBox制冷系统.Controls.Add(this.label24);
+            this.groupBox制冷系统.Controls.Add(this.label23);
+            this.groupBox制冷系统.Controls.Add(this.Z17);
+            this.groupBox制冷系统.Controls.Add(this.label7);
+            this.groupBox制冷系统.Controls.Add(this.Z27);
+            this.groupBox制冷系统.Controls.Add(this.Z28);
+            this.groupBox制冷系统.Controls.Add(this.Z25);
+            this.groupBox制冷系统.Controls.Add(this.Z24);
+            this.groupBox制冷系统.Controls.Add(this.Z23);
+            this.groupBox制冷系统.Controls.Add(this.Z22);
+            this.groupBox制冷系统.Controls.Add(this.Z19);
+            this.groupBox制冷系统.Controls.Add(this.label275);
+            this.groupBox制冷系统.Controls.Add(this.label272);
+            this.groupBox制冷系统.Controls.Add(this.label233);
+            this.groupBox制冷系统.Controls.Add(this.label244);
+            this.groupBox制冷系统.Controls.Add(this.label230);
+            this.groupBox制冷系统.Controls.Add(this.label239);
+            this.groupBox制冷系统.Controls.Add(this.label235);
+            this.groupBox制冷系统.Controls.Add(this.label243);
+            this.groupBox制冷系统.Controls.Add(this.label231);
+            this.groupBox制冷系统.Controls.Add(this.label232);
+            this.groupBox制冷系统.Controls.Add(this.label237);
+            this.groupBox制冷系统.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox制冷系统.Location = new System.Drawing.Point(22, 123);
+            this.groupBox制冷系统.Name = "groupBox制冷系统";
+            this.groupBox制冷系统.Size = new System.Drawing.Size(514, 360);
+            this.groupBox制冷系统.TabIndex = 52;
+            this.groupBox制冷系统.TabStop = false;
+            this.groupBox制冷系统.Text = "制冷系统";
+            // 
+            // Z15
+            // 
+            this.Z15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z15.Location = new System.Drawing.Point(198, 102);
+            this.Z15.Name = "Z15";
+            this.Z15.ReadOnly = true;
+            this.Z15.Size = new System.Drawing.Size(53, 24);
+            this.Z15.TabIndex = 53;
+            this.Z15.Text = "z15";
+            // 
+            // Z29
+            // 
+            this.Z29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z29.Location = new System.Drawing.Point(420, 320);
+            this.Z29.Name = "Z29";
+            this.Z29.ReadOnly = true;
+            this.Z29.Size = new System.Drawing.Size(52, 24);
+            this.Z29.TabIndex = 90;
+            this.Z29.Text = "z29";
+            // 
+            // Z26
+            // 
+            this.Z26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z26.Location = new System.Drawing.Point(198, 285);
+            this.Z26.Name = "Z26";
+            this.Z26.ReadOnly = true;
+            this.Z26.Size = new System.Drawing.Size(52, 24);
+            this.Z26.TabIndex = 89;
+            this.Z26.Text = "z26";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label52.Location = new System.Drawing.Point(297, 215);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(120, 19);
+            this.label52.TabIndex = 88;
+            this.label52.Text = "a相电流不平衡度：";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label46.Location = new System.Drawing.Point(35, 215);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(120, 19);
+            this.label46.TabIndex = 87;
+            this.label46.Text = "a相电压不平衡度：";
+            // 
+            // Z16
+            // 
+            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z16.Location = new System.Drawing.Point(306, 102);
+            this.Z16.Name = "Z16";
+            this.Z16.ReadOnly = true;
+            this.Z16.Size = new System.Drawing.Size(49, 24);
+            this.Z16.TabIndex = 50;
+            this.Z16.Text = "z16";
+            // 
+            // Z12
+            // 
+            this.Z12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z12.Location = new System.Drawing.Point(198, 69);
+            this.Z12.Name = "Z12";
+            this.Z12.ReadOnly = true;
+            this.Z12.Size = new System.Drawing.Size(52, 24);
+            this.Z12.TabIndex = 47;
+            this.Z12.Text = "z12";
+            // 
+            // Z9
+            // 
+            this.Z9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z9.Location = new System.Drawing.Point(198, 32);
+            this.Z9.Name = "Z9";
+            this.Z9.ReadOnly = true;
+            this.Z9.Size = new System.Drawing.Size(49, 24);
+            this.Z9.TabIndex = 10;
+            this.Z9.Text = "z9";
+            // 
+            // Z11
+            // 
+            this.Z11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z11.Location = new System.Drawing.Point(420, 31);
+            this.Z11.Name = "Z11";
+            this.Z11.ReadOnly = true;
+            this.Z11.Size = new System.Drawing.Size(52, 24);
+            this.Z11.TabIndex = 43;
+            this.Z11.Text = "z11";
+            // 
+            // Z14
+            // 
+            this.Z14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z14.Location = new System.Drawing.Point(423, 71);
+            this.Z14.Name = "Z14";
+            this.Z14.ReadOnly = true;
+            this.Z14.Size = new System.Drawing.Size(49, 24);
+            this.Z14.TabIndex = 48;
+            this.Z14.Text = "z14";
+            // 
+            // Z18
+            // 
+            this.Z18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z18.Location = new System.Drawing.Point(198, 139);
+            this.Z18.Name = "Z18";
+            this.Z18.ReadOnly = true;
+            this.Z18.Size = new System.Drawing.Size(49, 24);
+            this.Z18.TabIndex = 86;
+            this.Z18.Text = "z18";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label51.Location = new System.Drawing.Point(81, 143);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(74, 19);
+            this.label51.TabIndex = 85;
+            this.label51.Text = "功率因素：";
+            // 
+            // Z21
+            // 
+            this.Z21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z21.Location = new System.Drawing.Point(423, 175);
+            this.Z21.Name = "Z21";
+            this.Z21.ReadOnly = true;
+            this.Z21.Size = new System.Drawing.Size(49, 24);
+            this.Z21.TabIndex = 84;
+            this.Z21.Text = "z21";
+            // 
+            // Z20
+            // 
+            this.Z20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z20.Location = new System.Drawing.Point(198, 175);
+            this.Z20.Name = "Z20";
+            this.Z20.ReadOnly = true;
+            this.Z20.Size = new System.Drawing.Size(49, 24);
+            this.Z20.TabIndex = 83;
+            this.Z20.Text = "z20";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label50.Location = new System.Drawing.Point(323, 179);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(94, 19);
+            this.label50.TabIndex = 82;
+            this.label50.Text = "a相畸变电流：";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label49.Location = new System.Drawing.Point(61, 179);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(94, 19);
+            this.label49.TabIndex = 81;
+            this.label49.Text = "a相畸变电压：";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label31.Location = new System.Drawing.Point(356, 106);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(61, 19);
+            this.label31.TabIndex = 79;
+            this.label31.Text = "总无功：";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label30.Location = new System.Drawing.Point(255, 106);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(61, 19);
+            this.label30.TabIndex = 78;
+            this.label30.Text = "总有功：";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label29.Location = new System.Drawing.Point(140, 106);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(61, 19);
+            this.label29.TabIndex = 77;
+            this.label29.Text = "总视在：";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label28.Location = new System.Drawing.Point(375, 70);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(42, 19);
+            this.label28.TabIndex = 76;
+            this.label28.Text = "c相：";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(273, 70);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(43, 19);
+            this.label26.TabIndex = 75;
+            this.label26.Text = "b相：";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.Location = new System.Drawing.Point(157, 70);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 19);
+            this.label25.TabIndex = 74;
+            this.label25.Text = "a相：";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label24.Location = new System.Drawing.Point(381, 34);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 19);
+            this.label24.TabIndex = 73;
+            this.label24.Text = "ca：";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label23.Location = new System.Drawing.Point(279, 34);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(37, 19);
+            this.label23.TabIndex = 72;
+            this.label23.Text = "bc：";
+            // 
+            // Z17
+            // 
+            this.Z17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z17.Location = new System.Drawing.Point(423, 103);
+            this.Z17.Name = "Z17";
+            this.Z17.ReadOnly = true;
+            this.Z17.Size = new System.Drawing.Size(49, 24);
+            this.Z17.TabIndex = 71;
+            this.Z17.Text = "z17";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(330, 143);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 19);
+            this.label7.TabIndex = 70;
+            this.label7.Text = "压缩机电能：";
+            // 
+            // Z27
+            // 
+            this.Z27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z27.Location = new System.Drawing.Point(420, 286);
+            this.Z27.Name = "Z27";
+            this.Z27.ReadOnly = true;
+            this.Z27.Size = new System.Drawing.Size(52, 24);
+            this.Z27.TabIndex = 69;
+            this.Z27.Text = "z27";
+            // 
+            // Z28
+            // 
+            this.Z28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z28.Location = new System.Drawing.Point(198, 320);
+            this.Z28.Name = "Z28";
+            this.Z28.ReadOnly = true;
+            this.Z28.Size = new System.Drawing.Size(52, 24);
+            this.Z28.TabIndex = 68;
+            this.Z28.Text = "z28";
+            // 
+            // Z25
+            // 
+            this.Z25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z25.Location = new System.Drawing.Point(420, 247);
+            this.Z25.Name = "Z25";
+            this.Z25.ReadOnly = true;
+            this.Z25.Size = new System.Drawing.Size(52, 24);
+            this.Z25.TabIndex = 67;
+            this.Z25.Text = "z25";
+            // 
+            // Z24
+            // 
+            this.Z24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z24.Location = new System.Drawing.Point(198, 247);
+            this.Z24.Name = "Z24";
+            this.Z24.ReadOnly = true;
+            this.Z24.Size = new System.Drawing.Size(52, 24);
+            this.Z24.TabIndex = 66;
+            this.Z24.Text = "z24";
+            // 
+            // Z23
+            // 
+            this.Z23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z23.Location = new System.Drawing.Point(420, 211);
+            this.Z23.Name = "Z23";
+            this.Z23.ReadOnly = true;
+            this.Z23.Size = new System.Drawing.Size(52, 24);
+            this.Z23.TabIndex = 65;
+            this.Z23.Text = "z23";
+            // 
+            // Z22
+            // 
+            this.Z22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z22.Location = new System.Drawing.Point(198, 211);
+            this.Z22.Name = "Z22";
+            this.Z22.ReadOnly = true;
+            this.Z22.Size = new System.Drawing.Size(52, 24);
+            this.Z22.TabIndex = 64;
+            this.Z22.Text = "z22";
+            // 
+            // Z19
+            // 
+            this.Z19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z19.Location = new System.Drawing.Point(420, 139);
+            this.Z19.Name = "Z19";
+            this.Z19.ReadOnly = true;
+            this.Z19.Size = new System.Drawing.Size(52, 24);
+            this.Z19.TabIndex = 63;
+            this.Z19.Text = "z19";
+            // 
+            // Z13
+            // 
+            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z13.Location = new System.Drawing.Point(306, 69);
+            this.Z13.Name = "Z13";
+            this.Z13.ReadOnly = true;
+            this.Z13.Size = new System.Drawing.Size(49, 24);
+            this.Z13.TabIndex = 46;
+            this.Z13.Text = "z13";
+            // 
+            // label275
+            // 
+            this.label275.AutoSize = true;
+            this.label275.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label275.Location = new System.Drawing.Point(210, 112);
+            this.label275.Name = "label275";
+            this.label275.Size = new System.Drawing.Size(0, 19);
+            this.label275.TabIndex = 54;
+            // 
+            // label272
+            // 
+            this.label272.AutoSize = true;
+            this.label272.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label272.Location = new System.Drawing.Point(157, 34);
+            this.label272.Name = "label272";
+            this.label272.Size = new System.Drawing.Size(37, 19);
+            this.label272.TabIndex = 51;
+            this.label272.Text = "ab：";
+            // 
+            // label233
+            // 
+            this.label233.AutoSize = true;
+            this.label233.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label233.Location = new System.Drawing.Point(304, 288);
+            this.label233.Name = "label233";
+            this.label233.Size = new System.Drawing.Size(113, 19);
+            this.label233.TabIndex = 38;
+            this.label233.Text = "冷凝器出口温度：";
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label244.Location = new System.Drawing.Point(304, 251);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(113, 19);
+            this.label244.TabIndex = 5;
+            this.label244.Text = "蒸发器出口压力：";
+            // 
+            // label230
+            // 
+            this.label230.AutoSize = true;
+            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label230.Location = new System.Drawing.Point(42, 323);
+            this.label230.Name = "label230";
+            this.label230.Size = new System.Drawing.Size(113, 19);
+            this.label230.TabIndex = 42;
+            this.label230.Text = "蒸发器出口温度：";
+            // 
+            // Z10
+            // 
+            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z10.Location = new System.Drawing.Point(306, 32);
+            this.Z10.Name = "Z10";
+            this.Z10.ReadOnly = true;
+            this.Z10.Size = new System.Drawing.Size(49, 24);
+            this.Z10.TabIndex = 42;
+            this.Z10.Text = "z10";
+            // 
+            // label239
+            // 
+            this.label239.AutoSize = true;
+            this.label239.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label239.Location = new System.Drawing.Point(16, 35);
+            this.label239.Name = "label239";
+            this.label239.Size = new System.Drawing.Size(139, 19);
+            this.label239.TabIndex = 9;
+            this.label239.Text = "压缩机运行交流电压：";
+            // 
+            // label235
+            // 
+            this.label235.AutoSize = true;
+            this.label235.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label235.Location = new System.Drawing.Point(16, 107);
+            this.label235.Name = "label235";
+            this.label235.Size = new System.Drawing.Size(139, 19);
+            this.label235.TabIndex = 37;
+            this.label235.Text = "压缩机运行交流功率：";
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label243.Location = new System.Drawing.Point(16, 71);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(139, 19);
+            this.label243.TabIndex = 1;
+            this.label243.Text = "压缩机运行交流电流：";
+            // 
+            // label231
+            // 
+            this.label231.AutoSize = true;
+            this.label231.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label231.Location = new System.Drawing.Point(304, 326);
+            this.label231.Name = "label231";
+            this.label231.Size = new System.Drawing.Size(113, 19);
+            this.label231.TabIndex = 40;
+            this.label231.Text = "蒸发器入口温度：";
+            // 
+            // label232
+            // 
+            this.label232.AutoSize = true;
+            this.label232.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label232.Location = new System.Drawing.Point(42, 251);
+            this.label232.Name = "label232";
+            this.label232.Size = new System.Drawing.Size(113, 19);
+            this.label232.TabIndex = 41;
+            this.label232.Text = "压缩机排气压力：";
+            // 
+            // label237
+            // 
+            this.label237.AutoSize = true;
+            this.label237.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label237.Location = new System.Drawing.Point(42, 287);
+            this.label237.Name = "label237";
+            this.label237.Size = new System.Drawing.Size(113, 19);
+            this.label237.TabIndex = 36;
+            this.label237.Text = "压缩机排气温度：";
+            // 
+            // groupBox气象数据
+            // 
+            this.groupBox气象数据.Controls.Add(this.Z2);
+            this.groupBox气象数据.Controls.Add(this.Z3);
+            this.groupBox气象数据.Controls.Add(this.label268);
+            this.groupBox气象数据.Controls.Add(this.label267);
+            this.groupBox气象数据.Controls.Add(this.label255);
+            this.groupBox气象数据.Controls.Add(this.Z1);
+            this.groupBox气象数据.Controls.Add(this.label242);
+            this.groupBox气象数据.Controls.Add(this.label241);
+            this.groupBox气象数据.Controls.Add(this.Z4);
+            this.groupBox气象数据.Controls.Add(this.label236);
+            this.groupBox气象数据.Controls.Add(this.label240);
+            this.groupBox气象数据.Controls.Add(this.label250);
+            this.groupBox气象数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox气象数据.Location = new System.Drawing.Point(20, 5);
+            this.groupBox气象数据.Name = "groupBox气象数据";
+            this.groupBox气象数据.Size = new System.Drawing.Size(510, 97);
+            this.groupBox气象数据.TabIndex = 49;
+            this.groupBox气象数据.TabStop = false;
+            this.groupBox气象数据.Text = "气象数据";
+            this.groupBox气象数据.Visible = false;
+            // 
+            // Z2
+            // 
+            this.Z2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z2.Location = new System.Drawing.Point(396, 32);
+            this.Z2.Name = "Z2";
+            this.Z2.ReadOnly = true;
+            this.Z2.Size = new System.Drawing.Size(53, 24);
+            this.Z2.TabIndex = 5;
+            this.Z2.Text = "z2";
+            // 
+            // Z3
+            // 
+            this.Z3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z3.Location = new System.Drawing.Point(155, 69);
+            this.Z3.Name = "Z3";
+            this.Z3.ReadOnly = true;
+            this.Z3.Size = new System.Drawing.Size(49, 24);
+            this.Z3.TabIndex = 6;
+            this.Z3.Text = "z3";
+            // 
+            // label268
+            // 
+            this.label268.AutoSize = true;
+            this.label268.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label268.Location = new System.Drawing.Point(494, 71);
+            this.label268.Name = "label268";
+            this.label268.Size = new System.Drawing.Size(0, 19);
+            this.label268.TabIndex = 51;
+            // 
+            // label267
+            // 
+            this.label267.AutoSize = true;
+            this.label267.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label267.Location = new System.Drawing.Point(448, 35);
+            this.label267.Name = "label267";
+            this.label267.Size = new System.Drawing.Size(45, 19);
+            this.label267.TabIndex = 50;
+            this.label267.Text = "W/m²";
+            // 
+            // label255
+            // 
+            this.label255.AutoSize = true;
+            this.label255.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label255.Location = new System.Drawing.Point(204, 72);
+            this.label255.Name = "label255";
+            this.label255.Size = new System.Drawing.Size(33, 19);
+            this.label255.TabIndex = 49;
+            this.label255.Text = "m/s";
+            // 
+            // Z1
+            // 
+            this.Z1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z1.Location = new System.Drawing.Point(155, 32);
+            this.Z1.Name = "Z1";
+            this.Z1.ReadOnly = true;
+            this.Z1.Size = new System.Drawing.Size(49, 24);
+            this.Z1.TabIndex = 4;
+            this.Z1.Text = "z1";
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label242.Location = new System.Drawing.Point(81, 35);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(74, 19);
+            this.label242.TabIndex = 2;
+            this.label242.Text = "环境温度：";
+            // 
+            // label241
+            // 
+            this.label241.AutoSize = true;
+            this.label241.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label241.Location = new System.Drawing.Point(296, 35);
+            this.label241.Name = "label241";
+            this.label241.Size = new System.Drawing.Size(100, 19);
+            this.label241.TabIndex = 3;
+            this.label241.Text = "太阳能辐照度：";
+            // 
+            // Z4
+            // 
+            this.Z4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z4.Location = new System.Drawing.Point(396, 69);
+            this.Z4.Name = "Z4";
+            this.Z4.ReadOnly = true;
+            this.Z4.Size = new System.Drawing.Size(53, 24);
+            this.Z4.TabIndex = 47;
+            this.Z4.Text = "z4";
+            // 
+            // label236
+            // 
+            this.label236.AutoSize = true;
+            this.label236.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label236.Location = new System.Drawing.Point(107, 72);
+            this.label236.Name = "label236";
+            this.label236.Size = new System.Drawing.Size(48, 19);
+            this.label236.TabIndex = 46;
+            this.label236.Text = "风速：";
+            // 
+            // label240
+            // 
+            this.label240.AutoSize = true;
+            this.label240.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label240.Location = new System.Drawing.Point(348, 72);
+            this.label240.Name = "label240";
+            this.label240.Size = new System.Drawing.Size(48, 19);
+            this.label240.TabIndex = 7;
+            this.label240.Text = "湿度：";
+            // 
+            // label250
+            // 
+            this.label250.AutoSize = true;
+            this.label250.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label250.Location = new System.Drawing.Point(204, 35);
+            this.label250.Name = "label250";
+            this.label250.Size = new System.Drawing.Size(22, 19);
+            this.label250.TabIndex = 48;
+            this.label250.Text = "℃";
             // 
             // panel36
             // 
@@ -3507,817 +4318,6 @@
             this.label265.TabIndex = 1;
             this.label265.Text = "水泵变频运行电流：";
             // 
-            // panel35
-            // 
-            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel35.Controls.Add(this.groupBox光伏系统数据);
-            this.panel35.Controls.Add(this.button1);
-            this.panel35.Controls.Add(this.groupBox制冷系统);
-            this.panel35.Controls.Add(this.groupBox气象数据);
-            this.panel35.Location = new System.Drawing.Point(0, 82);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(550, 533);
-            this.panel35.TabIndex = 0;
-            // 
-            // groupBox光伏系统数据
-            // 
-            this.groupBox光伏系统数据.Controls.Add(this.label22);
-            this.groupBox光伏系统数据.Controls.Add(this.Z6);
-            this.groupBox光伏系统数据.Controls.Add(this.label271);
-            this.groupBox光伏系统数据.Controls.Add(this.label269);
-            this.groupBox光伏系统数据.Controls.Add(this.Z7);
-            this.groupBox光伏系统数据.Controls.Add(this.Z5);
-            this.groupBox光伏系统数据.Controls.Add(this.label229);
-            this.groupBox光伏系统数据.Controls.Add(this.label234);
-            this.groupBox光伏系统数据.Controls.Add(this.label238);
-            this.groupBox光伏系统数据.Controls.Add(this.label270);
-            this.groupBox光伏系统数据.Controls.Add(this.Z8);
-            this.groupBox光伏系统数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox光伏系统数据.Location = new System.Drawing.Point(14, 6);
-            this.groupBox光伏系统数据.Name = "groupBox光伏系统数据";
-            this.groupBox光伏系统数据.Size = new System.Drawing.Size(525, 100);
-            this.groupBox光伏系统数据.TabIndex = 50;
-            this.groupBox光伏系统数据.TabStop = false;
-            this.groupBox光伏系统数据.Text = "光伏系统数据";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.Location = new System.Drawing.Point(293, 71);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(87, 19);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "直流表电能：";
-            // 
-            // Z6
-            // 
-            this.Z6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z6.Location = new System.Drawing.Point(396, 32);
-            this.Z6.Name = "Z6";
-            this.Z6.ReadOnly = true;
-            this.Z6.Size = new System.Drawing.Size(53, 24);
-            this.Z6.TabIndex = 4;
-            this.Z6.Text = "z6";
-            // 
-            // label271
-            // 
-            this.label271.AutoSize = true;
-            this.label271.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label271.Location = new System.Drawing.Point(448, 35);
-            this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(18, 19);
-            this.label271.TabIndex = 51;
-            this.label271.Text = "A";
-            // 
-            // label269
-            // 
-            this.label269.AutoSize = true;
-            this.label269.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label269.Location = new System.Drawing.Point(204, 35);
-            this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(18, 19);
-            this.label269.TabIndex = 49;
-            this.label269.Text = "V";
-            // 
-            // Z7
-            // 
-            this.Z7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z7.Location = new System.Drawing.Point(155, 69);
-            this.Z7.Name = "Z7";
-            this.Z7.ReadOnly = true;
-            this.Z7.Size = new System.Drawing.Size(49, 24);
-            this.Z7.TabIndex = 6;
-            this.Z7.Text = "z7";
-            // 
-            // Z5
-            // 
-            this.Z5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z5.Location = new System.Drawing.Point(155, 32);
-            this.Z5.Name = "Z5";
-            this.Z5.ReadOnly = true;
-            this.Z5.Size = new System.Drawing.Size(49, 24);
-            this.Z5.TabIndex = 2;
-            this.Z5.Text = "z5";
-            // 
-            // label229
-            // 
-            this.label229.AutoSize = true;
-            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label229.Location = new System.Drawing.Point(55, 72);
-            this.label229.Name = "label229";
-            this.label229.Size = new System.Drawing.Size(100, 19);
-            this.label229.TabIndex = 48;
-            this.label229.Text = "输出直流功率：";
-            // 
-            // label234
-            // 
-            this.label234.AutoSize = true;
-            this.label234.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label234.Location = new System.Drawing.Point(55, 35);
-            this.label234.Name = "label234";
-            this.label234.Size = new System.Drawing.Size(100, 19);
-            this.label234.TabIndex = 39;
-            this.label234.Text = "输出直流电压：";
-            // 
-            // label238
-            // 
-            this.label238.AutoSize = true;
-            this.label238.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label238.Location = new System.Drawing.Point(296, 35);
-            this.label238.Name = "label238";
-            this.label238.Size = new System.Drawing.Size(100, 19);
-            this.label238.TabIndex = 38;
-            this.label238.Text = "输出直流电流：";
-            // 
-            // label270
-            // 
-            this.label270.AutoSize = true;
-            this.label270.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label270.Location = new System.Drawing.Point(204, 72);
-            this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(22, 19);
-            this.label270.TabIndex = 50;
-            this.label270.Text = "W";
-            // 
-            // Z8
-            // 
-            this.Z8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z8.Location = new System.Drawing.Point(400, 71);
-            this.Z8.Name = "Z8";
-            this.Z8.ReadOnly = true;
-            this.Z8.Size = new System.Drawing.Size(49, 24);
-            this.Z8.TabIndex = 8;
-            this.Z8.Text = "z8";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(405, 491);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "下一页";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // groupBox制冷系统
-            // 
-            this.groupBox制冷系统.Controls.Add(this.Z15);
-            this.groupBox制冷系统.Controls.Add(this.Z29);
-            this.groupBox制冷系统.Controls.Add(this.Z26);
-            this.groupBox制冷系统.Controls.Add(this.label52);
-            this.groupBox制冷系统.Controls.Add(this.label46);
-            this.groupBox制冷系统.Controls.Add(this.Z16);
-            this.groupBox制冷系统.Controls.Add(this.Z12);
-            this.groupBox制冷系统.Controls.Add(this.Z9);
-            this.groupBox制冷系统.Controls.Add(this.Z11);
-            this.groupBox制冷系统.Controls.Add(this.Z14);
-            this.groupBox制冷系统.Controls.Add(this.Z18);
-            this.groupBox制冷系统.Controls.Add(this.label51);
-            this.groupBox制冷系统.Controls.Add(this.Z21);
-            this.groupBox制冷系统.Controls.Add(this.Z20);
-            this.groupBox制冷系统.Controls.Add(this.label50);
-            this.groupBox制冷系统.Controls.Add(this.label49);
-            this.groupBox制冷系统.Controls.Add(this.label31);
-            this.groupBox制冷系统.Controls.Add(this.label30);
-            this.groupBox制冷系统.Controls.Add(this.label29);
-            this.groupBox制冷系统.Controls.Add(this.label28);
-            this.groupBox制冷系统.Controls.Add(this.label26);
-            this.groupBox制冷系统.Controls.Add(this.label25);
-            this.groupBox制冷系统.Controls.Add(this.label24);
-            this.groupBox制冷系统.Controls.Add(this.label23);
-            this.groupBox制冷系统.Controls.Add(this.Z17);
-            this.groupBox制冷系统.Controls.Add(this.label7);
-            this.groupBox制冷系统.Controls.Add(this.Z27);
-            this.groupBox制冷系统.Controls.Add(this.Z28);
-            this.groupBox制冷系统.Controls.Add(this.Z25);
-            this.groupBox制冷系统.Controls.Add(this.Z24);
-            this.groupBox制冷系统.Controls.Add(this.Z23);
-            this.groupBox制冷系统.Controls.Add(this.Z22);
-            this.groupBox制冷系统.Controls.Add(this.Z19);
-            this.groupBox制冷系统.Controls.Add(this.Z13);
-            this.groupBox制冷系统.Controls.Add(this.label275);
-            this.groupBox制冷系统.Controls.Add(this.label272);
-            this.groupBox制冷系统.Controls.Add(this.label233);
-            this.groupBox制冷系统.Controls.Add(this.label244);
-            this.groupBox制冷系统.Controls.Add(this.label230);
-            this.groupBox制冷系统.Controls.Add(this.Z10);
-            this.groupBox制冷系统.Controls.Add(this.label239);
-            this.groupBox制冷系统.Controls.Add(this.label235);
-            this.groupBox制冷系统.Controls.Add(this.label243);
-            this.groupBox制冷系统.Controls.Add(this.label231);
-            this.groupBox制冷系统.Controls.Add(this.label232);
-            this.groupBox制冷系统.Controls.Add(this.label237);
-            this.groupBox制冷系统.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox制冷系统.Location = new System.Drawing.Point(22, 123);
-            this.groupBox制冷系统.Name = "groupBox制冷系统";
-            this.groupBox制冷系统.Size = new System.Drawing.Size(514, 360);
-            this.groupBox制冷系统.TabIndex = 52;
-            this.groupBox制冷系统.TabStop = false;
-            this.groupBox制冷系统.Text = "制冷系统";
-            // 
-            // Z15
-            // 
-            this.Z15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z15.Location = new System.Drawing.Point(201, 102);
-            this.Z15.Name = "Z15";
-            this.Z15.ReadOnly = true;
-            this.Z15.Size = new System.Drawing.Size(53, 24);
-            this.Z15.TabIndex = 53;
-            this.Z15.Text = "z15";
-            // 
-            // Z29
-            // 
-            this.Z29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z29.Location = new System.Drawing.Point(413, 320);
-            this.Z29.Name = "Z29";
-            this.Z29.ReadOnly = true;
-            this.Z29.Size = new System.Drawing.Size(52, 24);
-            this.Z29.TabIndex = 90;
-            this.Z29.Text = "z29";
-            // 
-            // Z26
-            // 
-            this.Z26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z26.Location = new System.Drawing.Point(195, 285);
-            this.Z26.Name = "Z26";
-            this.Z26.ReadOnly = true;
-            this.Z26.Size = new System.Drawing.Size(52, 24);
-            this.Z26.TabIndex = 89;
-            this.Z26.Text = "z26";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label52.Location = new System.Drawing.Point(268, 215);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(120, 19);
-            this.label52.TabIndex = 88;
-            this.label52.Text = "a相电流不平衡度：";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label46.Location = new System.Drawing.Point(35, 215);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(120, 19);
-            this.label46.TabIndex = 87;
-            this.label46.Text = "a相电压不平衡度：";
-            // 
-            // Z16
-            // 
-            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z16.Location = new System.Drawing.Point(317, 104);
-            this.Z16.Name = "Z16";
-            this.Z16.ReadOnly = true;
-            this.Z16.Size = new System.Drawing.Size(49, 24);
-            this.Z16.TabIndex = 50;
-            this.Z16.Text = "z16";
-            // 
-            // Z12
-            // 
-            this.Z12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z12.Location = new System.Drawing.Point(206, 69);
-            this.Z12.Name = "Z12";
-            this.Z12.ReadOnly = true;
-            this.Z12.Size = new System.Drawing.Size(52, 24);
-            this.Z12.TabIndex = 47;
-            this.Z12.Text = "z12";
-            // 
-            // Z9
-            // 
-            this.Z9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z9.Location = new System.Drawing.Point(205, 35);
-            this.Z9.Name = "Z9";
-            this.Z9.ReadOnly = true;
-            this.Z9.Size = new System.Drawing.Size(49, 24);
-            this.Z9.TabIndex = 10;
-            this.Z9.Text = "z9";
-            // 
-            // Z11
-            // 
-            this.Z11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z11.Location = new System.Drawing.Point(420, 31);
-            this.Z11.Name = "Z11";
-            this.Z11.ReadOnly = true;
-            this.Z11.Size = new System.Drawing.Size(52, 24);
-            this.Z11.TabIndex = 43;
-            this.Z11.Text = "z11";
-            // 
-            // Z14
-            // 
-            this.Z14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z14.Location = new System.Drawing.Point(423, 71);
-            this.Z14.Name = "Z14";
-            this.Z14.ReadOnly = true;
-            this.Z14.Size = new System.Drawing.Size(49, 24);
-            this.Z14.TabIndex = 48;
-            this.Z14.Text = "z14";
-            // 
-            // Z18
-            // 
-            this.Z18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z18.Location = new System.Drawing.Point(197, 139);
-            this.Z18.Name = "Z18";
-            this.Z18.ReadOnly = true;
-            this.Z18.Size = new System.Drawing.Size(49, 24);
-            this.Z18.TabIndex = 86;
-            this.Z18.Text = "z18";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label51.Location = new System.Drawing.Point(81, 143);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(74, 19);
-            this.label51.TabIndex = 85;
-            this.label51.Text = "功率因素：";
-            // 
-            // Z21
-            // 
-            this.Z21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z21.Location = new System.Drawing.Point(416, 175);
-            this.Z21.Name = "Z21";
-            this.Z21.ReadOnly = true;
-            this.Z21.Size = new System.Drawing.Size(49, 24);
-            this.Z21.TabIndex = 84;
-            this.Z21.Text = "z21";
-            // 
-            // Z20
-            // 
-            this.Z20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z20.Location = new System.Drawing.Point(197, 175);
-            this.Z20.Name = "Z20";
-            this.Z20.ReadOnly = true;
-            this.Z20.Size = new System.Drawing.Size(49, 24);
-            this.Z20.TabIndex = 83;
-            this.Z20.Text = "z20";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label50.Location = new System.Drawing.Point(294, 179);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(94, 19);
-            this.label50.TabIndex = 82;
-            this.label50.Text = "a相畸变电流：";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label49.Location = new System.Drawing.Point(61, 179);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(94, 19);
-            this.label49.TabIndex = 81;
-            this.label49.Text = "a相畸变电压：";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label31.Location = new System.Drawing.Point(353, 106);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(61, 19);
-            this.label31.TabIndex = 79;
-            this.label31.Text = "总无功：";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label30.Location = new System.Drawing.Point(255, 106);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 19);
-            this.label30.TabIndex = 78;
-            this.label30.Text = "总有功：";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label29.Location = new System.Drawing.Point(140, 106);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(61, 19);
-            this.label29.TabIndex = 77;
-            this.label29.Text = "总视在：";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label28.Location = new System.Drawing.Point(372, 70);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 19);
-            this.label28.TabIndex = 76;
-            this.label28.Text = "c相：";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(264, 70);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(43, 19);
-            this.label26.TabIndex = 75;
-            this.label26.Text = "b相：";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(157, 70);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 19);
-            this.label25.TabIndex = 74;
-            this.label25.Text = "a相：";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(372, 34);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(36, 19);
-            this.label24.TabIndex = 73;
-            this.label24.Text = "ca：";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label23.Location = new System.Drawing.Point(264, 34);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(37, 19);
-            this.label23.TabIndex = 72;
-            this.label23.Text = "bc：";
-            // 
-            // Z17
-            // 
-            this.Z17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z17.Location = new System.Drawing.Point(416, 103);
-            this.Z17.Name = "Z17";
-            this.Z17.ReadOnly = true;
-            this.Z17.Size = new System.Drawing.Size(49, 24);
-            this.Z17.TabIndex = 71;
-            this.Z17.Text = "z17";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(301, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 19);
-            this.label7.TabIndex = 70;
-            this.label7.Text = "压缩机电能：";
-            // 
-            // Z27
-            // 
-            this.Z27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z27.Location = new System.Drawing.Point(415, 286);
-            this.Z27.Name = "Z27";
-            this.Z27.ReadOnly = true;
-            this.Z27.Size = new System.Drawing.Size(52, 24);
-            this.Z27.TabIndex = 69;
-            this.Z27.Text = "z27";
-            // 
-            // Z28
-            // 
-            this.Z28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z28.Location = new System.Drawing.Point(194, 320);
-            this.Z28.Name = "Z28";
-            this.Z28.ReadOnly = true;
-            this.Z28.Size = new System.Drawing.Size(52, 24);
-            this.Z28.TabIndex = 68;
-            this.Z28.Text = "z28";
-            // 
-            // Z25
-            // 
-            this.Z25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z25.Location = new System.Drawing.Point(414, 247);
-            this.Z25.Name = "Z25";
-            this.Z25.ReadOnly = true;
-            this.Z25.Size = new System.Drawing.Size(52, 24);
-            this.Z25.TabIndex = 67;
-            this.Z25.Text = "z25";
-            // 
-            // Z24
-            // 
-            this.Z24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z24.Location = new System.Drawing.Point(195, 247);
-            this.Z24.Name = "Z24";
-            this.Z24.ReadOnly = true;
-            this.Z24.Size = new System.Drawing.Size(52, 24);
-            this.Z24.TabIndex = 66;
-            this.Z24.Text = "z24";
-            // 
-            // Z23
-            // 
-            this.Z23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z23.Location = new System.Drawing.Point(414, 211);
-            this.Z23.Name = "Z23";
-            this.Z23.ReadOnly = true;
-            this.Z23.Size = new System.Drawing.Size(52, 24);
-            this.Z23.TabIndex = 65;
-            this.Z23.Text = "z23";
-            // 
-            // Z22
-            // 
-            this.Z22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z22.Location = new System.Drawing.Point(195, 211);
-            this.Z22.Name = "Z22";
-            this.Z22.ReadOnly = true;
-            this.Z22.Size = new System.Drawing.Size(52, 24);
-            this.Z22.TabIndex = 64;
-            this.Z22.Text = "z22";
-            // 
-            // Z19
-            // 
-            this.Z19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z19.Location = new System.Drawing.Point(414, 139);
-            this.Z19.Name = "Z19";
-            this.Z19.ReadOnly = true;
-            this.Z19.Size = new System.Drawing.Size(52, 24);
-            this.Z19.TabIndex = 63;
-            this.Z19.Text = "z19";
-            // 
-            // Z13
-            // 
-            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z13.Location = new System.Drawing.Point(310, 71);
-            this.Z13.Name = "Z13";
-            this.Z13.ReadOnly = true;
-            this.Z13.Size = new System.Drawing.Size(49, 24);
-            this.Z13.TabIndex = 46;
-            this.Z13.Text = "z13";
-            // 
-            // label275
-            // 
-            this.label275.AutoSize = true;
-            this.label275.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label275.Location = new System.Drawing.Point(210, 112);
-            this.label275.Name = "label275";
-            this.label275.Size = new System.Drawing.Size(0, 19);
-            this.label275.TabIndex = 54;
-            // 
-            // label272
-            // 
-            this.label272.AutoSize = true;
-            this.label272.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label272.Location = new System.Drawing.Point(157, 34);
-            this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(37, 19);
-            this.label272.TabIndex = 51;
-            this.label272.Text = "ab：";
-            // 
-            // label233
-            // 
-            this.label233.AutoSize = true;
-            this.label233.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label233.Location = new System.Drawing.Point(276, 288);
-            this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(113, 19);
-            this.label233.TabIndex = 38;
-            this.label233.Text = "冷凝器出口温度：";
-            // 
-            // label244
-            // 
-            this.label244.AutoSize = true;
-            this.label244.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label244.Location = new System.Drawing.Point(279, 251);
-            this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(113, 19);
-            this.label244.TabIndex = 5;
-            this.label244.Text = "蒸发器出口压力：";
-            // 
-            // label230
-            // 
-            this.label230.AutoSize = true;
-            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label230.Location = new System.Drawing.Point(42, 323);
-            this.label230.Name = "label230";
-            this.label230.Size = new System.Drawing.Size(113, 19);
-            this.label230.TabIndex = 42;
-            this.label230.Text = "蒸发器出口温度：";
-            // 
-            // Z10
-            // 
-            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z10.Location = new System.Drawing.Point(314, 34);
-            this.Z10.Name = "Z10";
-            this.Z10.ReadOnly = true;
-            this.Z10.Size = new System.Drawing.Size(49, 24);
-            this.Z10.TabIndex = 42;
-            this.Z10.Text = "z10";
-            // 
-            // label239
-            // 
-            this.label239.AutoSize = true;
-            this.label239.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label239.Location = new System.Drawing.Point(16, 35);
-            this.label239.Name = "label239";
-            this.label239.Size = new System.Drawing.Size(139, 19);
-            this.label239.TabIndex = 9;
-            this.label239.Text = "压缩机运行交流电压：";
-            // 
-            // label235
-            // 
-            this.label235.AutoSize = true;
-            this.label235.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label235.Location = new System.Drawing.Point(16, 107);
-            this.label235.Name = "label235";
-            this.label235.Size = new System.Drawing.Size(139, 19);
-            this.label235.TabIndex = 37;
-            this.label235.Text = "压缩机运行交流功率：";
-            // 
-            // label243
-            // 
-            this.label243.AutoSize = true;
-            this.label243.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label243.Location = new System.Drawing.Point(16, 71);
-            this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(139, 19);
-            this.label243.TabIndex = 1;
-            this.label243.Text = "压缩机运行交流电流：";
-            // 
-            // label231
-            // 
-            this.label231.AutoSize = true;
-            this.label231.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label231.Location = new System.Drawing.Point(280, 326);
-            this.label231.Name = "label231";
-            this.label231.Size = new System.Drawing.Size(113, 19);
-            this.label231.TabIndex = 40;
-            this.label231.Text = "蒸发器入口温度：";
-            // 
-            // label232
-            // 
-            this.label232.AutoSize = true;
-            this.label232.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label232.Location = new System.Drawing.Point(42, 251);
-            this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(113, 19);
-            this.label232.TabIndex = 41;
-            this.label232.Text = "压缩机排气压力：";
-            // 
-            // label237
-            // 
-            this.label237.AutoSize = true;
-            this.label237.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label237.Location = new System.Drawing.Point(42, 287);
-            this.label237.Name = "label237";
-            this.label237.Size = new System.Drawing.Size(113, 19);
-            this.label237.TabIndex = 36;
-            this.label237.Text = "压缩机排气温度：";
-            // 
-            // groupBox气象数据
-            // 
-            this.groupBox气象数据.Controls.Add(this.Z2);
-            this.groupBox气象数据.Controls.Add(this.Z3);
-            this.groupBox气象数据.Controls.Add(this.label268);
-            this.groupBox气象数据.Controls.Add(this.label267);
-            this.groupBox气象数据.Controls.Add(this.label255);
-            this.groupBox气象数据.Controls.Add(this.Z1);
-            this.groupBox气象数据.Controls.Add(this.label242);
-            this.groupBox气象数据.Controls.Add(this.label241);
-            this.groupBox气象数据.Controls.Add(this.Z4);
-            this.groupBox气象数据.Controls.Add(this.label236);
-            this.groupBox气象数据.Controls.Add(this.label240);
-            this.groupBox气象数据.Controls.Add(this.label250);
-            this.groupBox气象数据.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox气象数据.Location = new System.Drawing.Point(20, 5);
-            this.groupBox气象数据.Name = "groupBox气象数据";
-            this.groupBox气象数据.Size = new System.Drawing.Size(510, 97);
-            this.groupBox气象数据.TabIndex = 49;
-            this.groupBox气象数据.TabStop = false;
-            this.groupBox气象数据.Text = "气象数据";
-            this.groupBox气象数据.Visible = false;
-            // 
-            // Z2
-            // 
-            this.Z2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z2.Location = new System.Drawing.Point(396, 32);
-            this.Z2.Name = "Z2";
-            this.Z2.ReadOnly = true;
-            this.Z2.Size = new System.Drawing.Size(53, 24);
-            this.Z2.TabIndex = 5;
-            this.Z2.Text = "z2";
-            // 
-            // Z3
-            // 
-            this.Z3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z3.Location = new System.Drawing.Point(155, 69);
-            this.Z3.Name = "Z3";
-            this.Z3.ReadOnly = true;
-            this.Z3.Size = new System.Drawing.Size(49, 24);
-            this.Z3.TabIndex = 6;
-            this.Z3.Text = "z3";
-            // 
-            // label268
-            // 
-            this.label268.AutoSize = true;
-            this.label268.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label268.Location = new System.Drawing.Point(494, 71);
-            this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(0, 19);
-            this.label268.TabIndex = 51;
-            // 
-            // label267
-            // 
-            this.label267.AutoSize = true;
-            this.label267.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label267.Location = new System.Drawing.Point(448, 35);
-            this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(45, 19);
-            this.label267.TabIndex = 50;
-            this.label267.Text = "W/m²";
-            // 
-            // label255
-            // 
-            this.label255.AutoSize = true;
-            this.label255.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label255.Location = new System.Drawing.Point(204, 72);
-            this.label255.Name = "label255";
-            this.label255.Size = new System.Drawing.Size(33, 19);
-            this.label255.TabIndex = 49;
-            this.label255.Text = "m/s";
-            // 
-            // Z1
-            // 
-            this.Z1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z1.Location = new System.Drawing.Point(155, 32);
-            this.Z1.Name = "Z1";
-            this.Z1.ReadOnly = true;
-            this.Z1.Size = new System.Drawing.Size(49, 24);
-            this.Z1.TabIndex = 4;
-            this.Z1.Text = "z1";
-            // 
-            // label242
-            // 
-            this.label242.AutoSize = true;
-            this.label242.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label242.Location = new System.Drawing.Point(81, 35);
-            this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(74, 19);
-            this.label242.TabIndex = 2;
-            this.label242.Text = "环境温度：";
-            // 
-            // label241
-            // 
-            this.label241.AutoSize = true;
-            this.label241.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label241.Location = new System.Drawing.Point(296, 35);
-            this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(100, 19);
-            this.label241.TabIndex = 3;
-            this.label241.Text = "太阳能辐照度：";
-            // 
-            // Z4
-            // 
-            this.Z4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z4.Location = new System.Drawing.Point(396, 69);
-            this.Z4.Name = "Z4";
-            this.Z4.ReadOnly = true;
-            this.Z4.Size = new System.Drawing.Size(53, 24);
-            this.Z4.TabIndex = 47;
-            this.Z4.Text = "z4";
-            // 
-            // label236
-            // 
-            this.label236.AutoSize = true;
-            this.label236.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label236.Location = new System.Drawing.Point(107, 72);
-            this.label236.Name = "label236";
-            this.label236.Size = new System.Drawing.Size(48, 19);
-            this.label236.TabIndex = 46;
-            this.label236.Text = "风速：";
-            // 
-            // label240
-            // 
-            this.label240.AutoSize = true;
-            this.label240.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label240.Location = new System.Drawing.Point(348, 72);
-            this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(48, 19);
-            this.label240.TabIndex = 7;
-            this.label240.Text = "湿度：";
-            // 
-            // label250
-            // 
-            this.label250.AutoSize = true;
-            this.label250.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label250.Location = new System.Drawing.Point(204, 35);
-            this.label250.Name = "label250";
-            this.label250.Size = new System.Drawing.Size(22, 19);
-            this.label250.TabIndex = 48;
-            this.label250.Text = "℃";
-            // 
             // 维护登记tabPage9
             // 
             this.维护登记tabPage9.Controls.Add(this.panel55);
@@ -4700,7 +4700,7 @@
             this.lsvServer.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lsvServer.GridLines = true;
             this.lsvServer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem1});
             this.lsvServer.Location = new System.Drawing.Point(3, 25);
             this.lsvServer.Name = "lsvServer";
             this.lsvServer.Size = new System.Drawing.Size(497, 217);
@@ -5247,34 +5247,34 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(979, 334);
             this.dataGridView1.TabIndex = 0;
@@ -5284,55 +5284,55 @@
             this.chart2.BackColor = System.Drawing.Color.Transparent;
             this.chart2.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea12.Area3DStyle.IsRightAngleAxes = false;
-            chartArea12.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
-            chartArea12.Area3DStyle.PointDepth = 40;
-            chartArea12.Area3DStyle.PointGapDepth = 0;
-            chartArea12.Area3DStyle.Rotation = 7;
-            chartArea12.Area3DStyle.WallWidth = 3;
-            chartArea12.BackColor = System.Drawing.Color.Black;
-            chartArea12.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea12.BorderWidth = 2;
-            chartArea12.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea12);
+            chartArea6.Area3DStyle.IsRightAngleAxes = false;
+            chartArea6.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.None;
+            chartArea6.Area3DStyle.PointDepth = 40;
+            chartArea6.Area3DStyle.PointGapDepth = 0;
+            chartArea6.Area3DStyle.Rotation = 7;
+            chartArea6.Area3DStyle.WallWidth = 3;
+            chartArea6.BackColor = System.Drawing.Color.Black;
+            chartArea6.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea6.BorderWidth = 2;
+            chartArea6.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea6);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend12.Name = "Legend1";
-            this.chart2.Legends.Add(legend12);
+            legend6.Name = "Legend1";
+            this.chart2.Legends.Add(legend6);
             this.chart2.Location = new System.Drawing.Point(0, 0);
             this.chart2.Name = "chart2";
-            series94.ChartArea = "ChartArea1";
-            series94.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series94.Color = System.Drawing.Color.Yellow;
-            series94.IsValueShownAsLabel = true;
-            series94.Legend = "Legend1";
-            series94.LegendText = "集热器管道温度";
-            series94.Name = "Series1";
-            series95.ChartArea = "ChartArea1";
-            series95.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series95.Legend = "Legend1";
-            series95.LegendText = "水箱温度";
-            series95.Name = "Series2";
-            series96.ChartArea = "ChartArea1";
-            series96.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series96.Legend = "Legend1";
-            series96.LegendText = "回水温度";
-            series96.Name = "Series3";
-            series97.ChartArea = "ChartArea1";
-            series97.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series97.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series97.Legend = "Legend1";
-            series97.LegendText = "水箱液位高度";
-            series97.Name = "Series4";
-            series98.ChartArea = "ChartArea1";
-            series98.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series98.Legend = "Legend1";
-            series98.LegendText = "环境温度";
-            series98.Name = "Series5";
-            this.chart2.Series.Add(series94);
-            this.chart2.Series.Add(series95);
-            this.chart2.Series.Add(series96);
-            this.chart2.Series.Add(series97);
-            this.chart2.Series.Add(series98);
+            series45.ChartArea = "ChartArea1";
+            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series45.Color = System.Drawing.Color.Yellow;
+            series45.IsValueShownAsLabel = true;
+            series45.Legend = "Legend1";
+            series45.LegendText = "集热器管道温度";
+            series45.Name = "Series1";
+            series46.ChartArea = "ChartArea1";
+            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series46.Legend = "Legend1";
+            series46.LegendText = "水箱温度";
+            series46.Name = "Series2";
+            series47.ChartArea = "ChartArea1";
+            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series47.Legend = "Legend1";
+            series47.LegendText = "回水温度";
+            series47.Name = "Series3";
+            series48.ChartArea = "ChartArea1";
+            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series48.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series48.Legend = "Legend1";
+            series48.LegendText = "水箱液位高度";
+            series48.Name = "Series4";
+            series49.ChartArea = "ChartArea1";
+            series49.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series49.Legend = "Legend1";
+            series49.LegendText = "环境温度";
+            series49.Name = "Series5";
+            this.chart2.Series.Add(series45);
+            this.chart2.Series.Add(series46);
+            this.chart2.Series.Add(series47);
+            this.chart2.Series.Add(series48);
+            this.chart2.Series.Add(series49);
             this.chart2.Size = new System.Drawing.Size(979, 299);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
@@ -7716,7 +7716,7 @@
             // 
             this.splitContainer15.Panel2.Controls.Add(this.panel19);
             this.splitContainer15.Size = new System.Drawing.Size(613, 473);
-            this.splitContainer15.SplitterDistance = 236;
+            this.splitContainer15.SplitterDistance = 235;
             this.splitContainer15.TabIndex = 32;
             // 
             // panel17
@@ -7725,7 +7725,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(609, 232);
+            this.panel17.Size = new System.Drawing.Size(609, 231);
             this.panel17.TabIndex = 57;
             // 
             // groupBox20
@@ -7740,7 +7740,7 @@
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox20.Location = new System.Drawing.Point(0, 0);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(609, 232);
+            this.groupBox20.Size = new System.Drawing.Size(609, 231);
             this.groupBox20.TabIndex = 57;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "集热循环参数";
@@ -7813,7 +7813,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(609, 232);
+            this.panel18.Size = new System.Drawing.Size(609, 231);
             this.panel18.TabIndex = 57;
             // 
             // groupBox21
@@ -7828,7 +7828,7 @@
             this.groupBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox21.Location = new System.Drawing.Point(0, 0);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(609, 232);
+            this.groupBox21.Size = new System.Drawing.Size(609, 231);
             this.groupBox21.TabIndex = 58;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "集热定温循环参数";
@@ -7902,7 +7902,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(0, 0);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(609, 229);
+            this.panel19.Size = new System.Drawing.Size(609, 230);
             this.panel19.TabIndex = 32;
             // 
             // groupBox22
@@ -13007,7 +13007,7 @@
             this.listView1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listView1.GridLines = true;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(3, 17);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(497, 240);
@@ -13144,11 +13144,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbX3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbX2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbX1)).EndInit();
-            this.panel36.ResumeLayout(false);
-            this.gbCOP.ResumeLayout(false);
-            this.gbCOP.PerformLayout();
-            this.groupBox50.ResumeLayout(false);
-            this.groupBox50.PerformLayout();
             this.panel35.ResumeLayout(false);
             this.groupBox光伏系统数据.ResumeLayout(false);
             this.groupBox光伏系统数据.PerformLayout();
@@ -13156,6 +13151,11 @@
             this.groupBox制冷系统.PerformLayout();
             this.groupBox气象数据.ResumeLayout(false);
             this.groupBox气象数据.PerformLayout();
+            this.panel36.ResumeLayout(false);
+            this.gbCOP.ResumeLayout(false);
+            this.gbCOP.PerformLayout();
+            this.groupBox50.ResumeLayout(false);
+            this.groupBox50.PerformLayout();
             this.维护登记tabPage9.ResumeLayout(false);
             this.panel55.ResumeLayout(false);
             this.录入被更换表数据groupBox84.ResumeLayout(false);

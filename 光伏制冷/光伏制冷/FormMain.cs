@@ -1422,14 +1422,15 @@ namespace 光伏制冷
                     //如果是光伏供电
                     if (CanshuValue.switch3=="1")
                     {
-                        //逆变率
-                        z45transRate = (Convert.ToDouble(z7DCP) / Convert.ToDouble(z15PAC6Ps)).ToString("F2");
-
+                        //逆变率[压缩机功率除以直流表功率]
+                        z45transRate = (Convert.ToDouble(z15PAC6Ps) / Convert.ToDouble(PAC7P)).ToString("F2");
+                        //水泵耗电[总耗电-单相电表耗电]
                         z34m420W = (Convert.ToDouble(sUMPACW) - Convert.ToDouble(PAC7W)).ToString("F4");
                         modeChoose = "光伏";
                     }
                     else
                     {
+                        //如果是市电,就不存在逆变率的概念，把对应的隐藏
                         Action removeZ45 = delegate { this.Z45.Visible = false;this.label8.Visible=false ;};
                         this.Invoke(removeZ45);
                         z45transRate ="空";
@@ -4070,12 +4071,12 @@ namespace 光伏制冷
                     string DCValue = "";
                     if (keyValue[2] == 0x00)
                     {
-                        DCValue = Convert.ToString((keyValue[0] * 256 + keyValue[1]) * Math.Pow(10, (keyValue[3] - 2)));
+                        DCValue = Convert.ToString((keyValue[0] * 256 + keyValue[1]) * Math.Pow(10, (keyValue[3] - 3)));
 
                     }
                     if (keyValue[2] == 0x01)
                     {
-                        DCValue = Convert.ToString((keyValue[0] * 256 + keyValue[1]) * Math.Pow(10, (keyValue[3] - 2) * (-1)));
+                        DCValue = Convert.ToString((keyValue[0] * 256 + keyValue[1]) * Math.Pow(10, (keyValue[3] - 3) * (-1)));
                     }
                     return DCValue;
 
