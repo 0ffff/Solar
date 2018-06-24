@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\getEER\getEER\bin\Debug\getEER.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\getEER\getEER\bin\Debug\getEER.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\getEER\getEER\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\getEER\getEER\obj\Debug\getEER.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\getEER\getEER\obj\Debug\getEER.pdb
