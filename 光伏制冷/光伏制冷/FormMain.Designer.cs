@@ -241,12 +241,14 @@
             this.Z8 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox制冷系统 = new System.Windows.Forms.GroupBox();
+            this.Z16 = new System.Windows.Forms.TextBox();
+            this.Z13 = new System.Windows.Forms.TextBox();
+            this.Z10 = new System.Windows.Forms.TextBox();
             this.Z15 = new System.Windows.Forms.TextBox();
             this.Z29 = new System.Windows.Forms.TextBox();
             this.Z26 = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.Z16 = new System.Windows.Forms.TextBox();
             this.Z12 = new System.Windows.Forms.TextBox();
             this.Z9 = new System.Windows.Forms.TextBox();
             this.Z11 = new System.Windows.Forms.TextBox();
@@ -274,13 +276,11 @@
             this.Z23 = new System.Windows.Forms.TextBox();
             this.Z22 = new System.Windows.Forms.TextBox();
             this.Z19 = new System.Windows.Forms.TextBox();
-            this.Z13 = new System.Windows.Forms.TextBox();
             this.label275 = new System.Windows.Forms.Label();
             this.label272 = new System.Windows.Forms.Label();
             this.label233 = new System.Windows.Forms.Label();
             this.label244 = new System.Windows.Forms.Label();
             this.label230 = new System.Windows.Forms.Label();
-            this.Z10 = new System.Windows.Forms.TextBox();
             this.label239 = new System.Windows.Forms.Label();
             this.label235 = new System.Windows.Forms.Label();
             this.label243 = new System.Windows.Forms.Label();
@@ -3302,6 +3302,36 @@
             this.groupBox制冷系统.TabStop = false;
             this.groupBox制冷系统.Text = "制冷系统";
             // 
+            // Z16
+            // 
+            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z16.Location = new System.Drawing.Point(306, 102);
+            this.Z16.Name = "Z16";
+            this.Z16.ReadOnly = true;
+            this.Z16.Size = new System.Drawing.Size(49, 24);
+            this.Z16.TabIndex = 50;
+            this.Z16.Text = "z16";
+            // 
+            // Z13
+            // 
+            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z13.Location = new System.Drawing.Point(306, 69);
+            this.Z13.Name = "Z13";
+            this.Z13.ReadOnly = true;
+            this.Z13.Size = new System.Drawing.Size(49, 24);
+            this.Z13.TabIndex = 46;
+            this.Z13.Text = "z13";
+            // 
+            // Z10
+            // 
+            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Z10.Location = new System.Drawing.Point(306, 32);
+            this.Z10.Name = "Z10";
+            this.Z10.ReadOnly = true;
+            this.Z10.Size = new System.Drawing.Size(49, 24);
+            this.Z10.TabIndex = 42;
+            this.Z10.Text = "z10";
+            // 
             // Z15
             // 
             this.Z15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -3351,16 +3381,6 @@
             this.label46.Size = new System.Drawing.Size(120, 19);
             this.label46.TabIndex = 87;
             this.label46.Text = "a相电压不平衡度：";
-            // 
-            // Z16
-            // 
-            this.Z16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z16.Location = new System.Drawing.Point(306, 102);
-            this.Z16.Name = "Z16";
-            this.Z16.ReadOnly = true;
-            this.Z16.Size = new System.Drawing.Size(49, 24);
-            this.Z16.TabIndex = 50;
-            this.Z16.Text = "z16";
             // 
             // Z12
             // 
@@ -3632,16 +3652,6 @@
             this.Z19.TabIndex = 63;
             this.Z19.Text = "z19";
             // 
-            // Z13
-            // 
-            this.Z13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z13.Location = new System.Drawing.Point(306, 69);
-            this.Z13.Name = "Z13";
-            this.Z13.ReadOnly = true;
-            this.Z13.Size = new System.Drawing.Size(49, 24);
-            this.Z13.TabIndex = 46;
-            this.Z13.Text = "z13";
-            // 
             // label275
             // 
             this.label275.AutoSize = true;
@@ -3690,16 +3700,6 @@
             this.label230.Size = new System.Drawing.Size(113, 19);
             this.label230.TabIndex = 42;
             this.label230.Text = "蒸发器出口温度：";
-            // 
-            // Z10
-            // 
-            this.Z10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Z10.Location = new System.Drawing.Point(306, 32);
-            this.Z10.Name = "Z10";
-            this.Z10.ReadOnly = true;
-            this.Z10.Size = new System.Drawing.Size(49, 24);
-            this.Z10.TabIndex = 42;
-            this.Z10.Text = "z10";
             // 
             // label239
             // 

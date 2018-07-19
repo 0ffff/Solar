@@ -1186,3 +1186,6 @@ E:\光伏制冷\Solar\光伏制冷\光伏制冷\obj\Debug\光伏制冷.FormQuery
 E:\光伏制冷\Solar\光伏制冷\光伏制冷\obj\Debug\西子新能源.Properties.Resources.resources
 E:\光伏制冷\Solar\光伏制冷\光伏制冷\obj\Debug\光伏制冷.csproj.GenerateResource.Cache
 E:\光伏制冷\Solar\光伏制冷\光伏制冷\obj\Debug\西子新能源.exe.licenses
+E:\光伏制冷\Solar\光伏制冷\光伏制冷\bin\Debug\System.Windows.Forms.DataVisualization.dll
+E:\光伏制冷\Solar\光伏制冷\光伏制冷\bin\Debug\System.Windows.Forms.DataVisualization.xml
+E:\光伏制冷\Solar\光伏制冷\光伏制冷\bin\Debug\zh-CHS\System.Windows.Forms.DataVisualization.resources.dll

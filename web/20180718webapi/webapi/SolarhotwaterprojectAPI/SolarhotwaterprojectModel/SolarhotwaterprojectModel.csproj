@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{062CFEBA-CA1C-44E5-B5F1-FF3E984DE090}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolarhotwaterprojectModel</RootNamespace>
+    <AssemblyName>SolarhotwaterprojectModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSoft.DBUtilityGeneric">
+      <HintPath>..\packages\DCSoft\DCSoft.DBUtilityGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="DCSoft.Utility">
+      <HintPath>..\packages\DCSoft\DCSoft.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM">
+      <HintPath>..\packages\DCSoft\Dos.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseModel\AreaInfo.cs" />
+    <Compile Include="DataBaseModel\系统采集器参数.cs" />
+    <Compile Include="DataBaseModel\系统采集器实时.cs" />
+    <Compile Include="DataBaseModel\CollectorInfo.cs" />
+    <Compile Include="DataBaseModel\CollectPointInfo.cs" />
+    <Compile Include="DataBaseModel\CompanyInfo.cs" />
+    <Compile Include="DataBaseModel\log.cs" />
+    <Compile Include="DataBaseModel\ProjectDetailInfo.cs" />
+    <Compile Include="DataBaseModel\ProjectInfo.cs" />
+    <Compile Include="DataBaseModel\tb_Alarm.cs" />
+    <Compile Include="DataBaseModel\tb_DayIndex.cs" />
+    <Compile Include="DataBaseModel\tb_HourIndex.cs" />
+    <Compile Include="DataBaseModel\tb_MonthIndex.cs" />
+    <Compile Include="DataBaseModel\tb_YearIndex.cs" />
+    <Compile Include="DataBaseModel\VW_LastIndex.cs" />
+    <Compile Include="DataBaseModel\VW_Monitoringindex.cs" />
+    <Compile Include="DataBaseModel\VW_TodayEmissionreduction.cs" />
+    <Compile Include="DataBaseModel\系统采集器.cs" />
+    <Compile Include="DataBaseModel\系统采集器Index.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

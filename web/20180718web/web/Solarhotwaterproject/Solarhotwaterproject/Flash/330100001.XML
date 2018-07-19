@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<order>
+  <test yw="10" jt1="1" jt2="1" jt3="1" jt4="1" f1="1" f2="1" h1="1" temp0="10℃" temp01="10.1℃" temp1="20℃" temp11="20.1℃" temp2="30℃" temp21="30.1℃" temp3="40℃" temp31="40.1℃" temp4="50℃" temp41="50.1℃" temp5="60℃" temp6="70℃" temp7="80℃" temp8="90℃" temp9="90℃" w1="419.6W/m²" w2="26.6℃" w3="10.2m/s" w4="1.47m" g1="0.01m³/h" g11="0.011m³/h" g2="0.02m³/h" g21="0.021m³/h" g3="0.03m³/h" g4="0.04m³/h" g5="0.05m³/h" kaidu="90%" wd="55℃" sd="90%" dl="1A" dgl="10W" lux="10000lux">
+  </test>
+</order>

@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82288A37-1017-4E25-8344-6F016380356D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Solarhotwaterproject</RootNamespace>
+    <AssemblyName>Solarhotwaterproject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSoft.Utility">
+      <HintPath>..\..\..\..\..\新系统\webapi\SolarhotwaterprojectAPI\packages\DCSoft\DCSoft.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM">
+      <HintPath>..\..\..\..\..\新系统\webapi\SolarhotwaterprojectAPI\packages\DCSoft\Dos.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.AppService.ApiApps.Service, Version=0.9.16.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.AppService.ApiApps.Service.0.9.16\lib\net45\Microsoft.Azure.AppService.ApiApps.Service.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.0.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-table.min.css" />
+    <Content Include="css\newStyle.css" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="Flash\320200001.swf" />
+    <Content Include="Flash\320200001.XML" />
+    <Content Include="Flash\330100001.swf" />
+    <Content Include="Flash\330100001.XML" />
+    <Content Include="Flash\331100001.html" />
+    <Content Include="Flash\331100001.swf" />
+    <Content Include="Flash\331100001.XML" />
+    <Content Include="Flash\8.swf" />
+    <Content Include="Flash\8.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="img\331100001.jpg" />
+    <Content Include="img\arrow_down.png" />
+    <Content Include="img\arrow_right.png" />
+    <Content Include="img\arrow_up.png" />
+    <Content Include="img\back.png" />
+    <Content Include="img\chart_0.png" />
+    <Content Include="img\chart_1.png" />
+    <Content Include="img\cloud.png" />
+    <Content Include="img\co2.png" />
+    <Content Include="img\day_0.png" />
+    <Content Include="img\day_1.png" />
+    <Content Include="img\headcontent.png" />
+    <Content Include="img\hour_0.png" />
+    <Content Include="img\hour_1.png" />
+    <Content Include="img\light.png" />
+    <Content Include="img\light_1.png" />
+    <Content Include="img\light_2.png" />
+    <Content Include="img\loginbg3.png" />
+    <Content Include="img\logininfo.png" />
+    <Content Include="img\loginlogo.png" />
+    <Content Include="img\loginpassword.png" />
+    <Content Include="img\loginuser.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\month_0.png" />
+    <Content Include="img\month_1.png" />
+    <Content Include="img\navbg.png" />
+    <Content Include="img\no.png" />
+    <Content Include="img\rightBG_01.png" />
+    <Content Include="img\rightBG_02.png" />
+    <Content Include="img\rightNav1-1.png" />
+    <Content Include="img\rightNav1-2.png" />
+    <Content Include="img\rightNav2-1.png" />
+    <Content Include="img\rightNav2-2.png" />
+    <Content Include="img\rightNav3-1.png" />
+    <Content Include="img\rightNav3-2.png" />
+    <Content Include="img\rightNav4-1.png" />
+    <Content Include="img\rightNav4-2.png" />
+    <Content Include="img\rightNav5-1.png" />
+    <Content Include="img\rightNav5-2.png" />
+    <Content Include="img\rightNav6-1.png" />
+    <Content Include="img\rightNav6-2.png" />
+    <Content Include="img\so2.png" />
+    <Content Include="img\dust.png" />
+    <Content Include="img\coal.png" />
+    <Content Include="img\table_0.png" />
+    <Content Include="img\table_1.png" />
+    <Content Include="img\water.png" />
+    <Content Include="img\year_0.png" />
+    <Content Include="img\year_1.png" />
+    <Content Include="js\Alarm.js" />
+    <Content Include="js\bootstrap-table-zh-CN.min.js" />
+    <Content Include="js\bootstrap-table.min.js" />
+    <Content Include="js\cloud.js" />
+    <Content Include="js\fusioncharts.charts.js" />
+    <Content Include="js\FusionCharts.js" />
+    <Content Include="js\fusioncharts.widgets.js" />
+    <Content Include="js\highcharts-more.js" />
+    <Content Include="js\jquery-1.11.3.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\moment.min.js" />
+    <Content Include="js\ProjectDetail.js" />
+    <Content Include="js\QueryAnalysis.js" />
+    <Content Include="js\RealTime.js" />
+    <Content Include="js\select2.min.js" />
+    <Content Include="js\zh-cn.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\highcharts.css" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-3d.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-3d.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-more.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-more.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\accessibility.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\accessibility.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\annotations.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\annotations.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost-canvas.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost-canvas.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\broken-axis.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\broken-axis.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\bullet.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\bullet.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\data.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\data.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drag-panes.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drag-panes.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drilldown.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drilldown.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\export-data.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\export-data.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\exporting.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\exporting.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\funnel.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\funnel.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\gantt.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\gantt.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\grid-axis.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\grid-axis.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\heatmap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\heatmap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\histogram-bellcurve.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\histogram-bellcurve.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\item-series.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\item-series.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\no-data-to-display.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\no-data-to-display.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\offline-exporting.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\offline-exporting.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\oldie.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\oldie.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\overlapping-datalabels.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\overlapping-datalabels.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\parallel-coordinates.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\parallel-coordinates.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pareto.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pareto.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pattern-fill.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pattern-fill.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sankey.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sankey.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\series-label.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\series-label.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\solid-gauge.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\solid-gauge.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\static-scale.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\static-scale.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\stock.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\stock.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\streamgraph.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\streamgraph.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sunburst.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sunburst.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\tilemap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\tilemap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\treemap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\treemap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variable-pie.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variable-pie.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variwide.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variwide.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\vector.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\vector.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\windbarb.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\windbarb.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\wordcloud.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\wordcloud.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\xrange.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\xrange.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\avocado.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\avocado.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-blue.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-blue.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-green.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-green.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-unica.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-unica.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\gray.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\gray.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid-light.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid-light.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sand-signika.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sand-signika.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\skies.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\skies.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sunset.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sunset.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\themes\dark-unica.css" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\themes\grid-light.css" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\themes\sand-signika.css" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts-3d.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts-3d.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts-more.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\canvg.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\canvg.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\jspdf.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\jspdf.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\rgbcolor.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\rgbcolor.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\svg2pdf.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\lib\svg2pdf.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\accessibility.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\accessibility.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\annotations.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\annotations.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost-canvas.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost-canvas.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\broken-axis.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\broken-axis.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\bullet.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\bullet.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\data.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\data.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drag-panes.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drag-panes.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drilldown.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drilldown.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\export-data.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\export-data.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\exporting.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\exporting.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\funnel.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\funnel.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\gantt.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\gantt.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\grid-axis.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\grid-axis.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\heatmap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\heatmap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\histogram-bellcurve.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\histogram-bellcurve.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\item-series.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\item-series.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\no-data-to-display.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\no-data-to-display.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\offline-exporting.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\offline-exporting.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\oldie.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\oldie.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\overlapping-datalabels.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\overlapping-datalabels.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\parallel-coordinates.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\parallel-coordinates.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pareto.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pareto.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pattern-fill.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pattern-fill.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sankey.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sankey.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\series-label.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\series-label.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\solid-gauge.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\solid-gauge.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\static-scale.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\static-scale.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\stock.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\stock.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\streamgraph.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\streamgraph.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sunburst.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sunburst.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\tilemap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\tilemap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\treemap.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\treemap.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variable-pie.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variable-pie.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variwide.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variwide.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\vector.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\vector.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\windbarb.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\windbarb.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\wordcloud.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\wordcloud.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\xrange.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\xrange.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\readme.txt" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\avocado.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\avocado.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-blue.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-blue.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-green.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-green.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-unica.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-unica.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\gray.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\gray.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid-light.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid-light.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sand-signika.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sand-signika.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\skies.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\skies.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sunset.js" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sunset.src.js" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-column-interactive\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-column-null-values\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-column-stacking-grouping\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-pie-donut\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-pie\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\3d-scatter-draggable\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\annotations\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-basic\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-inverted\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-missing\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-negative\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-stacked-percent\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\area-stacked\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\arearange-line\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\arearange\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\areaspline\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bar-basic\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bar-negative-stack\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bar-stacked\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bellcurve\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\box-plot\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bubble-3d\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bubble\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\bullet-graph\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\chart-update\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-basic\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-drilldown\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-negative\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-parsed\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-placement\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-rotated-labels\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-stacked-and-grouped\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-stacked-percent\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\column-stacked\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\columnrange\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo-dual-axes\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo-meteogram\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo-multi-axes\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo-regression\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo-timeline\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\combo\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\dynamic-click-to-add\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\dynamic-master-detail\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\dynamic-update\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\error-bar\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\funnel\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-activity\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-clock\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-dual\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-solid\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-speedometer\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\gauge-vu-meter\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\heatmap-canvas\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\heatmap\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\histogram\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\honeycomb-usa\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\item-series\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-ajax\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-basic\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-boost\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-labels\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-log-axis\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\line-time-series\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\live-data\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\parallel-coordinates\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pareto\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-basic\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-donut\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-drilldown\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-gradient\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-legend\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-monochrome\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pie-semi-circle\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\polar-spider\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\polar-wind-rose\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\polar\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\polygon\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\pyramid\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\renderer\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\responsive\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\sankey-diagram\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\scatter-boost\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\scatter\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\sparkline\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\spline-inverted\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\spline-irregular-time\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\spline-plot-bands\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\spline-symbols\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\streamgraph\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\styled-mode-column\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\styled-mode-pie\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\sunburst\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\synchronized-charts\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\treemap-coloraxis\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\treemap-large-dataset\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\treemap-with-levels\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\variable-radius-pie\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\variwide\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\vector-plot\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\waterfall\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\windbarb-series\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\wordcloud\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\examples\x-range\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\gfx\vml-radial-gradient.png" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\arrow.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\circle.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\cursor.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\earth.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\feature.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\fibonacci.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\flag-circlepin.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\flag-diamondpin.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\flag-flag.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\flag-squarepin.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\flag.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\line.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\rect.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\reset.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\save.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\search.png" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\skies.jpg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\snow.png" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\sun.png" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\text.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\graphics\tunnel.svg" />
+    <Content Include="vendor\Highcharts-6.1.0\index.htm" />
+    <Content Include="vendor\Highcharts-6.1.0\readme.txt" />
+    <Content Include="view\331100001.XML">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="view\8.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendor\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\highcharts.scss" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-3d.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts-more.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\highcharts.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\accessibility.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\annotations.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost-canvas.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\boost.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\broken-axis.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\bullet.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\data.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drag-panes.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\drilldown.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\export-data.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\exporting.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\funnel.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\gantt.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\grid-axis.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\heatmap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\histogram-bellcurve.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\item-series.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\no-data-to-display.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\offline-exporting.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\oldie.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\overlapping-datalabels.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\parallel-coordinates.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pareto.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\pattern-fill.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sankey.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\series-label.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\solid-gauge.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\static-scale.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\stock.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\streamgraph.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\sunburst.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\tilemap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\treemap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variable-pie.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\variwide.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\vector.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\windbarb.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\wordcloud.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\modules\xrange.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\avocado.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-blue.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-green.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\dark-unica.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\gray.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid-light.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\grid.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sand-signika.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\skies.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\css\js\themes\sunset.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts-3d.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts-more.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\highcharts.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\accessibility.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\annotations.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost-canvas.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\boost.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\broken-axis.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\bullet.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\data.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drag-panes.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\drilldown.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\export-data.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\exporting.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\funnel.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\gantt.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\grid-axis.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\heatmap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\histogram-bellcurve.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\item-series.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\no-data-to-display.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\offline-exporting.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\oldie.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\overlapping-datalabels.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\parallel-coordinates.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pareto.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\pattern-fill.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sankey.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\series-label.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\solid-gauge.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\static-scale.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\stock.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\streamgraph.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\sunburst.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\tilemap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\treemap.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variable-pie.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\variwide.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\vector.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\windbarb.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\wordcloud.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\modules\xrange.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\avocado.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-blue.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-green.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\dark-unica.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\gray.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid-light.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\grid.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sand-signika.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\skies.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\code\themes\sunset.js.map" />
+    <Content Include="vendor\Highcharts-6.1.0\license.pdf" />
+    <Content Include="vendor\Highcharts-6.1.0\使用说明.pdf" />
+    <Content Include="DataServices\Handler1.ashx" />
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="apiapp.json" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="css\bootstrap-datetimepicker.min.css" />
+    <Content Include="css\bootstrap-select.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="js\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="js\bootstrap-select.min.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\exporting.js" />
+    <Content Include="js\highcharts-zh_CN.js" />
+    <Content Include="js\highcharts.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\oldie.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="view\Alarm.aspx" />
+    <Content Include="view\Configuration.aspx" />
+    <Content Include="view\login.aspx" />
+    <Content Include="view\ProjectDetail.aspx" />
+    <Content Include="view\QueryAnalysis.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="DataServices\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\系统采集器.cs" />
+    <Compile Include="Model\系统采集器Index.cs" />
+    <Compile Include="Model\系统采集器实时.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\Alarm.aspx.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Alarm.aspx.designer.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\Configuration.aspx.cs">
+      <DependentUpon>Configuration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Configuration.aspx.designer.cs">
+      <DependentUpon>Configuration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\ProjectDetail.aspx.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\ProjectDetail.aspx.designer.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\QueryAnalysis.aspx.cs">
+      <DependentUpon>QueryAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\QueryAnalysis.aspx.designer.cs">
+      <DependentUpon>QueryAnalysis.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52533</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52533/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

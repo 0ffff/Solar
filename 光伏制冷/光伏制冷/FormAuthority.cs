@@ -787,7 +787,6 @@ namespace 光伏制冷
                             {
                                 return true;
                             }
-
                         }
                     }
                 }
